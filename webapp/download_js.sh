@@ -54,3 +54,7 @@ download_file ${img_dir}/markers_default.png https://github.com/coryasilva/Leafl
 download_file ${img_dir}/markers_default@2x.png https://github.com/coryasilva/Leaflet.ExtraMarkers/raw/master/dist/img/markers_default@2x.png
 download_file ${img_dir}/markers_shadow.png https://github.com/coryasilva/Leaflet.ExtraMarkers/raw/master/dist/img/markers_shadow.png
 download_file ${img_dir}/markers_shadow@2x.png https://github.com/coryasilva/Leaflet.ExtraMarkers/raw/master/dist/img/markers_shadow@2x.png
+# Leaflet Messagebox
+# Licence: https://github.com/tinuzz/leaflet-messagebox/blob/master/LICENSE
+download_file ${js_dir}/leaflet.messagebox.js https://github.com/tinuzz/leaflet-messagebox/raw/master/leaflet-messagebox.js
+download_file ${css_dir}/leaflet.messagebox.css https://github.com/tinuzz/leaflet-messagebox/raw/master/leaflet-messagebox.css

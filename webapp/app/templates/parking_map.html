@@ -6,12 +6,13 @@
     {{super()}}
     {% include "head_map_js.html" %}
     <script>
-        var start_at_zoom = 9;
+        var start_at_zoom = 11;
 
         function load_geojson() {
 
             if (mymap.getZoom() < start_at_zoom){
                 console.log('Skip loading geojson : ' + mymap.getZoom());
+                box.show( "{{ _('Need to zoom in to view bicycle parking') }}" );
                 return;
             }
 
@@ -88,7 +89,10 @@
             else
                 load_geojson();
         }
+
         mymap.on('moveend', load_geojson);
+        var box = L.control.messagebox({ timeout: 5000 }).addTo(mymap);
+
     </script>
 {% endblock %}
 
