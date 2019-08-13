@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cycle node network 1\n"
 "Report-Msgid-Bugs-To: osm@lorenz.lu\n"
-"POT-Creation-Date: 2019-08-13 19:16+0200\n"
+"POT-Creation-Date: 2019-08-13 20:54+0200\n"
 "PO-Revision-Date: 2018-07-06 18:12+0200\n"
 "Last-Translator: Chrsitopher Lorenz <osm@lorenz.lu>\n"
 "Language: de\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Generated-By: Babel 2.7.0\n"
 
 #: app/templates/base.html:16 app/templates/node_popup.html:8
-#: app/templates/parking_map.html:106
+#: app/templates/parking_map.html:110
 msgid "Bicycle Parking"
 msgstr "Fahrradparkplätze"
 
@@ -34,7 +34,7 @@ msgid "Statistics"
 msgstr "Statistiken"
 
 #: app/templates/base.html:24 app/templates/parking_map.html:3
-#: app/templates/parking_map.html:103
+#: app/templates/parking_map.html:107
 msgid "Parking Map"
 msgstr "Parkplatz Karte"
 
@@ -54,15 +54,15 @@ msgstr "Wikiseiten"
 msgid "Name"
 msgstr "Name"
 
-#: app/templates/node_popup.html:11 app/templates/parking_map.html:107
+#: app/templates/node_popup.html:11 app/templates/parking_map.html:111
 msgid "Capacity"
 msgstr "Kapazität"
 
-#: app/templates/node_popup.html:14 app/templates/parking_map.html:108
+#: app/templates/node_popup.html:14 app/templates/parking_map.html:112
 msgid "Covered"
 msgstr "Überdachung"
 
-#: app/templates/node_popup.html:17 app/templates/parking_map.html:109
+#: app/templates/node_popup.html:17 app/templates/parking_map.html:113
 msgid "Access"
 msgstr "Zugang"
 
@@ -75,13 +75,41 @@ msgstr "In JOSM laden"
 msgid "open in relation analyzer"
 msgstr "Im Relation Analyzer öffen"
 
-#: app/templates/overpass_link.html:1
+#: app/templates/overpass_link.html:2 app/templates/overpass_link.html:4
 msgid "Overpass Turbo"
 msgstr ""
 
-#: app/templates/parking_map.html:79 app/templates/parking_map.html:86
+#: app/templates/parking_map.html:15
+msgid "Need to zoom in to view bicycle parking"
+msgstr ""
+
+#: app/templates/parking_map.html:80 app/templates/parking_map.html:87
 msgid "-Reload Values-"
 msgstr "-Werte neu laden-"
+
+#: app/templates/parking_map.html:120
+msgid "green"
+msgstr "grün"
+
+#: app/templates/parking_map.html:120
+msgid "Tag exists and matched value if defined"
+msgstr "Tag existiert und wenn angegeben gesuchter Wert"
+
+#: app/templates/parking_map.html:121
+msgid "yellow"
+msgstr "gelb"
+
+#: app/templates/parking_map.html:121
+msgid "Have this tag but value don't match"
+msgstr "Tag ist angegeben aber Wert stimmt nicht überein"
+
+#: app/templates/parking_map.html:122
+msgid "red"
+msgstr "rot"
+
+#: app/templates/parking_map.html:122
+msgid "Tag not defined"
+msgstr "Tag nicht definiert"
 
 #: app/templates/statistics.html:13
 msgid "by Type"

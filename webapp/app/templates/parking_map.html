@@ -116,5 +116,10 @@
             <option>-</option>
         </select>
         <div id="mapid"></div>
+        <ul>
+            <li>{{ _('green')}} - {{ _('Tag exists and matched value if defined')}}</li>
+            <li>{{ _('yellow')}} - {{ _('Have this tag but value don\'t match') }}</li>
+            <li>{{ _('red')}} - {{ _('Tag not defined')}}</li>
+        </ul>
     </div>
 {%- endblock %}
