@@ -1,0 +1,8 @@
+{% if typ == 'area' %}
+    {% with osm_id=osm_id %}{% include "osm_id_way.html" %}{% endwith %}
+{% else %}
+    <a href="https://osm.org/node/{{ osm_id }}" class="osm_id_line" target="_blank"><img src="{{ url_for('static', filename='img/node.png') }}">&nbsp;{{ osm_id }}</a>
+    <small>
+        (<a href="https://localhost:8112/load_object?objects=n{{ osm_id }}" title="{{ _("load in JOSM") }}" target="_blank">josm</a>)
+    </small>
+{% endif %}

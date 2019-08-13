@@ -1,6 +1,5 @@
 config
 
-database/config.json
 database/*.pbf
 database/tools/osmconvert
 database/tools/osmupdate
@@ -21,9 +20,12 @@ webapp/app/static/css/bootstrap.min.css
 webapp/app/static/js/jquery.min.js
 webapp/app/static/js/bootstrap.min.js
 webapp/app/static/js/leaflet.js
-webapp/app/static/js/leaflet.fullscreen.min.js
+webapp/app/static/js/leaflet.*.js
 webapp/app/static/css/leaflet.css
+webapp/app/static/css/leaflet.*.css
 webapp/app/static/css/fullscreen@2x.png
 webapp/app/static/css/fullscreen.png
+webapp/app/static/css/MarkerCluster*.css
 webapp/app/static/css/leaflet.fullscreen.css
 webapp/app/static/css/images/*
+webapp/app/static/img/markers_*.png

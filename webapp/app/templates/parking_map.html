@@ -1,0 +1,116 @@
+{%- extends "base.html" %}
+
+{% block title %}{{ _('Parking Map') }}{% endblock %} 
+
+{% block scripts %}
+    {{super()}}
+    {% include "head_map_js.html" %}
+    <script>
+        var start_at_zoom = 9;
+
+        function load_geojson() {
+
+            if (mymap.getZoom() < start_at_zoom){
+                console.log('Skip loading geojson : ' + mymap.getZoom());
+                return;
+            }
+
+            var customParams = {
+                bbox: mymap.getBounds().toBBoxString()
+            };
+
+            $.ajax({
+                dataType: "json",
+                url: "/geojson/parking/"+ document.getElementById("selectTag").value + L.Util.getParamString(customParams),
+                success: function(data) {
+                    nodes.clearLayers();
+                    $(data.features).each(function(key, data) {
+                        nodes.addData(data);
+                    });
+                    if (window.location.hash) {
+                        // open Popup for current selected node
+                        openNode(window.location.hash.substring(1));
+                    }
+                }
+                });
+            selectBox = document.getElementById("selectValue");
+            if (selectBox.options.length<2)
+                reloadSelectValue();
+        }
+
+        function clearSelectValue() {
+            selectBox = document.getElementById("selectValue");
+            while (selectBox.options.length) {
+                selectBox.remove(0);
+            }
+            var option = document.createElement("option");
+            option.text = "-";
+            selectBox.add(option);
+        }
+
+        function changeTag() {
+            clearSelectValue();
+            load_geojson();
+            reloadSelectValue();
+        }
+
+        function reloadSelectValue() {
+            var customParams = {
+                bbox: mymap.getBounds().toBBoxString()
+            };
+            $.ajax({
+                dataType: "json",
+                url: "/geojson/value/"+ document.getElementById("selectTag").value + L.Util.getParamString(customParams),
+                success: function(data) {
+                    selectBox = document.getElementById("selectValue");
+                    while (selectBox.options.length) {
+                        selectBox.remove(0);
+                    }
+                    var option = document.createElement("option");
+                    option.text = "-";
+                    selectBox.add(option);
+                    for (line in data) {
+                        option = document.createElement("option");
+                        option.text = data[line];
+                        selectBox.add(option);
+                    }
+
+                    option = document.createElement("option");
+                    option.text = "{{ _('-Reload Values-') }}";
+                    selectBox.add(option);
+                }
+                });
+        }
+
+        function changeValue() {
+            if (document.getElementById("selectValue").value == '{{ _('-Reload Values-') }}' )
+                reloadSelectValue();
+            else
+                load_geojson();
+        }
+        mymap.on('moveend', load_geojson);
+    </script>
+{% endblock %}
+
+{% block styles %}
+    {{super()}}
+    {% include "head_map_css.html" %}
+{% endblock %}
+
+{% block content %}
+    <div class ="container">
+        <div class="page-header">
+            <h1>{{ _('Parking Map') }}</h1>
+        </div>
+        <select id="selectTag" onchange="changeTag()">
+            <option value="bicycle_parking" selected="selected">{{ _('Bicycle Parking') }}</option>
+            <option value="capacity">{{ _('Capacity') }}</option>
+            <option value="covered">{{ _('Covered') }}</option>
+            <option value="access">{{ _('Access') }}</option>
+        </select>
+        <select id="selectValue" onchange="changeValue()">
+            <option>-</option>
+        </select>
+        <div id="mapid"></div>
+    </div>
+{%- endblock %}

@@ -1,0 +1,5 @@
+{% if value == '' %}
+    <a href="https://overpass-turbo.eu/?key={{key}}&template=key" target="_blank">{{ _("Overpass Turbo")}}</a>
+{% else %}
+    <a href="https://overpass-turbo.eu/?key={{key}}&value={{value}}&template=key-value" target="_blank">{{ _("Overpass Turbo")}}</a>
+{% endif %}

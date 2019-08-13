@@ -1,0 +1,7 @@
+IMPORT_PBF=import.osm.pbf
+IMPOSM_PARAMETER=
+export PGHOST=localhost
+export PGPORT=5432
+export PGUSER=osm
+export PGPASSWORD=osm
+export PGDATABASE=osm_parking

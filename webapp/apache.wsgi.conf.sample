@@ -1,0 +1,11 @@
+# apt-get install libapache2-mod-wsgi-py3
+<virtualhost *:80>
+    ServerName local.flask
+    WSGIScriptAlias / /opt/cycle_node_network/webapp/webapp.wsgi
+    WSGIDaemonProcess application processes=1 threads=25 python-home=/opt/cycle_node_network/webapp/venv python-path=/opt/cycle_node_network/webapp/venv/lib/python3.5/site-packages
+    <directory /opt/cycle_node_network/webapp/> 
+        WSGIProcessGroup application
+        WSGIApplicationGroup %{GLOBAL}
+        Require all granted
+    </directory>
+</virtualhost>

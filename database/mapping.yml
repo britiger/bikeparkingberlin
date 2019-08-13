@@ -1,0 +1,47 @@
+
+tables:
+  parking_nodes:
+    type: point
+    mapping:
+      amenity: [bicycle_parking]
+    columns:
+    - {name: osm_id, type: id}
+    - {name: geom, type: geometry}
+    - {name: all_tags, type: hstore_tags}
+    - {key: name, name: name, type: string}
+    - {key: operator, name: operator, type: string}
+    - {key: covered, name: covered, type: string}
+    - {key: access, name: access, type: string}
+    - {key: capacity, name: capacity, type: string}
+    - {key: fee, name: fee, type: string}
+    - {key: bicycle_parking, name: bicycle_parking, type: string}
+    - {key: maxstay, name: maxstay, type: string}
+    - {key: surveillance, name: surveillance, type: string}
+  
+  parking_poly:
+    type: polygon
+    mapping:
+      amenity: [bicycle_parking]
+    columns:
+    - {name: osm_id, type: id}
+    - {name: geom, type: geometry}
+    - {name: all_tags, type: hstore_tags}
+    - {key: name, name: name, type: string}
+    - {key: operator, name: operator, type: string}
+    - {key: covered, name: covered, type: string}
+    - {key: access, name: access, type: string}
+    - {key: capacity, name: capacity, type: string}
+    - {key: fee, name: fee, type: string}
+    - {key: bicycle_parking, name: bicycle_parking, type: string}
+    - {key: maxstay, name: maxstay, type: string}
+    - {key: surveillance, name: surveillance, type: string}
+
+  borders:
+    type: polygon
+    mapping:
+      boundary: [administrative]
+    columns:
+    - {name: osm_id, type: id}
+    - {name: geom, type: geometry}
+    - {key: name, name: name, type: string}
+    - {key: admin_level, name: admin_level, type: integer}

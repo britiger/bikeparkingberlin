@@ -1,0 +1,4 @@
+{
+    "cachedir": "./cache",
+    "mapping": "mapping.yml"
+}

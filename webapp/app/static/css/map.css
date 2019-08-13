@@ -1,0 +1,33 @@
+#mapid {
+    top:0px;
+    height: 450px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    z-index: 5;
+}
+
+.mapPopupTable td,
+.networkTable td {
+    padding-left: 1em;
+}
+
+a.jumpto {
+    display: block;
+    position: relative;
+    top: -460px;
+    visibility: hidden;
+}
+
+.osm_id_line {
+    white-space: nowrap;
+}
+
+#top-link-block {
+    position: fixed;
+    bottom: 18px;
+    right: 10px;
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,23 @@
+<h2>{{ node['ref']|e }}</h2>
+<table class="mapPopupTable">
+    <tbody>
+{% if node['name'] %}
+        <tr><th>{{ _('Name') }}</th><td>{{ node['name']|e }}</td></tr>
+{% endif %}
+{% if node['bicycle_parking'] %}
+        <tr><th>{{ _('Bicycle Parking') }}</th><td>{{ node['bicycle_parking']|e }}</td></tr>
+{% endif %}
+{% if node['capacity'] %}
+        <tr><th>{{ _('Capacity') }}</th><td>{{ node['capacity']|e }}</td></tr>
+{% endif %}
+{% if node['covered'] %}
+        <tr><th>{{ _('Covered') }}</th><td>{{ node['covered']|e }}</td></tr>
+{% endif %}
+{% if node['access'] %}
+        <tr><th>{{ _('Access') }}</th><td>{{ node['access']|e }}</td></tr>
+{% endif %}
+
+</tbody>
+</table>
+
+{% with osm_id=node['osm_id'], typ=node['typ'] %}{% include "osm_id_node.html" %}{% endwith %}

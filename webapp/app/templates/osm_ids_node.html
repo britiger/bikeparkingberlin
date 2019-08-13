@@ -1,0 +1,3 @@
+{% for osm_id in osm_ids %}
+    {% with osm_id=osm_id %}{% include "osm_id_node.html" %}{% endwith %}<br/>
+{% endfor %}
