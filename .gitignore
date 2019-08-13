@@ -1,0 +1,29 @@
+config
+
+database/config.json
+database/*.pbf
+database/tools/osmconvert
+database/tools/osmupdate
+database/cache/*
+database/tmp/*
+webapp/venv
+
+# python
+__pycache__/
+*.py[cod]
+*$py.class
+webapp/messages.pot
+*.mo
+
+# External files
+webapp/app/static/js/popper.min.js
+webapp/app/static/css/bootstrap.min.css
+webapp/app/static/js/jquery.min.js
+webapp/app/static/js/bootstrap.min.js
+webapp/app/static/js/leaflet.js
+webapp/app/static/js/leaflet.fullscreen.min.js
+webapp/app/static/css/leaflet.css
+webapp/app/static/css/fullscreen@2x.png
+webapp/app/static/css/fullscreen.png
+webapp/app/static/css/leaflet.fullscreen.css
+webapp/app/static/css/images/*
