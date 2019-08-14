@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "./webapp/venv/bin/python"
+    "python.pythonPath": "./webapp/venv/bin/python",
+    "python.linting.flake8Args": ["--ignore=E501", "--verbose"]
 }
