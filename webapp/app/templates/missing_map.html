@@ -1,0 +1,63 @@
+{%- extends "base.html" %}
+
+{% macro sentence_case(text) %}
+    {{ text[0]|upper}}{{text[1:] }}
+{% endmacro %}
+
+{% block title %}{{ _('Missing Parking Map') }} {{ sentence_case(city) }}{% endblock %} 
+
+{% block scripts %}
+    {{super()}}
+    {% include "head_map_js.html" %}
+    <script>
+        var start_at_zoom = 11;
+
+        function load_geojson() {
+
+            if (mymap.getZoom() < start_at_zoom){
+                console.log('Skip loading geojson : ' + mymap.getZoom());
+                box.show( "{{ _('Need to zoom in to view bicycle parking') }}" );
+                return;
+            }
+
+            var customParams = {
+                bbox: mymap.getBounds().toBBoxString()
+            };
+
+            $.ajax({
+                dataType: "json",
+                url: "/geojson/missing/{{ city }}" + L.Util.getParamString(customParams),
+                success: function(data) {
+                    nodes.clearLayers();
+                    $(data.features).each(function(key, data) {
+                        nodes.addData(data);
+                    });
+                }
+                });
+        }
+
+        mymap.on('moveend', load_geojson);
+        var box = L.control.messagebox({ timeout: 5000 }).addTo(mymap);
+
+    </script>
+{% endblock %}
+
+{% block styles %}
+    {{super()}}
+    {% include "head_map_css.html" %}
+{% endblock %}
+
+{% block content %}
+    <div class ="container">
+        <div class="page-header">
+            <h1>{{ _('Missing Parking Map') }} {{ sentence_case(city) }}</h1>
+            <ul>
+                <li>{{ _('Total Parking') }}: {{ all_parking }}</li>
+                <li>{{ _('Missing Parking') }}: {{ missing_parking }}</li>
+                <li>{{ _('Coverage') }}: {{ "%.2f"|format(missing_parking / all_parking * 100) }}%</li>
+                <li>{{ _('Datasource') }}: {{ datasource }}</li>
+            </ul>
+        </div>
+        <div id="mapid"></div>
+    </div>
+{%- endblock %}

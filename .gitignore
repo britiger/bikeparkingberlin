@@ -29,3 +29,4 @@ webapp/app/static/css/MarkerCluster*.css
 webapp/app/static/css/leaflet.fullscreen.css
 webapp/app/static/css/images/*
 webapp/app/static/img/markers_*.png
+database/external_data/*

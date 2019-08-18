@@ -1,0 +1,10 @@
+<h3>{{ node['gml_id']|e }}</h3>
+<table class="mapPopupTable">
+    <tbody>
+
+{% if node['elem_nr'] %}
+        <tr><th>elem_nr</th><td>{{ node['elem_nr']|e }}</td></tr>
+{% endif %}
+
+</tbody>
+</table>

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cycle node network 1\n"
 "Report-Msgid-Bugs-To: osm@lorenz.lu\n"
-"POT-Creation-Date: 2019-08-13 20:54+0200\n"
+"POT-Creation-Date: 2019-08-18 15:02+0200\n"
 "PO-Revision-Date: 2018-07-06 18:12+0200\n"
 "Last-Translator: Chrsitopher Lorenz <osm@lorenz.lu>\n"
 "Language: de\n"
@@ -29,7 +29,7 @@ msgid "Start"
 msgstr ""
 
 #: app/templates/base.html:23 app/templates/statistics.html:3
-#: app/templates/statistics.html:8
+#: app/templates/statistics.html:18
 msgid "Statistics"
 msgstr "Statistiken"
 
@@ -38,7 +38,12 @@ msgstr "Statistiken"
 msgid "Parking Map"
 msgstr "Parkplatz Karte"
 
-#: app/templates/base.html:31
+#: app/templates/base.html:25 app/templates/missing_map.html:7
+#: app/templates/missing_map.html:53
+msgid "Missing Parking Map"
+msgstr "Karte Fehlende Parkplätze"
+
+#: app/templates/base.html:32
 msgid "Back to Top"
 msgstr "Nach Oben"
 
@@ -49,6 +54,26 @@ msgstr "Fahrradparkplätze in OpenStreetMap"
 #: app/templates/index.html:11
 msgid "Wiki pages"
 msgstr "Wikiseiten"
+
+#: app/templates/missing_map.html:19 app/templates/parking_map.html:15
+msgid "Need to zoom in to view bicycle parking"
+msgstr "Bitte hereinzoomen um Fahrradparkplätze anzuzeigen"
+
+#: app/templates/missing_map.html:55
+msgid "Total Parking"
+msgstr "Gesamt Parkplätze"
+
+#: app/templates/missing_map.html:56
+msgid "Missing Parking"
+msgstr "Fehlende Parkplätze"
+
+#: app/templates/missing_map.html:57
+msgid "Coverage"
+msgstr "Abdeckung"
+
+#: app/templates/missing_map.html:58
+msgid "Datasource"
+msgstr "Datenquelle"
 
 #: app/templates/node_popup.html:5
 msgid "Name"
@@ -79,10 +104,6 @@ msgstr "Im Relation Analyzer öffen"
 msgid "Overpass Turbo"
 msgstr ""
 
-#: app/templates/parking_map.html:15
-msgid "Need to zoom in to view bicycle parking"
-msgstr ""
-
 #: app/templates/parking_map.html:80 app/templates/parking_map.html:87
 msgid "-Reload Values-"
 msgstr "-Werte neu laden-"
@@ -111,59 +132,63 @@ msgstr "rot"
 msgid "Tag not defined"
 msgstr "Tag nicht definiert"
 
-#: app/templates/statistics.html:13
+#: app/templates/statistics.html:23
+msgid "Search"
+msgstr "Suche"
+
+#: app/templates/statistics.html:28
 msgid "by Type"
 msgstr "nach Typ"
 
-#: app/templates/statistics.html:16
+#: app/templates/statistics.html:31
 msgid "Type"
 msgstr "Typ"
 
-#: app/templates/statistics.html:17 app/templates/statistics.html:36
-#: app/templates/statistics.html:56 app/templates/statistics.html:76
-#: app/templates/statistics.html:96 app/templates/statistics.html:116
+#: app/templates/statistics.html:32 app/templates/statistics.html:51
+#: app/templates/statistics.html:71 app/templates/statistics.html:91
+#: app/templates/statistics.html:111 app/templates/statistics.html:131
 msgid "Count"
 msgstr "Anzahl"
 
-#: app/templates/statistics.html:18
+#: app/templates/statistics.html:33
 msgid "Sum of capacity"
 msgstr "Summe der Kapazitäten"
 
-#: app/templates/statistics.html:32
+#: app/templates/statistics.html:47
 msgid "by Bicycle Parking"
 msgstr "nach Fahrradparkplatz"
 
-#: app/templates/statistics.html:35 app/templates/statistics.html:55
-#: app/templates/statistics.html:75 app/templates/statistics.html:95
-#: app/templates/statistics.html:115
+#: app/templates/statistics.html:50 app/templates/statistics.html:70
+#: app/templates/statistics.html:90 app/templates/statistics.html:110
+#: app/templates/statistics.html:130
 msgid "Value"
 msgstr "Wert"
 
-#: app/templates/statistics.html:37 app/templates/statistics.html:57
-#: app/templates/statistics.html:77 app/templates/statistics.html:97
-#: app/templates/statistics.html:117
+#: app/templates/statistics.html:52 app/templates/statistics.html:72
+#: app/templates/statistics.html:92 app/templates/statistics.html:112
+#: app/templates/statistics.html:132
 msgid "Percent"
 msgstr "Prozent"
 
-#: app/templates/statistics.html:38 app/templates/statistics.html:58
-#: app/templates/statistics.html:78 app/templates/statistics.html:98
-#: app/templates/statistics.html:118
+#: app/templates/statistics.html:53 app/templates/statistics.html:73
+#: app/templates/statistics.html:93 app/templates/statistics.html:113
+#: app/templates/statistics.html:133
 msgid "OSM-Links"
 msgstr ""
 
-#: app/templates/statistics.html:52
+#: app/templates/statistics.html:67
 msgid "by Access"
 msgstr "nach Zugang"
 
-#: app/templates/statistics.html:72
+#: app/templates/statistics.html:87
 msgid "by Covered"
 msgstr "nach Überdachung"
 
-#: app/templates/statistics.html:92
+#: app/templates/statistics.html:107
 msgid "by Operator"
 msgstr "nach Betreiber"
 
-#: app/templates/statistics.html:112
+#: app/templates/statistics.html:127
 msgid "by Fee"
 msgstr "nach Bezahlung"
 

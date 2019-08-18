@@ -19,12 +19,17 @@ var nodes = new L.geoJson(null, {onEachFeature: onEachFeaturePopup,
     pointToLayer:
         function (feature, latlng) {
             var colorm = 'red';
+            // for osm-point
             if ( feature.properties.requestedValue && feature.properties.requestedValue != '' ) {
                 selectBox = document.getElementById("selectValue");
                 if (selectBox.value == '-' || selectBox.value == feature.properties.requestedValue) 
                     colorm = 'green';
                 else
                     colorm = 'yellow';
+            }
+            // for external data
+            if ( feature.properties.missing && feature.properties.missing == 'no') {
+                colorm = green;
             }
             var redMarker = L.ExtraMarkers.icon({
                 icon: 'fa-number',

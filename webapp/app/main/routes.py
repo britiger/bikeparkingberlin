@@ -66,3 +66,17 @@ def statistics(filter_text=' '):
 def parkingmap():
 
     return render_template('parking_map.html')
+
+
+@bp.route('/missingmap/<city>')
+def missingmap(city):
+    sql = text('SELECT count(*) from public.s_fahrradstaender')
+    all_parking = db.engine.execute(sql).fetchone()[0]
+
+    sql = text('SELECT count(*) from public.missing_parking_berlin')
+    missing_parking = db.engine.execute(sql).fetchone()[0]
+
+    datasource = "Geoportal Berlin / Vermessungstechnische Straßenbefahrung 2014/2015 - Fahrradständer"
+    # TODO: put all info into config(tables and views) + start zoomlevel + start bbox
+
+    return render_template('missing_map.html', city=city, all_parking=all_parking, missing_parking=missing_parking, datasource=datasource)
