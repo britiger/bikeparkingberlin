@@ -47,7 +47,7 @@ def geojson_existing(city):
 
     (southwest_lng, southwest_lat, northeast_lng, northeast_lat) = bbox.split(',')
     linestring = 'LINESTRING(' + southwest_lng + ' ' + southwest_lat + ',' + northeast_lng + ' ' + northeast_lat + ')'
-    sql = text('SELECT all_data.*, osm.osm_id int_osm_id, osm.typ int_typ, ST_X(ST_Centroid(ST_Transform(all_data.geom, 4326))) AS lon, ST_Y(ST_Centroid(ST_Transform(all_data.geom, 4326))) AS lat FROM public.' + external_data['table_all_parking'] + ' all_data LEFT JOIN imposm3.view_parking osm ON osm.geom && ST_Expand(all_data.geom, 50) WHERE all_data.ogc_fid NOT IN (SELECT ogc_fid FROM public.' + external_data['table_missing_parking'] + ') AND ST_WITHIN(st_transform(all_data.geom,4326), ST_Envelope(ST_GeomFromText(:linestring, 4326) ) ) ORDER BY st_distance(all_data.geom,osm.geom)')
+    sql = text('SELECT all_data.*, osm.osm_id int_osm_id, osm.typ int_typ, osm.name int_name, osm.bicycle_parking int_bicycle_parking, osm.access int_access, osm.capacity int_capacity, osm.covered int_covered, ST_X(ST_Centroid(ST_Transform(all_data.geom, 4326))) AS lon, ST_Y(ST_Centroid(ST_Transform(all_data.geom, 4326))) AS lat FROM public.' + external_data['table_all_parking'] + ' all_data LEFT JOIN imposm3.view_parking osm ON osm.geom && ST_Expand(all_data.geom, 50) WHERE all_data.ogc_fid NOT IN (SELECT ogc_fid FROM public.' + external_data['table_missing_parking'] + ') AND ST_WITHIN(st_transform(all_data.geom,4326), ST_Envelope(ST_GeomFromText(:linestring, 4326) ) ) ORDER BY st_distance(all_data.geom,osm.geom)')
     result = db.engine.execute(sql, {'linestring': linestring})
 
     return render_geojson_nodes_external(result, city, True)
