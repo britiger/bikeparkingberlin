@@ -1,0 +1,16 @@
+<h3>{{ node['IDENT']|e }}</h3>
+<table class="mapPopupTable">
+    <tbody>
+
+{% for col_name in node.keys() %}
+    {% if col_name not in ['gml_id', 'geom', 'lat', 'lon', 'x', 'y', 'geojson', 'ogc_fid', 'int_osm_id', 'int_typ'] %}
+        <tr><th>{{ col_name }}</th><td>{{ node[col_name]|e }}</td></tr>
+    {% endif %}
+{% endfor %}
+
+</tbody>
+</table>
+
+{% if node['int_osm_id'] %}
+    {% with osm_id=node['int_osm_id'], typ=node['int_typ'] %}{% include "osm_id_node.html" %}{% endwith %}
+{% endif %}
