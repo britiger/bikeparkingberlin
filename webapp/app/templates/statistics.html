@@ -16,6 +16,9 @@
     <div class="container">
         <div class="page-header">
             <h1>{{ _('Statistics') }} {{ city_name }}</h1>
+            {% if osm_id != 0 %}
+                <p>{% with osm_id=osm_id %}{% include "osm_id_way.html" %}{% endwith %}</p>
+            {% endif %}
         </div>
 
         <form action="javascript:searchText()" onsubmit="return searchText()">
