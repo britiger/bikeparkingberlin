@@ -1,4 +1,4 @@
-from flask import render_template
+from flask import render_template, abort
 from app.main import bp
 from app import db
 
@@ -70,13 +70,16 @@ def parkingmap():
 
 @bp.route('/missingmap/<city>')
 def missingmap(city):
-    sql = text('SELECT count(*) from public.s_fahrradstaender')
+    sql = text('SELECT * FROM public.external_data WHERE city=:city')
+    external_data = db.engine.execute(sql, {'city': city}).fetchone()
+
+    if external_data is None:
+        abort(404)
+
+    sql = text('SELECT count(*) from public.' + external_data['table_all_parking'])
     all_parking = db.engine.execute(sql).fetchone()[0]
 
-    sql = text('SELECT count(*) from public.missing_parking_berlin')
+    sql = text('SELECT count(*) from public.' + external_data['table_missing_parking'])
     missing_parking = db.engine.execute(sql).fetchone()[0]
 
-    datasource = "Geoportal Berlin / Vermessungstechnische Straßenbefahrung 2014/2015 - Fahrradständer"
-    # TODO: put all info into config(tables and views) + start zoomlevel + start bbox
-
-    return render_template('missing_map.html', city=city, all_parking=all_parking, missing_parking=missing_parking, datasource=datasource)
+    return render_template('missing_map.html', city=city, all_parking=all_parking, missing_parking=missing_parking, datasource=external_data['datasource'], lat=external_data['center_lat'], lon=external_data['center_lon'], zoom=external_data['zoom_level'])

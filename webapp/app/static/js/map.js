@@ -51,6 +51,10 @@ function onEachFeaturePopup(feature, layer) {
             layer.on('popupopen', function(e) { window.location.href = '#' + feature.properties.osm_id; })
             mapNodes[feature.properties.osm_id] = layer;
         }
+        if (feature.properties.ogc_fid) {
+            layer.on('popupopen', function(e) { window.location.href = '#' + feature.properties.ogc_fid; })
+            mapNodes[feature.properties.ogc_fid] = layer;
+        }
     }
 }
 

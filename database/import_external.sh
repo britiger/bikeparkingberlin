@@ -30,5 +30,5 @@ ogr2ogr -f "PostgreSQL" PG:"host=$PGHOST port=$PGPORT dbname=$PGDATABASE user=$P
     -s_srs EPSG:25833 -t_srs EPSG:3857 \
     external_data/s_Fahrradstaender.gml
 
-# create views
-psql -f sql/create_view_external_berlin.sql
+# create views and entry in external_data   
+psql -f sql/create_external_berlin.sql
