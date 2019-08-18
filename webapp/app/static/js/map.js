@@ -29,7 +29,7 @@ var nodes = new L.geoJson(null, {onEachFeature: onEachFeaturePopup,
             }
             // for external data
             if ( feature.properties.missing && feature.properties.missing == 'no') {
-                colorm = green;
+                colorm = 'green';
             }
             var redMarker = L.ExtraMarkers.icon({
                 icon: 'fa-number',

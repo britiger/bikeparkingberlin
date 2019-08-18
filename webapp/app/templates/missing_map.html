@@ -32,6 +32,24 @@
                         // open Popup for current selected node
                         openNode(window.location.hash.substring(1));
                     }
+                    load_existing(customParams);
+                }
+                });
+            
+        }
+
+        function load_existing(customParams) {
+            $.ajax({
+                dataType: "json",
+                url: "/geojson/existing/{{ city }}" + L.Util.getParamString(customParams),
+                success: function(data) {
+                    $(data.features).each(function(key, data) {
+                        nodes.addData(data);
+                    });
+                    if (window.location.hash) {
+                        // open Popup for current selected node
+                        openNode(window.location.hash.substring(1));
+                    }
                 }
                 });
         }
