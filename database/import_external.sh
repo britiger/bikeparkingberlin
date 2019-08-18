@@ -22,6 +22,7 @@ then
 fi
 
 # Import data
+psql -f sql/create_external_table.sql
 echo "Importing External Data ..."
 # Berlin Fahrradständer
 echo "Import Berlin Fahrradständer Befahrung 2014"
