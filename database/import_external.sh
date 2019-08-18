@@ -6,6 +6,8 @@ cd `dirname $(readlink -f $0)`
 source ../config
 source ./tools/bash_functions.sh
 
+mkdir -p external_data
+
 # Download data if not exists
 if [ ! -f external_data/s_Fahrradstaender.gml ]
 then
@@ -29,4 +31,4 @@ ogr2ogr -f "PostgreSQL" PG:"host=$PGHOST port=$PGPORT dbname=$PGDATABASE user=$P
     external_data/s_Fahrradstaender.gml
 
 # create views
-psql -f create_view_external_berlin.sql
+psql -f sql/create_view_external_berlin.sql
