@@ -73,7 +73,7 @@
             <ul>
                 <li>{{ _('Total Parking') }}: {{ all_parking }}</li>
                 <li>{{ _('Missing Parking') }}: {{ missing_parking }}</li>
-                <li>{{ _('Coverage') }}: {{ "%.2f"|format(missing_parking / all_parking * 100) }}%</li>
+                <li>{{ _('Coverage') }}: {{ "%.2f"|format(100 - missing_parking / all_parking * 100) }}%</li>
                 <li>{{ _('Datasource') }}: {{ datasource }}</li>
             </ul>
         </div>
