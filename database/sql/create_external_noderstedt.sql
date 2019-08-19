@@ -1,3 +1,5 @@
+SET client_min_messages TO WARNING;
+
 DROP TABLE IF EXISTS all_parking_nstedt CASCADE;
 CREATE TABLE all_parking_nstedt (
     ogc_fid INT,

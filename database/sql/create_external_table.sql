@@ -1,3 +1,5 @@
+SET client_min_messages TO WARNING;
+
 CREATE TABLE IF NOT EXISTS external_data (
     id SERIAL,
     city VARCHAR(255) NOT NULL UNIQUE,

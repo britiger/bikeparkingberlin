@@ -1,3 +1,5 @@
+SET client_min_messages TO WARNING;
+
 CREATE OR REPLACE VIEW missing_parking_berlin AS
 SELECT bln.*,  ST_AsGeoJSON(st_transform(bln.geom,4326)) as geojson
 FROM public.s_fahrradstaender bln

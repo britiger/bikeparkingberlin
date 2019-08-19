@@ -1,3 +1,5 @@
+SET client_min_messages TO WARNING;
+
 CREATE OR REPLACE VIEW missing_parking_hamburg AS
 SELECT hh.*,  ST_AsGeoJSON(st_transform(hh.geom,4326)) as geojson
 FROM public.bikeandride hh

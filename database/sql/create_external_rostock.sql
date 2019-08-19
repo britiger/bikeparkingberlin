@@ -1,3 +1,5 @@
+SET client_min_messages TO WARNING;
+
 DROP TABLE IF EXISTS all_parking_rostock CASCADE;
 CREATE TABLE all_parking_rostock (
     ogc_fid INT,
