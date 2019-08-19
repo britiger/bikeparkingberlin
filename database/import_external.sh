@@ -27,6 +27,12 @@ then
     wget -O external_data/fahrradabstellanlagen_jena.csv https://opendata.jena.de/data/fahrradabstellanlagen.csv
 fi
 
+if [ ! -f external_data/fahrradabstellanlagen_rostock.csv ]
+then
+    echo "Download Rostock Fahrradabstellanlagen"
+    wget -O external_data/fahrradabstellanlagen_rostock.csv https://geo.sv.rostock.de/download/opendata/fahrradabstellanlagen/fahrradabstellanlagen.csv
+fi
+
 # Check ogr2ogr
 if [ -z `which ogr2ogr` ]
 then
@@ -58,3 +64,9 @@ echo "Import Jena Fahrradabstellanlagen"
 psql -f sql/create_external_jena.sql
 cat external_data/fahrradabstellanlagen_jena.csv | psql -c "COPY all_parking_jena(id,org_lat,org_lon,name) FROM STDIN DELIMITER ',' CSV HEADER;"
 psql -c "UPDATE all_parking_jena SET ogc_fid=id, geom=ST_TRANSFORM(ST_SetSRID(ST_MakePoint(org_lon, org_lat),4326),3857)"
+
+# Rostock Fahrradabstellanlagen
+echo "Import Rostock Fahrradabstellanlagen"
+psql -f sql/create_external_rostock.sql
+cat external_data/fahrradabstellanlagen_rostock.csv | psql -c "COPY all_parking_rostock(org_lat,org_lon,uuid,kreis_name,kreis_schluessel,gemeindeverband_name,gemeindeverband_schluessel,gemeinde_name,gemeinde_schluessel,gemeindeteil_name,gemeindeteil_schluessel,strasse_name,strasse_schluessel,hausnummer,hausnummer_zusatz,postleitzahl,art,stellplaetze,gebuehren,ueberdacht) FROM STDIN DELIMITER ',' CSV HEADER;"
+psql -c "UPDATE all_parking_rostock SET ogc_fid=id, geom=ST_TRANSFORM(ST_SetSRID(ST_MakePoint(org_lon, org_lat),4326),3857)"
