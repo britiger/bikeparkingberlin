@@ -33,6 +33,12 @@ then
     wget -O external_data/fahrradabstellanlagen_rostock.csv https://geo.sv.rostock.de/download/opendata/fahrradabstellanlagen/fahrradabstellanlagen.csv
 fi
 
+if [ ! -f external_data/hh_wfs_verkehr_opendata_26217_snap_7.XML ]
+then
+    echo "Download Hamburg Bike + Ride Anlagen"
+    wget -O external_data/hh_wfs_verkehr_opendata_26217_snap_7.XML http://archiv.transparenz.hamburg.de/hmbtgarchive/HMDK/hh_wfs_verkehr_opendata_26217_snap_7.XML
+fi
+
 # Check ogr2ogr
 if [ -z `which ogr2ogr` ]
 then
@@ -50,7 +56,6 @@ ogr2ogr -f "PostgreSQL" PG:"host=$PGHOST port=$PGPORT dbname=$PGDATABASE user=$P
     -progress -overwrite -lco GEOMETRY_NAME=geom \
     -s_srs EPSG:25833 -t_srs EPSG:3857 \
     external_data/s_Fahrradstaender.gml
-# create views and entry in external_data   
 psql -f sql/create_external_berlin.sql
 
 # Norderstedt Fahrrad ÖPNV
@@ -70,3 +75,11 @@ echo "Import Rostock Fahrradabstellanlagen"
 psql -f sql/create_external_rostock.sql
 cat external_data/fahrradabstellanlagen_rostock.csv | psql -c "COPY all_parking_rostock(org_lat,org_lon,uuid,kreis_name,kreis_schluessel,gemeindeverband_name,gemeindeverband_schluessel,gemeinde_name,gemeinde_schluessel,gemeindeteil_name,gemeindeteil_schluessel,strasse_name,strasse_schluessel,hausnummer,hausnummer_zusatz,postleitzahl,art,stellplaetze,gebuehren,ueberdacht) FROM STDIN DELIMITER ',' CSV HEADER;"
 psql -c "UPDATE all_parking_rostock SET ogc_fid=id, geom=ST_TRANSFORM(ST_SetSRID(ST_MakePoint(org_lon, org_lat),4326),3857)"
+
+# Hamburg Bike + Rode
+echo "Import Hamburg Bike + Ride"
+ogr2ogr -f "PostgreSQL" PG:"host=$PGHOST port=$PGPORT dbname=$PGDATABASE user=$PGUSER password=$PGPASSWORD" \
+    -overwrite -lco GEOMETRY_NAME=geom \
+    -t_srs EPSG:3857 \
+    external_data/hh_wfs_verkehr_opendata_26217_snap_7.XML
+psql -f sql/create_external_hamburg.sql
