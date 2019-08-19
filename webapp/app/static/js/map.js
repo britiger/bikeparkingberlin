@@ -15,6 +15,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 $('#mapid').css("position", "sticky");
 
+var clusterGroup = L.markerClusterGroup({showCoverageOnHover: false, maxClusterRadius: 50, disableClusteringAtZoom: 16});
 var nodes = new L.geoJson(null, {onEachFeature: onEachFeaturePopup,
     pointToLayer:
         function (feature, latlng) {
@@ -39,7 +40,9 @@ var nodes = new L.geoJson(null, {onEachFeature: onEachFeaturePopup,
             return L.marker(latlng, {icon: redMarker }); 
         }
     });
-nodes.addTo(mymap);
+// nodes.addTo(mymap);
+clusterGroup.addTo(mymap);
+clusterGroup.addLayer(nodes);
 
 function onEachFeaturePopup(feature, layer) {
     // does this feature have a property named popupContent?

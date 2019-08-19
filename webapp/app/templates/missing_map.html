@@ -46,6 +46,8 @@
                     $(data.features).each(function(key, data) {
                         nodes.addData(data);
                     });
+                    clusterGroup.clearLayers();
+                    clusterGroup.addLayer(nodes);
                     if (window.location.hash) {
                         // open Popup for current selected node
                         openNode(window.location.hash.substring(1));
