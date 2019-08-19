@@ -48,7 +48,7 @@ function onEachFeaturePopup(feature, layer) {
     // does this feature have a property named popupContent?
     if (feature.properties) {
         if (feature.properties.popupContent) {
-            layer.bindPopup(feature.properties.popupContent);
+            layer.bindPopup(feature.properties.popupContent, {maxHeight: document.getElementById('mapid').clientHeight - 125});
         }
         if (feature.properties.osm_id) {
             layer.on('popupopen', function(e) { window.location.href = '#' + feature.properties.osm_id; })
