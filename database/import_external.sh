@@ -21,6 +21,12 @@ then
     wget -O external_data/13_Bike_und_ride.csv http://185.223.104.6/data/norderstedt/13_Bike_und_ride.csv
 fi
 
+if [ ! -f external_data/fahrradabstellanlagen_jena.csv ]
+then
+    echo "Download Jena Fahrradabstellanlagen"
+    wget -O external_data/fahrradabstellanlagen_jena.csv https://opendata.jena.de/data/fahrradabstellanlagen.csv
+fi
+
 # Check ogr2ogr
 if [ -z `which ogr2ogr` ]
 then
@@ -46,3 +52,9 @@ echo "Import Norderstedt Fahhradabstellanlagen an ÖPNV-Haltestellen"
 psql -f sql/create_external_noderstedt.sql
 cat external_data/13_Bike_und_ride.csv | psql -c "COPY all_parking_nstedt(IDENT,BEZEICH,OEPNV,ART,ANZAHL,X,Y) FROM STDIN DELIMITER ';' CSV HEADER;"
 psql -c "UPDATE all_parking_nstedt SET ogc_fid=IDENT, geom=ST_TRANSFORM(ST_SetSRID(ST_MakePoint(X, Y),32632),3857)"
+
+# Jena Fahrradabstellanlagen
+echo "Import Jena Fahrradabstellanlagen"
+psql -f sql/create_external_jena.sql
+cat external_data/fahrradabstellanlagen_jena.csv | psql -c "COPY all_parking_jena(id,org_lat,org_lon,name) FROM STDIN DELIMITER ',' CSV HEADER;"
+psql -c "UPDATE all_parking_jena SET ogc_fid=id, geom=ST_TRANSFORM(ST_SetSRID(ST_MakePoint(org_lon, org_lat),4326),3857)"
