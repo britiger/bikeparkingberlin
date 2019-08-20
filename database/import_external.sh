@@ -9,35 +9,23 @@ source ./tools/bash_functions.sh
 mkdir -p external_data
 
 # Download data if not exists
-if [ ! -f external_data/s_Fahrradstaender.gml ]
-then
-    echo "Download Berlin Fahrradständer Befahrung 2014"
-    wget -O external_data/s_Fahrradstaender.gml https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/s_Fahrradstaender\?service\=WFS\&version\=1.1.0\&request\=GetFeature\&typeName\=fis:s_Fahrradstaender
-fi
+function download_external {
+    text="$1"
+    url="$2"
+    filename="$3"
 
-if [ ! -f external_data/13_Bike_und_ride.csv ]
-then
-    echo "Download Norderstedt Fahhradabstellanlagen an ÖPNV-Haltestellen"
-    wget -O external_data/13_Bike_und_ride.csv http://185.223.104.6/data/norderstedt/13_Bike_und_ride.csv
-fi
+    if [ ! -f external_data/$filename ]
+    then
+        echo "Download $text"
+        wget -O external_data/$filename $url
+    fi
+}
 
-if [ ! -f external_data/fahrradabstellanlagen_jena.csv ]
-then
-    echo "Download Jena Fahrradabstellanlagen"
-    wget -O external_data/fahrradabstellanlagen_jena.csv https://opendata.jena.de/data/fahrradabstellanlagen.csv
-fi
-
-if [ ! -f external_data/fahrradabstellanlagen_rostock.csv ]
-then
-    echo "Download Rostock Fahrradabstellanlagen"
-    wget -O external_data/fahrradabstellanlagen_rostock.csv https://geo.sv.rostock.de/download/opendata/fahrradabstellanlagen/fahrradabstellanlagen.csv
-fi
-
-if [ ! -f external_data/hh_wfs_verkehr_opendata_26217_snap_7.XML ]
-then
-    echo "Download Hamburg Bike + Ride Anlagen"
-    wget -O external_data/hh_wfs_verkehr_opendata_26217_snap_7.XML http://archiv.transparenz.hamburg.de/hmbtgarchive/HMDK/hh_wfs_verkehr_opendata_26217_snap_7.XML
-fi
+download_external "Berlin Fahrradständer Befahrung 2014" https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/s_Fahrradstaender\?service\=WFS\&version\=1.1.0\&request\=GetFeature\&typeName\=fis:s_Fahrradstaender s_Fahrradstaender.gml
+download_external "Norderstedt Fahhradabstellanlagen an ÖPNV-Haltestellen" http://185.223.104.6/data/norderstedt/13_Bike_und_ride.csv 13_Bike_und_ride.csv
+download_external "Jena Fahrradabstellanlagen" https://opendata.jena.de/data/fahrradabstellanlagen.csv fahrradabstellanlagen_jena.csv
+download_external "Rostock Fahrradabstellanlagen" https://geo.sv.rostock.de/download/opendata/fahrradabstellanlagen/fahrradabstellanlagen.csv fahrradabstellanlagen_rostock.csv
+download_external "Hamburg Bike + Ride Anlagen" http://archiv.transparenz.hamburg.de/hmbtgarchive/HMDK/hh_wfs_verkehr_opendata_26217_snap_7.XML hh_wfs_verkehr_opendata_26217_snap_7.XML
 
 # Check ogr2ogr
 if [ -z `which ogr2ogr` ]
