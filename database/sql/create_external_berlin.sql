@@ -9,4 +9,4 @@ WHERE osm.osm_id IS NULL;
 
 DELETE FROM external_data WHERE city='Berlin';
 INSERT INTO external_data (city, table_all_parking, table_missing_parking, datasource, center_lat, center_lon, zoom_level) 
-    VALUES ('Berlin', 's_fahrradstaender', 'missing_parking_berlin', 'Geoportal Berlin / Vermessungstechnische Straßenbefahrung 2014/2015 - Fahrradständer', 52.520008, 13.404954, 15);
+    VALUES ('Berlin', 's_fahrradstaender', 'missing_parking_berlin', 'Geoportal Berlin / Vermessungstechnische Straßenbefahrung 2014/2015 - Fahrradständer (Datenlizenz Deutschland - Namensnennung - Version 2.0)', 52.520008, 13.404954, 15);

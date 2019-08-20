@@ -22,4 +22,4 @@ WHERE osm.osm_id IS NULL;
 
 DELETE FROM external_data WHERE city='Norderstedt';
 INSERT INTO external_data (city, table_all_parking, table_missing_parking, datasource, center_lat, center_lon, zoom_level) 
-    VALUES ('Norderstedt', 'all_parking_nstedt', 'missing_parking_nstedt', 'Open Data Schleswig-Holstein Fahhradabstellanlagen an ÖPNV-Haltestellen, Standort und Ausstattung Norderstedt', 53.692139, 9.995334, 13);
+    VALUES ('Norderstedt', 'all_parking_nstedt', 'missing_parking_nstedt', 'Open Data Schleswig-Holstein Fahhradabstellanlagen an ÖPNV-Haltestellen, Standort und Ausstattung Norderstedt (Datenlizenz Deutschland – Zero – Version 2.0)', 53.692139, 9.995334, 13);

@@ -26,7 +26,7 @@ download_external "Norderstedt Fahhradabstellanlagen an ÖPNV-Haltestellen" http
 download_external "Jena Fahrradabstellanlagen" https://opendata.jena.de/data/fahrradabstellanlagen.csv fahrradabstellanlagen_jena.csv
 download_external "Rostock Fahrradabstellanlagen" https://geo.sv.rostock.de/download/opendata/fahrradabstellanlagen/fahrradabstellanlagen.csv fahrradabstellanlagen_rostock.csv
 download_external "Hamburg Bike + Ride Anlagen" http://archiv.transparenz.hamburg.de/hmbtgarchive/HMDK/hh_wfs_verkehr_opendata_26217_snap_7.XML hh_wfs_verkehr_opendata_26217_snap_7.XML
-
+download_external "Moers Fahrradständer" http://geoportal-niederrhein.de/files/opendatagis/Moers/fahrradstaender.geojson fahrradstaender.geojson
 # Check ogr2ogr
 if [ -z `which ogr2ogr` ]
 then
@@ -71,3 +71,11 @@ ogr2ogr -f "PostgreSQL" PG:"host=$PGHOST port=$PGPORT dbname=$PGDATABASE user=$P
     -t_srs EPSG:3857 \
     external_data/hh_wfs_verkehr_opendata_26217_snap_7.XML
 psql -f sql/create_external_hamburg.sql
+
+# Moers Fahrradständer
+echo "Import Moers Fahrradständer"
+ogr2ogr -f "PostgreSQL" PG:"host=$PGHOST port=$PGPORT dbname=$PGDATABASE user=$PGUSER password=$PGPASSWORD" \
+    -overwrite -lco GEOMETRY_NAME=geom \
+    -t_srs EPSG:3857 \
+    external_data/fahrradstaender.geojson
+psql -f sql/create_external_moers.sql

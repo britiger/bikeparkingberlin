@@ -36,4 +36,4 @@ WHERE osm.osm_id IS NULL;
 
 DELETE FROM external_data WHERE city='Rostock';
 INSERT INTO external_data (city, table_all_parking, table_missing_parking, datasource, center_lat, center_lon, zoom_level) 
-    VALUES ('Rostock', 'all_parking_rostock', 'missing_parking_rostock', 'Open Data Rostock Fahhradabstellanlagen (CC0)', 54.0887, 12.14049, 13);
+    VALUES ('Rostock', 'all_parking_rostock', 'missing_parking_rostock', 'Open Data Rostock Fahhradabstellanlagen (Creative Commons Zero Universal 1.0 Public Domain Dedication)', 54.0887, 12.14049, 13);
