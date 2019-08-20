@@ -26,7 +26,9 @@ download_external "Norderstedt Fahhradabstellanlagen an ÖPNV-Haltestellen" http
 download_external "Jena Fahrradabstellanlagen" https://opendata.jena.de/data/fahrradabstellanlagen.csv fahrradabstellanlagen_jena.csv
 download_external "Rostock Fahrradabstellanlagen" https://geo.sv.rostock.de/download/opendata/fahrradabstellanlagen/fahrradabstellanlagen.csv fahrradabstellanlagen_rostock.csv
 download_external "Hamburg Bike + Ride Anlagen" http://archiv.transparenz.hamburg.de/hmbtgarchive/HMDK/hh_wfs_verkehr_opendata_26217_snap_7.XML hh_wfs_verkehr_opendata_26217_snap_7.XML
-download_external "Moers Fahrradständer" http://geoportal-niederrhein.de/files/opendatagis/Moers/fahrradstaender.geojson fahrradstaender.geojson
+download_external "Moers Fahrradständer" http://geoportal-niederrhein.de/files/opendatagis/Moers/fahrradstaender.geojson fahrradstaender_moers.geojson
+download_external "Bonn Fahrradstellplätze" https://stadtplan.bonn.de/geojson?Thema=24840 fahrradstellplaetze_bonn.geojson
+
 # Check ogr2ogr
 if [ -z `which ogr2ogr` ]
 then
@@ -78,5 +80,14 @@ ogr2ogr -f "PostgreSQL" PG:"host=$PGHOST port=$PGPORT dbname=$PGDATABASE user=$P
     -overwrite -lco GEOMETRY_NAME=geom \
     -t_srs EPSG:3857 \
     -nln fahrradstaender_moers \
-    external_data/fahrradstaender.geojson
+    external_data/fahrradstaender_moers.geojson
 psql -f sql/create_external_moers.sql
+
+# Bonn Fahrradständer
+echo "Import Bonn Fahrradstellplätze"
+PGCLIENTENCODING=LATIN1 ogr2ogr -f "PostgreSQL" PG:"host=$PGHOST port=$PGPORT dbname=$PGDATABASE user=$PGUSER password=$PGPASSWORD" \
+    -overwrite -lco GEOMETRY_NAME=geom \
+    -t_srs EPSG:3857 \
+    -nln fahrradstaender_bonn \
+    external_data/fahrradstellplaetze_bonn.geojson
+psql -f sql/create_external_bonn.sql

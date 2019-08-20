@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cycle node network 1\n"
 "Report-Msgid-Bugs-To: osm@lorenz.lu\n"
-"POT-Creation-Date: 2019-08-18 15:02+0200\n"
+"POT-Creation-Date: 2019-08-20 21:38+0200\n"
 "PO-Revision-Date: 2018-07-06 18:12+0200\n"
 "Last-Translator: Chrsitopher Lorenz <osm@lorenz.lu>\n"
 "Language: de\n"
@@ -19,8 +19,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.7.0\n"
 
-#: app/templates/base.html:16 app/templates/node_popup.html:8
-#: app/templates/parking_map.html:110
+#: app/templates/base.html:16 app/templates/node_popup.html:7
+#: app/templates/node_popup_external.html:33 app/templates/parking_map.html:112
 msgid "Bicycle Parking"
 msgstr "Fahrradparkplätze"
 
@@ -34,16 +34,16 @@ msgid "Statistics"
 msgstr "Statistiken"
 
 #: app/templates/base.html:24 app/templates/parking_map.html:3
-#: app/templates/parking_map.html:107
+#: app/templates/parking_map.html:109
 msgid "Parking Map"
 msgstr "Parkplatz Karte"
 
-#: app/templates/base.html:25 app/templates/missing_map.html:7
-#: app/templates/missing_map.html:53
+#: app/templates/base.html:26 app/templates/missing_map.html:3
+#: app/templates/missing_map.html:74
 msgid "Missing Parking Map"
 msgstr "Karte Fehlende Parkplätze"
 
-#: app/templates/base.html:32
+#: app/templates/base.html:42
 msgid "Back to Top"
 msgstr "Nach Oben"
 
@@ -55,39 +55,46 @@ msgstr "Fahrradparkplätze in OpenStreetMap"
 msgid "Wiki pages"
 msgstr "Wikiseiten"
 
-#: app/templates/missing_map.html:19 app/templates/parking_map.html:15
+#: app/templates/index.html:17
+msgid "External Sources"
+msgstr "Externe Datenquellen"
+
+#: app/templates/missing_map.html:15 app/templates/parking_map.html:15
 msgid "Need to zoom in to view bicycle parking"
 msgstr "Bitte hereinzoomen um Fahrradparkplätze anzuzeigen"
 
-#: app/templates/missing_map.html:55
+#: app/templates/missing_map.html:76
 msgid "Total Parking"
 msgstr "Gesamt Parkplätze"
 
-#: app/templates/missing_map.html:56
+#: app/templates/missing_map.html:77
 msgid "Missing Parking"
 msgstr "Fehlende Parkplätze"
 
-#: app/templates/missing_map.html:57
+#: app/templates/missing_map.html:78
 msgid "Coverage"
 msgstr "Abdeckung"
 
-#: app/templates/missing_map.html:58
+#: app/templates/missing_map.html:79
 msgid "Datasource"
 msgstr "Datenquelle"
 
-#: app/templates/node_popup.html:5
+#: app/templates/node_popup.html:4 app/templates/node_popup_external.html:30
 msgid "Name"
 msgstr "Name"
 
-#: app/templates/node_popup.html:11 app/templates/parking_map.html:111
+#: app/templates/node_popup.html:10 app/templates/node_popup_external.html:36
+#: app/templates/parking_map.html:113
 msgid "Capacity"
 msgstr "Kapazität"
 
-#: app/templates/node_popup.html:14 app/templates/parking_map.html:112
+#: app/templates/node_popup.html:13 app/templates/node_popup_external.html:39
+#: app/templates/parking_map.html:114
 msgid "Covered"
 msgstr "Überdachung"
 
-#: app/templates/node_popup.html:17 app/templates/parking_map.html:113
+#: app/templates/node_popup.html:16 app/templates/node_popup_external.html:42
+#: app/templates/parking_map.html:115
 msgid "Access"
 msgstr "Zugang"
 
@@ -104,91 +111,91 @@ msgstr "Im Relation Analyzer öffen"
 msgid "Overpass Turbo"
 msgstr ""
 
-#: app/templates/parking_map.html:80 app/templates/parking_map.html:87
+#: app/templates/parking_map.html:82 app/templates/parking_map.html:89
 msgid "-Reload Values-"
 msgstr "-Werte neu laden-"
 
-#: app/templates/parking_map.html:120
+#: app/templates/parking_map.html:122
 msgid "green"
 msgstr "grün"
 
-#: app/templates/parking_map.html:120
+#: app/templates/parking_map.html:122
 msgid "Tag exists and matched value if defined"
 msgstr "Tag existiert und wenn angegeben gesuchter Wert"
 
-#: app/templates/parking_map.html:121
+#: app/templates/parking_map.html:123
 msgid "yellow"
 msgstr "gelb"
 
-#: app/templates/parking_map.html:121
+#: app/templates/parking_map.html:123
 msgid "Have this tag but value don't match"
 msgstr "Tag ist angegeben aber Wert stimmt nicht überein"
 
-#: app/templates/parking_map.html:122
+#: app/templates/parking_map.html:124
 msgid "red"
 msgstr "rot"
 
-#: app/templates/parking_map.html:122
+#: app/templates/parking_map.html:124
 msgid "Tag not defined"
 msgstr "Tag nicht definiert"
 
-#: app/templates/statistics.html:23
+#: app/templates/statistics.html:26
 msgid "Search"
 msgstr "Suche"
 
-#: app/templates/statistics.html:28
+#: app/templates/statistics.html:31
 msgid "by Type"
 msgstr "nach Typ"
 
-#: app/templates/statistics.html:31
+#: app/templates/statistics.html:34
 msgid "Type"
 msgstr "Typ"
 
-#: app/templates/statistics.html:32 app/templates/statistics.html:51
-#: app/templates/statistics.html:71 app/templates/statistics.html:91
-#: app/templates/statistics.html:111 app/templates/statistics.html:131
+#: app/templates/statistics.html:35 app/templates/statistics.html:54
+#: app/templates/statistics.html:74 app/templates/statistics.html:94
+#: app/templates/statistics.html:114 app/templates/statistics.html:134
 msgid "Count"
 msgstr "Anzahl"
 
-#: app/templates/statistics.html:33
+#: app/templates/statistics.html:36
 msgid "Sum of capacity"
 msgstr "Summe der Kapazitäten"
 
-#: app/templates/statistics.html:47
+#: app/templates/statistics.html:50
 msgid "by Bicycle Parking"
 msgstr "nach Fahrradparkplatz"
-
-#: app/templates/statistics.html:50 app/templates/statistics.html:70
-#: app/templates/statistics.html:90 app/templates/statistics.html:110
-#: app/templates/statistics.html:130
-msgid "Value"
-msgstr "Wert"
-
-#: app/templates/statistics.html:52 app/templates/statistics.html:72
-#: app/templates/statistics.html:92 app/templates/statistics.html:112
-#: app/templates/statistics.html:132
-msgid "Percent"
-msgstr "Prozent"
 
 #: app/templates/statistics.html:53 app/templates/statistics.html:73
 #: app/templates/statistics.html:93 app/templates/statistics.html:113
 #: app/templates/statistics.html:133
+msgid "Value"
+msgstr "Wert"
+
+#: app/templates/statistics.html:55 app/templates/statistics.html:75
+#: app/templates/statistics.html:95 app/templates/statistics.html:115
+#: app/templates/statistics.html:135
+msgid "Percent"
+msgstr "Prozent"
+
+#: app/templates/statistics.html:56 app/templates/statistics.html:76
+#: app/templates/statistics.html:96 app/templates/statistics.html:116
+#: app/templates/statistics.html:136
 msgid "OSM-Links"
 msgstr ""
 
-#: app/templates/statistics.html:67
+#: app/templates/statistics.html:70
 msgid "by Access"
 msgstr "nach Zugang"
 
-#: app/templates/statistics.html:87
+#: app/templates/statistics.html:90
 msgid "by Covered"
 msgstr "nach Überdachung"
 
-#: app/templates/statistics.html:107
+#: app/templates/statistics.html:110
 msgid "by Operator"
 msgstr "nach Betreiber"
 
-#: app/templates/statistics.html:127
+#: app/templates/statistics.html:130
 msgid "by Fee"
 msgstr "nach Bezahlung"
 

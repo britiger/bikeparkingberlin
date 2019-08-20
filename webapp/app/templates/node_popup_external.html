@@ -1,5 +1,7 @@
 {% if node['gml_id'] %}
     <h3>{{ node['gml_id']|e }}</h3>
+{% elif  node['stellplatz_nr'] %}
+    <h3>{{ node['stellplatz_nr']|e }}</h3>
 {% elif  node['uuid'] %}
     <h3>{{ node['uuid']|e }}</h3>
 {% elif  node['ident'] %}
