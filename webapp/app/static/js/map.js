@@ -56,10 +56,16 @@ function onEachFeaturePopup(feature, layer) {
         }
         if (feature.properties.ogc_fid) {
             layer.on('popupopen', function(e) { window.location.href = '#' + feature.properties.ogc_fid; })
+            layer.on('popupclose', function(e) { if(!stateMapMove) window.location.href = '#'; } );
             mapNodes[feature.properties.ogc_fid] = layer;
         }
     }
 }
+
+var stateMapMove = false;
+var stateTimeout = null;
+mymap.on('movestart', function(e) { if(stateTimeout) clearTimeout(stateTimeout); stateMapMove = true; });
+mymap.on('moveend', function(e) { stateTimeout = setTimeout(function(){ stateMapMove = false;}, 300); });
 
 function openNode(osm_id) {
     if (mapNodes[osm_id]) {
