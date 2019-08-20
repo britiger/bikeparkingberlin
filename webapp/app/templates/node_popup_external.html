@@ -1,10 +1,20 @@
-<h3>{{ node['gml_id']|e }}</h3>
+{% if node['gml_id'] %}
+    <h3>{{ node['gml_id']|e }}</h3>
+{% elif  node['uuid'] %}
+    <h3>{{ node['uuid']|e }}</h3>
+{% elif  node['ident'] %}
+    <h3>{{ node['ident']|e }}</h3>
+{% elif  node['id'] %}
+    <h3>{{ node['id']|e }}</h3>
+{% endif %}
 <table class="mapPopupTable">
     <tbody>
 
 {% for col_name in node.keys() %}
 {% if col_name not in ['gml_id', 'geom', 'lat', 'lon', 'x', 'y', 'geojson', 'ogc_fid', 'int_osm_id', 'int_typ', 'int_name', 'int_access', 'int_bicycle_parking', 'int_capacity', 'int_covered'] %}
-        <tr><th>{{ col_name }}</th><td>{{ node[col_name]|e }}</td></tr>
+        {% if node[col_name] %}
+            <tr><th>{{ col_name }}</th><td>{{ node[col_name]|e }}</td></tr>
+        {% endif %}
     {% endif %}
 {% endfor %}
 

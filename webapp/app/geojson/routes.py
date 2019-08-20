@@ -74,7 +74,7 @@ def get_values(valueType):
 def render_geojson_nodes_external(result, city, existing=False):
     features = []
     for row in result:
-        prop = {'popupContent': render_template('node_popup_' + city + '.html', node=row)}
+        prop = {'popupContent': render_template('node_popup_external.html', node=row)}
         for col_name in row.keys():
             prop[col_name] = row[col_name]
         if existing is True:
