@@ -77,5 +77,6 @@ echo "Import Moers Fahrradständer"
 ogr2ogr -f "PostgreSQL" PG:"host=$PGHOST port=$PGPORT dbname=$PGDATABASE user=$PGUSER password=$PGPASSWORD" \
     -overwrite -lco GEOMETRY_NAME=geom \
     -t_srs EPSG:3857 \
+    -nln fahrradstaender_moers \
     external_data/fahrradstaender.geojson
 psql -f sql/create_external_moers.sql
