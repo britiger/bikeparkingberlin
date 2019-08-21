@@ -18,6 +18,11 @@ function download_external {
     then
         echo "Download $text"
         wget -O external_data/$filename $url
+        if [[ $filename == *.zip ]]
+        then
+            # Extract Data if zip-file
+            unzip -o -d external_data/ external_data/$filename
+        fi
     fi
 }
 
@@ -28,6 +33,7 @@ download_external "Rostock Fahrradabstellanlagen" https://geo.sv.rostock.de/down
 download_external "Hamburg Bike + Ride Anlagen" http://archiv.transparenz.hamburg.de/hmbtgarchive/HMDK/hh_wfs_verkehr_opendata_26217_snap_7.XML hh_wfs_verkehr_opendata_26217_snap_7.XML
 download_external "Moers Fahrradständer" http://geoportal-niederrhein.de/files/opendatagis/Moers/fahrradstaender.geojson fahrradstaender_moers.geojson
 download_external "Bonn Fahrradstellplätze" https://stadtplan.bonn.de/geojson?Thema=24840 fahrradstellplaetze_bonn.geojson
+download_external "Wuppertal Fahrradstellplätze" https://www.offenedaten-wuppertal.de/node/1257/download Radabstellanlagen_wuppertal.zip
 
 # Check ogr2ogr
 if [ -z `which ogr2ogr` ]
@@ -91,3 +97,12 @@ PGCLIENTENCODING=LATIN1 ogr2ogr -f "PostgreSQL" PG:"host=$PGHOST port=$PGPORT db
     -nln fahrradstaender_bonn \
     external_data/fahrradstellplaetze_bonn.geojson
 psql -f sql/create_external_bonn.sql
+
+# Wuppertal Radabstellanlagen
+echo "Import Wuppertail Radabstellanlagen"
+ogr2ogr -f "PostgreSQL" PG:"host=$PGHOST port=$PGPORT dbname=$PGDATABASE user=$PGUSER password=$PGPASSWORD" \
+    -overwrite -lco GEOMETRY_NAME=geom \
+    -t_srs EPSG:3857 \
+    -nln radabstellanlagen_wuppertal \
+    external_data/Radabstellanlagen_EPSG3857_SHAPE.shp
+psql -f sql/create_external_wuppertal.sql
