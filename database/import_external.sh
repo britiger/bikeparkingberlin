@@ -8,6 +8,19 @@ source ./tools/bash_functions.sh
 
 mkdir -p external_data
 
+# Check unzip
+if [ -z `which unzip` ]
+then
+    echo "Please install unzip e.g. 'apt install unzip'"
+    exit 1
+fi
+# Check ogr2ogr
+if [ -z `which ogr2ogr` ]
+then
+    echo "Please install ogr2ogr e.g. 'apt install gdal-bin'"
+    exit 1
+fi
+
 # Download data if not exists
 function download_external {
     text="$1"
@@ -34,13 +47,6 @@ download_external "Hamburg Bike + Ride Anlagen" http://archiv.transparenz.hambur
 download_external "Moers Fahrradständer" http://geoportal-niederrhein.de/files/opendatagis/Moers/fahrradstaender.geojson fahrradstaender_moers.geojson
 download_external "Bonn Fahrradstellplätze" https://stadtplan.bonn.de/geojson?Thema=24840 fahrradstellplaetze_bonn.geojson
 download_external "Wuppertal Fahrradstellplätze" https://www.offenedaten-wuppertal.de/node/1257/download Radabstellanlagen_wuppertal.zip
-
-# Check ogr2ogr
-if [ -z `which ogr2ogr` ]
-then
-    echo "Please install ogr2ogr e.g. 'apt install gdal-bin'"
-    exit 1
-fi
 
 # Import data
 psql -f sql/create_external_table.sql
