@@ -52,63 +52,75 @@ download_external "Wuppertal Fahrradstellplätze" https://www.offenedaten-wupper
 psql -f sql/create_external_table.sql
 echo "Importing External Data ..."
 
+OGR2OGR_PGSQL="host=$PGHOST port=$PGPORT dbname=$PGDATABASE user=$PGUSER password=$PGPASSWORD SCHEMAS=extern"
+
 # Berlin Fahrradständer
 echo "Import Berlin Fahrradständer Befahrung 2014"
-ogr2ogr -f "PostgreSQL" PG:"host=$PGHOST port=$PGPORT dbname=$PGDATABASE user=$PGUSER password=$PGPASSWORD" \
+ogr2ogr -f "PostgreSQL" PG:"$OGR2OGR_PGSQL" \
     -progress -overwrite -lco GEOMETRY_NAME=geom \
     -s_srs EPSG:25833 -t_srs EPSG:3857 \
+    -nln all_parking_berlin \
     external_data/s_Fahrradstaender.gml
 psql -f sql/create_external_berlin.sql
+cat sql/create_external_template.sql | sed -e 's/#CITY#/berlin/g' | psql
 
 # Norderstedt Fahrrad ÖPNV
 echo "Import Norderstedt Fahhradabstellanlagen an ÖPNV-Haltestellen"
 psql -f sql/create_external_noderstedt.sql
-cat external_data/13_Bike_und_ride.csv | psql -c "COPY all_parking_nstedt(IDENT,BEZEICH,OEPNV,ART,ANZAHL,X,Y) FROM STDIN DELIMITER ';' CSV HEADER;"
-psql -c "UPDATE all_parking_nstedt SET ogc_fid=IDENT, geom=ST_TRANSFORM(ST_SetSRID(ST_MakePoint(X, Y),32632),3857)"
+cat external_data/13_Bike_und_ride.csv | psql -c "COPY extern.all_parking_nstedt(IDENT,BEZEICH,OEPNV,ART,ANZAHL,X,Y) FROM STDIN DELIMITER ';' CSV HEADER;"
+psql -c "UPDATE extern.all_parking_nstedt SET ogc_fid=IDENT, geom=ST_TRANSFORM(ST_SetSRID(ST_MakePoint(X, Y),32632),3857)"
+cat sql/create_external_template.sql | sed -e 's/#CITY#/nstedt/g' | psql
 
 # Jena Fahrradabstellanlagen
 echo "Import Jena Fahrradabstellanlagen"
 psql -f sql/create_external_jena.sql
-cat external_data/fahrradabstellanlagen_jena.csv | psql -c "COPY all_parking_jena(id,org_lat,org_lon,name) FROM STDIN DELIMITER ',' CSV HEADER;"
-psql -c "UPDATE all_parking_jena SET ogc_fid=id, geom=ST_TRANSFORM(ST_SetSRID(ST_MakePoint(org_lon, org_lat),4326),3857)"
+cat external_data/fahrradabstellanlagen_jena.csv | psql -c "COPY extern.all_parking_jena(id,org_lat,org_lon,name) FROM STDIN DELIMITER ',' CSV HEADER;"
+psql -c "UPDATE extern.all_parking_jena SET ogc_fid=id, geom=ST_TRANSFORM(ST_SetSRID(ST_MakePoint(org_lon, org_lat),4326),3857)"
+cat sql/create_external_template.sql | sed -e 's/#CITY#/jena/g' | psql
 
 # Rostock Fahrradabstellanlagen
 echo "Import Rostock Fahrradabstellanlagen"
 psql -f sql/create_external_rostock.sql
-cat external_data/fahrradabstellanlagen_rostock.csv | psql -c "COPY all_parking_rostock(org_lat,org_lon,uuid,kreis_name,kreis_schluessel,gemeindeverband_name,gemeindeverband_schluessel,gemeinde_name,gemeinde_schluessel,gemeindeteil_name,gemeindeteil_schluessel,strasse_name,strasse_schluessel,hausnummer,hausnummer_zusatz,postleitzahl,art,stellplaetze,gebuehren,ueberdacht) FROM STDIN DELIMITER ',' CSV HEADER;"
-psql -c "UPDATE all_parking_rostock SET ogc_fid=id, geom=ST_TRANSFORM(ST_SetSRID(ST_MakePoint(org_lon, org_lat),4326),3857)"
+cat external_data/fahrradabstellanlagen_rostock.csv | psql -c "COPY extern.all_parking_rostock(org_lat,org_lon,uuid,kreis_name,kreis_schluessel,gemeindeverband_name,gemeindeverband_schluessel,gemeinde_name,gemeinde_schluessel,gemeindeteil_name,gemeindeteil_schluessel,strasse_name,strasse_schluessel,hausnummer,hausnummer_zusatz,postleitzahl,art,stellplaetze,gebuehren,ueberdacht) FROM STDIN DELIMITER ',' CSV HEADER;"
+psql -c "UPDATE extern.all_parking_rostock SET ogc_fid=id, geom=ST_TRANSFORM(ST_SetSRID(ST_MakePoint(org_lon, org_lat),4326),3857)"
+cat sql/create_external_template.sql | sed -e 's/#CITY#/rostock/g' | psql
 
 # Hamburg Bike + Rode
 echo "Import Hamburg Bike + Ride"
-ogr2ogr -f "PostgreSQL" PG:"host=$PGHOST port=$PGPORT dbname=$PGDATABASE user=$PGUSER password=$PGPASSWORD" \
+ogr2ogr -f "PostgreSQL" PG:"$OGR2OGR_PGSQL" \
     -overwrite -lco GEOMETRY_NAME=geom \
     -t_srs EPSG:3857 \
+    -nln all_parking_hamburg \
     external_data/hh_wfs_verkehr_opendata_26217_snap_7.XML
 psql -f sql/create_external_hamburg.sql
+cat sql/create_external_template.sql | sed -e 's/#CITY#/hamburg/g' | psql
 
 # Moers Fahrradständer
 echo "Import Moers Fahrradständer"
-ogr2ogr -f "PostgreSQL" PG:"host=$PGHOST port=$PGPORT dbname=$PGDATABASE user=$PGUSER password=$PGPASSWORD" \
+ogr2ogr -f "PostgreSQL" PG:"$OGR2OGR_PGSQL" \
     -overwrite -lco GEOMETRY_NAME=geom \
     -t_srs EPSG:3857 \
-    -nln fahrradstaender_moers \
+    -nln all_parking_moers \
     external_data/fahrradstaender_moers.geojson
 psql -f sql/create_external_moers.sql
+cat sql/create_external_template.sql | sed -e 's/#CITY#/moers/g' | psql
 
 # Bonn Fahrradständer
 echo "Import Bonn Fahrradstellplätze"
-PGCLIENTENCODING=LATIN1 ogr2ogr -f "PostgreSQL" PG:"host=$PGHOST port=$PGPORT dbname=$PGDATABASE user=$PGUSER password=$PGPASSWORD" \
+PGCLIENTENCODING=LATIN1 ogr2ogr -f "PostgreSQL" PG:"$OGR2OGR_PGSQL" \
     -overwrite -lco GEOMETRY_NAME=geom \
     -t_srs EPSG:3857 \
-    -nln fahrradstaender_bonn \
+    -nln all_parking_bonn \
     external_data/fahrradstellplaetze_bonn.geojson
 psql -f sql/create_external_bonn.sql
+cat sql/create_external_template.sql | sed -e 's/#CITY#/bonn/g' | psql
 
 # Wuppertal Radabstellanlagen
 echo "Import Wuppertail Radabstellanlagen"
-ogr2ogr -f "PostgreSQL" PG:"host=$PGHOST port=$PGPORT dbname=$PGDATABASE user=$PGUSER password=$PGPASSWORD" \
+ogr2ogr -f "PostgreSQL" PG:"$OGR2OGR_PGSQL" \
     -overwrite -lco GEOMETRY_NAME=geom \
     -t_srs EPSG:3857 \
-    -nln radabstellanlagen_wuppertal \
+    -nln all_parking_wuppertal \
     external_data/Radabstellanlagen_EPSG3857_SHAPE.shp
 psql -f sql/create_external_wuppertal.sql
+cat sql/create_external_template.sql | sed -e 's/#CITY#/wuppertal/g' | psql

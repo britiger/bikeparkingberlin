@@ -25,14 +25,9 @@
                 <li class="nav-item dropdown {% if request.endpoint=='main.missingmap' %}active{% endif %}">
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ _('Missing Parking Map') }}</a>
                         <div class="dropdown-menu">
-                            <a href="{{ url_for('main.missingmap', city='Berlin') }}" class="dropdown-item">Berlin</a>
-                            <a href="{{ url_for('main.missingmap', city='Bonn') }}" class="dropdown-item">Bonn</a>
-                            <a href="{{ url_for('main.missingmap', city='Hamburg') }}" class="dropdown-item">Hamburg</a>
-                            <a href="{{ url_for('main.missingmap', city='Jena') }}" class="dropdown-item">Jena</a>
-                            <a href="{{ url_for('main.missingmap', city='Moers') }}" class="dropdown-item">Moers</a>
-                            <a href="{{ url_for('main.missingmap', city='Norderstedt') }}" class="dropdown-item">Norderstedt</a>
-                            <a href="{{ url_for('main.missingmap', city='Rostock') }}" class="dropdown-item">Rostock</a>
-                            <a href="{{ url_for('main.missingmap', city='Wuppertal') }}" class="dropdown-item">Wuppertal</a>
+                            {% for row in _external_data %}
+                                <a href="{{ url_for('main.missingmap', city=row['city']) }}" class="dropdown-item">{{ row['city'] }}</a>
+                            {% endfor %}
                         </div>
                 </li>
             </ul>

@@ -1,7 +1,7 @@
 SET client_min_messages TO WARNING;
 
-DROP TABLE IF EXISTS all_parking_rostock CASCADE;
-CREATE TABLE all_parking_rostock (
+DROP TABLE IF EXISTS extern.all_parking_rostock CASCADE;
+CREATE TABLE extern.all_parking_rostock (
     ogc_fid INT,
     id SERIAL,
     org_lon FLOAT,
@@ -27,13 +27,12 @@ CREATE TABLE all_parking_rostock (
     geom geometry
 );
 
-CREATE OR REPLACE VIEW missing_parking_rostock AS
-SELECT rostock.*,  ST_AsGeoJSON(st_transform(rostock.geom,4326)) as geojson
-FROM public.all_parking_rostock rostock
-LEFT JOIN imposm3.view_parking osm
-ON osm.geom && ST_Expand(st_transform(rostock.geom,3857), 50)
-WHERE osm.osm_id IS NULL;
-
-DELETE FROM external_data WHERE city='Rostock';
-INSERT INTO external_data (city, table_all_parking, table_missing_parking, datasource, center_lat, center_lon, zoom_level) 
-    VALUES ('Rostock', 'all_parking_rostock', 'missing_parking_rostock', 'Open Data Rostock Fahhradabstellanlagen (Creative Commons Zero Universal 1.0 Public Domain Dedication)', 54.0887, 12.14049, 13);
+DELETE FROM extern.external_data WHERE city='Rostock';
+INSERT INTO extern.external_data (city, suffix, datasource, datasource_link, license, license_link, center_lat, center_lon, zoom_level)
+    VALUES ('Rostock', 
+        'rostock', 
+        'OpenData.HRO - Fahrradabstellanlagen',
+        'https://www.opendata-hro.de/dataset/fahrradabstellanlagen',
+        'Creative Commons Zero Universal 1.0 Public Domain Dedication',
+        'https://creativecommons.org/publicdomain/zero/1.0/',
+        54.0887, 12.14049, 13);

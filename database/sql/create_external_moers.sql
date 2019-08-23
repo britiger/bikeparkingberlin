@@ -1,12 +1,11 @@
 SET client_min_messages TO WARNING;
 
-CREATE OR REPLACE VIEW missing_parking_moers AS
-SELECT moers.*,  ST_AsGeoJSON(st_transform(moers.geom,4326)) as geojson
-FROM public.fahrradstaender_moers moers
-LEFT JOIN imposm3.view_parking osm
-ON osm.geom && ST_Expand(st_transform(moers.geom,3857), 50)
-WHERE osm.osm_id IS NULL;
-
-DELETE FROM external_data WHERE city='Moers';
-INSERT INTO external_data (city, table_all_parking, table_missing_parking, datasource, center_lat, center_lon, zoom_level) 
-    VALUES ('Moers', 'fahrradstaender_moers', 'missing_parking_moers', 'Stadt Moers - Fahrradständer', 51.45342, 6.6326, 15);
+DELETE FROM extern.external_data WHERE city='Moers';
+INSERT INTO extern.external_data (city, suffix, datasource, datasource_link, license, license_link, center_lat, center_lon, zoom_level)
+    VALUES ('Moers',
+        'moers',
+        'open.nrw - Stadt Moers - Fahrradständer', 
+        'https://open.nrw/dataset/fahrradstaender-odp',
+        'Datenlizenz Deutschland – Zero – Version 2.0',
+        'https://www.govdata.de/dl-de/zero-2-0',
+        51.45342, 6.6326, 15);

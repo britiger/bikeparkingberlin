@@ -1,8 +1,15 @@
-from flask import render_template, abort
+from flask import render_template as flask_render_template, abort
 from app.main import bp
 from app import db
 
 from sqlalchemy import text
+
+
+def render_template(template, **kwargs):
+    sql = text('SELECT * FROM extern.external_data ORDER BY city')
+    external_data = db.engine.execute(sql)
+    kwargs.update({'_external_data': external_data.fetchall()})
+    return flask_render_template(template, **kwargs)
 
 
 @bp.route('/')
@@ -70,16 +77,16 @@ def parkingmap():
 
 @bp.route('/missingmap/<city>')
 def missingmap(city):
-    sql = text('SELECT * FROM public.external_data WHERE city=:city')
+    sql = text('SELECT * FROM extern.external_data WHERE city=:city')
     external_data = db.engine.execute(sql, {'city': city}).fetchone()
 
     if external_data is None:
         abort(404)
 
-    sql = text('SELECT count(*) from public.' + external_data['table_all_parking'])
+    sql = text('SELECT count(*) from extern.all_parking_' + external_data['suffix'])
     all_parking = db.engine.execute(sql).fetchone()[0]
 
-    sql = text('SELECT count(*) from public.' + external_data['table_missing_parking'])
+    sql = text('SELECT count(*) from extern.missing_parking_' + external_data['suffix'])
     missing_parking = db.engine.execute(sql).fetchone()[0]
 
-    return render_template('missing_map.html', city=city, all_parking=all_parking, missing_parking=missing_parking, datasource=external_data['datasource'], lat=external_data['center_lat'], lon=external_data['center_lon'], zoom=external_data['zoom_level'])
+    return render_template('missing_map.html', city=city, all_parking=all_parking, missing_parking=missing_parking, external_data=external_data)

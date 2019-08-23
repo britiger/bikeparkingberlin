@@ -17,14 +17,9 @@
         <h2>{{ _('External Sources')}}</h2>
 
         <ul>
-            <li><a href="https://fbinter.stadt-berlin.de/fb/index.jsp">Stadt Berlin - FIS-Brocker - Geoportal Berlin / Straßenbefahrung 2014 - Fahrradständer (WFS)</a> (<a href="https://www.govdata.de/dl-de/by-2-0">Datenlizenz Deutschland - Namensnennung - Version 2.0</a>)</li>
-            <li><a href="https://open.nrw/dataset/standorte-der-fahrradstellplaetze-bn">Stadt Bonn - open.nrw - Stadt Bonn - Standorte der Fahrradstellplätze</a> (<a href="http://www.opendefinition.org/licenses/cc-zero">Creative Commons CC Zero License (cc-zero)</a>)</li>
-            <li><a href="http://suche.transparenz.hamburg.de/dataset/bike-ride-anlagen-hamburg12">Stadt Hamburg - Transparenzportal Hamburg - Freie und Hansestadt Hamburg, Behörde für Wirtschaft, Verkehr und Innovation - Bike + Ride Anlagen Hamburg</a> (<a href="https://www.govdata.de/dl-de/by-2-0">Datenlizenz Deutschland - Namensnennung - Version 2.0</a>)</li>
-            <li><a href="https://opendata.jena.de/dataset/fahrradabstellanlagen">Stadt Jena - Open Data - Fahrradabstellanlagen</a> (<a href="https://www.govdata.de/dl-de/by-2-0">Datenlizenz Deutschland - Namensnennung - Version 2.0</a>)</li>
-            <li><a href="https://open.nrw/dataset/fahrradstaender-odp">Stadt Moers - open.nrw - Fahrradständer</a> (<a href="https://www.govdata.de/dl-de/zero-2-0">Datenlizenz Deutschland – Zero – Version 2.0</a>)</li>
-            <li><a href="https://opendata.schleswig-holstein.de/dataset/bike-and-ride">Stadt Noderstedt - Open Data Schleswig-Holstein - Bike and Ride</a> (<a href="https://www.govdata.de/dl-de/zero-2-0">Datenlizenz Deutschland – Zero – Version 2.0</a>)</li>
-            <li><a href="https://www.opendata-hro.de/dataset/fahrradabstellanlagen">Stadt Rostock - OpenData.HRO - Fahrradabstellanlagen</a> - (<a href="https://creativecommons.org/publicdomain/zero/1.0/">Creative Commons Zero Universal 1.0 Public Domain Dedication</a>)</li>
-            <li><a href="https://www.offenedaten-wuppertal.de/dataset/radabstellanlagen-wuppertal">Stadt Wuppertal ‐ offenedaten‐wuppertal.de - Radabstellanlagen</a> - (<a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Namensnennung 4.0 International Lizenz</a>)</li>
+            {% for row in _external_data %}
+                <li><a href="{{ row['datasource_link'] }}">{{ row['city'] }} - {{ row['datasource'] }}</a> (<a href="{{ row['license_link'] }}">{{ row['license'] }}</a>)</li>
+            {% endfor %}
         </ul>
     </div>
 {%- endblock %}

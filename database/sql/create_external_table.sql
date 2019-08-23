@@ -1,11 +1,14 @@
 SET client_min_messages TO WARNING;
 
-CREATE TABLE IF NOT EXISTS external_data (
+CREATE SCHEMA IF NOT EXISTS extern;
+CREATE TABLE IF NOT EXISTS extern.external_data (
     id SERIAL,
     city VARCHAR(255) NOT NULL UNIQUE,
-    table_all_parking VARCHAR(255),
-    table_missing_parking VARCHAR(255),
+    suffix VARCHAR(255) NOT NULL,
     datasource TEXT,
+    datasource_link TEXT,
+    license TEXT,
+    license_link TEXT,
     center_lat FLOAT,
     center_lon FLOAT,
     zoom_level INT
