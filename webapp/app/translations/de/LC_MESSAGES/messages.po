@@ -1,16 +1,16 @@
-# German translations for cycle node network.
+# German translations for Bike Parking Berlin.
 # Copyright (C) 2018 ORGANIZATION
-# This file is distributed under the same license as the cycle node network
+# This file is distributed under the same license as the Bike Parking Berlin
 # project.
-# Christopher Lorenz <osm@lorenz.lu>, 2018.
+# Christopher Lorenz <osm@lorenz.lu>, 2019.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: cycle node network 1\n"
+"Project-Id-Version: Bike Parking Berlin\n"
 "Report-Msgid-Bugs-To: osm@lorenz.lu\n"
 "POT-Creation-Date: 2019-08-24 20:43+0200\n"
 "PO-Revision-Date: 2018-07-06 18:12+0200\n"
-"Last-Translator: Chrsitopher Lorenz <osm@lorenz.lu>\n"
+"Last-Translator: Christopher Lorenz <osm@lorenz.lu>\n"
 "Language: de\n"
 "Language-Team: de <osm@lorenz.lu>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
