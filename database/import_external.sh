@@ -30,7 +30,7 @@ function download_external {
     if [ ! -f external_data/$filename ]
     then
         echo "Download $text"
-        wget -O external_data/$filename $url
+        wget -O external_data/$filename "$url"
         if [[ $filename == *.zip ]]
         then
             # Extract Data if zip-file
@@ -47,6 +47,7 @@ download_external "Hamburg Bike + Ride Anlagen" http://archiv.transparenz.hambur
 download_external "Moers Fahrradständer" http://geoportal-niederrhein.de/files/opendatagis/Moers/fahrradstaender.geojson fahrradstaender_moers.geojson
 download_external "Bonn Fahrradstellplätze" https://stadtplan.bonn.de/geojson?Thema=24840 fahrradstellplaetze_bonn.geojson
 download_external "Wuppertal Fahrradstellplätze" https://www.offenedaten-wuppertal.de/node/1257/download Radabstellanlagen_wuppertal.zip
+download_external "Köln Fahrrad Förderung" "https://geoportal.stadt-koeln.de/arcgis/rest/services/Fahrradverkehr_Ma%C3%9Fnahmen/MapServer/0/query?where=objectid+is+not+null&text=&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&relationParam=&outFields=*&returnGeometry=true&returnTrueCurves=false&maxAllowableOffset=&geometryPrecision=&outSR=4326&returnIdsOnly=false&returnCountOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&returnZ=false&returnM=false&gdbVersion=&returnDistinctValues=false&resultOffset=&resultRecordCount=&f=pjson" fahrrad_massnahme_koeln.geojson
 
 # Import data
 psql -f sql/create_external_table.sql
@@ -116,7 +117,7 @@ psql -f sql/create_external_bonn.sql
 cat sql/create_external_template.sql | sed -e 's/#CITY#/bonn/g' | psql
 
 # Wuppertal Radabstellanlagen
-echo "Import Wuppertail Radabstellanlagen"
+echo "Import Wuppertal Radabstellanlagen"
 ogr2ogr -f "PostgreSQL" PG:"$OGR2OGR_PGSQL" \
     -overwrite -lco GEOMETRY_NAME=geom \
     -t_srs EPSG:3857 \
@@ -124,3 +125,13 @@ ogr2ogr -f "PostgreSQL" PG:"$OGR2OGR_PGSQL" \
     external_data/Radabstellanlagen_EPSG3857_SHAPE.shp
 psql -f sql/create_external_wuppertal.sql
 cat sql/create_external_template.sql | sed -e 's/#CITY#/wuppertal/g' | psql
+
+# Köln Fahrrad Förderung
+echo "Import Köln Fahrrad Förderung"
+ogr2ogr -f "PostgreSQL" PG:"$OGR2OGR_PGSQL" \
+    -overwrite -lco GEOMETRY_NAME=geom \
+    -t_srs EPSG:3857 \
+    -nln all_parking_koeln \
+    external_data/fahrrad_massnahme_koeln.geojson
+psql -f sql/create_external_koeln.sql
+cat sql/create_external_template.sql | sed -e 's/#CITY#/koeln/g' | psql
