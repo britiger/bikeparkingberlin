@@ -39,7 +39,7 @@ function download_external {
     fi
 }
 
-download_external "Berlin Fahrradständer Befahrung 2014" https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/s_Fahrradstaender\?service\=WFS\&version\=1.1.0\&request\=GetFeature\&typeName\=fis:s_Fahrradstaender s_Fahrradstaender.gml
+download_external "Berlin Fahrradständer Befahrung 2014" "https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/s_Fahrradstaender?service=WFS&version=1.1.0&request=GetFeature&typeName=fis:s_Fahrradstaender" s_Fahrradstaender.gml
 download_external "Norderstedt Fahhradabstellanlagen an ÖPNV-Haltestellen" http://185.223.104.6/data/norderstedt/13_Bike_und_ride.csv 13_Bike_und_ride.csv
 download_external "Jena Fahrradabstellanlagen" https://opendata.jena.de/data/fahrradabstellanlagen.csv fahrradabstellanlagen_jena.csv
 download_external "Rostock Fahrradabstellanlagen" https://geo.sv.rostock.de/download/opendata/fahrradabstellanlagen/fahrradabstellanlagen.csv fahrradabstellanlagen_rostock.csv
