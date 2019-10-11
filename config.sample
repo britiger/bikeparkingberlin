@@ -5,3 +5,7 @@ export PGPORT=5432
 export PGUSER=osm
 export PGPASSWORD=osm
 export PGDATABASE=osm_parking
+export imprint_addr="Any Person
+This Street 42
+12345 Wheretown"
+export imprint_mail=osm@example.org

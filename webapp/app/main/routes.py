@@ -1,6 +1,7 @@
 from flask import render_template as flask_render_template, abort
 from app.main import bp
 from app import db
+from os import environ
 
 from sqlalchemy import text
 
@@ -17,6 +18,10 @@ def render_template(template, **kwargs):
 def index():
     return render_template('index.html')
 
+
+@bp.route('/imprint')
+def imprint():
+    return render_template('imprint.html', imprint_addr=environ.get('imprint_addr'), imprint_mail=environ.get('imprint_mail'))
 
 @bp.route('/statistics')
 @bp.route('/statistics/<filter_text>')

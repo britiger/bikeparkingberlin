@@ -30,6 +30,7 @@
                             {% endfor %}
                         </div>
                 </li>
+                <li class="nav-item {% if request.endpoint=='main.imprint' %}active{% endif %}"><a href="{{ url_for('main.imprint') }}" class="nav-link">{{ _('Imprint') }}</a></li>
             </ul>
         </div>
 </nav>
