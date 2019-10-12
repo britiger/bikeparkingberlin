@@ -39,7 +39,7 @@ function download_external {
     fi
 }
 
-download_external "Berlin Fahrradständer Befahrung 2014" https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/s_Fahrradstaender\?service\=WFS\&version\=1.1.0\&request\=GetFeature\&typeName\=fis:s_Fahrradstaender s_Fahrradstaender.gml
+download_external "Berlin Fahrradständer Befahrung 2014" "https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/s_Fahrradstaender?service=WFS&version=1.1.0&request=GetFeature&typeName=fis:s_Fahrradstaender" s_Fahrradstaender.gml
 download_external "Norderstedt Fahhradabstellanlagen an ÖPNV-Haltestellen" http://185.223.104.6/data/norderstedt/13_Bike_und_ride.csv 13_Bike_und_ride.csv
 download_external "Jena Fahrradabstellanlagen" https://opendata.jena.de/data/fahrradabstellanlagen.csv fahrradabstellanlagen_jena.csv
 download_external "Rostock Fahrradabstellanlagen" https://geo.sv.rostock.de/download/opendata/fahrradabstellanlagen/fahrradabstellanlagen.csv fahrradabstellanlagen_rostock.csv
@@ -48,7 +48,8 @@ download_external "Moers Fahrradständer" http://geoportal-niederrhein.de/files/
 download_external "Bonn Fahrradstellplätze" https://stadtplan.bonn.de/geojson?Thema=24840 fahrradstellplaetze_bonn.geojson
 download_external "Wuppertal Fahrradstellplätze" https://www.offenedaten-wuppertal.de/node/1257/download Radabstellanlagen_wuppertal.zip
 download_external "Köln Fahrrad Förderung" "https://geoportal.stadt-koeln.de/arcgis/rest/services/Fahrradverkehr_Ma%C3%9Fnahmen/MapServer/0/query?where=objectid+is+not+null&text=&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&relationParam=&outFields=*&returnGeometry=true&returnTrueCurves=false&maxAllowableOffset=&geometryPrecision=&outSR=4326&returnIdsOnly=false&returnCountOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&returnZ=false&returnM=false&gdbVersion=&returnDistinctValues=false&resultOffset=&resultRecordCount=&f=pjson" fahrrad_massnahme_koeln.geojson
-
+download_external "London Cycling Infrastructure" https://cycling.data.tfl.gov.uk/CyclingInfrastructure/data/points/cycle_parking.json london_parking.geojson
+download_external "London Cycling Infrastructure MapInfo" https://cycling.data.tfl.gov.uk/CycleParking/cycle-parking-map-info.zip london_mapinfo.zip
 # Import data
 psql -f sql/create_external_table.sql
 echo "Importing External Data ..."
@@ -135,3 +136,21 @@ ogr2ogr -f "PostgreSQL" PG:"$OGR2OGR_PGSQL" \
     external_data/fahrrad_massnahme_koeln.geojson
 psql -f sql/create_external_koeln.sql
 cat sql/create_external_template.sql | sed -e 's/#CITY#/koeln/g' | psql
+
+# London TFL Cycling Infrastructure
+echo "Import London TFL Cycling Infrastructure"
+ogr2ogr -f "PostgreSQL" PG:"$OGR2OGR_PGSQL" \
+    -overwrite -lco GEOMETRY_NAME=geom \
+    -t_srs EPSG:3857 \
+    -nln all_parking_london \
+    external_data/london_parking.geojson
+psql -f sql/create_external_london.sql
+cat sql/create_external_template.sql | sed -e 's/#CITY#/london/g' | psql
+
+ogr2ogr -f "PostgreSQL" PG:"$OGR2OGR_PGSQL" \
+    -overwrite -lco GEOMETRY_NAME=geom \
+    -t_srs EPSG:3857 \
+    -nln all_parking_london_map \
+    external_data/CycleParking\ 2015.TAB
+psql -f sql/create_external_london_map.sql
+cat sql/create_external_template.sql | sed -e 's/#CITY#/london_map/g' | psql

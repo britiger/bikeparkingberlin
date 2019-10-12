@@ -13,9 +13,12 @@
     <tbody>
 
 {% for col_name in node.keys() %}
-{% if col_name not in ['gml_id', 'geom', 'lat', 'lon', 'x', 'y', 'geojson', 'ogc_fid', 'int_osm_id', 'int_typ', 'int_name', 'int_access', 'int_bicycle_parking', 'int_capacity', 'int_covered'] %}
+{% if col_name not in ['gml_id', 'geom', 'lat', 'lon', 'x', 'y', 'long__mapinfo_', 'lat__mapinfo_', 'geojson', 'ogc_fid', 'int_osm_id', 'int_typ', 'int_name', 'int_access', 'int_bicycle_parking', 'int_capacity', 'int_covered'] %}
         {% if node[col_name] %}
-            <tr><th>{{ col_name }}</th><td>{{ node[col_name]|e }}</td></tr>
+            {% if col_name.startswith('prk') == false or node[col_name]!='FALSE' %}
+            {# For London: Show only Lines which not FALSE (Type is define with TRUE/FALSE in multiple colums)  #}
+                <tr><th>{{ col_name }}</th><td>{{ node[col_name]|e }}</td></tr>
+            {% endif %}
         {% endif %}
     {% endif %}
 {% endfor %}
