@@ -152,3 +152,5 @@ ogr2ogr -f "PostgreSQL" PG:"$OGR2OGR_PGSQL" \
     -t_srs EPSG:3857 \
     -nln all_parking_london_map \
     external_data/CycleParking\ 2015.TAB
+psql -f sql/create_external_london_map.sql
+cat sql/create_external_template.sql | sed -e 's/#CITY#/london_map/g' | psql
