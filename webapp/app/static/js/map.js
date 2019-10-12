@@ -43,6 +43,8 @@ var nodes = new L.geoJson(null, {onEachFeature: onEachFeaturePopup,
 // nodes.addTo(mymap);
 clusterGroup.addTo(mymap);
 clusterGroup.addLayer(nodes);
+// geomlayer
+var geomlayer = null;
 
 function onEachFeaturePopup(feature, layer) {
     // does this feature have a property named popupContent?
@@ -51,13 +53,17 @@ function onEachFeaturePopup(feature, layer) {
             layer.bindPopup(feature.properties.popupContent, {maxHeight: document.getElementById('mapid').clientHeight - 125});
         }
         if (feature.properties.osm_id) {
-            layer.on('popupopen', function(e) { window.location.href = '#' + feature.properties.osm_id; })
+            layer.on('popupopen', function(e) { window.location.href = '#' + feature.properties.osm_id; });
             mapNodes[feature.properties.osm_id] = layer;
         }
         if (feature.properties.ogc_fid) {
-            layer.on('popupopen', function(e) { window.location.href = '#' + feature.properties.ogc_fid; })
+            layer.on('popupopen', function(e) { window.location.href = '#' + feature.properties.ogc_fid; });
             layer.on('popupclose', function(e) { if(!stateMapMove) window.location.href = '#'; } );
             mapNodes[feature.properties.ogc_fid] = layer;
+        }
+        if (feature.properties.geojson) {
+            layer.on('popupopen', function(e) { geomlayer = L.geoJson(JSON.parse(feature.properties.geojson)); if(feature.properties.geojson.indexOf("Point")==-1) geomlayer.addTo(mymap); console.log(feature.properties.geojson.indexOf("Point")); } );
+            layer.on('popupclose', function(e) {mymap.removeLayer(geomlayer); } );
         }
     }
 }
