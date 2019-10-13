@@ -1,3 +1,6 @@
+tags:
+  load_all: true
+  exclude: [created_by, source, "tiger:*"]
 
 tables:
   parking_nodes:

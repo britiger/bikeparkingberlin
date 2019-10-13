@@ -127,6 +127,26 @@
             </tbody>
         </table>
 
+        <h2>{{ _('by Position') }}</h2>
+        <table class="table table-striped">
+            <thead>
+                <th>{{ _('Value') }}</th>
+                <th>{{ _('Count') }}</th>
+                <th>{{ _('Percent') }}</th>
+                <th>{{ _('OSM-Links') }}</th>
+            </thead>
+            <tbody>
+            {% for row in position %}
+                <tr>
+                    <td>{{ row['position']|e if row['position'] != None }}</td>
+                    <td>{{ row['count'] }}</td>
+                    <td>{{ "%.2f"|format(row['count'] / ns.totalCount * 100) }}&nbsp;%</td>
+                    <td>{% with key='bicycle:position', value=row['fee'] %}{% include "overpass_link.html" %}{% endwith %}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
         <h2>{{ _('by Fee') }}</h2>
         <table class="table table-striped">
             <thead>

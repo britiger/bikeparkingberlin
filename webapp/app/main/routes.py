@@ -71,7 +71,10 @@ def statistics(filter_text=' '):
     sql = text('SELECT count(*), operator from imposm3.view_parking ' + where_condition + ' GROUP BY operator ORDER BY count DESC')
     operator = db.engine.execute(sql, filter_execute)
 
-    return render_template('statistics.html', city_name=city_name, main=main, access=access, covered=covered, bicycle_parking=bicycle_parking, fee=fee, operator=operator, osm_id=osm_id)
+    sql = text('SELECT count(*), all_tags->\'bicycle_parking:position\' AS position from imposm3.view_parking ' + where_condition + ' GROUP BY all_tags->\'bicycle_parking:position\' ORDER BY count DESC')
+    position = db.engine.execute(sql, filter_execute)
+
+    return render_template('statistics.html', city_name=city_name, main=main, access=access, covered=covered, bicycle_parking=bicycle_parking, fee=fee, operator=operator, osm_id=osm_id, position=position)
 
 
 @bp.route('/parkingmap')

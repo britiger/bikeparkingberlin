@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bike Parking Berlin\n"
 "Report-Msgid-Bugs-To: osm@lorenz.lu\n"
-"POT-Creation-Date: 2019-10-11 17:47+0200\n"
+"POT-Creation-Date: 2019-10-13 12:27+0200\n"
 "PO-Revision-Date: 2018-07-06 18:12+0200\n"
 "Last-Translator: Christopher Lorenz <osm@lorenz.lu>\n"
 "Language: de\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Generated-By: Babel 2.7.0\n"
 
 #: app/templates/base.html:16 app/templates/node_popup.html:7
-#: app/templates/node_popup_external.html:33 app/templates/parking_map.html:112
+#: app/templates/node_popup_external.html:36 app/templates/parking_map.html:112
 msgid "Bicycle Parking"
 msgstr "Fahrradparkplätze"
 
@@ -96,21 +96,21 @@ msgstr "Datenquelle"
 msgid "License"
 msgstr "Lizenz"
 
-#: app/templates/node_popup.html:4 app/templates/node_popup_external.html:30
+#: app/templates/node_popup.html:4 app/templates/node_popup_external.html:33
 msgid "Name"
 msgstr "Name"
 
-#: app/templates/node_popup.html:10 app/templates/node_popup_external.html:36
+#: app/templates/node_popup.html:10 app/templates/node_popup_external.html:39
 #: app/templates/parking_map.html:113
 msgid "Capacity"
 msgstr "Kapazität"
 
-#: app/templates/node_popup.html:13 app/templates/node_popup_external.html:39
+#: app/templates/node_popup.html:13 app/templates/node_popup_external.html:42
 #: app/templates/parking_map.html:114
 msgid "Covered"
 msgstr "Überdachung"
 
-#: app/templates/node_popup.html:16 app/templates/node_popup_external.html:42
+#: app/templates/node_popup.html:16 app/templates/node_popup_external.html:45
 #: app/templates/parking_map.html:115
 msgid "Access"
 msgstr "Zugang"
@@ -171,6 +171,7 @@ msgstr "Typ"
 #: app/templates/statistics.html:35 app/templates/statistics.html:54
 #: app/templates/statistics.html:74 app/templates/statistics.html:94
 #: app/templates/statistics.html:114 app/templates/statistics.html:134
+#: app/templates/statistics.html:154
 msgid "Count"
 msgstr "Anzahl"
 
@@ -184,19 +185,19 @@ msgstr "nach Fahrradparkplatz"
 
 #: app/templates/statistics.html:53 app/templates/statistics.html:73
 #: app/templates/statistics.html:93 app/templates/statistics.html:113
-#: app/templates/statistics.html:133
+#: app/templates/statistics.html:133 app/templates/statistics.html:153
 msgid "Value"
 msgstr "Wert"
 
 #: app/templates/statistics.html:55 app/templates/statistics.html:75
 #: app/templates/statistics.html:95 app/templates/statistics.html:115
-#: app/templates/statistics.html:135
+#: app/templates/statistics.html:135 app/templates/statistics.html:155
 msgid "Percent"
 msgstr "Prozent"
 
 #: app/templates/statistics.html:56 app/templates/statistics.html:76
 #: app/templates/statistics.html:96 app/templates/statistics.html:116
-#: app/templates/statistics.html:136
+#: app/templates/statistics.html:136 app/templates/statistics.html:156
 msgid "OSM-Links"
 msgstr ""
 
@@ -213,6 +214,10 @@ msgid "by Operator"
 msgstr "nach Betreiber"
 
 #: app/templates/statistics.html:130
+msgid "by Position"
+msgstr "nach Position"
+
+#: app/templates/statistics.html:150
 msgid "by Fee"
 msgstr "nach Bezahlung"
 
