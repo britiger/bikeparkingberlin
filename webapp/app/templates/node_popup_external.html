@@ -25,8 +25,8 @@
 
 </tbody>
 </table>
+<hr/>
 {% if node['int_osm_id'] %}
-    <hr/>
     <table class="mapPopupTable">
         <tbody>
     {% if node['int_name'] %}
@@ -47,4 +47,10 @@
         </tbody>
     </table>
     {% with osm_id=node['int_osm_id'], typ=node['int_typ'] %}{% include "osm_id_node.html" %}{% endwith %}
+{% else %}
+    {{ _('Open Editor') }}:
+    <small>
+        (<a href="https://localhost:8112/load_and_zoom?top={{ node['lat'] }}&bottom={{ node['lat'] }}&left={{ node['lon'] }}&right={{ node['lon'] }}" title="{{ _("load in JOSM") }}" target="_blank">josm</a>
+        | <a href="https://osm.org/edit#map=19/{{ node['lat'] }}/{{ node['lon'] }}&comment=%23bikeparking" title="{{ _("edit with iD Editor") }}" target="_blank">iD</a>)
+    </small>
 {% endif %}

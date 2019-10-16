@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bike Parking Berlin\n"
 "Report-Msgid-Bugs-To: osm@lorenz.lu\n"
-"POT-Creation-Date: 2019-10-16 19:50+0200\n"
+"POT-Creation-Date: 2019-10-16 20:37+0200\n"
 "PO-Revision-Date: 2018-07-06 18:12+0200\n"
 "Last-Translator: Christopher Lorenz <osm@lorenz.lu>\n"
 "Language: de\n"
@@ -131,12 +131,21 @@ msgstr "Überdachung"
 msgid "Access"
 msgstr "Zugang"
 
-#: app/templates/osm_id_node.html:6 app/templates/osm_id_way.html:4
-#: app/templates/osm_id_way.html:10
+#: app/templates/node_popup_external.html:51
+msgid "Open Editor"
+msgstr "Editor öffnen"
+
+#: app/templates/node_popup_external.html:53 app/templates/osm_id_node.html:6
+#: app/templates/osm_id_way.html:4 app/templates/osm_id_way.html:11
 msgid "load in JOSM"
 msgstr "In JOSM laden"
 
-#: app/templates/osm_id_way.html:5
+#: app/templates/node_popup_external.html:54 app/templates/osm_id_node.html:7
+#: app/templates/osm_id_way.html:5 app/templates/osm_id_way.html:12
+msgid "edit with iD Editor"
+msgstr ""
+
+#: app/templates/osm_id_way.html:6
 msgid "open in relation analyzer"
 msgstr "Im Relation Analyzer öffen"
 
