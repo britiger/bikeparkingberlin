@@ -11,5 +11,6 @@ CREATE TABLE IF NOT EXISTS extern.external_data (
     license_link TEXT,
     center_lat FLOAT,
     center_lon FLOAT,
-    zoom_level INT
+    zoom_level INT,
+    admin_osm_id INT
 );

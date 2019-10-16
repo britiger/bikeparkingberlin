@@ -28,11 +28,11 @@ CREATE TABLE extern.all_parking_rostock (
 );
 
 DELETE FROM extern.external_data WHERE city='Rostock';
-INSERT INTO extern.external_data (city, suffix, datasource, datasource_link, license, license_link, center_lat, center_lon, zoom_level)
+INSERT INTO extern.external_data (city, suffix, datasource, datasource_link, license, license_link, center_lat, center_lon, zoom_level, admin_osm_id)
     VALUES ('Rostock', 
         'rostock', 
         'OpenData.HRO - Fahrradabstellanlagen',
         'https://www.opendata-hro.de/dataset/fahrradabstellanlagen',
         'Creative Commons Zero Universal 1.0 Public Domain Dedication',
         'https://creativecommons.org/publicdomain/zero/1.0/',
-        54.0887, 12.14049, 13);
+        54.0887, 12.14049, 13,-62405);

@@ -11,11 +11,11 @@ CREATE TABLE extern.all_parking_jena (
 );
 
 DELETE FROM extern.external_data WHERE city='Jena';
-INSERT INTO extern.external_data (city, suffix, datasource, datasource_link, license, license_link, center_lat, center_lon, zoom_level)
+INSERT INTO extern.external_data (city, suffix, datasource, datasource_link, license, license_link, center_lat, center_lon, zoom_level, admin_osm_id)
     VALUES ('Jena', 
         'jena', 
         'Open Data Jena - Fahrradabstellanlagen',
         'https://opendata.jena.de/dataset/fahrradabstellanlagen',
         'Datenlizenz Deutschland - Namensnenung 2.0',
         'https://www.govdata.de/dl-de/by-2-0',
-        50.92878, 11.5899, 13);
+        50.92878, 11.5899, 15, -62693);
