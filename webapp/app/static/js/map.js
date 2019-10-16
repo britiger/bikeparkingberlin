@@ -23,10 +23,19 @@ var nodes = new L.geoJson(null, {onEachFeature: onEachFeaturePopup,
             // for osm-point
             if ( feature.properties.requestedValue && feature.properties.requestedValue != '' ) {
                 selectBox = document.getElementById("selectValue");
-                if (selectBox.value == '-' || selectBox.value == feature.properties.requestedValue) 
+                if (selectBox.value == '-' || selectBox.value == feature.properties.requestedValue) {
                     colorm = 'green';
-                else
+                    if (!document.getElementById("show_green").checked)
+                        return null;
+                } else {
                     colorm = 'yellow';
+                    if (!document.getElementById("show_yellow").checked)
+                        return null;
+                }
+            } else if( feature.properties.requestedValue ) {
+                // feature.properties.requestedValue == '' if exists
+                if (!document.getElementById("show_red").checked)
+                    return null;
             }
             // for external data
             if ( feature.properties.missing && feature.properties.missing == 'no') {

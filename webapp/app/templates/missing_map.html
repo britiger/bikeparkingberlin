@@ -20,11 +20,17 @@
                 bbox: mymap.getBounds().toBBoxString()
             };
 
+            nodes.clearLayers();
+
+            if (!document.getElementById("show_red").checked) {
+                load_existing(customParams);
+                return;
+            }
+
             $.ajax({
                 dataType: "json",
                 url: "/geojson/missing/{{ city }}" + L.Util.getParamString(customParams),
                 success: function(data) {
-                    nodes.clearLayers();
                     $(data.features).each(function(key, data) {
                         nodes.addData(data);
                     });
@@ -39,6 +45,11 @@
         }
 
         function load_existing(customParams) {
+            if (!document.getElementById("show_green").checked) {
+                clusterGroup.clearLayers();
+                clusterGroup.addLayer(nodes);
+                return;
+            }
             $.ajax({
                 dataType: "json",
                 url: "/geojson/existing/{{ city }}" + L.Util.getParamString(customParams),
@@ -76,10 +87,13 @@
                 <li>{{ _('Total Parking') }}: {{ all_parking }}</li>
                 <li>{{ _('Missing Parking') }}: {{ missing_parking }}</li>
                 <li>{{ _('Coverage') }}: {{ "%.2f"|format(100 - missing_parking / all_parking * 100) }}%</li>
-                <li>{{ _('Datasource') }}: <a href="{{ external_data['datasource_link'] }}">{{ external_data['datasource'] }}</a></li>
-                <li>{{ _('License') }}: <a href="{{ external_data['license_link'] }}">{{ external_data['license'] }}</a></li>
+                <li>{{ _('Datasource') }}: <a href="{{ external_data['datasource_link'] }}">{{ external_data['datasource'] }}</a> / {{ _('License') }}: <a href="{{ external_data['license_link'] }}">{{ external_data['license'] }}</a></li>
             </ul>
         </div>
         <div id="mapid"></div>
+        <ul style="list-style-type: none">
+            <li><input type="checkbox" id="show_green" checked="checked" onchange="load_geojson();" /> {{ _('green')}} - {{ _('Data found in OpenStreetMap')}}</li>
+            <li><input type="checkbox" id="show_red" checked="checked" onchange="load_geojson();" /> {{ _('red')}} - {{ _('Missing data in OpenStreetMap')}}</li>
+        </ul>
     </div>
 {%- endblock %}

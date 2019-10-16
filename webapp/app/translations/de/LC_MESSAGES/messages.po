@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bike Parking Berlin\n"
 "Report-Msgid-Bugs-To: osm@lorenz.lu\n"
-"POT-Creation-Date: 2019-10-13 12:27+0200\n"
+"POT-Creation-Date: 2019-10-16 19:50+0200\n"
 "PO-Revision-Date: 2018-07-06 18:12+0200\n"
 "Last-Translator: Christopher Lorenz <osm@lorenz.lu>\n"
 "Language: de\n"
@@ -39,7 +39,7 @@ msgid "Parking Map"
 msgstr "Parkplatz Karte"
 
 #: app/templates/base.html:26 app/templates/missing_map.html:3
-#: app/templates/missing_map.html:74
+#: app/templates/missing_map.html:85
 msgid "Missing Parking Map"
 msgstr "Karte Fehlende Parkplätze"
 
@@ -76,25 +76,41 @@ msgstr "Externe Datenquellen"
 msgid "Need to zoom in to view bicycle parking"
 msgstr "Bitte hereinzoomen um Fahrradparkplätze anzuzeigen"
 
-#: app/templates/missing_map.html:76
+#: app/templates/missing_map.html:87
 msgid "Total Parking"
 msgstr "Gesamt Parkplätze"
 
-#: app/templates/missing_map.html:77
+#: app/templates/missing_map.html:88
 msgid "Missing Parking"
 msgstr "Fehlende Parkplätze"
 
-#: app/templates/missing_map.html:78
+#: app/templates/missing_map.html:89
 msgid "Coverage"
 msgstr "Abdeckung"
 
-#: app/templates/missing_map.html:79
+#: app/templates/missing_map.html:90
 msgid "Datasource"
 msgstr "Datenquelle"
 
-#: app/templates/missing_map.html:80
+#: app/templates/missing_map.html:90
 msgid "License"
 msgstr "Lizenz"
+
+#: app/templates/missing_map.html:95 app/templates/parking_map.html:122
+msgid "green"
+msgstr "grün"
+
+#: app/templates/missing_map.html:95
+msgid "Data found in OpenStreetMap"
+msgstr "Daten in OpenStreetMap gefunden"
+
+#: app/templates/missing_map.html:96 app/templates/parking_map.html:124
+msgid "red"
+msgstr "rot"
+
+#: app/templates/missing_map.html:96
+msgid "Missing data in OpenStreetMap"
+msgstr "Fehlende Daten in OpenStreetMap"
 
 #: app/templates/node_popup.html:4 app/templates/node_popup_external.html:33
 msgid "Name"
@@ -133,10 +149,6 @@ msgid "-Reload Values-"
 msgstr "-Werte neu laden-"
 
 #: app/templates/parking_map.html:122
-msgid "green"
-msgstr "grün"
-
-#: app/templates/parking_map.html:122
 msgid "Tag exists and matched value if defined"
 msgstr "Tag existiert und wenn angegeben gesuchter Wert"
 
@@ -147,10 +159,6 @@ msgstr "gelb"
 #: app/templates/parking_map.html:123
 msgid "Have this tag but value don't match"
 msgstr "Tag ist angegeben aber Wert stimmt nicht überein"
-
-#: app/templates/parking_map.html:124
-msgid "red"
-msgstr "rot"
 
 #: app/templates/parking_map.html:124
 msgid "Tag not defined"

@@ -118,10 +118,10 @@
             <option>-</option>
         </select>
         <div id="mapid"></div>
-        <ul>
-            <li>{{ _('green')}} - {{ _('Tag exists and matched value if defined')}}</li>
-            <li>{{ _('yellow')}} - {{ _('Have this tag but value don\'t match') }}</li>
-            <li>{{ _('red')}} - {{ _('Tag not defined')}}</li>
+        <ul style="list-style-type: none">
+            <li><input type="checkbox" id="show_green" checked="checked" onchange="changeValue()" /> {{ _('green')}} - {{ _('Tag exists and matched value if defined')}}</li>
+            <li><input type="checkbox" id="show_yellow" checked="checked" onchange="changeValue()" /> {{ _('yellow')}} - {{ _('Have this tag but value don\'t match') }}</li>
+            <li><input type="checkbox" id="show_red" checked="checked" onchange="changeValue()" /> {{ _('red')}} - {{ _('Tag not defined')}}</li>
         </ul>
     </div>
 {%- endblock %}
