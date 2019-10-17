@@ -50,6 +50,8 @@ download_external "Wuppertal Fahrradstellplätze" https://www.offenedaten-wupper
 download_external "Köln Fahrrad Förderung" "https://geoportal.stadt-koeln.de/arcgis/rest/services/Fahrradverkehr_Ma%C3%9Fnahmen/MapServer/0/query?where=objectid+is+not+null&text=&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&relationParam=&outFields=*&returnGeometry=true&returnTrueCurves=false&maxAllowableOffset=&geometryPrecision=&outSR=4326&returnIdsOnly=false&returnCountOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&returnZ=false&returnM=false&gdbVersion=&returnDistinctValues=false&resultOffset=&resultRecordCount=&f=pjson" fahrrad_massnahme_koeln.geojson
 download_external "London Cycling Infrastructure" https://cycling.data.tfl.gov.uk/CyclingInfrastructure/data/points/cycle_parking.json london_parking.geojson
 download_external "London Cycling Infrastructure MapInfo" https://cycling.data.tfl.gov.uk/CycleParking/cycle-parking-map-info.zip london_mapinfo.zip
+download_external "Düsseldorf Bike + Ride" "https://opendata.duesseldorf.de/sites/default/files/Bike%20%2B%20Ride-Stationen.geojson" BikeRideDuesseldorf.geojson 
+
 # Import data
 psql -f sql/create_external_table.sql
 echo "Importing External Data ..."
@@ -153,3 +155,14 @@ ogr2ogr -f "PostgreSQL" PG:"$OGR2OGR_PGSQL" \
 cat sql/create_external_template.sql | sed -e 's/#CITY#/london/g' | psql
 psql -f sql/create_external_london.sql
 cat sql/create_external_template.sql | sed -e 's/#CITY#/london_mix/g' | psql
+
+# Bike + Ride Stationen in Düsseldorf
+echo "Import Düsseldorf Bike + Ride"
+ogr2ogr -f "PostgreSQL" PG:"$OGR2OGR_PGSQL" \
+    -overwrite -lco GEOMETRY_NAME=geom \
+    -s_srs EPSG:4326 \
+    -t_srs EPSG:3857 \
+    -nln all_parking_duesseldorf \
+    external_data/BikeRideDuesseldorf.geojson
+psql -f sql/create_external_duesseldorf.sql
+cat sql/create_external_template.sql | sed -e 's/#CITY#/duesseldorf/g' | psql
