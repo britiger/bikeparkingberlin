@@ -186,7 +186,7 @@ ogr2ogr -f "PostgreSQL" PG:"$OGR2OGR_PGSQL" \
     -s_srs EPSG:31256 \
     -t_srs EPSG:3857 \
     -nln all_parking_graz \
-    external_data/FahrradabstellplДtze.shp
+    external_data/Fahrradabstellpl?tze.shp
 psql -f sql/create_external_graz.sql
 cat sql/create_external_template.sql | sed -e 's/#CITY#/graz/g' | psql
 
