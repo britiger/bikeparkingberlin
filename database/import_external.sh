@@ -52,6 +52,7 @@ download_external "London Cycling Infrastructure" https://cycling.data.tfl.gov.u
 download_external "London Cycling Infrastructure MapInfo" https://cycling.data.tfl.gov.uk/CycleParking/cycle-parking-map-info.zip london_mapinfo.zip
 download_external "Düsseldorf Bike + Ride" "https://opendata.duesseldorf.de/sites/default/files/Bike%20%2B%20Ride-Stationen.geojson" BikeRideDuesseldorf.geojson 
 download_external "Wien Fahrradabstellanlagen" "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:FAHRRADABSTELLANLAGEOGD&srsName=EPSG:4326&outputFormat=json" WienWFSFahrradabstellanlagen.geojson
+download_external "Graz Fahrradständer" http://www.opendatagraz.at/wp-content/uploads/2013/03/Fahrradabstellpl%C3%A4tze.zip Fahrradstellplaetze.zip
 
 # Import data
 psql -f sql/create_external_table.sql
@@ -177,3 +178,13 @@ ogr2ogr -f "PostgreSQL" PG:"$OGR2OGR_PGSQL" \
     external_data/WienWFSFahrradabstellanlagen.geojson
 psql -f sql/create_external_wien.sql
 cat sql/create_external_template.sql | sed -e 's/#CITY#/wien/g' | psql
+
+echo "Import Graz Fahrradständer"
+ogr2ogr -f "PostgreSQL" PG:"$OGR2OGR_PGSQL" \
+    -overwrite -lco GEOMETRY_NAME=geom \
+    -s_srs EPSG:31256 \
+    -t_srs EPSG:3857 \
+    -nln all_parking_graz \
+    external_data/FahrradabstellplДtze.shp
+psql -f sql/create_external_graz.sql
+cat sql/create_external_template.sql | sed -e 's/#CITY#/graz/g' | psql
