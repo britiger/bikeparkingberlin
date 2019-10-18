@@ -93,18 +93,18 @@ def render_geojson_nodes_external(result, city, existing=False, lessContent=Fals
             prop['missing'] = 'no'
         geom = {'type': 'Point', 'coordinates': [row['lon'], row['lat']]}
         entry = {'type': 'Feature', 'properties': prop, 'geometry': geom}
-        if lessContent:
-            # Add id for maproulette
-            if prop['gml_id']:
-                entry['@id'] = prop['gml_id']
-            elif prop['stellplatz_nr']:
-                entry['@id'] = prop['stellplatz_nr']
-            elif prop['uuid']:
-                entry['@id'] = prop['uuid']
-            elif prop['ident']:
-                entry['@id'] = prop['ident']
-            elif prop['id']:
-                entry['@id'] = prop['id']
+#        if lessContent:
+#            # Add id for maproulette
+#            if prop['gml_id']:
+#                entry['@id'] = prop['gml_id']
+#            elif prop['stellplatz_nr']:
+#                entry['@id'] = prop['stellplatz_nr']
+#            elif prop['uuid']:
+#                entry['@id'] = prop['uuid']
+#            elif prop['ident']:
+#                entry['@id'] = prop['ident']
+#            elif prop['id']:
+#                entry['@id'] = prop['id']
 
         features.append(entry)
 
