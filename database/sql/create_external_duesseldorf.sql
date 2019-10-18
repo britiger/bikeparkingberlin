@@ -6,6 +6,6 @@ INSERT INTO extern.external_data (city, suffix, datasource, datasource_link, lic
         'duesseldorf',
         'open.nrw - Landeshauptstadt Düsseldorf - Standorte der Bike- und Ride-Stationen sowie Radstationen', 
         'https://open.nrw/dataset/standorte-der-bike-und-ride-stationen-sowie-radstationen-duesseldorf-d',
-        'Datenlizenz Deutschland – Zero – Version 2.0',
-        'https://www.govdata.de/dl-de/zero-2-0',
+        'Datenlizenz Deutschland Namensnennung 2.0',
+        'https://www.govdata.de/dl-de/by-2-0',
         51.22172, 6.77616, 14, -62539);
