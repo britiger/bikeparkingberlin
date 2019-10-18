@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bike Parking Berlin\n"
 "Report-Msgid-Bugs-To: osm@lorenz.lu\n"
-"POT-Creation-Date: 2019-10-16 20:37+0200\n"
+"POT-Creation-Date: 2019-10-18 21:05+0200\n"
 "PO-Revision-Date: 2018-07-06 18:12+0200\n"
 "Last-Translator: Christopher Lorenz <osm@lorenz.lu>\n"
 "Language: de\n"
@@ -96,19 +96,27 @@ msgstr "Datenquelle"
 msgid "License"
 msgstr "Lizenz"
 
-#: app/templates/missing_map.html:95 app/templates/parking_map.html:122
+#: app/templates/missing_map.html:91
+msgid "More"
+msgstr "Mehr"
+
+#: app/templates/missing_map.html:91
+msgid "Export Missing"
+msgstr "Fehlende Exportieren"
+
+#: app/templates/missing_map.html:96 app/templates/parking_map.html:122
 msgid "green"
 msgstr "grün"
 
-#: app/templates/missing_map.html:95
+#: app/templates/missing_map.html:96
 msgid "Data found in OpenStreetMap"
 msgstr "Daten in OpenStreetMap gefunden"
 
-#: app/templates/missing_map.html:96 app/templates/parking_map.html:124
+#: app/templates/missing_map.html:97 app/templates/parking_map.html:124
 msgid "red"
 msgstr "rot"
 
-#: app/templates/missing_map.html:96
+#: app/templates/missing_map.html:97
 msgid "Missing data in OpenStreetMap"
 msgstr "Fehlende Daten in OpenStreetMap"
 

@@ -88,6 +88,7 @@
                 <li>{{ _('Missing Parking') }}: {{ missing_parking }}</li>
                 <li>{{ _('Coverage') }}: {{ "%.2f"|format(100 - missing_parking / all_parking * 100) }}%</li>
                 <li>{{ _('Datasource') }}: <a href="{{ external_data['datasource_link'] }}">{{ external_data['datasource'] }}</a> / {{ _('License') }}: <a href="{{ external_data['license_link'] }}">{{ external_data['license'] }}</a></li>
+                <li>{{ _('More') }}: <a href="/geojson/missing/{{ city }}" target="_blank">{{ _('Export Missing') }} (GeoJSON)</a></li>
             </ul>
         </div>
         <div id="mapid"></div>

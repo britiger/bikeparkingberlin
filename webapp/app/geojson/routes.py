@@ -27,12 +27,20 @@ def geojson_missing(city):
     if external_data is None:
         abort(404)
 
-    (southwest_lng, southwest_lat, northeast_lng, northeast_lat) = bbox.split(',')
-    linestring = 'LINESTRING(' + southwest_lng + ' ' + southwest_lat + ',' + northeast_lng + ' ' + northeast_lat + ')'
-    sql = text('SELECT *, ST_X(ST_Centroid(ST_Transform(geom, 4326))) AS lon, ST_Y(ST_Centroid(ST_Transform(geom, 4326))) AS lat FROM extern.missing_parking_' + external_data['suffix'] + ' WHERE ST_WITHIN(st_transform(geom,4326), ST_Envelope(ST_GeomFromText(:linestring, 4326) ) )')
-    result = db.engine.execute(sql, {'linestring': linestring})
+    where_condition = ''
+    filter_execute = {}
+    lessContent = True
+    if bbox != '':
+        (southwest_lng, southwest_lat, northeast_lng, northeast_lat) = bbox.split(',')
+        linestring = 'LINESTRING(' + southwest_lng + ' ' + southwest_lat + ',' + northeast_lng + ' ' + northeast_lat + ')'
+        where_condition = ' WHERE ST_WITHIN(st_transform(geom,4326), ST_Envelope(ST_GeomFromText(:linestring, 4326) ) )'
+        filter_execute = {'linestring': linestring}
+        lessContent = False
 
-    return render_geojson_nodes_external(result, city)
+    sql = text('SELECT *, ST_X(ST_Centroid(ST_Transform(geom, 4326))) AS lon, ST_Y(ST_Centroid(ST_Transform(geom, 4326))) AS lat FROM extern.missing_parking_' + external_data['suffix'] + where_condition)
+    result = db.engine.execute(sql, filter_execute)
+
+    return render_geojson_nodes_external(result, city, lessContent=lessContent)
 
 
 @bp.route('/geojson/existing/<city>')
@@ -71,12 +79,16 @@ def get_values(valueType):
     return jsonify(json_result)
 
 
-def render_geojson_nodes_external(result, city, existing=False):
+def render_geojson_nodes_external(result, city, existing=False, lessContent=False):
     features = []
     for row in result:
-        prop = {'popupContent': render_template('node_popup_external.html', node=row)}
+        if not lessContent:
+            prop = {'popupContent': render_template('node_popup_external.html', node=row)}
+        else:
+            prop = {}
         for col_name in row.keys():
-            prop[col_name] = row[col_name]
+            if not lessContent or (row[col_name] is not None and col_name not in ['geom', 'lat', 'lon', 'x', 'y', 'long__mapinfo_', 'lat__mapinfo_', 'geojson', 'ogc_fid', 'int_osm_id', 'int_typ', 'int_name', 'int_access', 'int_bicycle_parking', 'int_capacity', 'int_covered', 'int_ranking']):
+                prop[col_name] = row[col_name]
         if existing is True:
             prop['missing'] = 'no'
         geom = {'type': 'Point', 'coordinates': [row['lon'], row['lat']]}
