@@ -53,3 +53,5 @@ then
 fi
 
 mv tmp/update.osc.gz tmp/old_update.osc.gz
+
+psql -f sql/update_statistic.sql > /dev/null

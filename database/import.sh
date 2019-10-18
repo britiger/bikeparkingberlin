@@ -14,7 +14,7 @@ imposm3 import -srid 3857 -overwritecache ${IMPOSM_PARAMETER}  -connection "post
 
 # create views
 psql -f sql/create_views.sql
-
+psql -f sql/create_statistic.sql
 
 # Delete all tmp files for update
 rm -rf tmp/*

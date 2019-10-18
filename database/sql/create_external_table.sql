@@ -12,5 +12,5 @@ CREATE TABLE IF NOT EXISTS extern.external_data (
     center_lat FLOAT,
     center_lon FLOAT,
     zoom_level INT,
-    admin_osm_id INT
+    admin_osm_id BIGINT
 );

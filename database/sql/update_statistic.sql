@@ -1,0 +1,1 @@
+SELECT statistic.update_statistics();
