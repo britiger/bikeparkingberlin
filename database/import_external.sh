@@ -159,6 +159,7 @@ ogr2ogr -f "PostgreSQL" PG:"$OGR2OGR_PGSQL" \
 cat sql/create_external_template.sql | sed -e 's/#CITY#/london/g' | psql
 psql -f sql/create_external_london.sql
 cat sql/create_external_template.sql | sed -e 's/#CITY#/london_mix/g' | psql
+cat sql/create_external_template.sql | sed -e 's/#CITY#/london_mix_cluster/g' | psql
 
 # Bike + Ride Stationen in Düsseldorf
 echo "Import Düsseldorf Bike + Ride"
