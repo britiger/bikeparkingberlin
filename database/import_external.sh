@@ -70,6 +70,7 @@ ogr2ogr -f "PostgreSQL" PG:"$OGR2OGR_PGSQL" \
     external_data/s_Fahrradstaender.gml
 psql -f sql/create_external_berlin.sql
 cat sql/create_external_template.sql | sed -e 's/#CITY#/berlin/g' | psql
+cat sql/create_external_template.sql | sed -e 's/#CITY#/berlin_cluster/g' | psql
 
 # Norderstedt Fahrrad ÖPNV
 echo "Import Norderstedt Fahhradabstellanlagen an ÖPNV-Haltestellen"

@@ -7,6 +7,8 @@
     {% include "head_map_js.html" %}
     <script>
         var start_at_zoom = 11;
+        var is_cluster = (new URL(location.href)).searchParams.get('is_cluster');
+        console.log(is_cluster);
 
         function load_geojson() {
 
@@ -19,6 +21,8 @@
             var customParams = {
                 bbox: mymap.getBounds().toBBoxString()
             };
+            if(is_cluster)
+                customParams['is_cluster'] = is_cluster;
 
             nodes.clearLayers();
 
@@ -82,13 +86,26 @@
 {% block content %}
     <div class ="container">
         <div class="page-header">
-            <h1>{{ _('Missing Parking Map') }} {{ city }}</h1>
+            <h1>{{ _('Missing Parking Map') }} {{ city }}
+                {% if is_cluster %}
+                    <small>({{ _('Clustered') }})</small>
+                {% endif %}
+            </h1>
             <ul>
                 <li>{{ _('Total Parking') }}: {{ all_parking }}</li>
                 <li>{{ _('Missing Parking') }}: {{ missing_parking }}</li>
                 <li>{{ _('Coverage') }}: {{ "%.2f"|format(100 - missing_parking / all_parking * 100) }}%</li>
                 <li>{{ _('Datasource') }}: <a href="{{ external_data['datasource_link'] }}">{{ external_data['datasource'] }}</a> / {{ _('License') }}: <a href="{{ external_data['license_link'] }}">{{ external_data['license'] }}</a></li>
-                <li>{{ _('More') }}: <a href="/geojson/missing/{{ city }}" target="_blank">{{ _('Export Missing') }} (GeoJSON)</a></li>
+                <li>{{ _('More') }}: 
+                    {% if external_data['is_cluster'] %}
+                        {% if is_cluster %}
+                            <a href="?">{{ _('Remove Clustering') }}</a> &#x2022;
+                        {% else %}
+                            <a href="?is_cluster=true">{{ _('Show Clustered') }}</a> &#x2022;
+                        {% endif %}
+                    {% endif %}
+                    <a href="/geojson/missing/{{ city }}" target="_blank">{{ _('Export Missing') }} (GeoJSON)</a>
+                </li>
             </ul>
         </div>
         <div id="mapid"></div>

@@ -20,12 +20,19 @@ def geojson_parking(valueType):
 @bp.route('/geojson/missing/<city>')
 def geojson_missing(city):
     bbox = request.args.get('bbox', '')
+    is_cluster = request.args.get('is_cluster', False)
 
     sql = text('SELECT * FROM extern.external_data WHERE city=:city')
     external_data = db.engine.execute(sql, {'city': city}).fetchone()
 
     if external_data is None:
         abort(404)
+
+    suffix = external_data['suffix']
+    if is_cluster is not False and external_data['is_cluster'] is False:
+        abort(404)
+    if is_cluster is not False:
+        suffix += '_cluster'
 
     where_condition = ''
     filter_execute = {}
@@ -37,7 +44,7 @@ def geojson_missing(city):
         filter_execute = {'linestring': linestring}
         lessContent = False
 
-    sql = text('SELECT *, ST_X(ST_Centroid(ST_Transform(geom, 4326))) AS lon, ST_Y(ST_Centroid(ST_Transform(geom, 4326))) AS lat FROM extern.missing_parking_' + external_data['suffix'] + where_condition)
+    sql = text('SELECT *, ST_X(ST_Centroid(ST_Transform(geom, 4326))) AS lon, ST_Y(ST_Centroid(ST_Transform(geom, 4326))) AS lat FROM extern.missing_parking_' + suffix + where_condition)
     result = db.engine.execute(sql, filter_execute)
 
     return render_geojson_nodes_external(result, city, lessContent=lessContent)
@@ -46,6 +53,7 @@ def geojson_missing(city):
 @bp.route('/geojson/existing/<city>')
 def geojson_existing(city):
     bbox = request.args.get('bbox', '')
+    is_cluster = request.args.get('is_cluster', False)
 
     sql = text('SELECT * FROM extern.external_data WHERE city=:city')
     external_data = db.engine.execute(sql, {'city': city}).fetchone()
@@ -53,9 +61,16 @@ def geojson_existing(city):
     if external_data is None:
         abort(404)
 
+    suffix = external_data['suffix']
+    if is_cluster is not False and external_data['is_cluster'] is False:
+        abort(404)
+
+    if is_cluster is not False:
+        suffix += '_cluster'
+
     (southwest_lng, southwest_lat, northeast_lng, northeast_lat) = bbox.split(',')
     linestring = 'LINESTRING(' + southwest_lng + ' ' + southwest_lat + ',' + northeast_lng + ' ' + northeast_lat + ')'
-    sql = text('SELECT existing_data.*, osm.osm_id int_osm_id, osm.typ int_typ, osm.name int_name, osm.bicycle_parking int_bicycle_parking, osm.access int_access, osm.capacity int_capacity, osm.covered int_covered, ST_X(ST_Centroid(ST_Transform(existing_data.geom, 4326))) AS lon, ST_Y(ST_Centroid(ST_Transform(existing_data.geom, 4326))) AS lat FROM extern.existing_parking_' + external_data['suffix'] + ' existing_data LEFT JOIN imposm3.view_parking osm ON osm.geom && ST_Expand(existing_data.geom, 50) WHERE ST_WITHIN(st_transform(existing_data.geom,4326), ST_Envelope(ST_GeomFromText(:linestring, 4326) ) ) ORDER BY st_distance(existing_data.geom,osm.geom)')
+    sql = text('SELECT existing_data.*, osm.osm_id int_osm_id, osm.typ int_typ, osm.name int_name, osm.bicycle_parking int_bicycle_parking, osm.access int_access, osm.capacity int_capacity, osm.covered int_covered, ST_X(ST_Centroid(ST_Transform(existing_data.geom, 4326))) AS lon, ST_Y(ST_Centroid(ST_Transform(existing_data.geom, 4326))) AS lat FROM extern.existing_parking_' + suffix + ' existing_data LEFT JOIN imposm3.view_parking osm ON osm.geom && ST_Expand(existing_data.geom, 50) WHERE ST_WITHIN(st_transform(existing_data.geom,4326), ST_Envelope(ST_GeomFromText(:linestring, 4326) ) ) ORDER BY st_distance(existing_data.geom,osm.geom)')
     result = db.engine.execute(sql, {'linestring': linestring})
 
     return render_geojson_nodes_external(result, city, True)
