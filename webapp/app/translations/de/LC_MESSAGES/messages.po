@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bike Parking Berlin\n"
 "Report-Msgid-Bugs-To: osm@lorenz.lu\n"
-"POT-Creation-Date: 2019-10-18 21:05+0200\n"
+"POT-Creation-Date: 2019-10-19 19:00+0200\n"
 "PO-Revision-Date: 2018-07-06 18:12+0200\n"
 "Last-Translator: Christopher Lorenz <osm@lorenz.lu>\n"
 "Language: de\n"
@@ -39,7 +39,7 @@ msgid "Parking Map"
 msgstr "Parkplatz Karte"
 
 #: app/templates/base.html:26 app/templates/missing_map.html:3
-#: app/templates/missing_map.html:85
+#: app/templates/missing_map.html:89
 msgid "Missing Parking Map"
 msgstr "Karte Fehlende Parkplätze"
 
@@ -72,51 +72,63 @@ msgstr "Wikiseiten"
 msgid "External Sources"
 msgstr "Externe Datenquellen"
 
-#: app/templates/missing_map.html:15 app/templates/parking_map.html:15
+#: app/templates/missing_map.html:17 app/templates/parking_map.html:15
 msgid "Need to zoom in to view bicycle parking"
 msgstr "Bitte hereinzoomen um Fahrradparkplätze anzuzeigen"
 
-#: app/templates/missing_map.html:87
+#: app/templates/missing_map.html:91
+msgid "Clustered"
+msgstr "Gruppiert"
+
+#: app/templates/missing_map.html:95
 msgid "Total Parking"
 msgstr "Gesamt Parkplätze"
 
-#: app/templates/missing_map.html:88
+#: app/templates/missing_map.html:96
 msgid "Missing Parking"
 msgstr "Fehlende Parkplätze"
 
-#: app/templates/missing_map.html:89
+#: app/templates/missing_map.html:97
 msgid "Coverage"
 msgstr "Abdeckung"
 
-#: app/templates/missing_map.html:90
+#: app/templates/missing_map.html:98
 msgid "Datasource"
 msgstr "Datenquelle"
 
-#: app/templates/missing_map.html:90
+#: app/templates/missing_map.html:98
 msgid "License"
 msgstr "Lizenz"
 
-#: app/templates/missing_map.html:91
+#: app/templates/missing_map.html:99
 msgid "More"
 msgstr "Mehr"
 
-#: app/templates/missing_map.html:91
+#: app/templates/missing_map.html:102
+msgid "Remove Clustering"
+msgstr "Gruppierung Entfernen"
+
+#: app/templates/missing_map.html:104
+msgid "Show Clustered"
+msgstr "Gruppiert Zeigen"
+
+#: app/templates/missing_map.html:107
 msgid "Export Missing"
 msgstr "Fehlende Exportieren"
 
-#: app/templates/missing_map.html:96 app/templates/parking_map.html:122
+#: app/templates/missing_map.html:113 app/templates/parking_map.html:122
 msgid "green"
 msgstr "grün"
 
-#: app/templates/missing_map.html:96
+#: app/templates/missing_map.html:113
 msgid "Data found in OpenStreetMap"
 msgstr "Daten in OpenStreetMap gefunden"
 
-#: app/templates/missing_map.html:97 app/templates/parking_map.html:124
+#: app/templates/missing_map.html:114 app/templates/parking_map.html:124
 msgid "red"
 msgstr "rot"
 
-#: app/templates/missing_map.html:97
+#: app/templates/missing_map.html:114
 msgid "Missing data in OpenStreetMap"
 msgstr "Fehlende Daten in OpenStreetMap"
 
@@ -151,7 +163,7 @@ msgstr "In JOSM laden"
 #: app/templates/node_popup_external.html:54 app/templates/osm_id_node.html:7
 #: app/templates/osm_id_way.html:5 app/templates/osm_id_way.html:12
 msgid "edit with iD Editor"
-msgstr ""
+msgstr "Mit iD Editor bearbeiten"
 
 #: app/templates/osm_id_way.html:6
 msgid "open in relation analyzer"
