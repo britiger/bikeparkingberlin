@@ -104,7 +104,7 @@
                             <a href="?is_cluster=true">{{ _('Show Clustered') }}</a> &#x2022;
                         {% endif %}
                     {% endif %}
-                    <a href="/geojson/missing/{{ city }}" target="_blank">{{ _('Export Missing') }} (GeoJSON)</a>
+                    <a href="/geojson/missing/{{ city }}{% if is_cluster %}?is_cluster=true{% endif %}" target="_blank">{{ _('Export Missing') }} (GeoJSON)</a>
                 </li>
             </ul>
         </div>
