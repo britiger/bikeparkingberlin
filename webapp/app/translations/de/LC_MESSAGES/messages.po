@@ -110,7 +110,7 @@ msgstr "Gruppierung Entfernen"
 
 #: app/templates/missing_map.html:104
 msgid "Show Clustered"
-msgstr "Gruppiert Zeigen"
+msgstr "Gruppiert Anzeigen"
 
 #: app/templates/missing_map.html:107
 msgid "Export Missing"
