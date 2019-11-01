@@ -39,6 +39,36 @@ tables:
     - {key: maxstay, name: maxstay, type: string}
     - {key: surveillance, name: surveillance, type: string}
 
+  rental_nodes:
+    type: point
+    mapping:
+      amenity: [bicycle_rental]
+    columns:
+    - {name: osm_id, type: id}
+    - {name: geom, type: geometry}
+    - {name: all_tags, type: hstore_tags}
+    - {key: name, name: name, type: string}
+    - {key: ref, name: ref, type: string}
+    - {key: ref_name, name: ref_name, type: string}
+    - {key: operator, name: operator, type: string}
+    - {key: network, name: network, type: string}
+    - {key: capacity, name: capacity, type: string}
+
+  rental_poly:
+    type: polygon
+    mapping:
+      amenity: [bicycle_rental]
+    columns:
+    - {name: osm_id, type: id}
+    - {name: geom, type: geometry}
+    - {name: all_tags, type: hstore_tags}
+    - {key: name, name: name, type: string}
+    - {key: ref, name: ref, type: string}
+    - {key: ref_name, name: ref_name, type: string}
+    - {key: operator, name: operator, type: string}
+    - {key: network, name: network, type: string}
+    - {key: capacity, name: capacity, type: string}
+
   borders:
     type: polygon
     mapping:

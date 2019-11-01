@@ -1,0 +1,79 @@
+{%- extends "base.html" %}
+
+{% block title %}{{ _('Rental Map') }} {{ city }}{% endblock %} 
+
+{% block scripts %}
+    {{super()}}
+    {% include "head_map_js.html" %}
+    <script>
+        var start_at_zoom = 11;
+        
+        function load_geojson() {
+
+            if (mymap.getZoom() < start_at_zoom){
+                console.log('Skip loading geojson : ' + mymap.getZoom());
+                box.show( "{{ _('Need to zoom in to view bicycle rental') }}" );
+                return;
+            }
+
+            var customParams = {
+                bbox: mymap.getBounds().toBBoxString()
+            };
+
+            nodes.clearLayers();
+
+            $.ajax({
+                dataType: "json",
+                url: "/geojson/rental/{{ city }}" + L.Util.getParamString(customParams),
+                success: function(data) {
+                    $(data.features).each(function(key, data) {
+                        nodes.addData(data);
+                    });
+                    clusterGroup.clearLayers();
+                    clusterGroup.addLayer(nodes);
+                    if (window.location.hash) {
+                        // open Popup for current selected node
+                        openNode(window.location.hash.substring(1));
+                    }
+                }
+                });
+            
+        }
+
+        mymap.on('moveend', load_geojson);
+        var box = L.control.messagebox({ timeout: 5000 }).addTo(mymap);
+        mymap.setView([{{ rental_data['center_lat'] }}, {{ rental_data['center_lon'] }}], 13);
+
+        function changeValue() {
+           load_geojson();
+        }
+    </script>
+{% endblock %}
+
+{% block styles %}
+    {{super()}}
+    {% include "head_map_css.html" %}
+{% endblock %}
+
+{% block content %}
+    <div class ="container">
+        <div class="page-header">
+            <h1>{{ _('Rental Map') }} {{ city }}</h1>
+            <ul>
+                <li>{{ _('Operator') }}: {{ rental_data['target_operator'] }}</li>
+                <li>{{ _('Network') }}: {{ rental_data['target_network'] }}</li>
+                <li>{{ _('Total Rental') }}: {{ all_rental }}</li>
+                <li>{{ _('Missing Rental') }}: {{ missing_rental }}</li>
+                <li>{{ _('Coverage') }}: {{ "%.2f"|format(100 - missing_rental / all_rental * 100) }}%</li>
+                <li>{{ _('Rentals only in OpenStreetMap') }}: {{ unknown_rental }}</li>
+            </ul>
+        </div>
+        <div id="mapid"></div>
+        <ul style="list-style-type: none">
+            <li><input type="checkbox" id="show_green" checked="checked" onchange="changeValue();" /> {{ _('green')}} - {{ _('Data found in OpenStreetMap')}}</li>
+            <li><input type="checkbox" id="show_yellow" checked="checked" onchange="changeValue();" /> {{ _('yellow')}} - {{ _('Some tags don\'t match') }}</li>
+            <li><input type="checkbox" id="show_red" checked="checked" onchange="changeValue();" /> {{ _('red')}} - {{ _('Missing data in OpenStreetMap')}}</li>
+            <li><input type="checkbox" id="show_purple" checked="checked" onchange="changeValue();" /> {{ _('purple')}} - {{ _('Rentals only in OpenStreetMap')}}</li>
+        </ul>
+    </div>
+{%- endblock %}

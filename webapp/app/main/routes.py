@@ -10,6 +10,9 @@ def render_template(template, **kwargs):
     sql = text('SELECT * FROM extern.external_data ORDER BY city')
     external_data = db.engine.execute(sql)
     kwargs.update({'_external_data': external_data.fetchall()})
+    sql = text('SELECT * FROM extern.rental_nextbike ORDER BY city')
+    rental_data = db.engine.execute(sql)
+    kwargs.update({'_rental_data': rental_data.fetchall()})
     return flask_render_template(template, **kwargs)
 
 
@@ -108,3 +111,26 @@ def missingmap(city):
     missing_parking = db.engine.execute(sql).fetchone()[0]
 
     return render_template('missing_map.html', city=city, all_parking=all_parking, missing_parking=missing_parking, external_data=external_data, is_cluster=is_cluster)
+
+
+@bp.route('/rentalmap/<city>')
+def rentalmap(city):
+
+    sql = text('SELECT * FROM extern.rental_data WHERE city=:city')
+    rental_data = db.engine.execute(sql, {'city': city}).fetchone()
+
+    if rental_data is None:
+        abort(404)
+
+    suffix = rental_data['suffix']
+
+    sql = text('SELECT count(*) from extern.all_rental_' + suffix)
+    all_rental = db.engine.execute(sql).fetchone()[0]
+
+    sql = text('SELECT count(*) from extern.missing_rental_' + suffix)
+    missing_rental = db.engine.execute(sql).fetchone()[0]
+
+    sql = text('SELECT count(*) from extern.unknown_rental_' + suffix)
+    unknown_rental = db.engine.execute(sql).fetchone()[0]
+
+    return render_template('rental_map.html', city=city, all_rental=all_rental, missing_rental=missing_rental, unknown_rental=unknown_rental, rental_data=rental_data)

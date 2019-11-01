@@ -30,6 +30,14 @@
                             {% endfor %}
                         </div>
                 </li>
+                <li class="nav-item dropdown {% if request.endpoint=='main.rentalmap' %}active{% endif %}">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ _('Rental Map') }}</a>
+                    <div class="dropdown-menu">
+                        {% for row in _rental_data %}
+                            <a href="{{ url_for('main.rentalmap', city=row['city']) }}" class="dropdown-item">{{ row['city'] }}</a>
+                        {% endfor %}
+                    </div>
+            </li>
                 <li class="nav-item {% if request.endpoint=='main.imprint' %}active{% endif %}"><a href="{{ url_for('main.imprint') }}" class="nav-link">{{ _('Imprint') }}</a></li>
             </ul>
         </div>

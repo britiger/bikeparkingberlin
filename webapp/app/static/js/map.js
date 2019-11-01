@@ -41,6 +41,12 @@ var nodes = new L.geoJson(null, {onEachFeature: onEachFeaturePopup,
             if ( feature.properties.missing && feature.properties.missing == 'no') {
                 colorm = 'green';
             }
+            // for rental data
+            if ( feature.properties._color ) {
+                colorm = feature.properties._color;
+                if (!document.getElementById("show_"+colorm).checked)
+                    return null;
+            }
             var redMarker = L.ExtraMarkers.icon({
                 icon: 'fa-number',
                 markerColor: colorm,

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bike Parking Berlin\n"
 "Report-Msgid-Bugs-To: osm@lorenz.lu\n"
-"POT-Creation-Date: 2019-10-19 19:00+0200\n"
+"POT-Creation-Date: 2019-11-01 16:39+0100\n"
 "PO-Revision-Date: 2018-07-06 18:12+0200\n"
 "Last-Translator: Christopher Lorenz <osm@lorenz.lu>\n"
 "Language: de\n"
@@ -43,12 +43,17 @@ msgstr "Parkplatz Karte"
 msgid "Missing Parking Map"
 msgstr "Karte Fehlende Parkplätze"
 
-#: app/templates/base.html:33 app/templates/imprint.html:3
+#: app/templates/base.html:34 app/templates/rental_map.html:3
+#: app/templates/rental_map.html:58
+msgid "Rental Map"
+msgstr "Miet Karte"
+
+#: app/templates/base.html:41 app/templates/imprint.html:3
 #: app/templates/imprint.html:8
 msgid "Imprint"
 msgstr "Impressum"
 
-#: app/templates/base.html:40
+#: app/templates/base.html:48
 msgid "Back to Top"
 msgstr "Nach Oben"
 
@@ -88,7 +93,7 @@ msgstr "Gesamt Parkplätze"
 msgid "Missing Parking"
 msgstr "Fehlende Parkplätze"
 
-#: app/templates/missing_map.html:97
+#: app/templates/missing_map.html:97 app/templates/rental_map.html:64
 msgid "Coverage"
 msgstr "Abdeckung"
 
@@ -117,22 +122,25 @@ msgid "Export Missing"
 msgstr "Fehlende Exportieren"
 
 #: app/templates/missing_map.html:113 app/templates/parking_map.html:122
+#: app/templates/rental_map.html:70
 msgid "green"
 msgstr "grün"
 
-#: app/templates/missing_map.html:113
+#: app/templates/missing_map.html:113 app/templates/rental_map.html:70
 msgid "Data found in OpenStreetMap"
 msgstr "Daten in OpenStreetMap gefunden"
 
 #: app/templates/missing_map.html:114 app/templates/parking_map.html:124
+#: app/templates/rental_map.html:72
 msgid "red"
 msgstr "rot"
 
-#: app/templates/missing_map.html:114
+#: app/templates/missing_map.html:114 app/templates/rental_map.html:72
 msgid "Missing data in OpenStreetMap"
 msgstr "Fehlende Daten in OpenStreetMap"
 
 #: app/templates/node_popup.html:4 app/templates/node_popup_external.html:33
+#: app/templates/node_popup_rental.html:22
 msgid "Name"
 msgstr "Name"
 
@@ -152,18 +160,33 @@ msgid "Access"
 msgstr "Zugang"
 
 #: app/templates/node_popup_external.html:51
+#: app/templates/node_popup_rental.html:37
 msgid "Open Editor"
 msgstr "Editor öffnen"
 
-#: app/templates/node_popup_external.html:53 app/templates/osm_id_node.html:6
+#: app/templates/node_popup_external.html:53
+#: app/templates/node_popup_rental.html:39 app/templates/osm_id_node.html:6
 #: app/templates/osm_id_way.html:4 app/templates/osm_id_way.html:11
 msgid "load in JOSM"
 msgstr "In JOSM laden"
 
-#: app/templates/node_popup_external.html:54 app/templates/osm_id_node.html:7
+#: app/templates/node_popup_external.html:54
+#: app/templates/node_popup_rental.html:40 app/templates/osm_id_node.html:7
 #: app/templates/osm_id_way.html:5 app/templates/osm_id_way.html:12
 msgid "edit with iD Editor"
 msgstr "Mit iD Editor bearbeiten"
+
+#: app/templates/node_popup_rental.html:25
+msgid "Ref"
+msgstr ""
+
+#: app/templates/node_popup_rental.html:28 app/templates/rental_map.html:60
+msgid "Operator"
+msgstr "Betreiber"
+
+#: app/templates/node_popup_rental.html:31 app/templates/rental_map.html:61
+msgid "Network"
+msgstr "Netzwerk"
 
 #: app/templates/osm_id_way.html:6
 msgid "open in relation analyzer"
@@ -181,7 +204,7 @@ msgstr "-Werte neu laden-"
 msgid "Tag exists and matched value if defined"
 msgstr "Tag existiert und wenn angegeben gesuchter Wert"
 
-#: app/templates/parking_map.html:123
+#: app/templates/parking_map.html:123 app/templates/rental_map.html:71
 msgid "yellow"
 msgstr "gelb"
 
@@ -192,6 +215,30 @@ msgstr "Tag ist angegeben aber Wert stimmt nicht überein"
 #: app/templates/parking_map.html:124
 msgid "Tag not defined"
 msgstr "Tag nicht definiert"
+
+#: app/templates/rental_map.html:15
+msgid "Need to zoom in to view bicycle rental"
+msgstr "Bitte hereinzoomen um Mitstationen anzuzeigen"
+
+#: app/templates/rental_map.html:62
+msgid "Total Rental"
+msgstr "Mietstationen Gesamt"
+
+#: app/templates/rental_map.html:63
+msgid "Missing Rental"
+msgstr "Fehlende Mietstationen"
+
+#: app/templates/rental_map.html:65 app/templates/rental_map.html:73
+msgid "Rentals only in OpenStreetMap"
+msgstr "Mietstation nur in OpenStreetMap"
+
+#: app/templates/rental_map.html:71
+msgid "Some tags don't match"
+msgstr "Einige Tags stimmen nicht überein"
+
+#: app/templates/rental_map.html:73
+msgid "purple"
+msgstr "lila"
 
 #: app/templates/statistics.html:26
 msgid "Search"

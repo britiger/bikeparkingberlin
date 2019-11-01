@@ -94,6 +94,31 @@ def get_values(valueType):
     return jsonify(json_result)
 
 
+@bp.route('/geojson/rental/<city>')
+def geojson_rental(city):
+    bbox = request.args.get('bbox', '')
+
+    sql = text('SELECT * FROM extern.rental_data WHERE city=:city')
+    rental_data = db.engine.execute(sql, {'city': city}).fetchone()
+
+    if rental_data is None:
+        abort(404)
+
+    suffix = rental_data['suffix']
+
+    (southwest_lng, southwest_lat, northeast_lng, northeast_lat) = bbox.split(',')
+    linestring = 'LINESTRING(' + southwest_lng + ' ' + southwest_lat + ',' + northeast_lng + ' ' + northeast_lat + ')'
+
+    sql = text('SELECT existing_data.* FROM extern.existing_rental_' + suffix + ' existing_data WHERE ST_WITHIN(st_transform(existing_data.geom,4326), ST_Envelope(ST_GeomFromText(:linestring, 4326) ) )')
+    result_existing = db.engine.execute(sql, {'linestring': linestring})
+    sql = text('SELECT existing_data.* FROM extern.missing_rental_' + suffix + ' existing_data WHERE ST_WITHIN(st_transform(existing_data.geom,4326), ST_Envelope(ST_GeomFromText(:linestring, 4326) ) )')
+    result_missing = db.engine.execute(sql, {'linestring': linestring})
+    sql = text('SELECT existing_data.* FROM extern.unknown_rental_' + suffix + ' existing_data WHERE ST_WITHIN(st_transform(existing_data.geom,4326), ST_Envelope(ST_GeomFromText(:linestring, 4326) ) )')
+    result_unknown = db.engine.execute(sql, {'linestring': linestring})
+
+    return render_geojson_nodes_rental(result_existing, result_missing, result_unknown, city, rental_data['target_operator'], rental_data['target_network'])
+
+
 def render_geojson_nodes_external(result, city, existing=False, lessContent=False):
     features = []
     for row in result:
@@ -120,6 +145,61 @@ def render_geojson_nodes_external(result, city, existing=False, lessContent=Fals
 #                entry['@id'] = prop['ident']
 #            elif prop['id']:
 #                entry['@id'] = prop['id']
+
+        features.append(entry)
+
+    json_result = {'type': 'FeatureCollection', 'features': features}
+    return jsonify(json_result)
+
+
+def render_geojson_nodes_rental(result_existing, result_missing, result_unknown, city, target_operator, target_network):
+    features = []
+    for row in result_existing:
+        prop = {'popupContent': render_template('node_popup_rental.html', node=row)}
+        prop['_color'] = 'green'
+        check_names = True
+        for col_name in row.keys():
+            prop[col_name] = row[col_name]
+
+        if 'int_network' in prop:
+            if target_network and prop['int_network'] != target_network:
+                check_names = False
+        else:
+            check_names = False
+
+        if 'int_operator' in prop:
+            if target_operator and prop['int_operator'] != target_operator:
+                check_names = False
+        else:
+            check_names = False
+
+        if not check_names:
+            prop['_color'] = 'yellow'
+
+        geom = {'type': 'Point', 'coordinates': [row['lon'], row['lat']]}
+        entry = {'type': 'Feature', 'properties': prop, 'geometry': geom}
+
+        features.append(entry)
+
+    for row in result_missing:
+        prop = {'popupContent': render_template('node_popup_rental.html', node=row)}
+        prop['_color'] = 'red'
+        for col_name in row.keys():
+            prop[col_name] = row[col_name]
+
+        geom = {'type': 'Point', 'coordinates': [row['lon'], row['lat']]}
+        entry = {'type': 'Feature', 'properties': prop, 'geometry': geom}
+
+        features.append(entry)
+
+    for row in result_unknown:
+        prop = {'popupContent': render_template('node_popup_rental.html', node=row)}
+        prop['_color'] = 'purple'
+        for col_name in row.keys():
+            prop[col_name] = row[col_name]
+
+        geom = {'type': 'Point', 'coordinates': [row['lon'], row['lat']]}
+        entry = {'type': 'Feature', 'properties': prop, 'geometry': geom}
 
         features.append(entry)
 
