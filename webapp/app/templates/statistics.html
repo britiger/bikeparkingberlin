@@ -6,8 +6,10 @@
     {{super()}}
     <script>
         function searchText() {
-            if (document.getElementById("searchTextField").value.length > 2)
-                window.location.href = "{{ url_for('main.statistics') }}/"+document.getElementById("searchTextField").value;
+            if (document.getElementById("searchTextField").value.length > 2) {
+                document.getElementById("searchForm").action = "{{ url_for('main.statistics') }}/"+document.getElementById("searchTextField").value;
+            } else
+                return false;
         }
     </script>
 {% endblock %}
@@ -15,15 +17,33 @@
 {% block content %}
     <div class="container">
         <div class="page-header">
-            <h1>{{ _('Statistics') }} {{ city_name }}</h1>
-            {% if osm_id != 0 %}
-                <p>{% with osm_id=osm_id %}{% include "osm_id_way.html" %}{% endwith %}</p>
-            {% endif %}
+            <h1>{{ _('Statistics') }} {{ city_name }} -
+                {% if rental %}
+                    {{ _('Bicycle Rental') }}
+                {% else %}
+                    {{ _('Bicycle Parking') }}
+                {% endif %}
+            </h1>
+            <ul>
+                {% if osm_id != 0 %}
+                    <li>{% with osm_id=osm_id %}{% include "osm_id_way.html" %}{% endwith %}</li>
+                {% endif %}
+                <li>{{ _('More') }}: 
+                    {% if rental %}
+                        <a href="?">{{ _('Bicycle Parking') }}</a>
+                    {% else %}
+                        <a href="?rental=true">{{ _('Bicycle Rental') }}</a>
+                    {% endif %}
+                </li>
+            </ul>
         </div>
 
-        <form action="javascript:searchText()" onsubmit="return searchText()">
+        <form action="javascript:searchText()" onsubmit="return searchText()" id="searchForm">
             <input type="text" id="searchTextField" />
-            <input type="button" onclick="searchText()" value="{{ _('Search')}}" />
+            {% if rental %}
+                <input type="hidden" name="rental" value="{{ rental }}" />
+            {% endif %}
+            <input type="submit" value="{{ _('Search')}}" />
         </form>
 
         {% set ns = namespace(totalCount=0) %}
@@ -47,6 +67,7 @@
             </tbody>
         </table>
 
+        {% if bicycle_parking %}
         <h2>{{ _('by Bicycle Parking') }}</h2>
         <table class="table table-striped">
             <thead>
@@ -66,7 +87,9 @@
             {% endfor %}
             </tbody>
         </table>
+        {% endif %}
 
+        {% if access %}
         <h2>{{ _('by Access') }}</h2>
         <table class="table table-striped">
             <thead>
@@ -86,7 +109,9 @@
             {% endfor %}
             </tbody>
         </table>
+        {% endif %}
 
+        {% if covered %}
         <h2>{{ _('by Covered') }}</h2>
         <table class="table table-striped">
             <thead>
@@ -106,6 +131,7 @@
             {% endfor %}
             </tbody>
         </table>
+        {% endif %}
 
         <h2>{{ _('by Operator') }}</h2>
         <table class="table table-striped">
@@ -127,6 +153,29 @@
             </tbody>
         </table>
 
+        {% if network %}
+        <h2>{{ _('by Network') }}</h2>
+        <table class="table table-striped">
+            <thead>
+                <th>{{ _('Value') }}</th>
+                <th>{{ _('Count') }}</th>
+                <th>{{ _('Percent') }}</th>
+                <th>{{ _('OSM-Links') }}</th>
+            </thead>
+            <tbody>
+            {% for row in network %}
+                <tr>
+                    <td>{{ row['network']|e }}</td>
+                    <td>{{ row['count'] }}</td>
+                    <td>{{ "%.2f"|format(row['count'] / ns.totalCount * 100) }}&nbsp;%</td>
+                    <td>{% with key='network', value=row['network'] %}{% include "overpass_link.html" %}{% endwith %}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        {% endif %}
+
+        {% if position %}
         <h2>{{ _('by Position') }}</h2>
         <table class="table table-striped">
             <thead>
@@ -146,7 +195,9 @@
             {% endfor %}
             </tbody>
         </table>
+        {% endif%}
 
+        {% if fee %}
         <h2>{{ _('by Fee') }}</h2>
         <table class="table table-striped">
             <thead>
@@ -166,5 +217,7 @@
             {% endfor %}
             </tbody>
         </table>
+        {% endif %}
+
     </div>
 {%- endblock %}

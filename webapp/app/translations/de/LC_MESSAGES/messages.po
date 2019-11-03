@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bike Parking Berlin\n"
 "Report-Msgid-Bugs-To: osm@lorenz.lu\n"
-"POT-Creation-Date: 2019-11-01 16:39+0100\n"
+"POT-Creation-Date: 2019-11-03 15:11+0100\n"
 "PO-Revision-Date: 2018-07-06 18:12+0200\n"
 "Last-Translator: Christopher Lorenz <osm@lorenz.lu>\n"
 "Language: de\n"
@@ -21,6 +21,7 @@ msgstr ""
 
 #: app/templates/base.html:16 app/templates/node_popup.html:7
 #: app/templates/node_popup_external.html:36 app/templates/parking_map.html:112
+#: app/templates/statistics.html:24 app/templates/statistics.html:33
 msgid "Bicycle Parking"
 msgstr "Fahrradparkplätze"
 
@@ -29,7 +30,7 @@ msgid "Start"
 msgstr ""
 
 #: app/templates/base.html:23 app/templates/statistics.html:3
-#: app/templates/statistics.html:18
+#: app/templates/statistics.html:20
 msgid "Statistics"
 msgstr "Statistiken"
 
@@ -44,7 +45,7 @@ msgid "Missing Parking Map"
 msgstr "Karte Fehlende Parkplätze"
 
 #: app/templates/base.html:34 app/templates/rental_map.html:3
-#: app/templates/rental_map.html:58
+#: app/templates/rental_map.html:61
 msgid "Rental Map"
 msgstr "Miet Karte"
 
@@ -93,7 +94,7 @@ msgstr "Gesamt Parkplätze"
 msgid "Missing Parking"
 msgstr "Fehlende Parkplätze"
 
-#: app/templates/missing_map.html:97 app/templates/rental_map.html:64
+#: app/templates/missing_map.html:97 app/templates/rental_map.html:67
 msgid "Coverage"
 msgstr "Abdeckung"
 
@@ -105,7 +106,7 @@ msgstr "Datenquelle"
 msgid "License"
 msgstr "Lizenz"
 
-#: app/templates/missing_map.html:99
+#: app/templates/missing_map.html:99 app/templates/statistics.html:31
 msgid "More"
 msgstr "Mehr"
 
@@ -122,20 +123,20 @@ msgid "Export Missing"
 msgstr "Fehlende Exportieren"
 
 #: app/templates/missing_map.html:113 app/templates/parking_map.html:122
-#: app/templates/rental_map.html:70
+#: app/templates/rental_map.html:73
 msgid "green"
 msgstr "grün"
 
-#: app/templates/missing_map.html:113 app/templates/rental_map.html:70
+#: app/templates/missing_map.html:113 app/templates/rental_map.html:73
 msgid "Data found in OpenStreetMap"
 msgstr "Daten in OpenStreetMap gefunden"
 
 #: app/templates/missing_map.html:114 app/templates/parking_map.html:124
-#: app/templates/rental_map.html:72
+#: app/templates/rental_map.html:75
 msgid "red"
 msgstr "rot"
 
-#: app/templates/missing_map.html:114 app/templates/rental_map.html:72
+#: app/templates/missing_map.html:114 app/templates/rental_map.html:75
 msgid "Missing data in OpenStreetMap"
 msgstr "Fehlende Daten in OpenStreetMap"
 
@@ -180,11 +181,11 @@ msgstr "Mit iD Editor bearbeiten"
 msgid "Ref"
 msgstr ""
 
-#: app/templates/node_popup_rental.html:28 app/templates/rental_map.html:60
+#: app/templates/node_popup_rental.html:28 app/templates/rental_map.html:63
 msgid "Operator"
 msgstr "Betreiber"
 
-#: app/templates/node_popup_rental.html:31 app/templates/rental_map.html:61
+#: app/templates/node_popup_rental.html:31 app/templates/rental_map.html:64
 msgid "Network"
 msgstr "Netzwerk"
 
@@ -204,7 +205,7 @@ msgstr "-Werte neu laden-"
 msgid "Tag exists and matched value if defined"
 msgstr "Tag existiert und wenn angegeben gesuchter Wert"
 
-#: app/templates/parking_map.html:123 app/templates/rental_map.html:71
+#: app/templates/parking_map.html:123 app/templates/rental_map.html:74
 msgid "yellow"
 msgstr "gelb"
 
@@ -220,88 +221,99 @@ msgstr "Tag nicht definiert"
 msgid "Need to zoom in to view bicycle rental"
 msgstr "Bitte hereinzoomen um Mitstationen anzuzeigen"
 
-#: app/templates/rental_map.html:62
+#: app/templates/rental_map.html:65
 msgid "Total Rental"
 msgstr "Mietstationen Gesamt"
 
-#: app/templates/rental_map.html:63
+#: app/templates/rental_map.html:66
 msgid "Missing Rental"
 msgstr "Fehlende Mietstationen"
 
-#: app/templates/rental_map.html:65 app/templates/rental_map.html:73
+#: app/templates/rental_map.html:68 app/templates/rental_map.html:76
 msgid "Rentals only in OpenStreetMap"
 msgstr "Mietstation nur in OpenStreetMap"
 
-#: app/templates/rental_map.html:71
+#: app/templates/rental_map.html:74
 msgid "Some tags don't match"
 msgstr "Einige Tags stimmen nicht überein"
 
-#: app/templates/rental_map.html:73
+#: app/templates/rental_map.html:76
 msgid "purple"
 msgstr "lila"
 
-#: app/templates/statistics.html:26
+#: app/templates/statistics.html:22 app/templates/statistics.html:35
+msgid "Bicycle Rental"
+msgstr "Fahrradmietstationen"
+
+#: app/templates/statistics.html:46
 msgid "Search"
 msgstr "Suche"
 
-#: app/templates/statistics.html:31
+#: app/templates/statistics.html:51
 msgid "by Type"
 msgstr "nach Typ"
 
-#: app/templates/statistics.html:34
+#: app/templates/statistics.html:54
 msgid "Type"
 msgstr "Typ"
 
-#: app/templates/statistics.html:35 app/templates/statistics.html:54
-#: app/templates/statistics.html:74 app/templates/statistics.html:94
-#: app/templates/statistics.html:114 app/templates/statistics.html:134
-#: app/templates/statistics.html:154
+#: app/templates/statistics.html:55 app/templates/statistics.html:75
+#: app/templates/statistics.html:97 app/templates/statistics.html:119
+#: app/templates/statistics.html:140 app/templates/statistics.html:161
+#: app/templates/statistics.html:183 app/templates/statistics.html:205
 msgid "Count"
 msgstr "Anzahl"
 
-#: app/templates/statistics.html:36
+#: app/templates/statistics.html:56
 msgid "Sum of capacity"
 msgstr "Summe der Kapazitäten"
 
-#: app/templates/statistics.html:50
+#: app/templates/statistics.html:71
 msgid "by Bicycle Parking"
 msgstr "nach Fahrradparkplatz"
 
-#: app/templates/statistics.html:53 app/templates/statistics.html:73
-#: app/templates/statistics.html:93 app/templates/statistics.html:113
-#: app/templates/statistics.html:133 app/templates/statistics.html:153
+#: app/templates/statistics.html:74 app/templates/statistics.html:96
+#: app/templates/statistics.html:118 app/templates/statistics.html:139
+#: app/templates/statistics.html:160 app/templates/statistics.html:182
+#: app/templates/statistics.html:204
 msgid "Value"
 msgstr "Wert"
 
-#: app/templates/statistics.html:55 app/templates/statistics.html:75
-#: app/templates/statistics.html:95 app/templates/statistics.html:115
-#: app/templates/statistics.html:135 app/templates/statistics.html:155
+#: app/templates/statistics.html:76 app/templates/statistics.html:98
+#: app/templates/statistics.html:120 app/templates/statistics.html:141
+#: app/templates/statistics.html:162 app/templates/statistics.html:184
+#: app/templates/statistics.html:206
 msgid "Percent"
 msgstr "Prozent"
 
-#: app/templates/statistics.html:56 app/templates/statistics.html:76
-#: app/templates/statistics.html:96 app/templates/statistics.html:116
-#: app/templates/statistics.html:136 app/templates/statistics.html:156
+#: app/templates/statistics.html:77 app/templates/statistics.html:99
+#: app/templates/statistics.html:121 app/templates/statistics.html:142
+#: app/templates/statistics.html:163 app/templates/statistics.html:185
+#: app/templates/statistics.html:207
 msgid "OSM-Links"
 msgstr ""
 
-#: app/templates/statistics.html:70
+#: app/templates/statistics.html:93
 msgid "by Access"
 msgstr "nach Zugang"
 
-#: app/templates/statistics.html:90
+#: app/templates/statistics.html:115
 msgid "by Covered"
 msgstr "nach Überdachung"
 
-#: app/templates/statistics.html:110
+#: app/templates/statistics.html:136
 msgid "by Operator"
 msgstr "nach Betreiber"
 
-#: app/templates/statistics.html:130
+#: app/templates/statistics.html:157
+msgid "by Network"
+msgstr "nach Netzwerk"
+
+#: app/templates/statistics.html:179
 msgid "by Position"
 msgstr "nach Position"
 
-#: app/templates/statistics.html:150
+#: app/templates/statistics.html:201
 msgid "by Fee"
 msgstr "nach Bezahlung"
 

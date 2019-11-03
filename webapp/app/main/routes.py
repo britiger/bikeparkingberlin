@@ -30,6 +30,7 @@ def imprint():
 @bp.route('/statistics')
 @bp.route('/statistics/<filter_text>')
 def statistics(filter_text=' '):
+    rental = request.args.get('rental', False)
     city_name = ''
     osm_id = 0
 
@@ -57,28 +58,46 @@ def statistics(filter_text=' '):
         where_condition = ' WHERE st_within(geom, (SELECT geom FROM imposm3.osm_borders WHERE osm_id=:osm_id)) '
         filter_execute = {'osm_id': osm_id}
 
-    sql = text('SELECT count(*), typ, sum(capacity::int) FILTER (WHERE capacity ~ E\'^\\\\d+$\') AS sum_capacity FROM imposm3.view_parking ' + where_condition + ' GROUP BY typ ORDER BY count DESC')
+    access = False
+    bicycle_parking = False
+    covered = False
+    fee = False
+    network = False
+    position = False
+
+    if rental:
+        # bicycle_rental
+        table_name = 'imposm3.view_rental'
+
+        sql = text('SELECT count(*), network from imposm3.view_rental ' + where_condition + ' GROUP BY network ORDER BY count DESC')
+        network = db.engine.execute(sql, filter_execute)
+
+    else:
+        # bicycle_parking
+        table_name = 'imposm3.view_parking'
+
+        sql = text('SELECT count(*), access from imposm3.view_parking ' + where_condition + ' GROUP BY access ORDER BY count DESC')
+        access = db.engine.execute(sql, filter_execute)
+
+        sql = text('SELECT count(*), covered from imposm3.view_parking ' + where_condition + ' GROUP BY covered ORDER BY count DESC')
+        covered = db.engine.execute(sql, filter_execute)
+
+        sql = text('SELECT count(*), bicycle_parking from imposm3.view_parking ' + where_condition + ' GROUP BY bicycle_parking ORDER BY count DESC')
+        bicycle_parking = db.engine.execute(sql, filter_execute)
+
+        sql = text('SELECT count(*), fee from imposm3.view_parking ' + where_condition + ' GROUP BY fee ORDER BY count DESC')
+        fee = db.engine.execute(sql, filter_execute)
+
+        sql = text('SELECT count(*), all_tags->\'bicycle_parking:position\' AS position from imposm3.view_parking ' + where_condition + ' GROUP BY all_tags->\'bicycle_parking:position\' ORDER BY count DESC')
+        position = db.engine.execute(sql, filter_execute)
+
+    sql = text('SELECT count(*), typ, sum(capacity::int) FILTER (WHERE capacity ~ E\'^\\\\d+$\') AS sum_capacity FROM ' + table_name + ' ' + where_condition + ' GROUP BY typ ORDER BY count DESC')
     main = db.engine.execute(sql, filter_execute)
 
-    sql = text('SELECT count(*), access from imposm3.view_parking ' + where_condition + ' GROUP BY access ORDER BY count DESC')
-    access = db.engine.execute(sql, filter_execute)
-
-    sql = text('SELECT count(*), covered from imposm3.view_parking ' + where_condition + ' GROUP BY covered ORDER BY count DESC')
-    covered = db.engine.execute(sql, filter_execute)
-
-    sql = text('SELECT count(*), bicycle_parking from imposm3.view_parking ' + where_condition + ' GROUP BY bicycle_parking ORDER BY count DESC')
-    bicycle_parking = db.engine.execute(sql, filter_execute)
-
-    sql = text('SELECT count(*), fee from imposm3.view_parking ' + where_condition + ' GROUP BY fee ORDER BY count DESC')
-    fee = db.engine.execute(sql, filter_execute)
-
-    sql = text('SELECT count(*), operator from imposm3.view_parking ' + where_condition + ' GROUP BY operator ORDER BY count DESC')
+    sql = text('SELECT count(*), operator from ' + table_name + ' ' + where_condition + ' GROUP BY operator ORDER BY count DESC')
     operator = db.engine.execute(sql, filter_execute)
 
-    sql = text('SELECT count(*), all_tags->\'bicycle_parking:position\' AS position from imposm3.view_parking ' + where_condition + ' GROUP BY all_tags->\'bicycle_parking:position\' ORDER BY count DESC')
-    position = db.engine.execute(sql, filter_execute)
-
-    return render_template('statistics.html', city_name=city_name, main=main, access=access, covered=covered, bicycle_parking=bicycle_parking, fee=fee, operator=operator, osm_id=osm_id, position=position)
+    return render_template('statistics.html', city_name=city_name, main=main, access=access, covered=covered, bicycle_parking=bicycle_parking, fee=fee, operator=operator, osm_id=osm_id, position=position, network=network, rental=rental)
 
 
 @bp.route('/parkingmap')
