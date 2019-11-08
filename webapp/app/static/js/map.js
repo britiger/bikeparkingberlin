@@ -57,7 +57,7 @@ var nodes = new L.geoJson(null, {onEachFeature: onEachFeaturePopup,
 // nodes.addTo(mymap);
 clusterGroup.addTo(mymap);
 clusterGroup.addLayer(nodes);
-loadHash([51.505, 13.09], 7);
+loadHash(51.505, 13.09, 7);
 // geomlayer
 var geomlayer = null;
 
