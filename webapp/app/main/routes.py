@@ -152,4 +152,4 @@ def rentalmap(city, brand):
     sql = text('SELECT count(*) from extern.unknown_rental_' + suffix)
     unknown_rental = db.engine.execute(sql).fetchone()[0]
 
-    return render_template('rental_map.html', city=city, all_rental=all_rental, missing_rental=missing_rental, unknown_rental=unknown_rental, rental_data=rental_data)
+    return render_template('rental_map.html', city=city, brand=brand, all_rental=all_rental, missing_rental=missing_rental, unknown_rental=unknown_rental, rental_data=rental_data)
