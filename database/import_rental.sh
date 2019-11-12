@@ -9,6 +9,12 @@ cd `dirname $(readlink -f $0)`
 source ../config
 source ./tools/bash_functions.sh
 
+#  activate Python from webapp
+python3 -m venv ../webapp/venv
+source ../webapp/venv/bin/activate
+pip install --upgrade setuptools
+pip install --upgrade pip
+pip install -r ../webapp/requirements.txt
 
 # Download data if not exists
 function download_external {
