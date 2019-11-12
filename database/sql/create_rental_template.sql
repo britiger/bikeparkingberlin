@@ -6,7 +6,8 @@ FROM imposm3.view_rental_#AREA#
 WHERE 
     "name" ILIKE ANY(SELECT unnest(search_values) FROM extern.rental_data WHERE city = '#CITY#' AND brand='#BRAND#')
     OR network ILIKE ANY(SELECT unnest(search_values) FROM extern.rental_data WHERE city = '#CITY#' AND brand='#BRAND#')
-    OR operator ILIKE ANY(SELECT unnest(search_values) FROM extern.rental_data WHERE city = '#CITY#' AND brand='#BRAND#');
+    OR operator ILIKE ANY(SELECT unnest(search_values) FROM extern.rental_data WHERE city = '#CITY#' AND brand='#BRAND#')
+    OR all_tags->'brand' ILIKE ANY(SELECT unnest(search_values) FROM extern.rental_data WHERE city = '#CITY#' AND brand='#BRAND#');
 
 -- All rental stations missing
 CREATE OR REPLACE VIEW extern.missing_rental_#SUFFIX# AS
