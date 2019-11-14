@@ -24,7 +24,7 @@
 
             $.ajax({
                 dataType: "json",
-                url: "/geojson/rental/{{ city }}" + L.Util.getParamString(customParams),
+                url: "/geojson/rental/{{ city }}/{{ brand }}" + L.Util.getParamString(customParams),
                 success: function(data) {
                     $(data.features).each(function(key, data) {
                         nodes.addData(data);
@@ -55,7 +55,7 @@
 {% block content %}
     <div class ="container">
         <div class="page-header">
-            <h1>{{ _('Rental Map') }} {{ city }}</h1>
+            <h1>{{ _('Rental Map') }} {{ city }} ({{ brand }})</h1>
             <ul>
                 <li>{{ _('Operator') }}: {{ rental_data['target_operator'] }}</li>
                 <li>{{ _('Network') }}: {{ rental_data['target_network'] }}</li>

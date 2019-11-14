@@ -94,12 +94,12 @@ def get_values(valueType):
     return jsonify(json_result)
 
 
-@bp.route('/geojson/rental/<city>')
-def geojson_rental(city):
+@bp.route('/geojson/rental/<city>/<brand>')
+def geojson_rental(city, brand):
     bbox = request.args.get('bbox', '')
 
-    sql = text('SELECT * FROM extern.rental_data WHERE city=:city')
-    rental_data = db.engine.execute(sql, {'city': city}).fetchone()
+    sql = text('SELECT * FROM extern.rental_data WHERE city=:city AND brand=:brand')
+    rental_data = db.engine.execute(sql, {'city': city, 'brand': brand}).fetchone()
 
     if rental_data is None:
         abort(404)
