@@ -20,8 +20,8 @@ def parse_place(place):
     if place['bike']:
         # Skip bikes, only use stations
         return
-    sql = text('INSERT INTO extern.all_rental_nextbike (api_id, uid, lat, lon, name, number) VALUES (:api_id, :uid, :lat, :lon, :name, :number)')
-    engine.execute(sql, {'api_id': api_id, 'uid': place['uid'], 'lat': place['lat'], 'lon': place['lng'], 'name': place['name'], 'number': place['number']})
+    sql = text('INSERT INTO extern.all_rental_nextbike (api_id, uid, lat, lon, name, number, capacity, terminal_type, rack_locks) VALUES (:api_id, :uid, :lat, :lon, :name, :number, :capacity, :terminal_type, :rack_locks)')
+    engine.execute(sql, {'api_id': api_id, 'uid': place['uid'], 'lat': place['lat'], 'lon': place['lng'], 'name': place['name'], 'number': place['number'], 'capacity': place['bike_racks'], 'terminal_type': place['terminal_type'], 'rack_locks': place['rack_locks']})
 
 
 def parse_file():

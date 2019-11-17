@@ -17,7 +17,7 @@ engine = create_engine(SQLALCHEMY_DATABASE_URI)
 
 def parse_place(place):
     items_cnt = len(place['items'])
-    sql = text('INSERT INTO extern.all_rental_flotte (location_name, street, city, zip, lat, lon, items_cnt) VALUES (:location_name, :street, :city, :zip, :lat, :lon, :items_cnt)')
+    sql = text('INSERT INTO extern.all_rental_flotte (location_name, street, city, zip, lat, lon, capacity) VALUES (:location_name, :street, :city, :zip, :lat, :lon, :items_cnt)')
     engine.execute(sql, {'location_name': place['location_name'], 'street': place['address']['street'], 'city': place['address']['city'], 'zip': place['address']['zip'], 'lat': place['lat'], 'lon': place['lon'], 'items_cnt': items_cnt})
 
 

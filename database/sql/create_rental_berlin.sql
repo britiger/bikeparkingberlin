@@ -2,7 +2,7 @@
 SET client_min_messages TO WARNING;
 
 -- Add Nextbike
-INSERT INTO extern.rental_nextbike (city, api_ids, target_network, target_operator, search_values, center_lat, center_lon, admin_osm_id) VALUES ('Berlin', ARRAY[362], 'Deezer nextbike', 'nextbike GmbH', ARRAY['%deezer%', '%nextbike%'], 52.520008, 13.404954, ARRAY[-62422]);
+INSERT INTO extern.rental_nextbike (city, api_ids, target_brand, target_network, target_operator, search_values, center_lat, center_lon, admin_osm_id) VALUES ('Berlin', ARRAY[362], 'Deezer nextbike', 'Deezer nextbike', 'nextbike GmbH', ARRAY['%deezer%', '%nextbike%'], 52.520008, 13.404954, ARRAY[-62422]);
 
 -- Create View with all rental stations berlin
 CREATE OR REPLACE VIEW imposm3.view_rental_berlin AS

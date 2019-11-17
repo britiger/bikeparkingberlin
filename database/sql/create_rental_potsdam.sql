@@ -2,7 +2,7 @@
 SET client_min_messages TO WARNING;
 
 -- Add Nextbike
-INSERT INTO extern.rental_nextbike (city, api_ids, target_network, target_operator, search_values, center_lat, center_lon, admin_osm_id) VALUES ('Potsdam', ARRAY[158], 'PotsdamRad', 'nextbike GmbH', ARRAY['%PotsdamRad%', '%Potsdam Rad%', '%Potsdam-Rad%', '%nextbike%'], 52.3988, 13.0656, ARRAY[-62369,-365821,-531654,-332537]);
+INSERT INTO extern.rental_nextbike (city, api_ids, target_brand, target_network, target_operator, search_values, center_lat, center_lon, admin_osm_id) VALUES ('Potsdam', ARRAY[158], 'PotsdamRad', 'PotsdamRad', 'nextbike GmbH', ARRAY['%PotsdamRad%', '%Potsdam Rad%', '%Potsdam-Rad%', '%nextbike%'], 52.3988, 13.0656, ARRAY[-62369,-365821,-531654,-332537]);
 
 -- Create View with all rental stations potsdam
 CREATE OR REPLACE VIEW imposm3.view_rental_potsdam_nb AS

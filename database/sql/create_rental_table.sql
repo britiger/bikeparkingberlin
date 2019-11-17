@@ -20,6 +20,7 @@ CREATE TABLE IF NOT EXISTS extern.rental_nextbike (
     id SERIAL,
     city VARCHAR(255) NOT NULL UNIQUE,
     api_ids INT[],
+    target_brand VARCHAR(255) NOT NULL,
     target_network VARCHAR(255),
     target_operator VARCHAR(255),
     search_values VARCHAR(255)[],
@@ -35,6 +36,9 @@ CREATE TABLE IF NOT EXISTS extern.all_rental_nextbike (
     "lon" FLOAT,
     "name" VARCHAR(255),
     "number" INT,
+    "capacity" INT,
+    "terminal_type" VARCHAR(255),
+    "rack_locks" BOOLEAN,
     geom geometry(Geometry,3857)
 );
 
@@ -47,7 +51,7 @@ CREATE TABLE IF NOT EXISTS extern.all_rental_flotte (
     zip VARCHAR(255),
     lat FLOAT,
     lon FLOAT,
-    items_cnt INT,
+    capacity INT,
     geom geometry(Geometry,3857)
 );
 
@@ -61,5 +65,5 @@ CREATE OR REPLACE VIEW extern.rental_data AS
     SELECT city, brand, suffix, target_network, target_operator, search_values, center_lat, center_lon, admin_osm_id 
     FROM extern.rental_generic
 UNION ALL
-    SELECT city, 'nextbike' AS brand, 'nextbike_'||LOWER(city) AS suffix, target_network, target_operator, search_values, center_lat, center_lon, admin_osm_id
+    SELECT city, target_brand AS brand, 'nextbike_'||LOWER(city) AS suffix, target_network, target_operator, search_values, center_lat, center_lon, admin_osm_id
     FROM extern.rental_nextbike;

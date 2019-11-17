@@ -116,7 +116,7 @@ def geojson_rental(city, brand):
     sql = text('SELECT existing_data.* FROM extern.unknown_rental_' + suffix + ' existing_data WHERE ST_WITHIN(st_transform(existing_data.geom,4326), ST_Envelope(ST_GeomFromText(:linestring, 4326) ) )')
     result_unknown = db.engine.execute(sql, {'linestring': linestring})
 
-    return render_geojson_nodes_rental(result_existing, result_missing, result_unknown, city, rental_data['target_operator'], rental_data['target_network'])
+    return render_geojson_nodes_rental(result_existing, result_missing, result_unknown, city, rental_data['brand'], rental_data['target_operator'], rental_data['target_network'])
 
 
 def render_geojson_nodes_external(result, city, existing=False, lessContent=False):
@@ -152,7 +152,7 @@ def render_geojson_nodes_external(result, city, existing=False, lessContent=Fals
     return jsonify(json_result)
 
 
-def render_geojson_nodes_rental(result_existing, result_missing, result_unknown, city, target_operator, target_network):
+def render_geojson_nodes_rental(result_existing, result_missing, result_unknown, city, target_brand, target_operator, target_network):
     features = []
     for row in result_existing:
         prop = {'popupContent': render_template('node_popup_rental.html', node=row)}
@@ -160,6 +160,11 @@ def render_geojson_nodes_rental(result_existing, result_missing, result_unknown,
         check_names = True
         for col_name in row.keys():
             prop[col_name] = row[col_name]
+        if 'int_brand' in prop:
+            if target_brand and prop['int_brand'] != target_brand:
+                check_names = False
+        else:
+            check_names = False
 
         if 'int_network' in prop:
             if target_network and prop['int_network'] != target_network:
@@ -169,6 +174,12 @@ def render_geojson_nodes_rental(result_existing, result_missing, result_unknown,
 
         if 'int_operator' in prop:
             if target_operator and prop['int_operator'] != target_operator:
+                check_names = False
+        else:
+            check_names = False
+
+        if 'int_capacity' in prop:
+            if 'capacity' in prop and str(prop['int_capacity']) != str(prop['capacity']):
                 check_names = False
         else:
             check_names = False

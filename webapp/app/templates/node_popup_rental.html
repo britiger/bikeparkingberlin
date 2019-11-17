@@ -5,7 +5,7 @@
     <tbody>
 
 {% for col_name in node.keys() %}
-{% if col_name not in ['gml_id', 'geom', 'lat', 'lon', 'x', 'y', 'geojson', 'osm_geojson', 'int_osm_id', 'int_typ', 'int_name', 'int_ref', 'int_network', 'int_operator', 'target_operator', 'target_network'] %}
+{% if col_name not in ['gml_id', 'geom', 'lat', 'lon', 'x', 'y', 'geojson', 'osm_geojson', 'int_osm_id', 'int_typ', 'int_name', 'int_ref', 'int_ref_name', 'int_capacity', 'int_brand', 'int_network', 'int_operator', 'target_operator', 'target_network'] %}
         {% if node[col_name] %}
             <tr><th>{{ col_name }}</th><td>{{ node[col_name]|e }}</td></tr>
          {% endif %}
@@ -19,16 +19,25 @@
     <table class="mapPopupTable">
         <tbody>
     {% if node['int_name'] %}
-            <tr><th>{{ _('Name') }}</th><td {% if node['int_name'] != node['name'] %} title="{{ node['name'] }}?" style="background-color: yellow;"{% endif %}>{{ node['int_name']|e }}</td></tr>
+            <tr><th>{{ _('Name') }}</th><td>{{ node['int_name']|e }}</td></tr>
     {% endif %}
     {% if node['int_ref'] %}
             <tr><th>{{ _('Ref') }}</th><td {% if node['int_ref'] != node['number']|string %} title="{{ node['number'] }}?" style="background-color: yellow;"{% endif %}>{{ node['int_ref']|e }}</td></tr>
+    {% endif %}
+    {% if node['int_ref_name'] %}
+            <tr><th>{{ _('Ref Name') }}</th><td {% if node['int_ref_name'] != node['name'] %} title="{{ node['name'] }}?" style="background-color: yellow;"{% endif %}>{{ node['int_ref_name']|e }}</td></tr>
+    {% endif %}
+    {% if node['int_brand'] %}
+        <tr><th>{{ _('Brand') }}</th><td {% if node['int_brand'] != node['brand'] %} title="{{ node['brand'] }}?" style="background-color: yellow;"{% endif %}>{{ node['int_brand']|e }}</td></tr>
     {% endif %}
     {% if node['int_operator'] %}
             <tr><th>{{ _('Operator') }}</th><td {% if node['int_operator'] != node['target_operator'] %} title="{{ node['target_operator'] }}?" style="background-color: yellow;"{% endif %}>{{ node['int_operator']|e }}</td></tr>
     {% endif %}
     {% if node['int_network'] %}
             <tr><th>{{ _('Network') }}</th><td {% if node['int_network'] != node['target_network'] %} title="{{ node['target_network'] }}?" style="background-color: yellow;"{% endif %}>{{ node['int_network']|e }}</td></tr>
+    {% endif %}
+    {% if node['int_capacity'] %}
+        <tr><th>{{ _('Capacity') }}</th><td {% if node['int_capacity'] != node['capacity']|string %} title="{{ node['capacity'] }}?" style="background-color: yellow;"{% endif %}>{{ node['int_capacity']|e }}</td></tr>
     {% endif %}
         </tbody>
     </table>

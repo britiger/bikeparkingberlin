@@ -57,6 +57,7 @@
         <div class="page-header">
             <h1>{{ _('Rental Map') }} {{ city }} ({{ brand }})</h1>
             <ul>
+                <li>{{ _('Brand') }}: {{ rental_data['brand'] }}</li>
                 <li>{{ _('Operator') }}: {{ rental_data['target_operator'] }}</li>
                 <li>{{ _('Network') }}: {{ rental_data['target_network'] }}</li>
                 <li>{{ _('Total Rental') }}: {{ all_rental }}</li>
