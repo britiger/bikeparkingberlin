@@ -34,16 +34,25 @@
                     loadHashId();
                 }
                 });
+
+                
+            }
             
-        }
+            mymap.on('moveend', load_geojson);
+            var box = L.control.messagebox({ timeout: 5000 }).addTo(mymap);
+            loadHash({{ rental_data['center_lat'] }}, {{ rental_data['center_lon'] }}, 13);
+            
+            $.ajax({
+                dataType: "json",
+                url: "/geojson/rental_area/{{ city }}/{{ brand }}",
+                success: function(data) {
+                    L.geoJSON(data, {style: areaStyle}).addTo(mymap);
+                }
+            });
 
-        mymap.on('moveend', load_geojson);
-        var box = L.control.messagebox({ timeout: 5000 }).addTo(mymap);
-        loadHash({{ rental_data['center_lat'] }}, {{ rental_data['center_lon'] }}, 13);
-
-        function changeValue() {
-           load_geojson();
-        }
+            function changeValue() {
+            load_geojson();
+            }
     </script>
 {% endblock %}
 

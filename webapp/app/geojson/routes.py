@@ -119,6 +119,28 @@ def geojson_rental(city, brand):
     return render_geojson_nodes_rental(result_existing, result_missing, result_unknown, city, rental_data['brand'], rental_data['target_operator'], rental_data['target_network'])
 
 
+@bp.route('/geojson/rental_area/<city>/<brand>')
+def geojson_rental_area(city, brand):
+    sql = text('SELECT st_asgeojson(st_transform(st_union(geom),4326)) as geojson FROM extern.rental_data LEFT JOIN imposm3.osm_borders ON rental_data.admin_osm_id @> ARRAY[osm_borders.osm_id] WHERE city=:city AND brand=:brand')
+    rental_data = db.engine.execute(sql, {'city': city, 'brand': brand}).fetchone()
+
+    if rental_data is None:
+        abort(404)
+
+    return rental_data.geojson
+
+
+@bp.route('/geojson/parking_area/<city>')
+def geojson_parking_area(city):
+    sql = text('SELECT st_asgeojson(st_transform(st_union(geom),4326)) as geojson FROM extern.external_data LEFT JOIN imposm3.osm_borders ON external_data.admin_osm_id = osm_borders.osm_id WHERE city=:city')
+    rental_data = db.engine.execute(sql, {'city': city}).fetchone()
+
+    if rental_data is None:
+        abort(404)
+
+    return rental_data.geojson
+
+
 def render_geojson_nodes_external(result, city, existing=False, lessContent=False):
     features = []
     for row in result:

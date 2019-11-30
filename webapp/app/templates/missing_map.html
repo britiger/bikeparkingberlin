@@ -69,6 +69,13 @@
         var box = L.control.messagebox({ timeout: 5000 }).addTo(mymap);
         loadHash({{ external_data['center_lat'] }},{{ external_data['center_lon'] }},{{ external_data['zoom_level'] }});
 
+        $.ajax({
+            dataType: "json",
+            url: "/geojson/parking_area/{{ city }}",
+            success: function(data) {
+                L.geoJSON(data, {style: areaStyle}).addTo(mymap);
+            }
+        });
     </script>
 {% endblock %}
 
