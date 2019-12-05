@@ -1,14 +1,14 @@
 {% if osm_id < 0 %}
     <a href="https://osm.org/relation/{{ osm_id*-1 }}" class="osm_id_line" target="_blank"><img src="{{ url_for('static', filename='img/relation.png') }}">&nbsp;{{ osm_id*-1 }}</a>
     <small>
-        (<a href="https://localhost:8112/load_object?objects=r{{ osm_id*-1 }}&relation_members=true" title="{{ _("load in JOSM") }}" target="_blank">josm</a> 
+        (<a href="http://localhost:8111/load_object?objects=r{{ osm_id*-1 }}&relation_members=true" title="{{ _("load in JOSM") }}" target="_blank">josm</a> 
         | <a href="https://osm.org/edit?relation={{ osm_id*-1 }}&comment=%23bikeparking" title="{{ _("edit with iD Editor") }}" target="_blank">iD</a>
         | <a href="http://ra.osmsurround.org/analyzeRelation?relationId={{ osm_id*-1 }}" title="{{ _("open in relation analyzer") }}" target="_blank">ra</a>)
     </small>
 {% else %}
     <a href="https://osm.org/way/{{ osm_id }}" class="osm_id_line" target="_blank"><img src="{{ url_for('static', filename='img/way.png') }}">&nbsp;{{ osm_id }}</a>
     <small>
-        (<a href="https://localhost:8112/load_object?objects=w{{ osm_id }}" title="{{ _("load in JOSM") }}" target="_blank">josm</a>
+        (<a href="http://localhost:8111/load_object?objects=w{{ osm_id }}" title="{{ _("load in JOSM") }}" target="_blank">josm</a>
         | <a href="https://osm.org/edit?way={{ osm_id }}&comment=%23bikeparking" title="{{ _("edit with iD Editor") }}" target="_blank">iD</a>)
     </small>
 {% endif %}
