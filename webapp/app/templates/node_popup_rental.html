@@ -5,10 +5,10 @@
     <tbody>
 
 {% for col_name in node.keys() %}
-{% if col_name not in ['gml_id', 'geom', 'lat', 'lon', 'x', 'y', 'geojson', 'osm_geojson', 'int_osm_id', 'int_typ', 'int_name', 'int_ref', 'int_ref_name', 'int_capacity', 'int_brand', 'int_network', 'int_operator', 'target_operator', 'target_network'] %}
+    {% if col_name not in ['gml_id', 'geom', 'lat', 'lon', 'x', 'y', 'geojson', 'osm_geojson', 'int_osm_id', 'int_typ', 'int_name', 'int_ref', 'int_ref_name', 'int_capacity', 'int_brand', 'int_network', 'int_operator', 'target_operator', 'target_network', 'target_brand'] %}
         {% if node[col_name] %}
             <tr><th>{{ col_name }}</th><td>{{ node[col_name]|e }}</td></tr>
-         {% endif %}
+        {% endif %}
     {% endif %}
 {% endfor %}
 
@@ -28,7 +28,7 @@
             <tr><th>{{ _('Ref Name') }}</th><td {% if node['int_ref_name'] != node['name'] %} title="{{ node['name'] }}?" style="background-color: yellow;"{% endif %}>{{ node['int_ref_name']|e }}</td></tr>
     {% endif %}
     {% if node['int_brand'] %}
-        <tr><th>{{ _('Brand') }}</th><td {% if node['int_brand'] != node['brand'] %} title="{{ node['brand'] }}?" style="background-color: yellow;"{% endif %}>{{ node['int_brand']|e }}</td></tr>
+        <tr><th>{{ _('Brand') }}</th><td {% if node['int_brand'] != node['target_brand'] %} title="{{ node['target_brand'] }}?" style="background-color: yellow;"{% endif %}>{{ node['int_brand']|e }}</td></tr>
     {% endif %}
     {% if node['int_operator'] %}
             <tr><th>{{ _('Operator') }}</th><td {% if node['int_operator'] != node['target_operator'] %} title="{{ node['target_operator'] }}?" style="background-color: yellow;"{% endif %}>{{ node['int_operator']|e }}</td></tr>

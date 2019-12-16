@@ -20,7 +20,9 @@ WHERE osm.osm_id IS NULL;
 -- All rental stations matches - Multiple entries possible
 CREATE OR REPLACE VIEW extern.existing_rental_#SUFFIX# AS
 SELECT osm.osm_id int_osm_id, osm.brand int_brand, osm.network int_network, osm.operator int_operator, osm.capacity int_capacity, osm.ref int_ref, osm.ref_name int_ref_name, osm.name int_name, osm.typ int_typ,
-    '#BRAND#' AS brand,
+    '#BRAND#' AS target_brand,
+    rd.target_network,
+    rd.target_operator,
     city.*, 
     ST_AsGeoJSON(st_transform(city.geom,4326)) as geojson,
     ST_AsGeoJSON(st_transform(osm.geom,4326)) as osm_geojson,
@@ -28,6 +30,8 @@ SELECT osm.osm_id int_osm_id, osm.brand int_brand, osm.network int_network, osm.
 FROM extern.all_rental_#SUFFIX# city
     LEFT JOIN extern.osm_rental_#SUFFIX# osm
         ON osm.geom && ST_Expand(st_transform(city.geom,3857), 50)
+    LEFT JOIN extern.rental_data rd
+        ON rd.city = '#CITY#' AND rd.brand = '#BRAND#'
 WHERE city.uid NOT IN (SELECT uid FROM extern.missing_rental_#SUFFIX#);
 
 -- All rental stations matches

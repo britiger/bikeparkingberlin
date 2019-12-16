@@ -12,7 +12,7 @@ WHERE ST_WITHIN(geom, (SELECT ST_Union(geom) FROM imposm3.osm_borders WHERE osm_
 
 -- All rental stations should exists
 CREATE OR REPLACE VIEW extern.all_rental_nextbike_potsdam AS
-SELECT nb.target_network, nb.target_operator, all_rental_nextbike.* 
+SELECT all_rental_nextbike.* 
 FROM extern.all_rental_nextbike 
     LEFT JOIN extern.rental_nextbike nb ON api_ids && (SELECT api_ids FROM extern.rental_nextbike WHERE city = 'Potsdam')
 WHERE ARRAY[api_id] && (SELECT api_ids FROM extern.rental_nextbike WHERE city = 'Potsdam');
