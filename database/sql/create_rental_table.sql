@@ -69,5 +69,5 @@ CREATE OR REPLACE VIEW extern.rental_data AS
     SELECT city, brand, suffix, target_network, target_operator, search_values, datasource, datasource_link, license, license_link, center_lat, center_lon, admin_osm_id 
     FROM extern.rental_generic
 UNION ALL
-    SELECT city, target_brand AS brand, 'nextbike_'||LOWER(city) AS suffix, target_network, target_operator, search_values, 'nexbike GmbH', 'https://nextbike.de', 'unknown license', 'https://nextbike.de', center_lat, center_lon, admin_osm_id
+    SELECT city, target_brand AS brand, 'nextbike_'||LOWER(city) AS suffix, target_network, target_operator, search_values, 'nextbike GmbH', 'https://nextbike.de', 'unknown license', 'https://nextbike.net', center_lat, center_lon, admin_osm_id
     FROM extern.rental_nextbike;

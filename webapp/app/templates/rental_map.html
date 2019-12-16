@@ -73,6 +73,7 @@
                 <li>{{ _('Missing Rental') }}: {{ missing_rental }}</li>
                 <li>{{ _('Coverage') }}: {{ "%.2f"|format(100 - missing_rental / all_rental * 100) }}%</li>
                 <li>{{ _('Rentals only in OpenStreetMap') }}: {{ unknown_rental }}</li>
+                <li>{{ _('Datasource') }}: <a href="{{ rental_data['datasource_link'] }}">{{ rental_data['datasource'] }}</a> / {{ _('License') }}: <a href="{{ rental_data['license_link'] }}">{{ rental_data['license'] }}</a></li>
             </ul>
         </div>
         <div id="mapid"></div>

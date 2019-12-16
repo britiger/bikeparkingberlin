@@ -23,5 +23,13 @@
                 <li><a href="{{ row['datasource_link'] }}">{{ row['city'] }} - {{ row['datasource'] }}</a> (<a href="{{ row['license_link'] }}">{{ row['license'] }}</a>)</li>
             {% endfor %}
         </ul>
+
+        <h3>{{ _('Bicycle Rental') }}</h3>
+
+        <ul>
+            {% for row in _rental_data %}
+                    <li><a href="{{ row['datasource_link'] }}">{{ row['city'] }} - {{ row['datasource'] }}</a> (<a href="{{ row['license_link'] }}">{{ row['license'] }}</a>)</li>
+            {% endfor %}
+        </ul>
     </div>
 {%- endblock %}
