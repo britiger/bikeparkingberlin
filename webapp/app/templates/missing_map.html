@@ -85,7 +85,6 @@
 {% endblock %}
 
 {% block content %}
-    <div class ="container">
         <div class="page-header">
             <h1>{{ _('Missing Parking Map') }} {{ city }}
                 {% if is_cluster %}
@@ -114,5 +113,4 @@
             <li><input type="checkbox" id="show_green" checked="checked" onchange="load_geojson();" /> {{ _('green')}} - {{ _('Data found in OpenStreetMap')}}</li>
             <li><input type="checkbox" id="show_red" checked="checked" onchange="load_geojson();" /> {{ _('red')}} - {{ _('Missing data in OpenStreetMap')}}</li>
         </ul>
-    </div>
 {%- endblock %}

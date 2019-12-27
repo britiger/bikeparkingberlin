@@ -45,7 +45,9 @@
 
 {% endblock %}
 
-{% block content %}{% endblock %}
+<div class="container pt-4 pb-5">
+  {% block content %}{% endblock %}
+</div>
 
 {% block scripts %}
     <script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>

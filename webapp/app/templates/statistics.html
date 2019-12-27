@@ -15,7 +15,6 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container">
         <div class="page-header">
             <h1>{{ _('Statistics') }} {{ city_name }} -
                 {% if rental %}
@@ -219,7 +218,6 @@
         </table>
         {% endif %}
 
-    </div>
         <a href="#top" class="btn btn-primary" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
             {{ _('Back to Top') }} <i class="glyphicon glyphicon-chevron-up"></i>
         </a>

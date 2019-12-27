@@ -62,7 +62,6 @@
 {% endblock %}
 
 {% block content %}
-    <div class ="container">
         <div class="page-header">
             <h1>{{ _('Rental Map') }} {{ city }} ({{ brand }})</h1>
             <ul>
@@ -83,5 +82,4 @@
             <li><input type="checkbox" id="show_red" checked="checked" onchange="changeValue();" /> {{ _('red')}} - {{ _('Missing data in OpenStreetMap')}}</li>
             <li><input type="checkbox" id="show_purple" checked="checked" onchange="changeValue();" /> {{ _('purple')}} - {{ _('Rentals only in OpenStreetMap')}}</li>
         </ul>
-    </div>
 {%- endblock %}
