@@ -102,19 +102,47 @@
 
 {% block content %}
         <h1>{{ _('Parking Map') }}</h1>
-        <select id="selectTag" onchange="changeTag()">
-            <option value="bicycle_parking" selected="selected">{{ _('Bicycle Parking') }}</option>
-            <option value="capacity">{{ _('Capacity') }}</option>
-            <option value="covered">{{ _('Covered') }}</option>
-            <option value="access">{{ _('Access') }}</option>
-        </select>
-        <select id="selectValue" onchange="changeValue()">
-            <option>-</option>
-        </select>
+
+        <div class="card-group">
+            <div class="card">
+                <div class="card-header p-2" style="font-size: .875rem;">
+                    {{ _('Highlight') }}
+                </div>
+                <div class="card-body form-inline p-2">
+                    <select id="selectTag" onchange="changeTag()" class="form-control form-control-sm mr-2">
+                        <option value="bicycle_parking" selected="selected">{{ _('Bicycle Parking') }}</option>
+                        <option value="capacity">{{ _('Capacity') }}</option>
+                        <option value="covered">{{ _('Covered') }}</option>
+                        <option value="access">{{ _('Access') }}</option>
+                    </select>
+                    <select id="selectValue" onchange="changeValue()" class="form-control form-control-sm">
+                        <option>-</option>
+                    </select>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header p-2" style="font-size: .875rem;">
+                    {{ _('Legend and filter') }}
+                </div>
+                <div class="card-body p-2">
+                    <ul class="list-unstyled m-0">
+                        <li class="form-check form-control-sm">
+                            <input class="form-check-input" type="checkbox" id="show_green" checked="checked" onchange="changeValue()" /> 
+                            <label class="form-check-label">{{ _('green')}} - {{ _('Tag exists and matched value if defined')}}</label>
+                        </li>
+                        <li class="form-check form-control-sm">
+                            <input class="form-check-input" type="checkbox" id="show_yellow" checked="checked" onchange="changeValue()" /> 
+                            <label class="form-check-label">{{ _('yellow')}} - {{ _('Have this tag but value don\'t match') }}</label>
+                        </li>
+                        <li class="form-check form-control-sm">
+                            <input class="form-check-input" type="checkbox" id="show_red" checked="checked" onchange="changeValue()" /> 
+                            <label class="form-check-label">{{ _('red')}} - {{ _('Tag not defined')}}</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
         <div id="mapid"></div>
-        <ul style="list-style-type: none">
-            <li><label class="m-0"><input type="checkbox" id="show_green" checked="checked" onchange="changeValue()" /> {{ _('green')}} - {{ _('Tag exists and matched value if defined')}}</label></li>
-            <li><label class="m-0"><input type="checkbox" id="show_yellow" checked="checked" onchange="changeValue()" /> {{ _('yellow')}} - {{ _('Have this tag but value don\'t match') }}</label></li>
-            <li><label class="m-0"><input type="checkbox" id="show_red" checked="checked" onchange="changeValue()" /> {{ _('red')}} - {{ _('Tag not defined')}}</label></li>
-        </ul>
+
 {%- endblock %}
