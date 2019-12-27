@@ -50,10 +50,6 @@ msgstr "Miet Karte"
 msgid "Imprint"
 msgstr "Impressum"
 
-#: app/templates/base.html:48
-msgid "Back to Top"
-msgstr "Nach Oben"
-
 #: app/templates/imprint.html:11
 msgid "Contact"
 msgstr "Kontakt"
@@ -313,3 +309,6 @@ msgstr "nach Position"
 msgid "by Fee"
 msgstr "nach Bezahlung"
 
+#: app/templates/statistics.html:220
+msgid "Back to Top"
+msgstr "Nach Oben"
