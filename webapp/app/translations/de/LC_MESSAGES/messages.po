@@ -22,8 +22,8 @@ msgstr ""
 #: app/templates/base.html:16 app/templates/node_popup.html:7
 #: app/templates/node_popup_external.html:36 app/templates/parking_map.html:112
 #: app/templates/statistics.html:24 app/templates/statistics.html:33
-msgid "Bicycle Parking"
-msgstr "Fahrradparkplätze"
+msgid "OSM Bicycle Parking"
+msgstr "OSM Fahrradparkplätze"
 
 #: app/templates/base.html:23 app/templates/statistics.html:3
 #: app/templates/statistics.html:20
