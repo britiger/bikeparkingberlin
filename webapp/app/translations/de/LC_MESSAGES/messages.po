@@ -25,10 +25,6 @@ msgstr ""
 msgid "Bicycle Parking"
 msgstr "Fahrradparkplätze"
 
-#: app/templates/base.html:22
-msgid "Start"
-msgstr ""
-
 #: app/templates/base.html:23 app/templates/statistics.html:3
 #: app/templates/statistics.html:20
 msgid "Statistics"
