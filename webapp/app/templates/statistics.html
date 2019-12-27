@@ -15,7 +15,6 @@
 {% endblock %}
 
 {% block content %}
-        <div class="page-header">
             <h1>{{ _('Statistics') }} {{ city_name }} -
                 {% if rental %}
                     {{ _('Bicycle Rental') }}
@@ -35,7 +34,6 @@
                     {% endif %}
                 </li>
             </ul>
-        </div>
 
         <form action="javascript:searchText()" onsubmit="return searchText()" id="searchForm">
             <input type="text" id="searchTextField" />

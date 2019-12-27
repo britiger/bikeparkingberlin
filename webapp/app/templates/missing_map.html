@@ -85,7 +85,6 @@
 {% endblock %}
 
 {% block content %}
-        <div class="page-header">
             <h1>{{ _('Missing Parking Map') }} {{ city }}
                 {% if is_cluster %}
                     <small>({{ _('Clustered') }})</small>
@@ -107,7 +106,7 @@
                     <a href="/geojson/missing/{{ city }}{% if is_cluster %}?is_cluster=true{% endif %}" target="_blank">{{ _('Export Missing') }} (GeoJSON)</a>
                 </li>
             </ul>
-        </div>
+
         <div id="mapid"></div>
         <ul style="list-style-type: none">
             <li><input type="checkbox" id="show_green" checked="checked" onchange="load_geojson();" /> {{ _('green')}} - {{ _('Data found in OpenStreetMap')}}</li>
