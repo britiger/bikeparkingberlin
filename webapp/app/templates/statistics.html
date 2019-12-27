@@ -1,6 +1,6 @@
 {%- extends "base.html" %}
 
-{% block title %}{{ _('Statistics') }} {{ city_name }}{% endblock %} 
+{% block title %}{{ _('Statistics') }} {{ city_name }}{% endblock %}
 
 {% block scripts %}
     {{super()}}
@@ -26,7 +26,7 @@
                 {% if osm_id != 0 %}
                     <li>{% with osm_id=osm_id %}{% include "osm_id_way.html" %}{% endwith %}</li>
                 {% endif %}
-                <li>{{ _('More') }}: 
+                <li>{{ _('More') }}:
                     {% if rental %}
                         <a href="?">{{ _('Bicycle Parking') }}</a>
                     {% else %}

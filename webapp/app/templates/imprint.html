@@ -1,6 +1,6 @@
 {%- extends "base.html" %}
 
-{% block title %}{{ _('Imprint') }}{% endblock %} 
+{% block title %}{{ _('Imprint') }}{% endblock %}
 
 {% block content %}
         <h1>{{ _('Imprint') }}</h1>
@@ -10,7 +10,7 @@
         <p>{{ imprint_addr|replace('\n', '<br/>'|safe) }}</p>
 
         <p>{{ _('Mail') }}: <a href="mailto:{{ imprint_mail }}">{{ imprint_mail }}</a></p>
-        <h1>Datenschutzerklärung</h1>        
+        <h1>Datenschutzerklärung</h1>
         <h2>Auskunft, Löschung, Sperrung</h2>
         <p>
         Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung sowie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit unter der oben angegebenen Adresse an uns wenden.
@@ -28,7 +28,7 @@
         Diese Daten sind nicht bestimmten Personen zuordenbar. Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen. Wir behalten uns vor, diese Daten nachträglich zu prüfen, wenn uns konkrete Anhaltspunkte für eine rechtswidrige und missbräuchliche Nutzung bekannt werden.
         </p>
         <h2>OpenStreetMap</h2>
-        
+
         <p>Die Seite bindet Landkarten des Dienstes "OpenStreetMap" ein (https://www.openstreetmap.org) ein, die auf Grundlage der Open Data Commons Open Database Lizenz (ODbL) durch die OpenStreetMap Foundation (OSMF) angeboten werden. siehe Datenschutzerklärung: <a href="https://wiki.openstreetmap.org/wiki/Privacy_Policy">https://wiki.openstreetmap.org/wiki/Privacy_Policy</a>).</p>
         <p>Nach unserer Kenntnis werden die Daten der Nutzer durch OpenStreetMap ausschließlich zu Zwecken der Darstellung der Kartenfunktionen und Zwischenspeicherung der gewählten Einstellungen verwendet. Zu diesen Daten können insbesondere IP-Adressen und Standortdaten der Nutzer gehören, die jedoch nicht ohne deren Einwilligung, erhoben werden.</p>
 {%- endblock %}

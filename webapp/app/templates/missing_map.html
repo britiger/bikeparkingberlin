@@ -1,6 +1,6 @@
 {%- extends "base.html" %}
 
-{% block title %}{{ _('Missing Parking Map') }} {{ city }}{% endblock %} 
+{% block title %}{{ _('Missing Parking Map') }} {{ city }}{% endblock %}
 
 {% block scripts %}
     {{super()}}
@@ -42,7 +42,7 @@
                     load_existing(customParams);
                 }
                 });
-            
+
         }
 
         function load_existing(customParams) {
@@ -95,7 +95,7 @@
                 <li>{{ _('Missing Parking') }}: {{ missing_parking }}</li>
                 <li>{{ _('Coverage') }}: {{ "%.2f"|format(100 - missing_parking / all_parking * 100) }}%</li>
                 <li>{{ _('Datasource') }}: <a href="{{ external_data['datasource_link'] }}">{{ external_data['datasource'] }}</a> / {{ _('License') }}: <a href="{{ external_data['license_link'] }}">{{ external_data['license'] }}</a></li>
-                <li>{{ _('More') }}: 
+                <li>{{ _('More') }}:
                     {% if external_data['is_cluster'] %}
                         {% if is_cluster %}
                             <a href="?">{{ _('Remove Clustering') }}</a> &#x2022;
