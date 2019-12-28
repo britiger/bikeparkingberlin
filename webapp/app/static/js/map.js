@@ -26,7 +26,7 @@ var nodes = new L.geoJson(null, {onEachFeature: onEachFeaturePopup,
         function (feature, latlng) {
             var colorm = 'red';
             // for osm-point
-            if ( feature.properties.requestedValue && feature.properties.requestedValue != '' ) {
+            if ( typeof feature.properties.requestedValue !== 'undefined' && feature.properties.requestedValue != '' ) {
                 selectBox = document.getElementById("selectValue");
                 if (selectBox.value == '-' || selectBox.value == feature.properties.requestedValue) {
                     colorm = 'green';
@@ -37,7 +37,7 @@ var nodes = new L.geoJson(null, {onEachFeature: onEachFeaturePopup,
                     if (!document.getElementById("show_yellow").checked)
                         return null;
                 }
-            } else if( feature.properties.requestedValue ) {
+            } else if( typeof feature.properties.requestedValue !== 'undefined' ) {
                 // feature.properties.requestedValue == '' if exists
                 if (!document.getElementById("show_red").checked)
                     return null;
