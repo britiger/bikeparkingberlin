@@ -108,17 +108,21 @@
                 <div class="card-header p-2" style="font-size: .875rem;">
                     {{ _('Highlight') }}
                 </div>
-                <div class="card-body form-inline p-2">
-                    <select id="selectTag" onchange="changeTag()" class="form-control form-control-sm mr-2">
-                        <option value="bicycle_parking" selected="selected">{{ _('Bicycle Parking') }}</option>
-                        <option value="capacity">{{ _('Capacity') }}</option>
-                        <option value="covered">{{ _('Covered') }}</option>
-                        <option value="access">{{ _('Access') }}</option>
-                    </select>
-                    <select id="selectValue" onchange="changeValue()" class="form-control form-control-sm">
-                        <option>-</option>
-                    </select>
-                </div>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <select id="selectTag" onchange="changeTag()" class="form-control form-control-sm mr-2">
+                            <option value="bicycle_parking" selected="selected">{{ _('Bicycle Parking') }}</option>
+                            <option value="capacity">{{ _('Capacity') }}</option>
+                            <option value="covered">{{ _('Covered') }}</option>
+                            <option value="access">{{ _('Access') }}</option>
+                        </select>
+                    </li>
+                    <li class="list-group-item">
+                        <select id="selectValue" onchange="changeValue()" class="form-control form-control-sm">
+                            <option>-</option>
+                        </select>
+                    </li>
+                </ul>
             </div>
             <div class="card">
                 <div class="card-header p-2" style="font-size: .875rem;">

@@ -85,31 +85,50 @@
 {% endblock %}
 
 {% block content %}
-            <h1>{{ _('Missing Parking Map') }} {{ city }}
-                {% if is_cluster %}
-                    <small>({{ _('Clustered') }})</small>
-                {% endif %}
-            </h1>
-            <ul>
-                <li>{{ _('Total Parking') }}: {{ all_parking }}</li>
-                <li>{{ _('Missing Parking') }}: {{ missing_parking }}</li>
-                <li>{{ _('Coverage') }}: {{ "%.2f"|format(100 - missing_parking / all_parking * 100) }}%</li>
-                <li>{{ _('Datasource') }}: <a href="{{ external_data['datasource_link'] }}">{{ external_data['datasource'] }}</a> / {{ _('License') }}: <a href="{{ external_data['license_link'] }}">{{ external_data['license'] }}</a></li>
-                <li>{{ _('More') }}:
-                    {% if external_data['is_cluster'] %}
-                        {% if is_cluster %}
-                            <a href="?">{{ _('Remove Clustering') }}</a> &#x2022;
-                        {% else %}
-                            <a href="?is_cluster=true">{{ _('Show Clustered') }}</a> &#x2022;
+        <h1>{{ _('Missing Parking Map') }} {{ city }}
+            {% if is_cluster %}
+                <small>({{ _('Clustered') }})</small>
+            {% endif %}
+        </h1>
+        <div class="card-group">
+            <div class="card">
+                <div class="card-header p-2" style="font-size: .875rem;">
+                    {{ _('Information') }}
+                </div>
+                <ul class="list-group" style="font-size: .875rem;">
+                    <li class="list-group-item">{{ _('Total Parking') }}: {{ all_parking }}</li>
+                    <li class="list-group-item">{{ _('Missing Parking') }}: {{ missing_parking }}</li>
+                    <li class="list-group-item">{{ _('Coverage') }}: {{ "%.2f"|format(100 - missing_parking / all_parking * 100) }}%</li>
+                    <li class="list-group-item">{{ _('Datasource') }}: <a href="{{ external_data['datasource_link'] }}">{{ external_data['datasource'] }}</a> / {{ _('License') }}: <a href="{{ external_data['license_link'] }}">{{ external_data['license'] }}</a></li>
+                    <li class="list-group-item">{{ _('More') }}:
+                        {% if external_data['is_cluster'] %}
+                            {% if is_cluster %}
+                                <a href="?">{{ _('Remove Clustering') }}</a> &#x2022;
+                            {% else %}
+                                <a href="?is_cluster=true">{{ _('Show Clustered') }}</a> &#x2022;
+                            {% endif %}
                         {% endif %}
-                    {% endif %}
-                    <a href="/geojson/missing/{{ city }}{% if is_cluster %}?is_cluster=true{% endif %}" target="_blank">{{ _('Export Missing') }} (GeoJSON)</a>
-                </li>
-            </ul>
-
+                        <a href="/geojson/missing/{{ city }}{% if is_cluster %}?is_cluster=true{% endif %}" target="_blank">{{ _('Export Missing') }} (GeoJSON)</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="card-header p-2" style="font-size: .875rem;">
+                    {{ _('Legend and filter') }}
+                </div>
+                <div class="card-body p-2">
+                    <ul class="list-unstyled m-0">
+                        <li class="form-check form-control-sm">
+                            <input type="checkbox" id="show_green" checked="checked" onchange="load_geojson();" />
+                            <label class="form-check-label" for="show_green">{{ _('green')}} - {{ _('Data found in OpenStreetMap')}}</label>
+                        </li>
+                        <li class="form-check form-control-sm">
+                            <input type="checkbox" id="show_red" checked="checked" onchange="load_geojson();" /> 
+                            <label class="form-check-label" for="show_red">{{ _('red')}} - {{ _('Missing data in OpenStreetMap')}}</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <div id="mapid"></div>
-        <ul style="list-style-type: none">
-            <li><input type="checkbox" id="show_green" checked="checked" onchange="load_geojson();" /> {{ _('green')}} - {{ _('Data found in OpenStreetMap')}}</li>
-            <li><input type="checkbox" id="show_red" checked="checked" onchange="load_geojson();" /> {{ _('red')}} - {{ _('Missing data in OpenStreetMap')}}</li>
-        </ul>
 {%- endblock %}
