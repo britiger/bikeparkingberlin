@@ -96,9 +96,9 @@
                     {{ _('Information') }}
                 </div>
                 <ul class="list-group" style="font-size: .875rem;">
-                    <li class="list-group-item">{{ _('Total Parking') }}: {{ all_parking }}</li>
-                    <li class="list-group-item">{{ _('Missing Parking') }}: {{ missing_parking }}</li>
-                    <li class="list-group-item">{{ _('Coverage') }}: {{ "%.2f"|format(100 - missing_parking / all_parking * 100) }}%</li>
+                    <li class="list-group-item">{{ _('Total Parking') }}: {{ all_parking }}
+                        <br/>{{ _('Missing Parking') }}: {{ missing_parking }}
+                        <br/>{{ _('Coverage') }}: {{ "%.2f"|format(100 - missing_parking / all_parking * 100) }}%</li>
                     <li class="list-group-item">{{ _('Datasource') }}: <a href="{{ external_data['datasource_link'] }}">{{ external_data['datasource'] }}</a> / {{ _('License') }}: <a href="{{ external_data['license_link'] }}">{{ external_data['license'] }}</a></li>
                     <li class="list-group-item">{{ _('More') }}:
                         {% if external_data['is_cluster'] %}
