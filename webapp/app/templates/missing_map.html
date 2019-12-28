@@ -1,6 +1,6 @@
 {%- extends "base.html" %}
 
-{% block title %}{{ _('Missing Parking Map') }} {{ city }}{% endblock %} 
+{% block title %}{{ _('Missing Parking Map') }} {{ city }}{% endblock %}
 
 {% block scripts %}
     {{super()}}
@@ -42,7 +42,7 @@
                     load_existing(customParams);
                 }
                 });
-            
+
         }
 
         function load_existing(customParams) {
@@ -85,8 +85,6 @@
 {% endblock %}
 
 {% block content %}
-    <div class ="container">
-        <div class="page-header">
             <h1>{{ _('Missing Parking Map') }} {{ city }}
                 {% if is_cluster %}
                     <small>({{ _('Clustered') }})</small>
@@ -97,7 +95,7 @@
                 <li>{{ _('Missing Parking') }}: {{ missing_parking }}</li>
                 <li>{{ _('Coverage') }}: {{ "%.2f"|format(100 - missing_parking / all_parking * 100) }}%</li>
                 <li>{{ _('Datasource') }}: <a href="{{ external_data['datasource_link'] }}">{{ external_data['datasource'] }}</a> / {{ _('License') }}: <a href="{{ external_data['license_link'] }}">{{ external_data['license'] }}</a></li>
-                <li>{{ _('More') }}: 
+                <li>{{ _('More') }}:
                     {% if external_data['is_cluster'] %}
                         {% if is_cluster %}
                             <a href="?">{{ _('Remove Clustering') }}</a> &#x2022;
@@ -108,11 +106,10 @@
                     <a href="/geojson/missing/{{ city }}{% if is_cluster %}?is_cluster=true{% endif %}" target="_blank">{{ _('Export Missing') }} (GeoJSON)</a>
                 </li>
             </ul>
-        </div>
+
         <div id="mapid"></div>
         <ul style="list-style-type: none">
             <li><input type="checkbox" id="show_green" checked="checked" onchange="load_geojson();" /> {{ _('green')}} - {{ _('Data found in OpenStreetMap')}}</li>
             <li><input type="checkbox" id="show_red" checked="checked" onchange="load_geojson();" /> {{ _('red')}} - {{ _('Missing data in OpenStreetMap')}}</li>
         </ul>
-    </div>
 {%- endblock %}

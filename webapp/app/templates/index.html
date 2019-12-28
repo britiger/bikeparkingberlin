@@ -1,12 +1,9 @@
 {%- extends "base.html" %}
 
-{% block title %}Start{% endblock %} 
+{% block title %}Start{% endblock %}
 
 {% block content %}
-    <div class="container">
-        <div class="page-header">
-            <h1>{{ _('Bicycle Parking in OpenStreetMap') }}</h1>
-        </div>
+        <h1>{{ _('Bicycle Parking in OpenStreetMap') }}</h1>
 
         <h2>{{ _('Wiki pages') }}</h2>
 
@@ -31,5 +28,4 @@
                     <li><a href="{{ row['datasource_link'] }}">{{ row['city'] }} - {{ row['datasource'] }}</a> (<a href="{{ row['license_link'] }}">{{ row['license'] }}</a>)</li>
             {% endfor %}
         </ul>
-    </div>
 {%- endblock %}
