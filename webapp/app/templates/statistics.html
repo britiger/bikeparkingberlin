@@ -80,7 +80,7 @@
                     <td>{{ row['bicycle_parking']|e }}</td>
                     <td>{{ row['count'] }}</td>
                     <td>{{ "%.2f"|format(row['count'] / ns.totalCount * 100) }}&nbsp;%</td>
-                    <td>{% with key='bicycle_parking', value=row['bicycle_parking'] %}{% include "overpass_link.html" %}{% endwith %}</td>
+                    <td>{% with key='bicycle_parking', value=row['bicycle_parking'], city=city_name %}{% include "overpass_link.html" %}{% endwith %}</td>
                 </tr>
             {% endfor %}
             </tbody>
@@ -103,7 +103,7 @@
                     <td>{{ row['access']|e }}</td>
                     <td>{{ row['count'] }}</td>
                     <td>{{ "%.2f"|format(row['count'] / ns.totalCount * 100) }}&nbsp;%</td>
-                    <td>{% with key='access', value=row['access'] %}{% include "overpass_link.html" %}{% endwith %}</td>
+                    <td>{% with key='access', value=row['access'], city=city_name %}{% include "overpass_link.html" %}{% endwith %}</td>
                 </tr>
             {% endfor %}
             </tbody>
@@ -126,7 +126,7 @@
                     <td>{{ row['covered']|e }}</td>
                     <td>{{ row['count'] }}</td>
                     <td>{{ "%.2f"|format(row['count'] / ns.totalCount * 100) }}&nbsp;%</td>
-                    <td>{% with key='covered', value=row['covered'] %}{% include "overpass_link.html" %}{% endwith %}</td>
+                    <td>{% with key='covered', value=row['covered'], city=city_name %}{% include "overpass_link.html" %}{% endwith %}</td>
                 </tr>
             {% endfor %}
             </tbody>
@@ -148,7 +148,7 @@
                     <td>{{ row['operator']|e }}</td>
                     <td>{{ row['count'] }}</td>
                     <td>{{ "%.2f"|format(row['count'] / ns.totalCount * 100) }}&nbsp;%</td>
-                    <td>{% with key='operator', value=row['operator'] %}{% include "overpass_link.html" %}{% endwith %}</td>
+                    <td>{% with key='operator', value=row['operator'], city=city_name %}{% include "overpass_link.html" %}{% endwith %}</td>
                 </tr>
             {% endfor %}
             </tbody>
@@ -170,7 +170,7 @@
                     <td>{{ row['network']|e }}</td>
                     <td>{{ row['count'] }}</td>
                     <td>{{ "%.2f"|format(row['count'] / ns.totalCount * 100) }}&nbsp;%</td>
-                    <td>{% with key='network', value=row['network'] %}{% include "overpass_link.html" %}{% endwith %}</td>
+                    <td>{% with key='network', value=row['network'], city=city_name %}{% include "overpass_link.html" %}{% endwith %}</td>
                 </tr>
             {% endfor %}
             </tbody>
@@ -193,7 +193,7 @@
                     <td>{{ row['position']|e if row['position'] != None }}</td>
                     <td>{{ row['count'] }}</td>
                     <td>{{ "%.2f"|format(row['count'] / ns.totalCount * 100) }}&nbsp;%</td>
-                    <td>{% with key='bicycle:position', value=row['fee'] %}{% include "overpass_link.html" %}{% endwith %}</td>
+                    <td>{% with key='bicycle:position', value=row['fee'], city=city_name %}{% include "overpass_link.html" %}{% endwith %}</td>
                 </tr>
             {% endfor %}
             </tbody>
@@ -216,7 +216,7 @@
                     <td>{{ row['fee']|e }}</td>
                     <td>{{ row['count'] }}</td>
                     <td>{{ "%.2f"|format(row['count'] / ns.totalCount * 100) }}&nbsp;%</td>
-                    <td>{% with key='fee', value=row['fee'] %}{% include "overpass_link.html" %}{% endwith %}</td>
+                    <td>{% with key='fee', value=row['fee'], city=city_name %}{% include "overpass_link.html" %}{% endwith %}</td>
                 </tr>
             {% endfor %}
             </tbody>

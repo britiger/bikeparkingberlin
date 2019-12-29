@@ -1,5 +1,17 @@
-{% if value == '' %}
-    <a href="https://overpass-turbo.eu/?key={{key}}&template=key" target="_blank">{{ _("Overpass Turbo")}}</a>
+{% if rental %}
+    {% if key != 'bicycle_rental' %}
+        {% set bcp_val = 'bicycle_rental%3D%2A%20and%20' %}
+    {% endif %}
 {% else %}
-    <a href="https://overpass-turbo.eu/?key={{key}}&value={{value}}&template=key-value" target="_blank">{{ _("Overpass Turbo")}}</a>
+    {% if key != 'bicycle_parking' %}
+        {% set bcp_val = 'bicycle_parking%3D%2A%20and%20' %}
+    {% endif %}
+{% endif %}
+{% if city %}
+    {% set in_city_search = '%20in%20' + city %}
+{% endif %}
+{% if value == '' %}
+    <a href="https://overpass-turbo.eu/?w={{bcp_val}}{{key}}%3D%2A{{in_city_search}}" target="_blank">{{ _("Overpass Turbo")}}</a>
+{% else %}
+    <a href="https://overpass-turbo.eu/?w={{bcp_val}}{{key}}%3D{{value}}{{in_city_search}}" target="_blank">{{ _("Overpass Turbo")}}</a>
 {% endif %}
