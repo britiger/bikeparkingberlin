@@ -44,7 +44,7 @@ def geojson_missing(city):
         filter_execute = {'linestring': linestring}
         lessContent = False
 
-    sql = text('SELECT mp.*, fb.feedback, fb.do_not_exists, ST_X(ST_Centroid(ST_Transform(mp.geom, 4326))) AS lon, ST_Y(ST_Centroid(ST_Transform(mp.geom, 4326))) AS lat FROM extern.missing_parking_' + suffix  + ' mp LEFT JOIN extern.external_feedback fb ON  ST_EQUALS(mp.geom,fb.geom) ' + where_condition)
+    sql = text('SELECT mp.*, fb.feedback, fb.do_not_exists, ST_X(ST_Centroid(ST_Transform(mp.geom, 4326))) AS lon, ST_Y(ST_Centroid(ST_Transform(mp.geom, 4326))) AS lat FROM extern.missing_parking_' + suffix + ' mp LEFT JOIN extern.external_feedback fb ON ST_EQUALS(mp.geom,fb.geom) ' + where_condition)
     result = db.engine.execute(sql, filter_execute)
 
     return render_geojson_nodes_external(result, city, lessContent=lessContent)

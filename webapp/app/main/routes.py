@@ -126,10 +126,13 @@ def missingmap(city):
     sql = text('SELECT count(*) from extern.all_parking_' + suffix)
     all_parking = db.engine.execute(sql).fetchone()[0]
 
-    sql = text('SELECT count(*) from extern.missing_parking_' + suffix)
+    sql = text('SELECT count(*) from extern.missing_parking_' + suffix  + ' mp LEFT JOIN extern.external_feedback fb ON ST_EQUALS(mp.geom,fb.geom) WHERE fb.do_not_exists IS NULL OR NOT fb.do_not_exists' )
     missing_parking = db.engine.execute(sql).fetchone()[0]
 
-    return render_template('missing_map.html', city=city, all_parking=all_parking, missing_parking=missing_parking, external_data=external_data, is_cluster=is_cluster)
+    sql = text('SELECT count(*) from extern.external_feedback WHERE suffix=:suffix')
+    do_not_exists = db.engine.execute(sql, {'suffix' : suffix}).fetchone()[0]
+
+    return render_template('missing_map.html', city=city, all_parking=all_parking, missing_parking=missing_parking, do_not_exists=do_not_exists, external_data=external_data, is_cluster=is_cluster)
 
 
 @bp.route('/rentalmap/<city>/<brand>')

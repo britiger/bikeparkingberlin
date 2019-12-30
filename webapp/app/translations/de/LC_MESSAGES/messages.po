@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Bike Parking Berlin\n"
 "Report-Msgid-Bugs-To: osm@lorenz.lu\n"
-"POT-Creation-Date: 2019-12-28 23:43+0100\n"
+"POT-Creation-Date: 2019-12-30 01:47+0100\n"
 "PO-Revision-Date: 2018-07-06 18:12+0200\n"
 "Last-Translator: Christopher Lorenz <osm@lorenz.lu>\n"
 "Language: de\n"
@@ -93,60 +93,68 @@ msgstr ""
 msgid "Total Parking"
 msgstr "Gesamt Parkplätze"
 
-#: app/templates/missing_map.html:100
+#: app/templates/missing_map.html:101 app/templates/missing_map.html:134
+msgid "Not Existing"
+msgstr "Nicht Vorhanden"
+
+#: app/templates/missing_map.html:103
 msgid "Missing Parking"
 msgstr "Fehlende Parkplätze"
 
-#: app/templates/missing_map.html:101 app/templates/rental_map.html:78
+#: app/templates/missing_map.html:104 app/templates/rental_map.html:78
 msgid "Coverage"
 msgstr "Abdeckung"
 
-#: app/templates/missing_map.html:102 app/templates/rental_map.html:79
+#: app/templates/missing_map.html:105 app/templates/rental_map.html:79
 msgid "Datasource"
 msgstr "Datenquelle"
 
-#: app/templates/missing_map.html:102 app/templates/rental_map.html:79
+#: app/templates/missing_map.html:105 app/templates/rental_map.html:79
 msgid "License"
 msgstr "Lizenz"
 
-#: app/templates/missing_map.html:103 app/templates/statistics.html:29
+#: app/templates/missing_map.html:106 app/templates/statistics.html:29
 msgid "More"
 msgstr "Mehr"
 
-#: app/templates/missing_map.html:106
+#: app/templates/missing_map.html:109
 msgid "Remove Clustering"
 msgstr "Gruppierung Entfernen"
 
-#: app/templates/missing_map.html:108
+#: app/templates/missing_map.html:111
 msgid "Show Clustered"
 msgstr "Gruppiert Anzeigen"
 
-#: app/templates/missing_map.html:111
+#: app/templates/missing_map.html:114
 msgid "Export Missing"
 msgstr "Fehlende Exportieren"
 
-#: app/templates/missing_map.html:117 app/templates/parking_map.html:129
+#: app/templates/missing_map.html:120 app/templates/parking_map.html:129
 #: app/templates/rental_map.html:84
 msgid "Legend and filter"
 msgstr "Legende und Filter"
 
-#: app/templates/missing_map.html:123 app/templates/parking_map.html:135
+#: app/templates/missing_map.html:126 app/templates/parking_map.html:135
 #: app/templates/rental_map.html:90
 msgid "green"
 msgstr "grün"
 
-#: app/templates/missing_map.html:123 app/templates/rental_map.html:90
+#: app/templates/missing_map.html:126 app/templates/rental_map.html:90
 msgid "Data found in OpenStreetMap"
 msgstr "Daten in OpenStreetMap gefunden"
 
-#: app/templates/missing_map.html:127 app/templates/parking_map.html:143
+#: app/templates/missing_map.html:130 app/templates/parking_map.html:143
 #: app/templates/rental_map.html:98
 msgid "red"
 msgstr "rot"
 
-#: app/templates/missing_map.html:127 app/templates/rental_map.html:98
+#: app/templates/missing_map.html:130 app/templates/rental_map.html:98
 msgid "Missing data in OpenStreetMap"
 msgstr "Fehlende Daten in OpenStreetMap"
+
+#: app/templates/missing_map.html:134
+msgid "blue"
+msgstr "blau"
 
 #: app/templates/node_popup.html:4 app/templates/node_popup_external.html:33
 #: app/templates/node_popup_rental.html:22
@@ -215,7 +223,7 @@ msgstr "Netzwerk"
 msgid "open in relation analyzer"
 msgstr "Im Relation Analyzer öffen"
 
-#: app/templates/overpass_link.html:2 app/templates/overpass_link.html:4
+#: app/templates/overpass_link.html:14 app/templates/overpass_link.html:16
 msgid "Overpass Turbo"
 msgstr ""
 
