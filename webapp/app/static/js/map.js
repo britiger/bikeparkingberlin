@@ -46,6 +46,12 @@ var nodes = new L.geoJson(null, {onEachFeature: onEachFeaturePopup,
             if ( feature.properties.missing && feature.properties.missing == 'no') {
                 colorm = 'green';
             }
+            if ( feature.properties.do_not_exists ) {
+                colorm = 'blue';
+                if (!document.getElementById("show_"+colorm).checked) {
+                    return null;
+                }
+            }
             // for rental data
             if ( feature.properties._color ) {
                 colorm = feature.properties._color;

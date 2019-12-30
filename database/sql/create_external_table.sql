@@ -15,3 +15,12 @@ CREATE TABLE IF NOT EXISTS extern.external_data (
     admin_osm_id BIGINT,
     is_cluster BOOLEAN DEFAULT false
 );
+
+CREATE TABLE IF NOT EXISTS extern.external_feedback (
+    id SERIAL,
+    suffix VARCHAR(255) NOT NULL,
+    osm_user VARCHAR(255),
+    do_not_exists BOOLEAN,
+    feedback TEXT,
+    geom geometry(Geometry,3857)
+);

@@ -40,11 +40,11 @@ def geojson_missing(city):
     if bbox != '':
         (southwest_lng, southwest_lat, northeast_lng, northeast_lat) = bbox.split(',')
         linestring = 'LINESTRING(' + southwest_lng + ' ' + southwest_lat + ',' + northeast_lng + ' ' + northeast_lat + ')'
-        where_condition = ' WHERE ST_WITHIN(st_transform(geom,4326), ST_Envelope(ST_GeomFromText(:linestring, 4326) ) )'
+        where_condition = ' WHERE ST_WITHIN(st_transform(mp.geom,4326), ST_Envelope(ST_GeomFromText(:linestring, 4326) ) )'
         filter_execute = {'linestring': linestring}
         lessContent = False
 
-    sql = text('SELECT *, ST_X(ST_Centroid(ST_Transform(geom, 4326))) AS lon, ST_Y(ST_Centroid(ST_Transform(geom, 4326))) AS lat FROM extern.missing_parking_' + suffix + where_condition)
+    sql = text('SELECT mp.*, fb.feedback, fb.do_not_exists, ST_X(ST_Centroid(ST_Transform(mp.geom, 4326))) AS lon, ST_Y(ST_Centroid(ST_Transform(mp.geom, 4326))) AS lat FROM extern.missing_parking_' + suffix  + ' mp LEFT JOIN extern.external_feedback fb ON  ST_EQUALS(mp.geom,fb.geom) ' + where_condition)
     result = db.engine.execute(sql, filter_execute)
 
     return render_geojson_nodes_external(result, city, lessContent=lessContent)
