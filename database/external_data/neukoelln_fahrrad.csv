@@ -230,7 +230,7 @@ Anzahl;Art;Überberdacht;ÖPNV;Ort;Jahr;Adresse;Projekt;lat;lon
 3;A;N;N;F;2018;Reuterstraße 66;Anlehnbügel 2018 (SenUVK);52.486294;13.428757
 3;A;N;N;F;2018;Richardplatz 28;Anlehnbügel 2018 (SenUVK);52.47419;13.446312
 3;A;N;N;F;2018;Richardplatz 2b;Anlehnbügel 2018 (SenUVK);52.47464;13.446285
-3;A;N;N;Geh;2018;Richardplatz 9 (Spielplatz);Anlehnbügel 2018 (SenUVK);52.47434;13.444049
+3;A;N;N;Geh;2018;Richardplatz 9 (Spielplatz);Anlehnbügel 2018 (SenUVK);52.474326;13.443644
 2;A;N;N;Geh;2018;Richardstraße 108;Anlehnbügel 2018 (SenUVK);52.478294;13.439162
 3;A;N;N;F;2018;Richardstraße 12;Anlehnbügel 2018 (SenUVK);52.47767;13.439705
 3;A;N;N;Geh;2018;Richardstraße 51;Anlehnbügel 2018 (SenUVK);52.472527;13.445518
@@ -401,7 +401,7 @@ Anzahl;Art;Überberdacht;ÖPNV;Ort;Jahr;Adresse;Projekt;lat;lon
 10;A;N;N;F;2019;Boddinstraße 22;Anlehnbügel 2018 (SenUVK);52.48027;13.428407
 3;A;N;N;Geh;2019;Boddinstraße 46;Anlehnbügel 2018 (SenUVK);52.480034;13.429225
 2;A;N;N;Geh;2019;Böhmische Straße 52;Anlehnbügel 2018 (SenUVK);52.47264;13.447207
-3;A;N;N;Geh;2019;Bornsdorfer Straße 14;Anlehnbügel 2018 (SenUVK);52.476578;13.436082
+3;A;N;N;Geh;2019;Bornsdorfer Straße 14;Anlehnbügel 2018 (SenUVK);52.476739;13.436665
 3;A;N;N;Geh;2019;Bornsdorfer Straße 37b;Anlehnbügel 2018 (SenUVK);52.475197;13.437996
 2;A;N;N;Geh;2019;Braunlager Straße 15;Anlehnbügel 2018 (SenUVK);52.457787;13.427585
 4;A;N;N;Geh;2019;Braunlager Straße 15;Anlehnbügel 2018 (SenUVK);52.457787;13.427585
