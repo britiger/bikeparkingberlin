@@ -141,6 +141,9 @@ def geojson_parking_area(city):
     return rental_data.geojson
 
 
+# lessContent is False for /geojson/existing/<city>
+# lessContent is False for /geojson/missing/<city>?bbox=…
+# lessContent is True for /geojson/missing/<city> (without bbox-Param)
 def render_geojson_nodes_external(result, city, existing=False, lessContent=False):
     features = []
     for row in result:
@@ -155,18 +158,18 @@ def render_geojson_nodes_external(result, city, existing=False, lessContent=Fals
             prop['missing'] = 'no'
         geom = {'type': 'Point', 'coordinates': [row['lon'], row['lat']]}
         entry = {'type': 'Feature', 'properties': prop, 'geometry': geom}
-#        if lessContent:
-#            # Add id for maproulette
-#            if prop['gml_id']:
-#                entry['@id'] = prop['gml_id']
-#            elif prop['stellplatz_nr']:
-#                entry['@id'] = prop['stellplatz_nr']
-#            elif prop['uuid']:
-#                entry['@id'] = prop['uuid']
-#            elif prop['ident']:
-#                entry['@id'] = prop['ident']
-#            elif prop['id']:
-#                entry['@id'] = prop['id']
+        if lessContent:
+            # Add id for maproulette
+            if prop['uuid']:
+                entry['@id'] = prop['uuid']
+            if prop['gml_id']:
+                entry['@externalId'] = prop['gml_id']
+            elif prop['stellplatz_nr']:
+                entry['@externalId'] = prop['stellplatz_nr']
+            elif prop['ident']:
+                entry['@externalId'] = prop['ident']
+            elif prop['id']:
+                entry['@externalId'] = prop['id']
 
         features.append(entry)
 
