@@ -24,3 +24,11 @@ CREATE TABLE IF NOT EXISTS extern.external_feedback (
     feedback TEXT,
     geom geometry(Geometry,3857)
 );
+
+CREATE TABLE IF NOT EXISTS extern.file_feedback (
+    id SERIAL,
+    suffix VARCHAR(255) NOT NULL,
+    osm_user VARCHAR(255),
+    obj_id VARCHAR(255),
+    feedback TEXT
+);
