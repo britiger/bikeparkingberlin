@@ -207,6 +207,6 @@ cat sql/create_external_template.sql | sed -e 's/#CITY#/zuerich/g' | psql
 # Nachträglich geokodiert, sofern möglich
 echo "Import Berlin Neukölln Fahrradabstellanlagen"
 psql -f sql/create_external_berlin_neukoelln.sql
-cat external_data/neukoelln_fahrrad.csv | psql -c "COPY extern.all_parking_berlin_neukoelln(anzahl,art,ueberdacht,oepnv,ort,jahr,adresse,projekt,lat,lon) FROM STDIN DELIMITER ';' CSV HEADER;"
+cat external_data/neukoelln_fahrrad.csv | psql -c "COPY extern.all_parking_berlin_neukoelln(id,anzahl,art,ueberdacht,oepnv,ort,jahr,adresse,projekt,lat,lon) FROM STDIN DELIMITER ';' CSV HEADER;"
 psql -c "UPDATE extern.all_parking_berlin_neukoelln SET ogc_fid=id, geom=ST_TRANSFORM(ST_SetSRID(ST_MakePoint(lon, lat),4326),3857)"
 cat sql/create_external_template.sql | sed -e 's/#CITY#/berlin_neukoelln/g' | psql

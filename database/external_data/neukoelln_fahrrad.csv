@@ -1,587 +1,587 @@
-Anzahl;Art;Überberdacht;ÖPNV;Ort;Jahr;Adresse;Projekt;lat;lon
-1;A;N;N;Geh;2018;Allerstraße 13;Anlehnbügel 2018 (SenUVK);52.474876;13.423399
-1;A;N;N;Geh;2018;Allerstraße 33;Anlehnbügel 2018 (SenUVK);52.474483;13.421933
-2;A;N;N;Geh;2018;Allerstraße 44;Anlehnbügel 2018 (SenUVK);52.474922;13.425871
-1;A;N;N;Geh;2018;Allerstraße 47;Anlehnbügel 2018 (SenUVK);52.475018;13.426748
-1;A;N;N;Geh;2018;Altenbraker Straße 23;Anlehnbügel 2018 (SenUVK);52.46965;13.432808
-2;A;N;N;Geh;2018;Anzengruberstraße 14/15;Anlehnbügel 2018 (SenUVK);52.48085;13.4410305
-1;A;N;N;Geh;2018;Anzengruberstraße 19;Anlehnbügel 2018 (SenUVK);52.48065;13.43968
-1;A;N;N;Geh;2018;Anzengruberstraße 8;Anlehnbügel 2018 (SenUVK);52.480434;13.43991
-2;A;N;N;Geh;2018;Bartastraße 12;Anlehnbügel 2018 (SenUVK);52.47462;13.450578
-3;A;N;N;Geh;2018;Bartastraße 16;Anlehnbügel 2018 (SenUVK);52.474346;13.450717
-2;A;N;N;Geh;2018;Boddinstraße 1;Anlehnbügel 2018 (SenUVK);52.481075;13.434288
-2;A;N;N;Geh;2018;Boddinstraße 10;Anlehnbügel 2018 (SenUVK);52.48072;13.431614
-3;A;N;N;Geh;2018;Boddinstraße 46;Anlehnbügel 2018 (SenUVK);52.480034;13.429225
-2;A;N;N;Geh;2018;Boddinstraße 5;Anlehnbügel 2018 (SenUVK);52.480953;13.433409
-2;A;N;N;Geh;2018;Boddinstraße 55;Anlehnbügel 2018 (SenUVK);52.480083;13.4306555
-3;A;N;N;Geh;2018;Boddinstraße 55 (Schule);Anlehnbügel 2018 (SenUVK);52.480083;13.4306555
-3;A;N;N;Geh;2018;Boddinstraße 55 (Schule);Anlehnbügel 2018 (SenUVK);52.480083;13.4306555
-3;A;N;N;Geh;2018;Boddinstraße 8/9;Anlehnbügel 2018 (SenUVK);52.480846;13.432647
-2;A;N;N;Geh;2018;Böhmische Straße 27;Anlehnbügel 2018 (SenUVK);52.476257;13.447315
-2;A;N;N;Geh;2018;Böhmische Straße 43;Anlehnbügel 2018 (SenUVK);52.474266;13.449216
-2;A;N;N;Geh;2018;Bornsdorfer Str. 19;Anlehnbügel 2018 (SenUVK);52.476254;13.437277
-2;A;N;N;Geh;2018;Bornsdorfer Str. 23;Anlehnbügel 2018 (SenUVK);52.476044;13.437349
-3;A;N;N;Geh;2018;Bornsdorfer Str. 31;Anlehnbügel 2018 (SenUVK);52.475693;13.43747
-3;A;N;N;Geh;2018;Bürknerstraße 10;Anlehnbügel 2018 (SenUVK);52.49324;13.42409
-1;A;N;N;Geh;2018;Bürknerstraße 17;Anlehnbügel 2018 (SenUVK);52.49297;13.423466
-3;A;N;N;Geh;2018;Bürknerstraße 20;Anlehnbügel 2018 (SenUVK);52.493023;13.424093
-3;A;N;N;F;2018;Donaustraße 54;Anlehnbügel 2018 (SenUVK);52.478474;13.441979
-2;A;N;N;Geh;2018;Donaustraße 81;Anlehnbügel 2018 (SenUVK);52.478462;13.442514
-3;A;N;N;F;2018;Elbestraße 1;Anlehnbügel 2018 (SenUVK);52.48289;13.438486
-7;A;N;N;F;2018;Elbestraße 1 (Mitttelstreifen);Anlehnbügel 2018 (SenUVK);52.48289;13.438486
-5;A;N;N;F;2018;Elbestraße 11;Anlehnbügel 2018 (SenUVK);52.48433;13.44033
-2;A;N;N;Geh;2018;Elbestraße 17/18;Anlehnbügel 2018 (SenUVK);52.485237;13.44162
-3;A;N;N;F;2018;Elbestraße 19;Anlehnbügel 2018 (SenUVK);52.485584;13.442041
-2;A;N;N;Geh;2018;Elbestraße 24;Anlehnbügel 2018 (SenUVK);52.48539;13.441275
-2;A;N;N;Geh;2018;Elsenstraße 61;Anlehnbügel 2018 (SenUVK);52.484287;13.447545
-2;A;N;N;Geh;2018;Emserstraße 128;Anlehnbügel 2018 (SenUVK);52.46918;13.437261
-2;A;N;N;Geh;2018;Emserstraße 20;Anlehnbügel 2018 (SenUVK);52.469257;13.435998
-2;A;N;N;Geh;2018;Emserstraße 47/48;Anlehnbügel 2018 (SenUVK);52.468243;13.427879
-1;A;N;N;Geh;2018;Emserstraße 51;Anlehnbügel 2018 (SenUVK);52.468132;13.426862
-1;A;N;N;Geh;2018;Emserstraße 60;Anlehnbügel 2018 (SenUVK);52.46788;13.424542
-2;A;N;N;Geh;2018;Emserstraße 61;Anlehnbügel 2018 (SenUVK);52.467846;13.424339
-2;A;N;N;Geh;2018;Emserstraße 63/64;Anlehnbügel 2018 (SenUVK);52.467804;13.423878
-3;A;N;N;Geh;2018;Emserstraße 66;Anlehnbügel 2018 (SenUVK);52.46771;13.423109
-2;A;N;N;Geh;2018;Emserstraße 66A;Anlehnbügel 2018 (SenUVK);52.467697;13.422898
-3;A;N;N;Geh;2018;Emserstraße 68;Anlehnbügel 2018 (SenUVK);52.467632;13.422428
-3;A;N;N;Geh;2018;Emserstraße 76/77;Anlehnbügel 2018 (SenUVK);52.467358;13.42206
-1;A;N;N;Geh;2018;Emserstraße 85;Anlehnbügel 2018 (SenUVK);52.467648;13.424622
-2;A;N;N;Geh;2018;Erlangerstraße 16;Anlehnbügel 2018 (SenUVK);52.48178;13.4307995
-2;A;N;N;Geh;2018;Erlangerstraße 6;Anlehnbügel 2018 (SenUVK);52.482143;13.430258
-5;A;N;N;F;2018;Finowstraße 12;Anlehnbügel 2018 (SenUVK);52.48272;13.443864
-5;A;N;N;F;2018;Finowstraße 13;Anlehnbügel 2018 (SenUVK);52.482983;13.44422
-2;A;N;N;Geh;2018;Finowstraße 14;Anlehnbügel 2018 (SenUVK);52.483112;13.444396
-2;A;N;N;Geh;2018;Finowstraße 17/18;Anlehnbügel 2018 (SenUVK);52.483406;13.444393
-2;A;N;N;Geh;2018;Finowstraße 19;Anlehnbügel 2018 (SenUVK);52.48315;13.44397
-2;A;N;N;Geh;2018;Finowstraße 20;Anlehnbügel 2018 (SenUVK);52.483036;13.443811
-3;A;N;N;Geh;2018;Finowstraße 23;Anlehnbügel 2018 (SenUVK);52.48265;13.443365
-3;A;N;N;Geh;2018;Finowstraße 8;Anlehnbügel 2018 (SenUVK);52.482094;13.44297
-2;A;N;N;Geh;2018;Flughafenstraße 20/22;Anlehnbügel 2018 (SenUVK);52.48156;13.430584
-2;A;N;N;Geh;2018;Flughafenstraße 37;Anlehnbügel 2018 (SenUVK);52.4811;13.428116
-3;A;N;N;Geh;2018;Flughafenstraße 45;Anlehnbügel 2018 (SenUVK);52.480717;13.426678
-2;A;N;N;Geh;2018;Flughafenstraße 58;Anlehnbügel 2018 (SenUVK);52.48087;13.424628
-3;A;N;N;Geh;2018;Flughafenstraße 84;Anlehnbügel 2018 (SenUVK);52.480503;13.421336
-1;A;N;N;Geh;2018;Flughafenstraße ggü. 13 (Arcaden);Anlehnbügel 2018 (SenUVK);52.48155;13.432098
-1;A;N;N;Geh;2018;Flughafenstraße ggü.11 (Arcaden);Anlehnbügel 2018 (SenUVK);52.481556;13.432463
-2;A;N;N;Geh;2018;Fontanestr. 13;Anlehnbügel 2018 (SenUVK);52.47985;13.421029
-2;A;N;N;Geh;2018;Fontanestraße 8;Anlehnbügel 2018 (SenUVK);52.480915;13.420555
-2;A;N;N;Geh;2018;Framstraße 17/19;Anlehnbügel 2018 (SenUVK);52.48915;13.432428
-2;A;N;N;Geh;2018;Framstraße 3;Anlehnbügel 2018 (SenUVK);52.489555;13.431332
-2;A;N;N;Geh;2018;Framstraße 9;Anlehnbügel 2018 (SenUVK);52.48936;13.431858
-3;A;N;N;Geh;2018;Friedelstraße 35;Anlehnbügel 2018 (SenUVK);52.492924;13.427814
-2;A;N;N;F;2018;Friedrichsbrunner Straße 23;Anlehnbügel 2018 (SenUVK);52.45978;13.430044
-4;A;N;N;Geh;2018;Friedrichsbrunner Straße 40-46;Anlehnbügel 2018 (SenUVK);52.45801;13.429887
-3;A;N;N;F;2018;Fuldastraße 10;Anlehnbügel 2018 (SenUVK);52.483524;13.435708
-2;A;N;N;Geh;2018;Fuldastraße 23A;Anlehnbügel 2018 (SenUVK);52.485687;13.438563
-3;A;N;N;Geh;2018;Fuldastraße 24;Anlehnbügel 2018 (SenUVK);52.485825;13.438746
-1;A;N;N;Geh;2018;Fuldastraße 35;Anlehnbügel 2018 (SenUVK);52.48636;13.439078
-3;A;N;N;Geh;2018;Fuldastraße 43;Anlehnbügel 2018 (SenUVK);52.485348;13.437741
-3;A;N;N;Geh;2018;Fuldastraße 50;Anlehnbügel 2018 (SenUVK);52.484344;13.436089
-8;A;N;N;F;2018;Fuldastraße 61;Anlehnbügel 2018 (SenUVK);52.482323;13.433768
-3;A;N;N;Geh;2018;Germaniapromenade 10;Anlehnbügel 2018 (SenUVK);52.46084;13.433689
-2;A;N;N;Geh;2018;Geygerstraße 7;Anlehnbügel 2018 (SenUVK);52.478783;13.442163
-3;A;N;N;Geh;2018;Geygerstraße ggü. 15 (Spielplatz);Anlehnbügel 2018 (SenUVK);52.479313;13.443595
-2;A;N;N;Geh;2018;Geygerstraße ggü. 17;Anlehnbügel 2018 (SenUVK);52.47953;13.443883
-3;A;N;N;Geh;2018;Glasower Straße 67;Anlehnbügel 2018 (SenUVK);52.46487;13.442216
-3;A;N;N;Geh;2018;Hannemannstraße 2;Anlehnbügel 2018 (SenUVK);52.45565;13.44886
-4;A;N;N;Geh;2018;Hannemannstraße 74;Anlehnbügel 2018 (SenUVK);52.454327;13.438647
-3;A;N;N;Geh;2018;Harzer Straße 12;Anlehnbügel 2018 (SenUVK);52.487965;13.442898
-2;A;N;N;Geh;2018;Harzer Straße 96;Anlehnbügel 2018 (SenUVK);52.48665;13.446072
-1;A;N;N;Geh;2018;Harzer Straße 97;Anlehnbügel 2018 (SenUVK);52.48674;13.445894
-2;A;N;N;Geh;2018;Harzer Straße 98;Anlehnbügel 2018 (SenUVK);52.486866;13.445647
-2;A;N;N;Geh;2018;Hermannstraße 173-172;Anlehnbügel 2018 (SenUVK);52.470753;13.429805
-1;A;N;N;Geh;2018;Hermannstraße 232;Anlehnbügel 2018 (SenUVK);52.48171;13.42512
-1;A;N;N;Geh;2018;Hermannstraße 72;Anlehnbügel 2018 (SenUVK);52.474056;13.427493
-10;A;N;N;Geh;2018;Hermannstraße 80 (ehem. Friedhof);Anlehnbügel 2018 (SenUVK);52.472454;13.428319
-1;A;N;N;Geh;2018;Herrfurthplatz 4;Anlehnbügel 2018 (SenUVK);52.477505;13.421486
-1;A;N;N;Geh;2018;Hertzbergstraße 20;Anlehnbügel 2018 (SenUVK);52.47696;13.447627
-2;A;N;N;Geh;2018;Hertzbergstraße 22;Anlehnbügel 2018 (SenUVK);52.47671;13.44755
-2;A;N;N;Geh;2018;Hertzbergstraße 23;Anlehnbügel 2018 (SenUVK);52.47657;13.447504
-3;A;N;N;F;2018;Hertzbergstraße 4;Anlehnbügel 2018 (SenUVK);52.475742;13.44784
-3;A;N;N;Geh;2018;Hobrechtstraße 39;Anlehnbügel 2018 (SenUVK);52.493458;13.425609
-2;A;N;N;Geh;2018;Hobrechtstraße 40;Anlehnbügel 2018 (SenUVK);52.49369;13.425524
-3;A;N;N;Geh;2018;Hobrechtstraße 41;Anlehnbügel 2018 (SenUVK);52.49385;13.425481
-3;A;N;N;F;2018;Hobrechtstraße 55 (Spielplatz);Anlehnbügel 2018 (SenUVK);52.491615;13.42514
-1;A;N;N;Geh;2018;Hobrechtstraße 8;Anlehnbügel 2018 (SenUVK);52.486595;13.427025
-1;A;N;N;Geh;2018;Hüttenroder Weg 10;Anlehnbügel 2018 (SenUVK);52.485134;13.446474
-3;A;N;N;Geh;2018;Hüttenroder Weg 14;Anlehnbügel 2018 (SenUVK);52.48492;13.446776
-2;A;N;N;Geh;2018;Hüttenroder Weg 26;Anlehnbügel 2018 (SenUVK);52.484516;13.4476795
-2;A;N;N;Geh;2018;Ilsestraße 4;Anlehnbügel 2018 (SenUVK);52.46956;13.435711
-3;A;N;N;Geh;2018;Innstraße 17;Anlehnbügel 2018 (SenUVK);52.480206;13.442197
-2;A;N;N;Geh;2018;Innstraße 2;Anlehnbügel 2018 (SenUVK);52.4827;13.445532
-2;A;N;N;Geh;2018;Innstraße 30;Anlehnbügel 2018 (SenUVK);52.480072;13.4425535
-2;A;N;N;Geh;2018;Innstraße 35;Anlehnbügel 2018 (SenUVK);52.48119;13.444026
-2;A;N;N;Geh;2018;Innstraße 37;Anlehnbügel 2018 (SenUVK);52.481453;13.444373
-2;A;N;N;Geh;2018;Innstraße 44;Anlehnbügel 2018 (SenUVK);52.482754;13.446
-1;A;N;N;Geh;2018;Innstraße 6;Anlehnbügel 2018 (SenUVK);52.482098;13.444738
-6;A;N;N;F;2018;Jonasstraße 17 (Peter-Petersen-Grundschule);Anlehnbügel 2018 (SenUVK);52.471687;13.435314
-2;A;N;N;Geh;2018;Jonasstraße 18;Anlehnbügel 2018 (SenUVK);52.47167;13.435149
-1;A;N;N;Geh;2018;Jonasstraße 28;Anlehnbügel 2018 (SenUVK);52.471287;13.431737
-2;A;N;N;Geh;2018;Jonasstraße 31;Anlehnbügel 2018 (SenUVK);52.471188;13.430887
-3;A;N;N;F;2018;Jonasstraße 63;Anlehnbügel 2018 (SenUVK);52.472015;13.439377
-2;A;N;N;Geh;2018;Jonastraße 55;Anlehnbügel 2018 (SenUVK);52.4715;13.435485
-2;A;N;N;Geh;2018;Kanner Straße 5;Anlehnbügel 2018 (SenUVK);52.471405;13.447375
-3;A;N;N;Geh;2018;Karl-Marx-Straße 91;Anlehnbügel 2018 (SenUVK);52.480476;13.436133
-1;A;N;N;Geh;2018;Karlsgartenstraße 3;Anlehnbügel 2018 (SenUVK);52.482273;13.423764
-1;A;N;N;Geh;2018;Karlsgartenstraße 4;Anlehnbügel 2018 (SenUVK);52.48226;13.423526
-3;A;N;N;Geh;2018;Karlsgartenstraße 5;Anlehnbügel 2018 (SenUVK);52.482193;13.4227705
-2;A;N;N;Geh;2018;Karlsgartenstraße 6;Anlehnbügel 2018 (SenUVK);52.48217;13.422211
-3;A;N;N;Geh;2018;Karlsgartenstraße 6;Anlehnbügel 2018 (SenUVK);52.48217;13.422211
-3;A;N;N;Geh;2018;Karlsgartenstraße 6;Anlehnbügel 2018 (SenUVK);52.48217;13.422211
-3;A;N;N;Geh;2018;Karlsgartenstraße 7;Anlehnbügel 2018 (SenUVK);52.48197;13.42093
-1;A;N;N;Geh;2018;Kiehlufer 49;Anlehnbügel 2018 (SenUVK);52.4855;13.4442425
-2;A;N;N;Geh;2018;Kiehlufer 51/53;Anlehnbügel 2018 (SenUVK);52.485413;13.444411
-3;A;N;N;Geh;2018;Kiehlufer 65;Anlehnbügel 2018 (SenUVK);52.4845;13.446196
-3;A;N;N;Geh;2018;Kiehlufer 69;Anlehnbügel 2018 (SenUVK);52.484306;13.446607
-2;A;N;N;Geh;2018;Kiehlufer 75;Anlehnbügel 2018 (SenUVK);52.483826;13.447545
-2;A;N;N;Geh;2018;Kienitzer Str. 16_Bornsdorfer Str. 4;Anlehnbügel 2018 (SenUVK);52.477394;13.436311
-2;A;N;N;Geh;2018;Kienitzer Straße 104;Anlehnbügel 2018 (SenUVK);52.475986;13.424867
-1;A;N;N;Geh;2018;Kienitzer Straße 91;Anlehnbügel 2018 (SenUVK);52.47594;13.426377
-1;A;N;N;Geh;2018;Kienitzer Straße 92;Anlehnbügel 2018 (SenUVK);52.476143;13.426231
-1;A;N;N;Geh;2018;Kienitzer Straße 96;Anlehnbügel 2018 (SenUVK);52.476105;13.425911
-3;A;N;N;Geh;2018;Kienitzer Straße 99;Anlehnbügel 2018 (SenUVK);52.475826;13.425563
-2;A;N;N;Geh;2018;Kirchhofstraße 48;Anlehnbügel 2018 (SenUVK);52.47323;13.443689
-2;A;N;N;Geh;2018;Laubestraße 13;Anlehnbügel 2018 (SenUVK);52.482952;13.439957
-3;A;N;N;Geh;2018;Lauibestraße 15;Anlehnbügel 2018 (SenUVK);52.483162;13.439537
-2;A;N;N;Geh;2018;Leinestraße 37 (Carl-Legien-Oberschule);Anlehnbügel 2018 (SenUVK);52.472637;13.423461
-2;A;N;N;Geh;2018;Leinestraße 57;Anlehnbügel 2018 (SenUVK);52.473236;13.42754
-1;A;N;N;Geh;2018;Liberdastraße 14;Anlehnbügel 2018 (SenUVK);52.49177;13.429267
-1;A;N;N;Geh;2018;Liberdastraße 2;Anlehnbügel 2018 (SenUVK);52.491722;13.429583
-1;A;N;N;Geh;2018;Liberdastraße 3;Anlehnbügel 2018 (SenUVK);52.491825;13.429728
-2;A;N;N;Geh;2018;Lichtenraderstr. 11;Anlehnbügel 2018 (SenUVK);52.47707;13.419946
-2;A;N;N;Geh;2018;Lichtenraderstr. 12;Anlehnbügel 2018 (SenUVK);52.476612;13.4200735
-3;A;N;N;Geh;2018;Lichtenraderstr. 24;Anlehnbügel 2018 (SenUVK);52.474174;13.420821
-3;A;N;N;Geh;2018;Lichtenraderstr. 26;Anlehnbügel 2018 (SenUVK);52.473732;13.420982
-3;A;N;N;Geh;2018;Lichtenraderstr. 37;Anlehnbügel 2018 (SenUVK);52.474182;13.421225
-3;A;N;N;Geh;2018;Lichtenraderstr. 45 (Spielplatz);Anlehnbügel 2018 (SenUVK);52.47612;13.420649
-2;A;N;N;Geh;2018;Lichtenraderstr. 52A;Anlehnbügel 2018 (SenUVK);52.477474;13.420202
-2;A;N;N;Geh;2018;Lichtenraderstr. 54;Anlehnbügel 2018 (SenUVK);52.477673;13.420137
-2;A;N;N;Geh;2018;Lichtenraderstr. 9;Anlehnbügel 2018 (SenUVK);52.477417;13.419838
-2;A;N;N;Geh;2018;Mahlower Str 15;Anlehnbügel 2018 (SenUVK);52.479626;13.420147
-2;A;N;N;Geh;2018;Mahlower Str.12;Anlehnbügel 2018 (SenUVK);52.479702;13.420927
-2;A;N;N;Geh;2018;Mahlower Str.13;Anlehnbügel 2018 (SenUVK);52.479668;13.420527
-1;A;N;N;Geh;2018;Mahlower Str.25;Anlehnbügel 2018 (SenUVK);52.479664;13.422758
-1;A;N;N;Geh;2018;Mahlower Str.27;Anlehnbügel 2018 (SenUVK);52.479755;13.423596
-2;A;N;N;Geh;2018;Mainzer Straße 12/13;Anlehnbügel 2018 (SenUVK);52.482964;13.427249
-2;A;N;N;Geh;2018;Mainzer Straße 17;Anlehnbügel 2018 (SenUVK);52.48209;13.427273
-2;A;N;N;Geh;2018;Mainzer Straße 20;Anlehnbügel 2018 (SenUVK);52.481487;13.427431
-2;A;N;N;Geh;2018;Mainzer Straße 27 (Spielplatz);Anlehnbügel 2018 (SenUVK);52.47898;13.428003
-2;A;N;N;Geh;2018;Mainzer Straße 43/2;Anlehnbügel 2018 (SenUVK);52.48155;13.427763
-2;A;N;N;Geh;2018;Mainzer Straße 7/8;Anlehnbügel 2018 (SenUVK);52.483772;13.427269
-1;A;N;N;Geh;2018;Mainzer Straße 9/10;Anlehnbügel 2018 (SenUVK);52.483444;13.427259
-2;A;N;N;Geh;2018;Manitiusstraße 11;Anlehnbügel 2018 (SenUVK);52.49088;13.433299
-2;A;N;N;Geh;2018;Manitiusstraße 15/16;Anlehnbügel 2018 (SenUVK);52.49075;13.434367
-2;A;N;N;Geh;2018;Maybachufer ggü. 21;Anlehnbügel 2018 (SenUVK);52.49361;13.427329
-2;A;N;N;Geh;2018;Nansenstraße 15;Anlehnbügel 2018 (SenUVK);52.49029;13.431627
-4;A;N;N;Geh;2018;Nansenstraße 2;Anlehnbügel 2018 (SenUVK);52.488407;13.429763
-2;A;N;N;Geh;2018;Nansenstraße 27;Anlehnbügel 2018 (SenUVK);52.491108;13.431995
-3;A;N;N;Geh;2018;Nansenstraße 3;Anlehnbügel 2018 (SenUVK);52.48857;13.429958
-2;A;N;N;Geh;2018;Nansenstraße 33;Anlehnbügel 2018 (SenUVK);52.490253;13.431262
-3;A;N;N;Geh;2018;Nansenstraße 6 (Kirche);Anlehnbügel 2018 (SenUVK);52.48893;13.430351
-2;A;N;N;Geh;2018;Neißestraße 2;Anlehnbügel 2018 (SenUVK);52.46762;13.425102
-1;A;N;N;Geh;2018;Neißestraße 3;Anlehnbügel 2018 (SenUVK);52.467583;13.42476
-2;A;N;N;Geh;2018;Niemetzstraße 11;Anlehnbügel 2018 (SenUVK);52.472885;13.4505005
-2;A;N;N;Geh;2018;Niemetzstraße 15;Anlehnbügel 2018 (SenUVK);52.47249;13.450881
-1;A;N;N;Geh;2018;Nogatstraße 15;Anlehnbügel 2018 (SenUVK);52.469727;13.434391
-1;A;N;N;Geh;2018;Nogatstraße 17;Anlehnbügel 2018 (SenUVK);52.469658;13.433871
-1;A;N;N;Geh;2018;Nogatstraße 17A;Anlehnbügel 2018 (SenUVK);52.469627;13.433597
-2;A;N;N;Geh;2018;Nogatstraße 19;Anlehnbügel 2018 (SenUVK);52.46956;13.433072
-3;A;N;N;Geh;2018;Nogatstraße 24;Anlehnbügel 2018 (SenUVK);52.469376;13.43159
-2;A;N;N;Geh;2018;Nogatstraße 31/32;Anlehnbügel 2018 (SenUVK);52.469166;13.431708
-2;A;N;N;Geh;2018;Nogatstraße 40;Anlehnbügel 2018 (SenUVK);52.469498;13.434241
-1;A;N;N;Geh;2018;Nogatstraße 45;Anlehnbügel 2018 (SenUVK);52.469692;13.435849
-3;A;N;N;F;2018;Oderstraße / Warthestraße 37;Anlehnbügel 2018 (SenUVK);52.469215;13.4208145
-2;A;N;N;Geh;2018;Oderstraße 1_Siegfriedstr. 58;Anlehnbügel 2018 (SenUVK);52.46694;13.421323
-6;A;N;N;Geh;2018;Oderstraße 172/176;Anlehnbügel 2018 (SenUVK);52.470165;13.417788
-2;A;N;N;Geh;2018;Oderstraße 35;Anlehnbügel 2018 (SenUVK);52.473576;13.419671
-3;A;N;N;Geh;2018;Oderstraße 37;Anlehnbügel 2018 (SenUVK);52.47394;13.419603
-6;A;N;N;F;2018;Oderstraße ggü 39;Anlehnbügel 2018 (SenUVK);52.474197;13.419496
-7;A;N;N;F;2018;Okerstraße 1;Anlehnbügel 2018 (SenUVK);52.474335;13.426939
-1;A;N;N;Geh;2018;Okerstraße 10;Anlehnbügel 2018 (SenUVK);52.474075;13.424565
-3;A;N;N;Geh;2018;Okerstraße 15;Anlehnbügel 2018 (SenUVK);52.473846;13.422492
-2;A;N;N;Geh;2018;Okerstraße 20;Anlehnbügel 2018 (SenUVK);52.473656;13.420718
-2;A;N;N;Geh;2018;Okerstraße 24;Anlehnbügel 2018 (SenUVK);52.473576;13.419968
-3;A;N;N;Geh;2018;Okerstraße 34;Anlehnbügel 2018 (SenUVK);52.473637;13.422649
-3;A;N;N;F;2018;Okerstraße 35;Anlehnbügel 2018 (SenUVK);52.473724;13.423582
-3;A;N;N;F;2018;Okerstraße 39;Anlehnbügel 2018 (SenUVK);52.473854;13.424668
-3;A;N;N;F;2018;Okerstraße 40;Anlehnbügel 2018 (SenUVK);52.47393;13.425355
-3;A;N;N;Geh;2018;Onckenstraße 19/21;Anlehnbügel 2018 (SenUVK);52.488205;13.441972
-1;A;N;N;Geh;2018;Onckenstraße 21;Anlehnbügel 2018 (SenUVK);52.48808;13.441816
-2;A;N;N;Geh;2018;Ossastr. 46;Anlehnbügel 2018 (SenUVK);52.48762;13.435984
-2;A;N;N;Geh;2018;Ossastraße 10;Anlehnbügel 2018 (SenUVK);52.48685;13.437175
-1;A;N;N;Geh;2018;Ossastraße 13;Anlehnbügel 2018 (SenUVK);52.4866;13.437692
-2;A;N;N;Geh;2018;Ossastraße 14/15;Anlehnbügel 2018 (SenUVK);52.486523;13.437856
-3;A;N;N;Geh;2018;Ossastraße 16A;Anlehnbügel 2018 (SenUVK);52.486217;13.438559
-4;A;N;N;Geh;2018;Ossastraße 34-37;Anlehnbügel 2018 (SenUVK);52.48635;13.438725
-2;A;N;N;Geh;2018;Ossastraße 39;Anlehnbügel 2018 (SenUVK);52.48681;13.437754
-5;A;N;N;Geh;2018;Ossastraße 44;Anlehnbügel 2018 (SenUVK);52.487457;13.43639
-4;A;N;N;Geh;2018;Ossastraße 45;Anlehnbügel 2018 (SenUVK);52.48752;13.436252
-2;A;N;N;Geh;2018;Pannierstraße 37;Anlehnbügel 2018 (SenUVK);52.490456;13.434194
-3;A;N;N;F;2018;Pannierstraße 61;Anlehnbügel 2018 (SenUVK);52.485897;13.429825
-2;A;N;N;Geh;2018;Pflügerstraße 24;Anlehnbügel 2018 (SenUVK);52.49004;13.433077
-2;A;N;N;Geh;2018;Pflügerstraße 53;Anlehnbügel 2018 (SenUVK);52.490257;13.433348
-2;A;N;N;Geh;2018;Pflügerstraße 60;Anlehnbügel 2018 (SenUVK);52.491;13.431063
-2;A;N;N;Geh;2018;Pflügerstraße 76/77;Anlehnbügel 2018 (SenUVK);52.491405;13.425446
-2;A;N;N;Geh;2018;Pflügerstraße 79A;Anlehnbügel 2018 (SenUVK);52.491295;13.424367
-3;A;N;N;Geh;2018;Reuterplatz (ostseite /Nansenstraße 2);Anlehnbügel 2018 (SenUVK);52.488407;13.429763
-1;A;N;N;Geh;2018;Reuterplatz 1;Anlehnbügel 2018 (SenUVK);52.489944;13.429244
-2;A;N;N;Geh;2018;Reuterplatz 1;Anlehnbügel 2018 (SenUVK);52.489944;13.429244
-2;A;N;N;Geh;2018;Reuterplatz 3/4;Anlehnbügel 2018 (SenUVK);52.489647;13.429909
-3;A;N;N;F;2018;Reuterstraße 66;Anlehnbügel 2018 (SenUVK);52.486294;13.428757
-3;A;N;N;F;2018;Richardplatz 28;Anlehnbügel 2018 (SenUVK);52.47419;13.446312
-3;A;N;N;F;2018;Richardplatz 2b;Anlehnbügel 2018 (SenUVK);52.47464;13.446285
-3;A;N;N;Geh;2018;Richardplatz 9 (Spielplatz);Anlehnbügel 2018 (SenUVK);52.474326;13.443644
-2;A;N;N;Geh;2018;Richardstraße 108;Anlehnbügel 2018 (SenUVK);52.478294;13.439162
-3;A;N;N;F;2018;Richardstraße 12;Anlehnbügel 2018 (SenUVK);52.47767;13.439705
-3;A;N;N;Geh;2018;Richardstraße 51;Anlehnbügel 2018 (SenUVK);52.472527;13.445518
-1;A;N;N;Geh;2018;Richardstraße 53A;Anlehnbügel 2018 (SenUVK);52.4721;13.445821
-2;A;N;N;Geh;2018;Richardstraße 7;Anlehnbügel 2018 (SenUVK);52.478104;13.438877
-1;A;N;N;Geh;2018;Roseggerstraße 11;Anlehnbügel 2018 (SenUVK);52.4787;13.444796
-3;A;N;N;Geh;2018;Roseggerstraße 12;Anlehnbügel 2018 (SenUVK);52.478874;13.445057
-2;A;N;N;Geh;2018;Roseggerstraße 17;Anlehnbügel 2018 (SenUVK);52.480038;13.446715
-2;A;N;N;Geh;2018;Roseggerstraße 35;Anlehnbügel 2018 (SenUVK);52.48067;13.447024
-2;A;N;N;Geh;2018;Roseggerstraße 37/38;Anlehnbügel 2018 (SenUVK);52.48026;13.4464445
-2;A;N;N;F;2018;Roseggerstraße 7;Anlehnbügel 2018 (SenUVK);52.47794;13.443665
-2;A;N;N;Geh;2018;Roseggerstraße 9;Anlehnbügel 2018 (SenUVK);52.47844;13.444413
-2;A;N;N;Geh;2018;Rübelandstraße 11;Anlehnbügel 2018 (SenUVK);52.472248;13.438405
-2;A;N;N;Geh;2018;Saltykowstraße ggü. 11;Anlehnbügel 2018 (SenUVK);52.476315;13.43736
-2;A;N;N;Geh;2018;Sanderstraße 22;Anlehnbügel 2018 (SenUVK);52.49259;13.426133
-6;A;N;N;F;2018;Sanderstraße 27;Anlehnbügel 2018 (SenUVK);52.492413;13.424134
-6;A;N;N;F;2018;Sanderstraße 29;Anlehnbügel 2018 (SenUVK);52.49235;13.423466
-3;A;N;N;Geh;2018;Schandauer Straße 16;Anlehnbügel 2018 (SenUVK);52.484726;13.441421
-3;A;N;N;Geh;2018;Schandauer Straße 4;Anlehnbügel 2018 (SenUVK);52.484386;13.441665
-2;A;N;N;Geh;2018;Schandauer Straße 8;Anlehnbügel 2018 (SenUVK);52.483917;13.442622
-2;A;N;N;Geh;2018;Schierker Straße 16;Anlehnbügel 2018 (SenUVK);52.47042;13.433893
-1;A;N;N;Geh;2018;Schierker Straße 19;Anlehnbügel 2018 (SenUVK);52.470333;13.433137
-2;A;N;N;Geh;2018;Schierker Straße 21;Anlehnbügel 2018 (SenUVK);52.470287;13.432667
-3;A;N;N;Geh;2018;Schierker Straße 26;Anlehnbügel 2018 (SenUVK);52.470066;13.430855
-2;A;N;N;Geh;2018;Schierker Straße 57 (Kita);Anlehnbügel 2018 (SenUVK);52.47091;13.439818
-3;A;N;N;Geh;2018;Schillerpromenade 24;Anlehnbügel 2018 (SenUVK);52.473373;13.4234295
-1;A;N;N;Geh;2018;Schillerpromenade 29 (Mittelstreifen);Anlehnbügel 2018 (SenUVK);52.474964;13.4231615
-2;A;N;N;Geh;2018;Schillerpromenade 31 (Mittelstreifen);Anlehnbügel 2018 (SenUVK);52.475426;13.423013
-3;A;N;N;Geh;2018;Schillerpromenade 34 (Karl-Weise-Grundschule);Anlehnbügel 2018 (SenUVK);52.47637;13.422807
-5;A;N;N;Geh;2018;Schillerpromenade 37 (Mittelstreifen);Anlehnbügel 2018 (SenUVK);52.477695;13.422312
-2;A;N;N;Geh;2018;Schillerpromenade 42 (Mittelstreifen);Anlehnbügel 2018 (SenUVK);52.478523;13.422055
-1;A;N;N;Geh;2018;Schillerpromenade 6;Anlehnbügel 2018 (SenUVK);52.477608;13.421518
-2;A;N;N;Geh;2018;Schinkestraße 23 (Spielplatz);Anlehnbügel 2018 (SenUVK);52.494526;13.422479
-2;A;N;N;Geh;2018;Schinkestraße 25;Anlehnbügel 2018 (SenUVK);52.494267;13.421925
-2;A;N;N;Geh;2018;Schöneweider Straße 17/18;Anlehnbügel 2018 (SenUVK);52.472034;13.444894
-2;A;N;N;Geh;2018;Schöneweider Straße 5;Anlehnbügel 2018 (SenUVK);52.471695;13.44415
-1;A;N;N;Geh;2018;Schönstedstraße 6;Anlehnbügel 2018 (SenUVK);52.48227;13.4363785
-2;A;N;N;Geh;2018;Schönstedstraße 7-8;Anlehnbügel 2018 (SenUVK);52.482456;13.436732
-3;A;N;N;Geh;2018;Schudomastraße 16;Anlehnbügel 2018 (SenUVK);52.47326;13.451392
-3;A;N;N;Geh;2018;Schudomastraße 36/37;Anlehnbügel 2018 (SenUVK);52.473194;13.452138
-1;A;N;N;Geh;2018;Selchower Str. 1;Anlehnbügel 2018 (SenUVK);52.479244;13.425139
-2;A;N;N;Geh;2018;Selchower Str. 22;Anlehnbügel 2018 (SenUVK);52.47851;13.420678
-2;A;N;N;Geh;2018;Selchower Str. 23;Anlehnbügel 2018 (SenUVK);52.47855;13.421003
-2;A;N;N;Geh;2018;Selchower Str. 27/28;Anlehnbügel 2018 (SenUVK);52.47872;13.422548
-2;A;N;N;Geh;2018;Selchower Str. 3/4;Anlehnbügel 2018 (SenUVK);52.47918;13.42455
-10;A;N;N;F;2018;Selchower Str. 35;Anlehnbügel 2018 (SenUVK);52.479023;13.425184
-2;A;N;N;Geh;2018;Siegfriedstraße 53;Anlehnbügel 2018 (SenUVK);52.466995;13.423033
-3;A;N;N;Geh;2018;Sinsheimer Weg 6 (Spielplatz);Anlehnbügel 2018 (SenUVK);52.48488;13.453122
-2;A;N;N;Geh;2018;Sonnenallee 126;Anlehnbügel 2018 (SenUVK);52.48011;13.442813
-3;A;N;N;Geh;2018;Sonnenallee 141;Anlehnbügel 2018 (SenUVK);52.479416;13.445175
-1;A;N;N;Geh;2018;Sonnenallee 58;Anlehnbügel 2018 (SenUVK);52.48486;13.433218
-2;A;N;N;Geh;2018;Sonnenallee 72/74;Anlehnbügel 2018 (SenUVK);52.483955;13.435126
-2;A;N;N;Geh;2018;Sprembergstraße 1;Anlehnbügel 2018 (SenUVK);52.493294;13.423429
-2;A;N;N;Geh;2018;Sprembergstraße 10/11;Anlehnbügel 2018 (SenUVK);52.493515;13.423108
-2;A;N;N;Geh;2018;Stuttgarterstraße 35;Anlehnbügel 2018 (SenUVK);52.477734;13.450482
-5;A;N;N;Geh;2018;Stuttgarterstraße 35;Anlehnbügel 2018 (SenUVK);52.477734;13.450482
-2;A;N;N;Geh;2018;Stuttgarterstraße 42;Anlehnbügel 2018 (SenUVK);52.47875;13.448387
-2;A;N;N;Geh;2018;Teupitzer Straße 37;Anlehnbügel 2018 (SenUVK);52.480087;13.455913
-2;A;N;N;Geh;2018;Teupitzer Straße 68;Anlehnbügel 2018 (SenUVK);52.48171;13.45538
-1;A;N;N;Geh;2018;Teupitzer Straße 69;Anlehnbügel 2018 (SenUVK);52.48149;13.4555025
-2;A;N;N;Geh;2018;Teupitzer Straße 69;Anlehnbügel 2018 (SenUVK);52.48149;13.4555025
-1;A;N;N;Geh;2018;Teupitzer Straße 71;Anlehnbügel 2018 (SenUVK);52.48115;13.455466
-2;A;N;N;Geh;2018;Thiemannstraße 15;Anlehnbügel 2018 (SenUVK);52.476517;13.449761
-2;A;N;N;Geh;2018;Thiemannstraße 16/16A;Anlehnbügel 2018 (SenUVK);52.476345;13.449598
-2;A;N;N;Geh;2018;Thiemannstraße 17A/18;Anlehnbügel 2018 (SenUVK);52.47608;13.4493065
-1;A;N;N;Geh;2018;Thiemannstraße 19;Anlehnbügel 2018 (SenUVK);52.475815;13.448923
-2;A;N;N;Geh;2018;Thiemannstraße 22;Anlehnbügel 2018 (SenUVK);52.475834;13.449412
-2;A;N;N;Geh;2018;Thiemannstraße 23;Anlehnbügel 2018 (SenUVK);52.476032;13.449659
-2;A;N;N;Geh;2018;Thomasstraße 49;Anlehnbügel 2018 (SenUVK);52.472416;13.434027
-2;A;N;N;Geh;2018;Thomasstraße 61/63;Anlehnbügel 2018 (SenUVK);52.472218;13.432446
-2;A;N;N;Geh;2018;Thomasstraße 69/71;Anlehnbügel 2018 (SenUVK);52.47202;13.430888
-2;A;N;N;Geh;2018;Treptower Straße 32A;Anlehnbügel 2018 (SenUVK);52.48345;13.455754
-3;A;N;N;Geh;2018;Truseweg 2;Anlehnbügel 2018 (SenUVK);52.482666;13.4475155
-2;A;N;N;Geh;2018;Truseweg 4;Anlehnbügel 2018 (SenUVK);52.482666;13.4475155
-2;A;N;N;Geh;2018;Warthestraße 15;Anlehnbügel 2018 (SenUVK);52.47004;13.425724
-1;A;N;N;Geh;2018;Warthestraße 19 (Mittelinsel);Anlehnbügel 2018 (SenUVK);52.46993;13.424768
-2;A;N;N;Geh;2018;Warthestraße 56/58;Anlehnbügel 2018 (SenUVK);52.469643;13.424903
-2;A;N;N;Geh;2018;Warthestraße 71;Anlehnbügel 2018 (SenUVK);52.47007;13.428663
-1;A;N;N;Geh;2018;Weichselstraße 19;Anlehnbügel 2018 (SenUVK);52.48634;13.435891
-3;A;N;N;Geh;2018;Weichselstraße 20/21;Anlehnbügel 2018 (SenUVK);52.48644;13.436021
-2;A;N;N;Geh;2018;Weißestr. 12;Anlehnbügel 2018 (SenUVK);52.477962;13.423563
-2;A;N;N;Geh;2018;Weißestr. 15;Anlehnbügel 2018 (SenUVK);52.477516;13.423701
-3;A;N;N;Geh;2018;Weißestr. 21;Anlehnbügel 2018 (SenUVK);52.476192;13.424107
-2;A;N;N;Geh;2018;Weißestraße 4;Anlehnbügel 2018 (SenUVK);52.479618;13.423054
-1;A;N;N;Geh;2018;Weißestraße 60;Anlehnbügel 2018 (SenUVK);52.47917;13.423572
-6;A;N;N;F;2018;Weißestraße 64/3;Anlehnbügel 2018 (SenUVK);52.480003;13.42332
-10;A;N;N;F;2018;Werrastraße 36;Anlehnbügel 2018 (SenUVK);52.47975;13.451672
-2;A;N;N;Geh;2018;Werrastraße 40A;Anlehnbügel 2018 (SenUVK);52.480423;13.450295
-4;A;N;N;Geh;2018;Werrastraße 43;Anlehnbügel 2018 (SenUVK);52.48093;13.44927
-3;A;N;N;Geh;2018;Werrastraße 46;Anlehnbügel 2018 (SenUVK);52.48119;13.448801
-2;A;N;N;Geh;2018;Werrastraße 50;Anlehnbügel 2018 (SenUVK);52.482277;13.44663
-2;A;N;N;Geh;2018;Werrastraße 51;Anlehnbügel 2018 (SenUVK);52.4824;13.446388
-1;A;N;N;Geh;2018;Weserstraße 10;Anlehnbügel 2018 (SenUVK);52.48803;13.429595
-26;A;N;N;Geh;2018;Weserstraße 12 (Schule);Anlehnbügel 2018 (SenUVK);52.487473;13.430067
-3;A;N;N;F;2018;Weserstraße 131;Anlehnbügel 2018 (SenUVK);52.479076;13.44987
-1;A;N;N;Geh;2018;Weserstraße 157;Anlehnbügel 2018 (SenUVK);52.48221;13.443481
-5;A;N;N;F;2018;Weserstraße 164;Anlehnbügel 2018 (SenUVK);52.483166;13.441576
-2;A;N;N;Geh;2018;Weserstraße 176 (Spielplatz);Anlehnbügel 2018 (SenUVK);52.484562;13.438769
-2;A;N;N;Geh;2018;Weserstraße 54;Anlehnbügel 2018 (SenUVK);52.48342;13.440586
-2;A;N;N;Geh;2018;Weserstraße 58;Anlehnbügel 2018 (SenUVK);52.483;13.441435
-3;A;N;N;Geh;2018;Weserstraße 59;Anlehnbügel 2018 (SenUVK);52.482746;13.441952
-3;A;N;N;Geh;2018;Weserstraße 65;Anlehnbügel 2018 (SenUVK);52.4821;13.443258
-2;A;N;N;Geh;2018;Weserstraße 72;Anlehnbügel 2018 (SenUVK);52.481255;13.444858
-2;A;N;N;Geh;2018;Weserstraße 74/75;Anlehnbügel 2018 (SenUVK);52.481033;13.44531
-3;A;N;N;F;2018;Weserstraße 79;Anlehnbügel 2018 (SenUVK);52.480453;13.446473
-3;A;N;N;F;2018;Weserstraße 80;Anlehnbügel 2018 (SenUVK);52.480164;13.447018
-2;A;N;N;Geh;2018;Weserstraße 84/85;Anlehnbügel 2018 (SenUVK);52.47978;13.447794
-3;A;N;N;F;2018;Weserstraße 89;Anlehnbügel 2018 (SenUVK);52.479237;13.448888
-1;A;N;N;Geh;2018;Weserstraße 9;Anlehnbügel 2018 (SenUVK);52.488247;13.428747
-2;A;N;N;Geh;2018;Wildenbruchplatz 1;Anlehnbügel 2018 (SenUVK);52.48396;13.443643
-2;A;N;N;Geh;2018;Wildenbruchplatz 2;Anlehnbügel 2018 (SenUVK);52.48396;13.443643
-2;A;N;N;Geh;2018;Wildenbruchplatz 4/5;Anlehnbügel 2018 (SenUVK);52.483658;13.444226
-2;A;N;N;Geh;2018;Wildenbruchplatz 7;Anlehnbügel 2018 (SenUVK);52.483227;13.445038
-3;A;N;N;Geh;2018;Wildenbruchplatz 9;Anlehnbügel 2018 (SenUVK);52.48303;13.445426
-2;A;N;N;Geh;2018;Wildenbruchstraße 12/13;Anlehnbügel 2018 (SenUVK);52.483646;13.4429655
-1;A;N;N;Geh;2018;Wildenbruchstraße 18;Anlehnbügel 2018 (SenUVK);52.48562;13.445548
-1;A;N;N;Geh;2018;Wildenbruchstraße 20;Anlehnbügel 2018 (SenUVK);52.48562;13.445548
-2;A;N;N;Geh;2018;Wildenbruchstraße 23;Anlehnbügel 2018 (SenUVK);52.486412;13.446717
-6;A;N;N;Geh;2018;Wildenbruchstraße 25 (Kita);Anlehnbügel 2018 (SenUVK);52.48680;13.44709
-2;A;N;N;Geh;2018;Wildenbruchstraße 66A;Anlehnbügel 2018 (SenUVK);52.486828;13.44663
-2;A;N;N;Geh;2018;Wildenbruchstraße 8;Anlehnbügel 2018 (SenUVK);52.48319;13.442282
-3;A;N;N;Geh;2018;Wildenbruchstraße 82/83;Anlehnbügel 2018 (SenUVK);52.48365;13.4425335
-2;A;N;N;Geh;2018;Wildenbruchstraße 9-11;Anlehnbügel 2018 (SenUVK);52.483295;13.442499
-2;A;N;N;Geh;2018;Wilhelm-Busch-Straße 22;Anlehnbügel 2018 (SenUVK);52.47831;13.444443
-2;A;N;N;Geh;2018;Wissmannstraße 20;Anlehnbügel 2018 (SenUVK);52.48285;13.423348
-2;A;N;N;Geh;2018;Wissmannstraße 28;Anlehnbügel 2018 (SenUVK);52.48294;13.422969
-2;A;N;N;Geh;2018;Wissmannstraße 30;Anlehnbügel 2018 (SenUVK);52.483265;13.422954
-3;A;N;N;F;2018;gegenüber Pflügerstraße 26;Fahrradstraße Weigandufer;52.48965;13.434121
-2;A;N;N;Geh;2018;gegenüber Pflügerstraße 26;Fahrradstraße Weigandufer;52.48965;13.434121
-4;A;N;N;F;2018;Pflügerstraße 26;Fahrradstraße Weigandufer;52.48965;13.434121
-2;A;N;N;Geh;2018;Pflügerstraße 34;Fahrradstraße Weigandufer;52.488586;13.436566
-3;A;N;N;F;2018;Pflügerstraße 38;Fahrradstraße Weigandufer;52.488045;13.437621
-3;A;N;N;F;2018;Weichselplatz 1;Fahrradstraße Weigandufer;52.487827;13.438072
-3;A;N;N;F;2018;Weigandufer 13;Fahrradstraße Weigandufer;52.485195;13.443195
-3;A;N;N;F;2018;Weigandufer 21;Fahrradstraße Weigandufer;52.48295;13.447589
-3;A;N;N;F;2018;Weigandufer 3;Fahrradstraße Weigandufer;52.486485;13.44068
-4;A;N;N;F;2018;Weigandufer 33A;Fahrradstraße Weigandufer;52.48104;13.450995
-3;A;N;N;F;2018;Weigandufer 8;Fahrradstraße Weigandufer;52.485928;13.441695
-3;A;N;N;F;2018;Weigandufer 9;Fahrradstraße Weigandufer;52.485645;13.442318
-6;A;N;N;Geh;2018;Karl-Marx-Straße 117;Karl-Marx-Straße;52.47825;13.438268
-2;A;N;N;Geh;2018;Karl-Marx-Straße 118;Karl-Marx-Straße;52.47809;13.437896
-1;A;N;N;Geh;2018;Karl-Marx-Straße 118;Karl-Marx-Straße;52.47809;13.437896
-3;A;N;N;Geh;2018;Karl-Marx-Straße 124;Karl-Marx-Straße;52.47787;13.438069
-5;A;N;N;Geh;2018;Karl-Marx-Straße 129;Karl-Marx-Straße;52.477604;13.438736
-10;A;N;N;Geh;2018;Karl-Marx-Straße 130;Karl-Marx-Straße;52.477444;13.438185
-2;A;N;N;Geh;2018;Karl-Marx-Straße 131;Karl-Marx-Straße;52.477535;13.439045
-6;A;N;N;Geh;2018;Karl-Marx-Straße 133;Karl-Marx-Straße;52.477444;13.438959
-4;A;N;N;Geh;2018;Karl-Marx-Straße 139;Karl-Marx-Straße;52.47704;13.439112
-8;A;N;N;Geh;2018;Karl-Marx-Straße 140;Karl-Marx-Straße;52.476955;13.438706
-4;A;N;N;Geh;2018;Karl-Marx-Straße 141;Karl-Marx-Straße;52.476994;13.439605
-3;A;N;N;Geh;2018;Karl-Marx-Straße 144;Karl-Marx-Straße;52.47658;13.438904
-7;A;N;N;Geh;2018;Karl-Marx-Straße 145;Karl-Marx-Straße;52.47677;13.43931
-5;A;N;N;Geh;2019;Alt Buckow 16;Anlehnbügel 2018 (SenUVK);52.4231;13.433477
-3;A;N;N;Geh;2019;Alt Rudow 26;Anlehnbügel 2018 (SenUVK);52.420097;13.492096
-2;A;N;N;Geh;2019;Alt Rudow 46;Anlehnbügel 2018 (SenUVK);52.418232;13.493155
-3;A;N;N;Geh;2019;Alt-Britz 39;Anlehnbügel 2018 (SenUVK);52.45019;13.440494
-2;A;N;N;Geh;2019;Altenbraker Straße 24;Anlehnbügel 2018 (SenUVK);52.469597;13.432387
-2;A;N;N;Geh;2019;Altenbraker Straße 26;Anlehnbügel 2018 (SenUVK);52.469185;13.432505
-6;A;N;N;F;2019;Altenbraker Straße 31;Anlehnbügel 2018 (SenUVK);52.46834;13.433111
-2;A;N;N;Geh;2019;Anzengruberstraße 2;Anlehnbügel 2018 (SenUVK);52.480095;13.437804
-3;A;N;N;Geh;2019;Bauführerweg 20;Anlehnbügel 2018 (SenUVK);52.431454;13.445991
-2;A;N;N;Geh;2019;Bendastraße 21;Anlehnbügel 2018 (SenUVK);52.466476;13.436726
-2;A;N;N;Geh;2019;Bendastraße 6;Anlehnbügel 2018 (SenUVK);52.4648;13.436837
-5;A;N;N;Geh;2019;Bendastraße17;Anlehnbügel 2018 (SenUVK);52.464214;13.437429
-2;A;N;N;Geh;2019;Berthelsdorfer Straße 10;Anlehnbügel 2018 (SenUVK);52.478607;13.440704
-3;A;N;N;Geh;2019;Biebricher Straße 1A;Anlehnbügel 2018 (SenUVK);52.481766;13.425408
-2;A;N;N;Geh;2019;Boddinstraße 1;Anlehnbügel 2018 (SenUVK);52.481075;13.434288
-10;A;N;N;F;2019;Boddinstraße 22;Anlehnbügel 2018 (SenUVK);52.48027;13.428407
-3;A;N;N;Geh;2019;Boddinstraße 46;Anlehnbügel 2018 (SenUVK);52.480034;13.429225
-2;A;N;N;Geh;2019;Böhmische Straße 52;Anlehnbügel 2018 (SenUVK);52.47264;13.447207
-3;A;N;N;Geh;2019;Bornsdorfer Straße 14;Anlehnbügel 2018 (SenUVK);52.476739;13.436665
-3;A;N;N;Geh;2019;Bornsdorfer Straße 37b;Anlehnbügel 2018 (SenUVK);52.475197;13.437996
-2;A;N;N;Geh;2019;Braunlager Straße 15;Anlehnbügel 2018 (SenUVK);52.457787;13.427585
-4;A;N;N;Geh;2019;Braunlager Straße 15;Anlehnbügel 2018 (SenUVK);52.457787;13.427585
-2;A;N;N;Geh;2019;Braunlager Straße 21;Anlehnbügel 2018 (SenUVK);52.457577;13.427071
-3;A;N;N;Geh;2019;Braunlager Straße 9;Anlehnbügel 2018 (SenUVK);52.458294;13.428832
-3;A;N;N;F;2019;Braunschweiger Straße 28;Anlehnbügel 2018 (SenUVK);52.471878;13.450912
-4;A;N;N;F;2019;Braunschweiger Straße 57;Anlehnbügel 2018 (SenUVK);52.47081;13.446018
-2;A;N;N;Geh;2019;Braunschweiger Straße 60;Anlehnbügel 2018 (SenUVK);52.470947;13.44542
-2;A;N;N;Geh;2019;Braunschweiger Straße 60;Anlehnbügel 2018 (SenUVK);52.470947;13.44542
-3;A;N;N;F;2019;Braunschweiger Straße 71;Anlehnbügel 2018 (SenUVK);52.47058;13.44414
-2;A;N;N;Geh;2019;Britzer Damm 101;Anlehnbügel 2018 (SenUVK);52.453835;13.4383955
-4;A;N;N;Geh;2019;Britzer Damm 121;Anlehnbügel 2018 (SenUVK);52.451782;13.438577
-6;A;N;N;Geh;2019;Britzer Damm 139;Anlehnbügel 2018 (SenUVK);52.450577;13.437726
-4;A;N;N;Geh;2019;Britzer Damm 146;Anlehnbügel 2018 (SenUVK);52.450184;13.436874
-1;A;N;N;Geh;2019;Britzer Damm 15;Anlehnbügel 2018 (SenUVK);52.461643;13.4350395
-2;A;N;N;Geh;2019;Britzer Damm 172;Anlehnbügel 2018 (SenUVK);52.44756;13.4349785
-1;A;N;N;Geh;2019;Britzer Damm 18;Anlehnbügel 2018 (SenUVK);52.46147;13.4346285
-2;A;N;N;Geh;2019;Britzer Damm 181;Anlehnbügel 2018 (SenUVK);52.446583;13.434963
-3;A;N;N;Geh;2019;Britzer Damm 26;Anlehnbügel 2018 (SenUVK);52.4606;13.434908
-4;A;N;N;Geh;2019;Britzer Damm 55;Anlehnbügel 2018 (SenUVK);52.45743;13.437113
-2;A;N;N;Geh;2019;Britzer Damm 88;Anlehnbügel 2018 (SenUVK);52.454887;13.437387
-2;A;N;N;Geh;2019;Bruno-Bauer-Straße 17;Anlehnbügel 2018 (SenUVK);52.464863;13.438995
-2;A;N;N;Geh;2019;Bruno-Bauer-Straße 22;Anlehnbügel 2018 (SenUVK);52.46628;13.438572
-2;A;N;N;Geh;2019;Brusendorfer Straße 19;Anlehnbügel 2018 (SenUVK);52.47396;13.453547
-3;A;N;N;Geh;2019;Buchbinderweg 21 (Spielplatz);Anlehnbügel 2018 (SenUVK);52.418304;13.490973
-3;A;N;N;F;2019;Buckower Damm 188;Anlehnbügel 2018 (SenUVK);52.42681;13.43495
-2;A;N;N;Geh;2019;Buckower Damm 213;Anlehnbügel 2018 (SenUVK);52.42467;13.43592
-6;A;N;N;Geh;2019;Buckower Damm 59;Anlehnbügel 2018 (SenUVK);52.438564;13.435236
-3;A;N;N;Geh;2019;Delbrückstraße 56;Anlehnbügel 2018 (SenUVK);52.465317;13.439295
-2;A;N;N;Geh;2019;Donaustraße 114;Anlehnbügel 2018 (SenUVK);52.48339;13.433764
-3;A;N;N;Geh;2019;Donaustraße 66;Anlehnbügel 2018 (SenUVK);52.476776;13.444625
-10;A;N;N;Geh;2019;Elfriede-Kuhr-Straße 7 (Spielplatz);Anlehnbügel 2018 (SenUVK);52.405613;13.506751
-2;A;N;N;Geh;2019;Elly-Heuss-Knapp-Straße 21;Anlehnbügel 2018 (SenUVK);52.403755;13.505799
-4;A;N;N;Geh;2019;Emser Straße 10;Anlehnbügel 2018 (SenUVK);52.4696;13.438712
-2;A;N;N;Geh;2019;Emser Straße 15;Anlehnbügel 2018 (SenUVK);52.469463;13.437615
-2;A;N;N;Geh;2019;Emser Straße 80;Anlehnbügel 2018 (SenUVK);52.467484;13.42317
-1;A;N;N;Geh;2019;Emser Straße 83;Anlehnbügel 2018 (SenUVK);52.467587;13.424071
-4;A;N;N;Geh;2019;Finowstraße 9;Anlehnbügel 2018 (SenUVK);52.482395;13.443381
-2;A;N;N;Geh;2019;Fläzsteinpfad 3 (Spielplatz);Anlehnbügel 2018 (SenUVK);52.423485;13.432339
-3;A;N;N;Geh;2019;Flurweg 77;Anlehnbügel 2018 (SenUVK);52.42825;13.480668
-6;A;N;N;F;2019;Fontanestraße 14;Anlehnbügel 2018 (SenUVK);52.479362;13.4211855
-10;A;N;N;F;2019;Friedelstraße 22, 23 und 42;Anlehnbügel 2018 (SenUVK);52.491642;13.428101
-3;A;N;N;Geh;2019;Friedelstraße 35;Anlehnbügel 2018 (SenUVK);52.492924;13.427814
-3;A;N;N;F;2019;Friedelstraße 47;Anlehnbügel 2018 (SenUVK);52.489967;13.427468
-3;A;N;N;Geh;2019;Friedelstraße 48;Anlehnbügel 2018 (SenUVK);52.489784;13.4275055
-3;A;N;N;Geh;2019;Fritz-Erler-Allee 26;Anlehnbügel 2018 (SenUVK);52.43427;13.454605
-3;A;N;N;Geh;2019;Fritz-Reuter-Allee 173;Anlehnbügel 2018 (SenUVK);52.43796;13.447653
-5;A;N;N;Geh;2019;Fritz-Reuter-Allee 50;Anlehnbügel 2018 (SenUVK);52.447754;13.449581
-3;A;N;N;F;2019;Ganghoferstraße 3;Anlehnbügel 2018 (SenUVK);52.47918;13.439822
-1;A;N;N;Geh;2019;Germaniapromenade 2;Anlehnbügel 2018 (SenUVK);52.46095;13.434578
-3;A;N;N;Geh;2019;Germaniapromenade 8;Anlehnbügel 2018 (SenUVK);52.46088;13.434027
-6;A;N;N;Geh;2019;Geygerstraße 12 - 15;Anlehnbügel 2018 (SenUVK);52.478992;13.443156
-3;A;N;N;Geh;2019;Gradestraße 36;Anlehnbügel 2018 (SenUVK);52.452698;13.43204
-2;A;N;N;Geh;2019;Hannemannstraße 24;Anlehnbügel 2018 (SenUVK);52.4553;13.44637
-3;A;N;N;Geh;2019;Hannemannstraße 32;Anlehnbügel 2018 (SenUVK);52.455143;13.445071
-2;A;N;N;Geh;2019;Hannemannstraße 43;Anlehnbügel 2018 (SenUVK);52.454624;13.443023
-2;A;N;N;Geh;2019;Hänselstraße 6;Anlehnbügel 2018 (SenUVK);52.46662;13.473873
-3;A;N;N;Geh;2019;Heidelberger Straße 35;Anlehnbügel 2018 (SenUVK);52.485893;13.452776
-2;A;N;N;Geh;2019;Hermannstraße 144;Anlehnbügel 2018 (SenUVK);52.46385;13.4337
-3;A;N;J;Geh;2019;Hermannstraße 180;Anlehnbügel 2018 (SenUVK);52.47273;13.428795
-2;A;N;N;Geh;2019;Hertzbergstraße 12;Anlehnbügel 2018 (SenUVK);52.476883;13.447996
-2;A;N;N;Geh;2019;Hobrechtstraße 17;Anlehnbügel 2018 (SenUVK);52.488827;13.426848
-8;A;N;N;Geh;2019;Hobrechtstraße 39;Anlehnbügel 2018 (SenUVK);52.493458;13.425609
-10;A;N;N;F;2019;Hobrechtstraße 75;Anlehnbügel 2018 (SenUVK);52.48704;13.426779
-12;A;N;N;F;2019;Hobrechtstraße 76;Anlehnbügel 2018 (SenUVK);52.486874;13.426757
-2;A;N;N;Geh;2019;Hobrechtstraße 8;Anlehnbügel 2018 (SenUVK);52.486595;13.427025
-3;A;N;N;Geh;2019;Holzmindener Straße 11 b;Anlehnbügel 2018 (SenUVK);52.456512;13.43094
-2;A;N;N;Geh;2019;Ilsestraße 11a;Anlehnbügel 2018 (SenUVK);52.471817;13.434949
-2;A;N;N;Geh;2019;In den Gärten 4 (Bolzplatz);Anlehnbügel 2018 (SenUVK);52.42002;13.420787
-3;A;N;N;Geh;2019;Innstraße 42;Anlehnbügel 2018 (SenUVK);52.482224;13.4453
-3;A;N;N;Geh;2019;Jahnstraße 85;Anlehnbügel 2018 (SenUVK);52.46016;13.436112
-2;A;N;N;Geh;2019;Jonasstraße 23;Anlehnbügel 2018 (SenUVK);52.47149;13.433542
-2;A;N;N;Geh;2019;Jonasstraße 43;Anlehnbügel 2018 (SenUVK);52.471073;13.43179
-6;A;N;N;F;2019;Jonasstraße 6;Anlehnbügel 2018 (SenUVK);52.472237;13.439301
-5;A;N;N;Geh;2019;Karl-Marx-Straße 228;Anlehnbügel 2018 (SenUVK);52.469467;13.441403
-3;A;N;N;Geh;2019;Karlsgartenstraße 6;Anlehnbügel 2018 (SenUVK);52.48217;13.422211
-3;A;N;N;Geh;2019;Kiehlufer 45;Anlehnbügel 2018 (SenUVK);52.485714;13.443789
-6;A;N;N;F;2019;Kiehlufer 55;Anlehnbügel 2018 (SenUVK);52.485085;13.445
-2;A;N;N;Geh;2019;Kiehlufer 73;Anlehnbügel 2018 (SenUVK);52.48415;13.446911
-11;A;N;N;F;2019;Kiehlufer 75;Anlehnbügel 2018 (SenUVK);52.483826;13.447545
-3;A;N;N;F;2019;Kienitzer Straße 20;Anlehnbügel 2018 (SenUVK);52.477314;13.435754
-3;A;N;N;Geh;2019;Kirchhofstraße 2;Anlehnbügel 2018 (SenUVK);52.4735;13.443412
-3;A;N;N;F;2019;Kirchnerweg 29;Anlehnbügel 2018 (SenUVK);52.426945;13.456094
-3;A;N;N;Geh;2019;Kirschner Weg 23 (Spielplatz);Anlehnbügel 2018 (SenUVK);52.426914;13.455472
-3;A;N;N;Geh;2019;Köpenicker Straße 154;Anlehnbügel 2018 (SenUVK);52.42017;13.499531
-3;A;N;N;Geh;2019;Kranoldstraße 10;Anlehnbügel 2018 (SenUVK);52.465984;13.433251
-2;A;N;N;Geh;2019;Lahnstraße 78;Anlehnbügel 2018 (SenUVK);52.468178;13.44535
-6;A;N;N;Geh;2019;Lautenbergerstraße 44;Anlehnbügel 2018 (SenUVK);52.45748;13.428436
-5;A;N;N;Geh;2019;Leinestraße 17;Anlehnbügel 2018 (SenUVK);52.472984;13.423046
-4;A;N;N;Geh;2019;Lenaustraße 12;Anlehnbügel 2018 (SenUVK);52.490147;13.428008
-8;A;N;N;Geh;2019;Lenaustraße 26;Anlehnbügel 2018 (SenUVK);52.490135;13.425184
-6;A;N;N;F;2019;Liberdastraße 10;Anlehnbügel 2018 (SenUVK);52.49226;13.429895
-3;A;N;N;Geh;2019;Liberdastraße 12;Anlehnbügel 2018 (SenUVK);52.492;13.429531
-6;A;N;N;F;2019;Liberdastraße 15;Anlehnbügel 2018 (SenUVK);52.491604;13.429091
-3;A;N;N;Geh;2019;Lipschitzallee 23;Anlehnbügel 2018 (SenUVK);52.430054;13.472364
-3;A;N;N;F;2019;Mahlower Straße 16;Anlehnbügel 2018 (SenUVK);52.47957;13.41974
-2;A;N;N;Geh;2019;Mahlower Straße 24;Anlehnbügel 2018 (SenUVK);52.479626;13.422436
-3;A;N;N;F;2019;Mainzer Straße 15;Anlehnbügel 2018 (SenUVK);52.482433;13.427237
-3;A;N;N;Geh;2019;Mainzer Straße 6;Anlehnbügel 2018 (SenUVK);52.48393;13.427271
-3;A;N;N;Geh;2019;Malchiner Straße 73;Anlehnbügel 2018 (SenUVK);52.445038;13.453047
-3;A;N;N;Geh;2019;Malchiner Straße 89;Anlehnbügel 2018 (SenUVK);52.444546;13.452839
-4;A;N;N;Geh;2019;Manitiusstraße 10;Anlehnbügel 2018 (SenUVK);52.490955;13.432988
-2;A;N;N;Geh;2019;Marienfelder Chaussee 142;Anlehnbügel 2018 (SenUVK);52.416073;13.406432
-3;A;N;N;Geh;2019;Marienfelder Chaussee 149;Anlehnbügel 2018 (SenUVK);52.415276;13.405198
-2;A;N;N;Geh;2019;Marienfelder Chaussee 66;Anlehnbügel 2018 (SenUVK);52.418278;13.415952
-6;A;N;N;Geh;2019;Maybachufer 17;Anlehnbügel 2018 (SenUVK);52.49401;13.426172
-3;A;N;N;Geh;2019;Maybachufer 19;Anlehnbügel 2018 (SenUVK);52.49381;13.426795
-6;A;N;N;Geh;2019;Maybachufer 27;Anlehnbügel 2018 (SenUVK);52.492832;13.429667
-3;A;N;N;Geh;2019;Michael-Bohnen-Ring 52;Anlehnbügel 2018 (SenUVK);52.465122;13.47421
-3;A;N;N;Geh;2019;Miningstraße 83;Anlehnbügel 2018 (SenUVK);52.449383;13.447361
-3;A;N;N;Geh;2019;Mohriner Allee 69;Anlehnbügel 2018 (SenUVK);52.44149;13.424325
-3;A;N;N;Geh;2019;Mohriner Allee 96;Anlehnbügel 2018 (SenUVK);52.44094;13.420074
-6;A;N;N;Geh;2019;Möwenweg 1 (Spielplatz);Anlehnbügel 2018 (SenUVK);52.44246;13.463447
-2;A;N;N;Geh;2019;Neudecker Weg 84;Anlehnbügel 2018 (SenUVK);52.419025;13.507805
-3;A;N;N;Geh;2019;Neuköllner Straße 312;Anlehnbügel 2018 (SenUVK);52.421043;13.488215
-3;A;N;N;Geh;2019;Neuköllner Straße 333;Anlehnbügel 2018 (SenUVK);52.417076;13.49459
-3;A;N;N;Geh;2019;Niemetzstraße 22;Anlehnbügel 2018 (SenUVK);52.47205;13.450961
-2;A;N;N;Geh;2019;Nogatstraße 14;Anlehnbügel 2018 (SenUVK);52.469757;13.4346485
-2;A;N;N;Geh;2019;Nogatstraße 52;Anlehnbügel 2018 (SenUVK);52.469955;13.43801
-2;A;N;N;Geh;2019;Nogatstraße 52;Anlehnbügel 2018 (SenUVK);52.469955;13.43801
-6;A;N;N;F;2019;Oderstraße 29;Anlehnbügel 2018 (SenUVK);52.472355;13.420016
-6;A;N;N;F;2019;Oderstraße 34;Anlehnbügel 2018 (SenUVK);52.473133;13.41983
-6;A;N;N;F;2019;Oderstraße 44;Anlehnbügel 2018 (SenUVK);52.475037;13.419316
-3;A;N;N;Geh;2019;Ortolanweg 94a;Anlehnbügel 2018 (SenUVK);52.439995;13.468676
-3;A;N;J;F;2019;Pannierstraße 26;Anlehnbügel 2018 (SenUVK);52.490158;13.434434
-5;A;N;N;Geh;2019;Pannierstraße 47;Anlehnbügel 2018 (SenUVK);52.488712;13.432547
-6;A;N;N;Geh;2019;Pannierstraße 51;Anlehnbügel 2018 (SenUVK);52.488148;13.431998
-2;A;N;N;Geh;2019;Pannierstraße 6;Anlehnbügel 2018 (SenUVK);52.4867;13.431051
-6;A;N;N;Geh;2019;Parchimer Allee 2;Anlehnbügel 2018 (SenUVK);52.446762;13.461084
-6;A;N;N;Geh;2019;Pflügerstraße 19;Anlehnbügel 2018 (SenUVK);52.490616;13.431463
-3;A;N;N;Geh;2019;Reuterstraße 37;Anlehnbügel 2018 (SenUVK);52.4906;13.429249
-6;A;N;N;F;2019;Richardstraße 68;Anlehnbügel 2018 (SenUVK);52.473175;13.44573
-3;A;N;N;Geh;2019;Ringslebenstraße 1;Anlehnbügel 2018 (SenUVK);52.42116;13.459823
-2;A;N;N;Geh;2019;Rübelandstraße 14;Anlehnbügel 2018 (SenUVK);52.47057;13.438616
-3;A;N;N;Geh;2019;Saalestraße 37;Anlehnbügel 2018 (SenUVK);52.472378;13.454418
-3;A;N;N;F;2019;Sanderstraße 17;Anlehnbügel 2018 (SenUVK);52.492744;13.427766
-3;A;N;N;F;2019;Schierker Straße 29;Anlehnbügel 2018 (SenUVK);52.46978;13.43036
-2;A;N;N;Geh;2019;Schierker Straße 30;Anlehnbügel 2018 (SenUVK);52.469822;13.43076
-4;A;N;N;Geh;2019;Schierker Straße 50;Anlehnbügel 2018 (SenUVK);52.4706163;13.4372997
-6;A;N;N;F;2019;Schierker Straße 53;Anlehnbügel 2018 (SenUVK);52.470737;13.438364
-2;A;N;N;Geh;2019;Schinkestraße 25;Anlehnbügel 2018 (SenUVK);52.494267;13.421925
-3;A;N;N;F;2019;Schöneweider Straße 20;Anlehnbügel 2018 (SenUVK);52.472054;13.444139
-3;A;N;N;Geh;2019;Schudomastraße 7;Anlehnbügel 2018 (SenUVK);52.473785;13.450105
-4;A;N;N;F;2019;Selchower Straße 10;Anlehnbügel 2018 (SenUVK);52.478935;13.42238
-6;A;N;N;F;2019;Sonnenallee 182;Anlehnbügel 2018 (SenUVK);52.476448;13.450208
-5;A;N;N;Geh;2019;Straße 231 129 ;Anlehnbügel 2018 (SenUVK);52.415527;13.470893
-3;A;N;N;Geh;2019;Stubenrauchstraße 87;Anlehnbügel 2018 (SenUVK);52.43281;13.497571
-3;A;N;N;Geh;2019;Sülzhayner Straße 28;Anlehnbügel 2018 (SenUVK);52.487255;13.44602
-4;A;N;N;Geh;2019;Sülzhayner Straße 8;Anlehnbügel 2018 (SenUVK);52.48775;13.44581
-6;A;N;N;Geh;2019;Theodor Loos Ring 14 (Spielplätze);Anlehnbügel 2018 (SenUVK);52.42213;13.477458
-2;A;N;N;Geh;2019;Thomasstraße 15;Anlehnbügel 2018 (SenUVK);52,4736675;13,4387278
-3;A;N;N;Geh;2019;Thomasstraße 21;Anlehnbügel 2018 (SenUVK);52,4734553;13,4378660
-3;A;N;N;Geh;2019;Thomasstraße 23;Anlehnbügel 2018 (SenUVK);52.4730788;13.4378412
-2;A;N;N;Geh;2019;Thomasstraße 55;Anlehnbügel 2018 (SenUVK);52.47232;13.433288
-2;A;N;N;Geh;2019;Thomasstraße 67;Anlehnbügel 2018 (SenUVK);52.472054;13.431179
-6;A;N;N;F;2019;Treptower Straße 19;Anlehnbügel 2018 (SenUVK);52.480133;13.451043
-3;A;N;N;Geh;2019;Treptower Straße 68;Anlehnbügel 2018 (SenUVK);52.482758;13.454052
-3;A;N;N;F;2019;Uthmannstraße 15;Anlehnbügel 2018 (SenUVK);52.475414;13.441359
-3;A;N;N;Geh;2019;Warthestraße 12;Anlehnbügel 2018 (SenUVK);52.470123;13.426442
-3;A;N;N;Geh;2019;Warthestraße 62;Anlehnbügel 2018 (SenUVK);52.469803;13.426306
-3;A;N;N;Geh;2019;Wederstraße 87;Anlehnbügel 2018 (SenUVK);52.462044;13.435679
-4;A;N;N;Geh;2019;Weichselstraße 19;Anlehnbügel 2018 (SenUVK);52.48634;13.435891
-3;A;N;N;Geh;2019;Weichselstraße 22;Anlehnbügel 2018 (SenUVK);52.48664;13.436255
-3;A;N;N;Geh;2019;Weichselstraße 63;Anlehnbügel 2018 (SenUVK);52.484413;13.432966
-2;A;N;N;Geh;2019;Weisestraße 17;Anlehnbügel 2018 (SenUVK);52.476852;13.4239235
-2;A;N;N;Geh;2019;Weisestraße 47;Anlehnbügel 2018 (SenUVK);52.47641;13.424441
-2;A;N;N;Geh;2019;Werrastraße 40 B;Anlehnbügel 2018 (SenUVK);52.480503;13.450137
-3;A;N;N;Geh;2019;Wesenberger Ring 13;Anlehnbügel 2018 (SenUVK);52.440792;13.441961
-3;A;N;N;F;2019;Weserstraße 106;Anlehnbügel 2018 (SenUVK);52.477066;13.452849
-4;A;N;N;F;2019;Wesertstraße 38;Anlehnbügel 2018 (SenUVK);52.485165;13.436516
-1;A;N;N;Geh;2019;Wissmannstraße 12;Anlehnbügel 2018 (SenUVK);52.484173;13.423338
-4;A;N;N;Geh;2019;Wissmannstraße 32;Anlehnbügel 2018 (SenUVK);52.483833;13.422687
-2;A;N;N;Geh;2019;Wissmannstraße 4;Anlehnbügel 2018 (SenUVK);52.48552;13.423372
-2;A;N;N;Geh;2019;Wissmannstraße 45;Anlehnbügel 2018 (SenUVK);52.485924;13.422996
-4;A;N;N;Geh;2019;Wittmannsdorfer Straße 1-6;Anlehnbügel 2018 (SenUVK);52.471874;13.439374
-2;A;N;N;Geh;2019;Zwiestädter Straße 10;Anlehnbügel 2018 (SenUVK);52.47328;13.447894
-5;A;N;N;Geh;2019;Zwillingstraße 21;Anlehnbügel 2018 (SenUVK);52.467354;13.464315
-40;A;N;N;Geh;2019;Donaustraße 88;Sondermodelle;52.47995;13.43991
-6;A;N;N;Geh;2019;Fontanestraße 8;Sondermodelle;52.480915;13.420555
-11;A;N;N;F;2019;Karl-Marx-Straße 13;PBL Karl-Marx-Straße;52.485615;13.426426
-2;A;N;N;F;2019;Karl-Marx-Straße 25;PBL Karl-Marx-Straße;52.484776;13.428273
-;A;N;N;F;2019;Friedelstraße 22, 23 und 42;Anlehnbügel 2018 (SenUVK);52.491203;13.427948
-;A;N;N;F;2019;Friedelstraße 22, 23 und 42;Anlehnbügel 2018 (SenUVK);52.491238;13.427513
+id;Anzahl;Art;Überberdacht;ÖPNV;Ort;Jahr;Adresse;Projekt;lat;lon
+1;1;A;N;N;Geh;2018;Allerstraße 13;Anlehnbügel 2018 (SenUVK);52.474876;13.423399
+2;1;A;N;N;Geh;2018;Allerstraße 33;Anlehnbügel 2018 (SenUVK);52.474483;13.421933
+3;2;A;N;N;Geh;2018;Allerstraße 44;Anlehnbügel 2018 (SenUVK);52.474922;13.425871
+4;1;A;N;N;Geh;2018;Allerstraße 47;Anlehnbügel 2018 (SenUVK);52.475018;13.426748
+5;1;A;N;N;Geh;2018;Altenbraker Straße 23;Anlehnbügel 2018 (SenUVK);52.46965;13.432808
+6;2;A;N;N;Geh;2018;Anzengruberstraße 14/15;Anlehnbügel 2018 (SenUVK);52.48085;13.4410305
+7;1;A;N;N;Geh;2018;Anzengruberstraße 19;Anlehnbügel 2018 (SenUVK);52.48065;13.43968
+8;1;A;N;N;Geh;2018;Anzengruberstraße 8;Anlehnbügel 2018 (SenUVK);52.480434;13.43991
+9;2;A;N;N;Geh;2018;Bartastraße 12;Anlehnbügel 2018 (SenUVK);52.47462;13.450578
+10;3;A;N;N;Geh;2018;Bartastraße 16;Anlehnbügel 2018 (SenUVK);52.474346;13.450717
+11;2;A;N;N;Geh;2018;Boddinstraße 1;Anlehnbügel 2018 (SenUVK);52.481075;13.434288
+12;2;A;N;N;Geh;2018;Boddinstraße 10;Anlehnbügel 2018 (SenUVK);52.48072;13.431614
+13;3;A;N;N;Geh;2018;Boddinstraße 46;Anlehnbügel 2018 (SenUVK);52.480034;13.429225
+14;2;A;N;N;Geh;2018;Boddinstraße 5;Anlehnbügel 2018 (SenUVK);52.480953;13.433409
+15;2;A;N;N;Geh;2018;Boddinstraße 55;Anlehnbügel 2018 (SenUVK);52.480083;13.4306555
+16;3;A;N;N;Geh;2018;Boddinstraße 55 (Schule);Anlehnbügel 2018 (SenUVK);52.480083;13.4306555
+17;3;A;N;N;Geh;2018;Boddinstraße 55 (Schule);Anlehnbügel 2018 (SenUVK);52.480083;13.4306555
+18;3;A;N;N;Geh;2018;Boddinstraße 8/9;Anlehnbügel 2018 (SenUVK);52.480846;13.432647
+19;2;A;N;N;Geh;2018;Böhmische Straße 27;Anlehnbügel 2018 (SenUVK);52.476257;13.447315
+20;2;A;N;N;Geh;2018;Böhmische Straße 43;Anlehnbügel 2018 (SenUVK);52.474266;13.449216
+21;2;A;N;N;Geh;2018;Bornsdorfer Str. 19;Anlehnbügel 2018 (SenUVK);52.476254;13.437277
+22;2;A;N;N;Geh;2018;Bornsdorfer Str. 23;Anlehnbügel 2018 (SenUVK);52.476044;13.437349
+23;3;A;N;N;Geh;2018;Bornsdorfer Str. 31;Anlehnbügel 2018 (SenUVK);52.475693;13.43747
+24;3;A;N;N;Geh;2018;Bürknerstraße 10;Anlehnbügel 2018 (SenUVK);52.49324;13.42409
+25;1;A;N;N;Geh;2018;Bürknerstraße 17;Anlehnbügel 2018 (SenUVK);52.49297;13.423466
+26;3;A;N;N;Geh;2018;Bürknerstraße 20;Anlehnbügel 2018 (SenUVK);52.493023;13.424093
+27;3;A;N;N;F;2018;Donaustraße 54;Anlehnbügel 2018 (SenUVK);52.478474;13.441979
+28;2;A;N;N;Geh;2018;Donaustraße 81;Anlehnbügel 2018 (SenUVK);52.478462;13.442514
+29;3;A;N;N;F;2018;Elbestraße 1;Anlehnbügel 2018 (SenUVK);52.48289;13.438486
+30;7;A;N;N;F;2018;Elbestraße 1 (Mitttelstreifen);Anlehnbügel 2018 (SenUVK);52.48289;13.438486
+31;5;A;N;N;F;2018;Elbestraße 11;Anlehnbügel 2018 (SenUVK);52.48433;13.44033
+32;2;A;N;N;Geh;2018;Elbestraße 17/18;Anlehnbügel 2018 (SenUVK);52.485237;13.44162
+33;3;A;N;N;F;2018;Elbestraße 19;Anlehnbügel 2018 (SenUVK);52.485584;13.442041
+34;2;A;N;N;Geh;2018;Elbestraße 24;Anlehnbügel 2018 (SenUVK);52.48539;13.441275
+35;2;A;N;N;Geh;2018;Elsenstraße 61;Anlehnbügel 2018 (SenUVK);52.484287;13.447545
+36;2;A;N;N;Geh;2018;Emserstraße 128;Anlehnbügel 2018 (SenUVK);52.46918;13.437261
+37;2;A;N;N;Geh;2018;Emserstraße 20;Anlehnbügel 2018 (SenUVK);52.469257;13.435998
+38;2;A;N;N;Geh;2018;Emserstraße 47/48;Anlehnbügel 2018 (SenUVK);52.468243;13.427879
+39;1;A;N;N;Geh;2018;Emserstraße 51;Anlehnbügel 2018 (SenUVK);52.468132;13.426862
+40;1;A;N;N;Geh;2018;Emserstraße 60;Anlehnbügel 2018 (SenUVK);52.46788;13.424542
+41;2;A;N;N;Geh;2018;Emserstraße 61;Anlehnbügel 2018 (SenUVK);52.467846;13.424339
+42;2;A;N;N;Geh;2018;Emserstraße 63/64;Anlehnbügel 2018 (SenUVK);52.467804;13.423878
+43;3;A;N;N;Geh;2018;Emserstraße 66;Anlehnbügel 2018 (SenUVK);52.46771;13.423109
+44;2;A;N;N;Geh;2018;Emserstraße 66A;Anlehnbügel 2018 (SenUVK);52.467697;13.422898
+45;3;A;N;N;Geh;2018;Emserstraße 68;Anlehnbügel 2018 (SenUVK);52.467632;13.422428
+46;3;A;N;N;Geh;2018;Emserstraße 76/77;Anlehnbügel 2018 (SenUVK);52.467358;13.42206
+47;1;A;N;N;Geh;2018;Emserstraße 85;Anlehnbügel 2018 (SenUVK);52.467648;13.424622
+48;2;A;N;N;Geh;2018;Erlangerstraße 16;Anlehnbügel 2018 (SenUVK);52.48178;13.4307995
+49;2;A;N;N;Geh;2018;Erlangerstraße 6;Anlehnbügel 2018 (SenUVK);52.482143;13.430258
+50;5;A;N;N;F;2018;Finowstraße 12;Anlehnbügel 2018 (SenUVK);52.48272;13.443864
+51;5;A;N;N;F;2018;Finowstraße 13;Anlehnbügel 2018 (SenUVK);52.482983;13.44422
+52;2;A;N;N;Geh;2018;Finowstraße 14;Anlehnbügel 2018 (SenUVK);52.483112;13.444396
+53;2;A;N;N;Geh;2018;Finowstraße 17/18;Anlehnbügel 2018 (SenUVK);52.483406;13.444393
+54;2;A;N;N;Geh;2018;Finowstraße 19;Anlehnbügel 2018 (SenUVK);52.48315;13.44397
+55;2;A;N;N;Geh;2018;Finowstraße 20;Anlehnbügel 2018 (SenUVK);52.483036;13.443811
+56;3;A;N;N;Geh;2018;Finowstraße 23;Anlehnbügel 2018 (SenUVK);52.48265;13.443365
+57;3;A;N;N;Geh;2018;Finowstraße 8;Anlehnbügel 2018 (SenUVK);52.482094;13.44297
+58;2;A;N;N;Geh;2018;Flughafenstraße 20/22;Anlehnbügel 2018 (SenUVK);52.48156;13.430584
+59;2;A;N;N;Geh;2018;Flughafenstraße 37;Anlehnbügel 2018 (SenUVK);52.4811;13.428116
+60;3;A;N;N;Geh;2018;Flughafenstraße 45;Anlehnbügel 2018 (SenUVK);52.480717;13.426678
+61;2;A;N;N;Geh;2018;Flughafenstraße 58;Anlehnbügel 2018 (SenUVK);52.48087;13.424628
+62;3;A;N;N;Geh;2018;Flughafenstraße 84;Anlehnbügel 2018 (SenUVK);52.480503;13.421336
+63;1;A;N;N;Geh;2018;Flughafenstraße ggü. 13 (Arcaden);Anlehnbügel 2018 (SenUVK);52.48155;13.432098
+64;1;A;N;N;Geh;2018;Flughafenstraße ggü.11 (Arcaden);Anlehnbügel 2018 (SenUVK);52.481556;13.432463
+65;2;A;N;N;Geh;2018;Fontanestr. 13;Anlehnbügel 2018 (SenUVK);52.47985;13.421029
+66;2;A;N;N;Geh;2018;Fontanestraße 8;Anlehnbügel 2018 (SenUVK);52.480915;13.420555
+67;2;A;N;N;Geh;2018;Framstraße 17/19;Anlehnbügel 2018 (SenUVK);52.48915;13.432428
+68;2;A;N;N;Geh;2018;Framstraße 3;Anlehnbügel 2018 (SenUVK);52.489555;13.431332
+69;2;A;N;N;Geh;2018;Framstraße 9;Anlehnbügel 2018 (SenUVK);52.48936;13.431858
+70;3;A;N;N;Geh;2018;Friedelstraße 35;Anlehnbügel 2018 (SenUVK);52.492924;13.427814
+71;2;A;N;N;F;2018;Friedrichsbrunner Straße 23;Anlehnbügel 2018 (SenUVK);52.45978;13.430044
+72;4;A;N;N;Geh;2018;Friedrichsbrunner Straße 40-46;Anlehnbügel 2018 (SenUVK);52.45801;13.429887
+73;3;A;N;N;F;2018;Fuldastraße 10;Anlehnbügel 2018 (SenUVK);52.483524;13.435708
+74;2;A;N;N;Geh;2018;Fuldastraße 23A;Anlehnbügel 2018 (SenUVK);52.485687;13.438563
+75;3;A;N;N;Geh;2018;Fuldastraße 24;Anlehnbügel 2018 (SenUVK);52.485825;13.438746
+76;1;A;N;N;Geh;2018;Fuldastraße 35;Anlehnbügel 2018 (SenUVK);52.48636;13.439078
+77;3;A;N;N;Geh;2018;Fuldastraße 43;Anlehnbügel 2018 (SenUVK);52.485348;13.437741
+78;3;A;N;N;Geh;2018;Fuldastraße 50;Anlehnbügel 2018 (SenUVK);52.484344;13.436089
+79;8;A;N;N;F;2018;Fuldastraße 61;Anlehnbügel 2018 (SenUVK);52.482323;13.433768
+80;3;A;N;N;Geh;2018;Germaniapromenade 10;Anlehnbügel 2018 (SenUVK);52.46084;13.433689
+81;2;A;N;N;Geh;2018;Geygerstraße 7;Anlehnbügel 2018 (SenUVK);52.478783;13.442163
+82;3;A;N;N;Geh;2018;Geygerstraße ggü. 15 (Spielplatz);Anlehnbügel 2018 (SenUVK);52.479313;13.443595
+83;2;A;N;N;Geh;2018;Geygerstraße ggü. 17;Anlehnbügel 2018 (SenUVK);52.47953;13.443883
+84;3;A;N;N;Geh;2018;Glasower Straße 67;Anlehnbügel 2018 (SenUVK);52.46487;13.442216
+85;3;A;N;N;Geh;2018;Hannemannstraße 2;Anlehnbügel 2018 (SenUVK);52.45565;13.44886
+86;4;A;N;N;Geh;2018;Hannemannstraße 74;Anlehnbügel 2018 (SenUVK);52.454327;13.438647
+87;3;A;N;N;Geh;2018;Harzer Straße 12;Anlehnbügel 2018 (SenUVK);52.487965;13.442898
+88;2;A;N;N;Geh;2018;Harzer Straße 96;Anlehnbügel 2018 (SenUVK);52.48665;13.446072
+89;1;A;N;N;Geh;2018;Harzer Straße 97;Anlehnbügel 2018 (SenUVK);52.48674;13.445894
+90;2;A;N;N;Geh;2018;Harzer Straße 98;Anlehnbügel 2018 (SenUVK);52.486866;13.445647
+91;2;A;N;N;Geh;2018;Hermannstraße 173-172;Anlehnbügel 2018 (SenUVK);52.470753;13.429805
+92;1;A;N;N;Geh;2018;Hermannstraße 232;Anlehnbügel 2018 (SenUVK);52.48171;13.42512
+93;1;A;N;N;Geh;2018;Hermannstraße 72;Anlehnbügel 2018 (SenUVK);52.474056;13.427493
+94;10;A;N;N;Geh;2018;Hermannstraße 80 (ehem. Friedhof);Anlehnbügel 2018 (SenUVK);52.472454;13.428319
+95;1;A;N;N;Geh;2018;Herrfurthplatz 4;Anlehnbügel 2018 (SenUVK);52.477505;13.421486
+96;1;A;N;N;Geh;2018;Hertzbergstraße 20;Anlehnbügel 2018 (SenUVK);52.47696;13.447627
+97;2;A;N;N;Geh;2018;Hertzbergstraße 22;Anlehnbügel 2018 (SenUVK);52.47671;13.44755
+98;2;A;N;N;Geh;2018;Hertzbergstraße 23;Anlehnbügel 2018 (SenUVK);52.47657;13.447504
+99;3;A;N;N;F;2018;Hertzbergstraße 4;Anlehnbügel 2018 (SenUVK);52.475742;13.44784
+100;3;A;N;N;Geh;2018;Hobrechtstraße 39;Anlehnbügel 2018 (SenUVK);52.493458;13.425609
+101;2;A;N;N;Geh;2018;Hobrechtstraße 40;Anlehnbügel 2018 (SenUVK);52.49369;13.425524
+102;3;A;N;N;Geh;2018;Hobrechtstraße 41;Anlehnbügel 2018 (SenUVK);52.49385;13.425481
+103;3;A;N;N;F;2018;Hobrechtstraße 55 (Spielplatz);Anlehnbügel 2018 (SenUVK);52.491615;13.42514
+104;1;A;N;N;Geh;2018;Hobrechtstraße 8;Anlehnbügel 2018 (SenUVK);52.486595;13.427025
+105;1;A;N;N;Geh;2018;Hüttenroder Weg 10;Anlehnbügel 2018 (SenUVK);52.485134;13.446474
+106;3;A;N;N;Geh;2018;Hüttenroder Weg 14;Anlehnbügel 2018 (SenUVK);52.48492;13.446776
+107;2;A;N;N;Geh;2018;Hüttenroder Weg 26;Anlehnbügel 2018 (SenUVK);52.484516;13.4476795
+108;2;A;N;N;Geh;2018;Ilsestraße 4;Anlehnbügel 2018 (SenUVK);52.46956;13.435711
+109;3;A;N;N;Geh;2018;Innstraße 17;Anlehnbügel 2018 (SenUVK);52.480206;13.442197
+110;2;A;N;N;Geh;2018;Innstraße 2;Anlehnbügel 2018 (SenUVK);52.4827;13.445532
+111;2;A;N;N;Geh;2018;Innstraße 30;Anlehnbügel 2018 (SenUVK);52.480072;13.4425535
+112;2;A;N;N;Geh;2018;Innstraße 35;Anlehnbügel 2018 (SenUVK);52.48119;13.444026
+113;2;A;N;N;Geh;2018;Innstraße 37;Anlehnbügel 2018 (SenUVK);52.481453;13.444373
+114;2;A;N;N;Geh;2018;Innstraße 44;Anlehnbügel 2018 (SenUVK);52.482754;13.446
+115;1;A;N;N;Geh;2018;Innstraße 6;Anlehnbügel 2018 (SenUVK);52.482098;13.444738
+116;6;A;N;N;F;2018;Jonasstraße 17 (Peter-Petersen-Grundschule);Anlehnbügel 2018 (SenUVK);52.471687;13.435314
+117;2;A;N;N;Geh;2018;Jonasstraße 18;Anlehnbügel 2018 (SenUVK);52.47167;13.435149
+118;1;A;N;N;Geh;2018;Jonasstraße 28;Anlehnbügel 2018 (SenUVK);52.471287;13.431737
+119;2;A;N;N;Geh;2018;Jonasstraße 31;Anlehnbügel 2018 (SenUVK);52.471188;13.430887
+120;3;A;N;N;F;2018;Jonasstraße 63;Anlehnbügel 2018 (SenUVK);52.472015;13.439377
+121;2;A;N;N;Geh;2018;Jonastraße 55;Anlehnbügel 2018 (SenUVK);52.4715;13.435485
+122;2;A;N;N;Geh;2018;Kanner Straße 5;Anlehnbügel 2018 (SenUVK);52.471405;13.447375
+123;3;A;N;N;Geh;2018;Karl-Marx-Straße 91;Anlehnbügel 2018 (SenUVK);52.480476;13.436133
+124;1;A;N;N;Geh;2018;Karlsgartenstraße 3;Anlehnbügel 2018 (SenUVK);52.482273;13.423764
+125;1;A;N;N;Geh;2018;Karlsgartenstraße 4;Anlehnbügel 2018 (SenUVK);52.48226;13.423526
+126;3;A;N;N;Geh;2018;Karlsgartenstraße 5;Anlehnbügel 2018 (SenUVK);52.482193;13.4227705
+127;2;A;N;N;Geh;2018;Karlsgartenstraße 6;Anlehnbügel 2018 (SenUVK);52.48217;13.422211
+128;3;A;N;N;Geh;2018;Karlsgartenstraße 6;Anlehnbügel 2018 (SenUVK);52.48217;13.422211
+129;3;A;N;N;Geh;2018;Karlsgartenstraße 6;Anlehnbügel 2018 (SenUVK);52.48217;13.422211
+130;3;A;N;N;Geh;2018;Karlsgartenstraße 7;Anlehnbügel 2018 (SenUVK);52.48197;13.42093
+131;1;A;N;N;Geh;2018;Kiehlufer 49;Anlehnbügel 2018 (SenUVK);52.4855;13.4442425
+132;2;A;N;N;Geh;2018;Kiehlufer 51/53;Anlehnbügel 2018 (SenUVK);52.485413;13.444411
+133;3;A;N;N;Geh;2018;Kiehlufer 65;Anlehnbügel 2018 (SenUVK);52.4845;13.446196
+134;3;A;N;N;Geh;2018;Kiehlufer 69;Anlehnbügel 2018 (SenUVK);52.484306;13.446607
+135;2;A;N;N;Geh;2018;Kiehlufer 75;Anlehnbügel 2018 (SenUVK);52.483826;13.447545
+136;2;A;N;N;Geh;2018;Kienitzer Str. 16_Bornsdorfer Str. 4;Anlehnbügel 2018 (SenUVK);52.477394;13.436311
+137;2;A;N;N;Geh;2018;Kienitzer Straße 104;Anlehnbügel 2018 (SenUVK);52.475986;13.424867
+138;1;A;N;N;Geh;2018;Kienitzer Straße 91;Anlehnbügel 2018 (SenUVK);52.47594;13.426377
+139;1;A;N;N;Geh;2018;Kienitzer Straße 92;Anlehnbügel 2018 (SenUVK);52.476143;13.426231
+140;1;A;N;N;Geh;2018;Kienitzer Straße 96;Anlehnbügel 2018 (SenUVK);52.476105;13.425911
+141;3;A;N;N;Geh;2018;Kienitzer Straße 99;Anlehnbügel 2018 (SenUVK);52.475826;13.425563
+142;2;A;N;N;Geh;2018;Kirchhofstraße 48;Anlehnbügel 2018 (SenUVK);52.47323;13.443689
+143;2;A;N;N;Geh;2018;Laubestraße 13;Anlehnbügel 2018 (SenUVK);52.482952;13.439957
+144;3;A;N;N;Geh;2018;Lauibestraße 15;Anlehnbügel 2018 (SenUVK);52.483162;13.439537
+145;2;A;N;N;Geh;2018;Leinestraße 37 (Carl-Legien-Oberschule);Anlehnbügel 2018 (SenUVK);52.472637;13.423461
+146;2;A;N;N;Geh;2018;Leinestraße 57;Anlehnbügel 2018 (SenUVK);52.473236;13.42754
+147;1;A;N;N;Geh;2018;Liberdastraße 14;Anlehnbügel 2018 (SenUVK);52.49177;13.429267
+148;1;A;N;N;Geh;2018;Liberdastraße 2;Anlehnbügel 2018 (SenUVK);52.491722;13.429583
+149;1;A;N;N;Geh;2018;Liberdastraße 3;Anlehnbügel 2018 (SenUVK);52.491825;13.429728
+150;2;A;N;N;Geh;2018;Lichtenraderstr. 11;Anlehnbügel 2018 (SenUVK);52.47707;13.419946
+151;2;A;N;N;Geh;2018;Lichtenraderstr. 12;Anlehnbügel 2018 (SenUVK);52.476612;13.4200735
+152;3;A;N;N;Geh;2018;Lichtenraderstr. 24;Anlehnbügel 2018 (SenUVK);52.474174;13.420821
+153;3;A;N;N;Geh;2018;Lichtenraderstr. 26;Anlehnbügel 2018 (SenUVK);52.473732;13.420982
+154;3;A;N;N;Geh;2018;Lichtenraderstr. 37;Anlehnbügel 2018 (SenUVK);52.474182;13.421225
+155;3;A;N;N;Geh;2018;Lichtenraderstr. 45 (Spielplatz);Anlehnbügel 2018 (SenUVK);52.47612;13.420649
+156;2;A;N;N;Geh;2018;Lichtenraderstr. 52A;Anlehnbügel 2018 (SenUVK);52.477474;13.420202
+157;2;A;N;N;Geh;2018;Lichtenraderstr. 54;Anlehnbügel 2018 (SenUVK);52.477673;13.420137
+158;2;A;N;N;Geh;2018;Lichtenraderstr. 9;Anlehnbügel 2018 (SenUVK);52.477417;13.419838
+159;2;A;N;N;Geh;2018;Mahlower Str 15;Anlehnbügel 2018 (SenUVK);52.479626;13.420147
+160;2;A;N;N;Geh;2018;Mahlower Str.12;Anlehnbügel 2018 (SenUVK);52.479702;13.420927
+161;2;A;N;N;Geh;2018;Mahlower Str.13;Anlehnbügel 2018 (SenUVK);52.479668;13.420527
+162;1;A;N;N;Geh;2018;Mahlower Str.25;Anlehnbügel 2018 (SenUVK);52.479664;13.422758
+163;1;A;N;N;Geh;2018;Mahlower Str.27;Anlehnbügel 2018 (SenUVK);52.479755;13.423596
+164;2;A;N;N;Geh;2018;Mainzer Straße 12/13;Anlehnbügel 2018 (SenUVK);52.482964;13.427249
+165;2;A;N;N;Geh;2018;Mainzer Straße 17;Anlehnbügel 2018 (SenUVK);52.48209;13.427273
+166;2;A;N;N;Geh;2018;Mainzer Straße 20;Anlehnbügel 2018 (SenUVK);52.481487;13.427431
+167;2;A;N;N;Geh;2018;Mainzer Straße 27 (Spielplatz);Anlehnbügel 2018 (SenUVK);52.47898;13.428003
+168;2;A;N;N;Geh;2018;Mainzer Straße 43/2;Anlehnbügel 2018 (SenUVK);52.48155;13.427763
+169;2;A;N;N;Geh;2018;Mainzer Straße 7/8;Anlehnbügel 2018 (SenUVK);52.483772;13.427269
+170;1;A;N;N;Geh;2018;Mainzer Straße 9/10;Anlehnbügel 2018 (SenUVK);52.483444;13.427259
+171;2;A;N;N;Geh;2018;Manitiusstraße 11;Anlehnbügel 2018 (SenUVK);52.49088;13.433299
+172;2;A;N;N;Geh;2018;Manitiusstraße 15/16;Anlehnbügel 2018 (SenUVK);52.49075;13.434367
+173;2;A;N;N;Geh;2018;Maybachufer ggü. 21;Anlehnbügel 2018 (SenUVK);52.49361;13.427329
+174;2;A;N;N;Geh;2018;Nansenstraße 15;Anlehnbügel 2018 (SenUVK);52.49029;13.431627
+175;4;A;N;N;Geh;2018;Nansenstraße 2;Anlehnbügel 2018 (SenUVK);52.488407;13.429763
+176;2;A;N;N;Geh;2018;Nansenstraße 27;Anlehnbügel 2018 (SenUVK);52.491108;13.431995
+177;3;A;N;N;Geh;2018;Nansenstraße 3;Anlehnbügel 2018 (SenUVK);52.48857;13.429958
+178;2;A;N;N;Geh;2018;Nansenstraße 33;Anlehnbügel 2018 (SenUVK);52.490253;13.431262
+179;3;A;N;N;Geh;2018;Nansenstraße 6 (Kirche);Anlehnbügel 2018 (SenUVK);52.48893;13.430351
+180;2;A;N;N;Geh;2018;Neißestraße 2;Anlehnbügel 2018 (SenUVK);52.46762;13.425102
+181;1;A;N;N;Geh;2018;Neißestraße 3;Anlehnbügel 2018 (SenUVK);52.467583;13.42476
+182;2;A;N;N;Geh;2018;Niemetzstraße 11;Anlehnbügel 2018 (SenUVK);52.472885;13.4505005
+183;2;A;N;N;Geh;2018;Niemetzstraße 15;Anlehnbügel 2018 (SenUVK);52.47249;13.450881
+184;1;A;N;N;Geh;2018;Nogatstraße 15;Anlehnbügel 2018 (SenUVK);52.469727;13.434391
+185;1;A;N;N;Geh;2018;Nogatstraße 17;Anlehnbügel 2018 (SenUVK);52.469658;13.433871
+186;1;A;N;N;Geh;2018;Nogatstraße 17A;Anlehnbügel 2018 (SenUVK);52.469627;13.433597
+187;2;A;N;N;Geh;2018;Nogatstraße 19;Anlehnbügel 2018 (SenUVK);52.46956;13.433072
+188;3;A;N;N;Geh;2018;Nogatstraße 24;Anlehnbügel 2018 (SenUVK);52.469376;13.43159
+189;2;A;N;N;Geh;2018;Nogatstraße 31/32;Anlehnbügel 2018 (SenUVK);52.469166;13.431708
+190;2;A;N;N;Geh;2018;Nogatstraße 40;Anlehnbügel 2018 (SenUVK);52.469498;13.434241
+191;1;A;N;N;Geh;2018;Nogatstraße 45;Anlehnbügel 2018 (SenUVK);52.469692;13.435849
+192;3;A;N;N;F;2018;Oderstraße / Warthestraße 37;Anlehnbügel 2018 (SenUVK);52.469215;13.4208145
+193;2;A;N;N;Geh;2018;Oderstraße 1_Siegfriedstr. 58;Anlehnbügel 2018 (SenUVK);52.46694;13.421323
+194;6;A;N;N;Geh;2018;Oderstraße 172/176;Anlehnbügel 2018 (SenUVK);52.470165;13.417788
+195;2;A;N;N;Geh;2018;Oderstraße 35;Anlehnbügel 2018 (SenUVK);52.473576;13.419671
+196;3;A;N;N;Geh;2018;Oderstraße 37;Anlehnbügel 2018 (SenUVK);52.47394;13.419603
+197;6;A;N;N;F;2018;Oderstraße ggü 39;Anlehnbügel 2018 (SenUVK);52.474197;13.419496
+198;7;A;N;N;F;2018;Okerstraße 1;Anlehnbügel 2018 (SenUVK);52.474335;13.426939
+199;1;A;N;N;Geh;2018;Okerstraße 10;Anlehnbügel 2018 (SenUVK);52.474075;13.424565
+200;3;A;N;N;Geh;2018;Okerstraße 15;Anlehnbügel 2018 (SenUVK);52.473846;13.422492
+201;2;A;N;N;Geh;2018;Okerstraße 20;Anlehnbügel 2018 (SenUVK);52.473656;13.420718
+202;2;A;N;N;Geh;2018;Okerstraße 24;Anlehnbügel 2018 (SenUVK);52.473576;13.419968
+203;3;A;N;N;Geh;2018;Okerstraße 34;Anlehnbügel 2018 (SenUVK);52.473637;13.422649
+204;3;A;N;N;F;2018;Okerstraße 35;Anlehnbügel 2018 (SenUVK);52.473724;13.423582
+205;3;A;N;N;F;2018;Okerstraße 39;Anlehnbügel 2018 (SenUVK);52.473854;13.424668
+206;3;A;N;N;F;2018;Okerstraße 40;Anlehnbügel 2018 (SenUVK);52.47393;13.425355
+207;3;A;N;N;Geh;2018;Onckenstraße 19/21;Anlehnbügel 2018 (SenUVK);52.488205;13.441972
+208;1;A;N;N;Geh;2018;Onckenstraße 21;Anlehnbügel 2018 (SenUVK);52.48808;13.441816
+209;2;A;N;N;Geh;2018;Ossastr. 46;Anlehnbügel 2018 (SenUVK);52.48762;13.435984
+210;2;A;N;N;Geh;2018;Ossastraße 10;Anlehnbügel 2018 (SenUVK);52.48685;13.437175
+211;1;A;N;N;Geh;2018;Ossastraße 13;Anlehnbügel 2018 (SenUVK);52.4866;13.437692
+212;2;A;N;N;Geh;2018;Ossastraße 14/15;Anlehnbügel 2018 (SenUVK);52.486523;13.437856
+213;3;A;N;N;Geh;2018;Ossastraße 16A;Anlehnbügel 2018 (SenUVK);52.486217;13.438559
+214;4;A;N;N;Geh;2018;Ossastraße 34-37;Anlehnbügel 2018 (SenUVK);52.48635;13.438725
+215;2;A;N;N;Geh;2018;Ossastraße 39;Anlehnbügel 2018 (SenUVK);52.48681;13.437754
+216;5;A;N;N;Geh;2018;Ossastraße 44;Anlehnbügel 2018 (SenUVK);52.487457;13.43639
+217;4;A;N;N;Geh;2018;Ossastraße 45;Anlehnbügel 2018 (SenUVK);52.48752;13.436252
+218;2;A;N;N;Geh;2018;Pannierstraße 37;Anlehnbügel 2018 (SenUVK);52.490456;13.434194
+219;3;A;N;N;F;2018;Pannierstraße 61;Anlehnbügel 2018 (SenUVK);52.485897;13.429825
+220;2;A;N;N;Geh;2018;Pflügerstraße 24;Anlehnbügel 2018 (SenUVK);52.49004;13.433077
+221;2;A;N;N;Geh;2018;Pflügerstraße 53;Anlehnbügel 2018 (SenUVK);52.490257;13.433348
+222;2;A;N;N;Geh;2018;Pflügerstraße 60;Anlehnbügel 2018 (SenUVK);52.491;13.431063
+223;2;A;N;N;Geh;2018;Pflügerstraße 76/77;Anlehnbügel 2018 (SenUVK);52.491405;13.425446
+224;2;A;N;N;Geh;2018;Pflügerstraße 79A;Anlehnbügel 2018 (SenUVK);52.491295;13.424367
+225;3;A;N;N;Geh;2018;Reuterplatz (ostseite /Nansenstraße 2);Anlehnbügel 2018 (SenUVK);52.488407;13.429763
+226;1;A;N;N;Geh;2018;Reuterplatz 1;Anlehnbügel 2018 (SenUVK);52.489944;13.429244
+227;2;A;N;N;Geh;2018;Reuterplatz 1;Anlehnbügel 2018 (SenUVK);52.489944;13.429244
+228;2;A;N;N;Geh;2018;Reuterplatz 3/4;Anlehnbügel 2018 (SenUVK);52.489647;13.429909
+229;3;A;N;N;F;2018;Reuterstraße 66;Anlehnbügel 2018 (SenUVK);52.486294;13.428757
+230;3;A;N;N;F;2018;Richardplatz 28;Anlehnbügel 2018 (SenUVK);52.47419;13.446312
+231;3;A;N;N;F;2018;Richardplatz 2b;Anlehnbügel 2018 (SenUVK);52.47464;13.446285
+232;3;A;N;N;Geh;2018;Richardplatz 9 (Spielplatz);Anlehnbügel 2018 (SenUVK);52.474326;13.443644
+233;2;A;N;N;Geh;2018;Richardstraße 108;Anlehnbügel 2018 (SenUVK);52.478294;13.439162
+234;3;A;N;N;F;2018;Richardstraße 12;Anlehnbügel 2018 (SenUVK);52.47767;13.439705
+235;3;A;N;N;Geh;2018;Richardstraße 51;Anlehnbügel 2018 (SenUVK);52.472527;13.445518
+236;1;A;N;N;Geh;2018;Richardstraße 53A;Anlehnbügel 2018 (SenUVK);52.4721;13.445821
+237;2;A;N;N;Geh;2018;Richardstraße 7;Anlehnbügel 2018 (SenUVK);52.478104;13.438877
+238;1;A;N;N;Geh;2018;Roseggerstraße 11;Anlehnbügel 2018 (SenUVK);52.4787;13.444796
+239;3;A;N;N;Geh;2018;Roseggerstraße 12;Anlehnbügel 2018 (SenUVK);52.478874;13.445057
+240;2;A;N;N;Geh;2018;Roseggerstraße 17;Anlehnbügel 2018 (SenUVK);52.480038;13.446715
+241;2;A;N;N;Geh;2018;Roseggerstraße 35;Anlehnbügel 2018 (SenUVK);52.48067;13.447024
+242;2;A;N;N;Geh;2018;Roseggerstraße 37/38;Anlehnbügel 2018 (SenUVK);52.48026;13.4464445
+243;2;A;N;N;F;2018;Roseggerstraße 7;Anlehnbügel 2018 (SenUVK);52.47794;13.443665
+244;2;A;N;N;Geh;2018;Roseggerstraße 9;Anlehnbügel 2018 (SenUVK);52.47844;13.444413
+245;2;A;N;N;Geh;2018;Rübelandstraße 11;Anlehnbügel 2018 (SenUVK);52.472248;13.438405
+246;2;A;N;N;Geh;2018;Saltykowstraße ggü. 11;Anlehnbügel 2018 (SenUVK);52.476315;13.43736
+247;2;A;N;N;Geh;2018;Sanderstraße 22;Anlehnbügel 2018 (SenUVK);52.49259;13.426133
+248;6;A;N;N;F;2018;Sanderstraße 27;Anlehnbügel 2018 (SenUVK);52.492413;13.424134
+249;6;A;N;N;F;2018;Sanderstraße 29;Anlehnbügel 2018 (SenUVK);52.49235;13.423466
+250;3;A;N;N;Geh;2018;Schandauer Straße 16;Anlehnbügel 2018 (SenUVK);52.484726;13.441421
+251;3;A;N;N;Geh;2018;Schandauer Straße 4;Anlehnbügel 2018 (SenUVK);52.484386;13.441665
+252;2;A;N;N;Geh;2018;Schandauer Straße 8;Anlehnbügel 2018 (SenUVK);52.483917;13.442622
+253;2;A;N;N;Geh;2018;Schierker Straße 16;Anlehnbügel 2018 (SenUVK);52.47042;13.433893
+254;1;A;N;N;Geh;2018;Schierker Straße 19;Anlehnbügel 2018 (SenUVK);52.470333;13.433137
+255;2;A;N;N;Geh;2018;Schierker Straße 21;Anlehnbügel 2018 (SenUVK);52.470287;13.432667
+256;3;A;N;N;Geh;2018;Schierker Straße 26;Anlehnbügel 2018 (SenUVK);52.470066;13.430855
+257;2;A;N;N;Geh;2018;Schierker Straße 57 (Kita);Anlehnbügel 2018 (SenUVK);52.47091;13.439818
+258;3;A;N;N;Geh;2018;Schillerpromenade 24;Anlehnbügel 2018 (SenUVK);52.473373;13.4234295
+259;1;A;N;N;Geh;2018;Schillerpromenade 29 (Mittelstreifen);Anlehnbügel 2018 (SenUVK);52.474964;13.4231615
+260;2;A;N;N;Geh;2018;Schillerpromenade 31 (Mittelstreifen);Anlehnbügel 2018 (SenUVK);52.475426;13.423013
+261;3;A;N;N;Geh;2018;Schillerpromenade 34 (Karl-Weise-Grundschule);Anlehnbügel 2018 (SenUVK);52.47637;13.422807
+262;5;A;N;N;Geh;2018;Schillerpromenade 37 (Mittelstreifen);Anlehnbügel 2018 (SenUVK);52.477695;13.422312
+263;2;A;N;N;Geh;2018;Schillerpromenade 42 (Mittelstreifen);Anlehnbügel 2018 (SenUVK);52.478523;13.422055
+264;1;A;N;N;Geh;2018;Schillerpromenade 6;Anlehnbügel 2018 (SenUVK);52.477608;13.421518
+265;2;A;N;N;Geh;2018;Schinkestraße 23 (Spielplatz);Anlehnbügel 2018 (SenUVK);52.494526;13.422479
+266;2;A;N;N;Geh;2018;Schinkestraße 25;Anlehnbügel 2018 (SenUVK);52.494267;13.421925
+267;2;A;N;N;Geh;2018;Schöneweider Straße 17/18;Anlehnbügel 2018 (SenUVK);52.472034;13.444894
+268;2;A;N;N;Geh;2018;Schöneweider Straße 5;Anlehnbügel 2018 (SenUVK);52.471695;13.44415
+269;1;A;N;N;Geh;2018;Schönstedstraße 6;Anlehnbügel 2018 (SenUVK);52.48227;13.4363785
+270;2;A;N;N;Geh;2018;Schönstedstraße 7-8;Anlehnbügel 2018 (SenUVK);52.482456;13.436732
+271;3;A;N;N;Geh;2018;Schudomastraße 16;Anlehnbügel 2018 (SenUVK);52.47326;13.451392
+272;3;A;N;N;Geh;2018;Schudomastraße 36/37;Anlehnbügel 2018 (SenUVK);52.473194;13.452138
+273;1;A;N;N;Geh;2018;Selchower Str. 1;Anlehnbügel 2018 (SenUVK);52.479244;13.425139
+274;2;A;N;N;Geh;2018;Selchower Str. 22;Anlehnbügel 2018 (SenUVK);52.47851;13.420678
+275;2;A;N;N;Geh;2018;Selchower Str. 23;Anlehnbügel 2018 (SenUVK);52.47855;13.421003
+276;2;A;N;N;Geh;2018;Selchower Str. 27/28;Anlehnbügel 2018 (SenUVK);52.47872;13.422548
+277;2;A;N;N;Geh;2018;Selchower Str. 3/4;Anlehnbügel 2018 (SenUVK);52.47918;13.42455
+278;10;A;N;N;F;2018;Selchower Str. 35;Anlehnbügel 2018 (SenUVK);52.479023;13.425184
+279;2;A;N;N;Geh;2018;Siegfriedstraße 53;Anlehnbügel 2018 (SenUVK);52.466995;13.423033
+280;3;A;N;N;Geh;2018;Sinsheimer Weg 6 (Spielplatz);Anlehnbügel 2018 (SenUVK);52.48488;13.453122
+281;2;A;N;N;Geh;2018;Sonnenallee 126;Anlehnbügel 2018 (SenUVK);52.48011;13.442813
+282;3;A;N;N;Geh;2018;Sonnenallee 141;Anlehnbügel 2018 (SenUVK);52.479416;13.445175
+283;1;A;N;N;Geh;2018;Sonnenallee 58;Anlehnbügel 2018 (SenUVK);52.48486;13.433218
+284;2;A;N;N;Geh;2018;Sonnenallee 72/74;Anlehnbügel 2018 (SenUVK);52.483955;13.435126
+285;2;A;N;N;Geh;2018;Sprembergstraße 1;Anlehnbügel 2018 (SenUVK);52.493294;13.423429
+286;2;A;N;N;Geh;2018;Sprembergstraße 10/11;Anlehnbügel 2018 (SenUVK);52.493515;13.423108
+287;2;A;N;N;Geh;2018;Stuttgarterstraße 35;Anlehnbügel 2018 (SenUVK);52.477734;13.450482
+288;5;A;N;N;Geh;2018;Stuttgarterstraße 35;Anlehnbügel 2018 (SenUVK);52.477734;13.450482
+289;2;A;N;N;Geh;2018;Stuttgarterstraße 42;Anlehnbügel 2018 (SenUVK);52.47875;13.448387
+290;2;A;N;N;Geh;2018;Teupitzer Straße 37;Anlehnbügel 2018 (SenUVK);52.480087;13.455913
+291;2;A;N;N;Geh;2018;Teupitzer Straße 68;Anlehnbügel 2018 (SenUVK);52.48171;13.45538
+292;1;A;N;N;Geh;2018;Teupitzer Straße 69;Anlehnbügel 2018 (SenUVK);52.48149;13.4555025
+293;2;A;N;N;Geh;2018;Teupitzer Straße 69;Anlehnbügel 2018 (SenUVK);52.48149;13.4555025
+294;1;A;N;N;Geh;2018;Teupitzer Straße 71;Anlehnbügel 2018 (SenUVK);52.48115;13.455466
+295;2;A;N;N;Geh;2018;Thiemannstraße 15;Anlehnbügel 2018 (SenUVK);52.476517;13.449761
+296;2;A;N;N;Geh;2018;Thiemannstraße 16/16A;Anlehnbügel 2018 (SenUVK);52.476345;13.449598
+297;2;A;N;N;Geh;2018;Thiemannstraße 17A/18;Anlehnbügel 2018 (SenUVK);52.47608;13.4493065
+298;1;A;N;N;Geh;2018;Thiemannstraße 19;Anlehnbügel 2018 (SenUVK);52.475815;13.448923
+299;2;A;N;N;Geh;2018;Thiemannstraße 22;Anlehnbügel 2018 (SenUVK);52.475834;13.449412
+300;2;A;N;N;Geh;2018;Thiemannstraße 23;Anlehnbügel 2018 (SenUVK);52.476032;13.449659
+301;2;A;N;N;Geh;2018;Thomasstraße 49;Anlehnbügel 2018 (SenUVK);52.472416;13.434027
+302;2;A;N;N;Geh;2018;Thomasstraße 61/63;Anlehnbügel 2018 (SenUVK);52.472218;13.432446
+303;2;A;N;N;Geh;2018;Thomasstraße 69/71;Anlehnbügel 2018 (SenUVK);52.47202;13.430888
+304;2;A;N;N;Geh;2018;Treptower Straße 32A;Anlehnbügel 2018 (SenUVK);52.48345;13.455754
+305;3;A;N;N;Geh;2018;Truseweg 2;Anlehnbügel 2018 (SenUVK);52.482666;13.4475155
+306;2;A;N;N;Geh;2018;Truseweg 4;Anlehnbügel 2018 (SenUVK);52.482666;13.4475155
+307;2;A;N;N;Geh;2018;Warthestraße 15;Anlehnbügel 2018 (SenUVK);52.47004;13.425724
+308;1;A;N;N;Geh;2018;Warthestraße 19 (Mittelinsel);Anlehnbügel 2018 (SenUVK);52.46993;13.424768
+309;2;A;N;N;Geh;2018;Warthestraße 56/58;Anlehnbügel 2018 (SenUVK);52.469643;13.424903
+310;2;A;N;N;Geh;2018;Warthestraße 71;Anlehnbügel 2018 (SenUVK);52.47007;13.428663
+311;1;A;N;N;Geh;2018;Weichselstraße 19;Anlehnbügel 2018 (SenUVK);52.48634;13.435891
+312;3;A;N;N;Geh;2018;Weichselstraße 20/21;Anlehnbügel 2018 (SenUVK);52.48644;13.436021
+313;2;A;N;N;Geh;2018;Weißestr. 12;Anlehnbügel 2018 (SenUVK);52.477962;13.423563
+314;2;A;N;N;Geh;2018;Weißestr. 15;Anlehnbügel 2018 (SenUVK);52.477516;13.423701
+315;3;A;N;N;Geh;2018;Weißestr. 21;Anlehnbügel 2018 (SenUVK);52.476192;13.424107
+316;2;A;N;N;Geh;2018;Weißestraße 4;Anlehnbügel 2018 (SenUVK);52.479618;13.423054
+317;1;A;N;N;Geh;2018;Weißestraße 60;Anlehnbügel 2018 (SenUVK);52.47917;13.423572
+318;6;A;N;N;F;2018;Weißestraße 64/3;Anlehnbügel 2018 (SenUVK);52.480003;13.42332
+319;10;A;N;N;F;2018;Werrastraße 36;Anlehnbügel 2018 (SenUVK);52.47975;13.451672
+320;2;A;N;N;Geh;2018;Werrastraße 40A;Anlehnbügel 2018 (SenUVK);52.480423;13.450295
+321;4;A;N;N;Geh;2018;Werrastraße 43;Anlehnbügel 2018 (SenUVK);52.48093;13.44927
+322;3;A;N;N;Geh;2018;Werrastraße 46;Anlehnbügel 2018 (SenUVK);52.48119;13.448801
+323;2;A;N;N;Geh;2018;Werrastraße 50;Anlehnbügel 2018 (SenUVK);52.482277;13.44663
+324;2;A;N;N;Geh;2018;Werrastraße 51;Anlehnbügel 2018 (SenUVK);52.4824;13.446388
+325;1;A;N;N;Geh;2018;Weserstraße 10;Anlehnbügel 2018 (SenUVK);52.48803;13.429595
+326;26;A;N;N;Geh;2018;Weserstraße 12 (Schule);Anlehnbügel 2018 (SenUVK);52.487473;13.430067
+327;3;A;N;N;F;2018;Weserstraße 131;Anlehnbügel 2018 (SenUVK);52.479076;13.44987
+328;1;A;N;N;Geh;2018;Weserstraße 157;Anlehnbügel 2018 (SenUVK);52.48221;13.443481
+329;5;A;N;N;F;2018;Weserstraße 164;Anlehnbügel 2018 (SenUVK);52.483166;13.441576
+330;2;A;N;N;Geh;2018;Weserstraße 176 (Spielplatz);Anlehnbügel 2018 (SenUVK);52.484562;13.438769
+331;2;A;N;N;Geh;2018;Weserstraße 54;Anlehnbügel 2018 (SenUVK);52.48342;13.440586
+332;2;A;N;N;Geh;2018;Weserstraße 58;Anlehnbügel 2018 (SenUVK);52.483;13.441435
+333;3;A;N;N;Geh;2018;Weserstraße 59;Anlehnbügel 2018 (SenUVK);52.482746;13.441952
+334;3;A;N;N;Geh;2018;Weserstraße 65;Anlehnbügel 2018 (SenUVK);52.4821;13.443258
+335;2;A;N;N;Geh;2018;Weserstraße 72;Anlehnbügel 2018 (SenUVK);52.481255;13.444858
+336;2;A;N;N;Geh;2018;Weserstraße 74/75;Anlehnbügel 2018 (SenUVK);52.481033;13.44531
+337;3;A;N;N;F;2018;Weserstraße 79;Anlehnbügel 2018 (SenUVK);52.480453;13.446473
+338;3;A;N;N;F;2018;Weserstraße 80;Anlehnbügel 2018 (SenUVK);52.480164;13.447018
+339;2;A;N;N;Geh;2018;Weserstraße 84/85;Anlehnbügel 2018 (SenUVK);52.47978;13.447794
+340;3;A;N;N;F;2018;Weserstraße 89;Anlehnbügel 2018 (SenUVK);52.479237;13.448888
+341;1;A;N;N;Geh;2018;Weserstraße 9;Anlehnbügel 2018 (SenUVK);52.488247;13.428747
+342;2;A;N;N;Geh;2018;Wildenbruchplatz 1;Anlehnbügel 2018 (SenUVK);52.48396;13.443643
+343;2;A;N;N;Geh;2018;Wildenbruchplatz 2;Anlehnbügel 2018 (SenUVK);52.48396;13.443643
+344;2;A;N;N;Geh;2018;Wildenbruchplatz 4/5;Anlehnbügel 2018 (SenUVK);52.483658;13.444226
+345;2;A;N;N;Geh;2018;Wildenbruchplatz 7;Anlehnbügel 2018 (SenUVK);52.483227;13.445038
+346;3;A;N;N;Geh;2018;Wildenbruchplatz 9;Anlehnbügel 2018 (SenUVK);52.48303;13.445426
+347;2;A;N;N;Geh;2018;Wildenbruchstraße 12/13;Anlehnbügel 2018 (SenUVK);52.483646;13.4429655
+348;1;A;N;N;Geh;2018;Wildenbruchstraße 18;Anlehnbügel 2018 (SenUVK);52.48562;13.445548
+349;1;A;N;N;Geh;2018;Wildenbruchstraße 20;Anlehnbügel 2018 (SenUVK);52.48562;13.445548
+350;2;A;N;N;Geh;2018;Wildenbruchstraße 23;Anlehnbügel 2018 (SenUVK);52.486412;13.446717
+351;6;A;N;N;Geh;2018;Wildenbruchstraße 25 (Kita);Anlehnbügel 2018 (SenUVK);52.48680;13.44709
+352;2;A;N;N;Geh;2018;Wildenbruchstraße 66A;Anlehnbügel 2018 (SenUVK);52.486828;13.44663
+353;2;A;N;N;Geh;2018;Wildenbruchstraße 8;Anlehnbügel 2018 (SenUVK);52.48319;13.442282
+354;3;A;N;N;Geh;2018;Wildenbruchstraße 82/83;Anlehnbügel 2018 (SenUVK);52.48365;13.4425335
+355;2;A;N;N;Geh;2018;Wildenbruchstraße 9-11;Anlehnbügel 2018 (SenUVK);52.483295;13.442499
+356;2;A;N;N;Geh;2018;Wilhelm-Busch-Straße 22;Anlehnbügel 2018 (SenUVK);52.47831;13.444443
+357;2;A;N;N;Geh;2018;Wissmannstraße 20;Anlehnbügel 2018 (SenUVK);52.48285;13.423348
+358;2;A;N;N;Geh;2018;Wissmannstraße 28;Anlehnbügel 2018 (SenUVK);52.48294;13.422969
+359;2;A;N;N;Geh;2018;Wissmannstraße 30;Anlehnbügel 2018 (SenUVK);52.483265;13.422954
+360;3;A;N;N;F;2018;gegenüber Pflügerstraße 26;Fahrradstraße Weigandufer;52.48965;13.434121
+361;2;A;N;N;Geh;2018;gegenüber Pflügerstraße 26;Fahrradstraße Weigandufer;52.48965;13.434121
+362;4;A;N;N;F;2018;Pflügerstraße 26;Fahrradstraße Weigandufer;52.48965;13.434121
+363;2;A;N;N;Geh;2018;Pflügerstraße 34;Fahrradstraße Weigandufer;52.488586;13.436566
+364;3;A;N;N;F;2018;Pflügerstraße 38;Fahrradstraße Weigandufer;52.488045;13.437621
+365;3;A;N;N;F;2018;Weichselplatz 1;Fahrradstraße Weigandufer;52.487827;13.438072
+366;3;A;N;N;F;2018;Weigandufer 13;Fahrradstraße Weigandufer;52.485195;13.443195
+367;3;A;N;N;F;2018;Weigandufer 21;Fahrradstraße Weigandufer;52.48295;13.447589
+368;3;A;N;N;F;2018;Weigandufer 3;Fahrradstraße Weigandufer;52.486485;13.44068
+369;4;A;N;N;F;2018;Weigandufer 33A;Fahrradstraße Weigandufer;52.48104;13.450995
+370;3;A;N;N;F;2018;Weigandufer 8;Fahrradstraße Weigandufer;52.485928;13.441695
+371;3;A;N;N;F;2018;Weigandufer 9;Fahrradstraße Weigandufer;52.485645;13.442318
+372;6;A;N;N;Geh;2018;Karl-Marx-Straße 117;Karl-Marx-Straße;52.47825;13.438268
+373;2;A;N;N;Geh;2018;Karl-Marx-Straße 118;Karl-Marx-Straße;52.47809;13.437896
+374;1;A;N;N;Geh;2018;Karl-Marx-Straße 118;Karl-Marx-Straße;52.47809;13.437896
+375;3;A;N;N;Geh;2018;Karl-Marx-Straße 124;Karl-Marx-Straße;52.47787;13.438069
+376;5;A;N;N;Geh;2018;Karl-Marx-Straße 129;Karl-Marx-Straße;52.477604;13.438736
+377;10;A;N;N;Geh;2018;Karl-Marx-Straße 130;Karl-Marx-Straße;52.477444;13.438185
+378;2;A;N;N;Geh;2018;Karl-Marx-Straße 131;Karl-Marx-Straße;52.477535;13.439045
+379;6;A;N;N;Geh;2018;Karl-Marx-Straße 133;Karl-Marx-Straße;52.477444;13.438959
+380;4;A;N;N;Geh;2018;Karl-Marx-Straße 139;Karl-Marx-Straße;52.47704;13.439112
+381;8;A;N;N;Geh;2018;Karl-Marx-Straße 140;Karl-Marx-Straße;52.476955;13.438706
+382;4;A;N;N;Geh;2018;Karl-Marx-Straße 141;Karl-Marx-Straße;52.476994;13.439605
+383;3;A;N;N;Geh;2018;Karl-Marx-Straße 144;Karl-Marx-Straße;52.47658;13.438904
+384;7;A;N;N;Geh;2018;Karl-Marx-Straße 145;Karl-Marx-Straße;52.47677;13.43931
+385;5;A;N;N;Geh;2019;Alt Buckow 16;Anlehnbügel 2018 (SenUVK);52.4231;13.433477
+386;3;A;N;N;Geh;2019;Alt Rudow 26;Anlehnbügel 2018 (SenUVK);52.420097;13.492096
+387;2;A;N;N;Geh;2019;Alt Rudow 46;Anlehnbügel 2018 (SenUVK);52.418232;13.493155
+388;3;A;N;N;Geh;2019;Alt-Britz 39;Anlehnbügel 2018 (SenUVK);52.45019;13.440494
+389;2;A;N;N;Geh;2019;Altenbraker Straße 24;Anlehnbügel 2018 (SenUVK);52.469597;13.432387
+390;2;A;N;N;Geh;2019;Altenbraker Straße 26;Anlehnbügel 2018 (SenUVK);52.469185;13.432505
+391;6;A;N;N;F;2019;Altenbraker Straße 31;Anlehnbügel 2018 (SenUVK);52.46834;13.433111
+392;2;A;N;N;Geh;2019;Anzengruberstraße 2;Anlehnbügel 2018 (SenUVK);52.480095;13.437804
+393;3;A;N;N;Geh;2019;Bauführerweg 20;Anlehnbügel 2018 (SenUVK);52.431454;13.445991
+394;2;A;N;N;Geh;2019;Bendastraße 21;Anlehnbügel 2018 (SenUVK);52.466476;13.436726
+395;2;A;N;N;Geh;2019;Bendastraße 6;Anlehnbügel 2018 (SenUVK);52.4648;13.436837
+396;5;A;N;N;Geh;2019;Bendastraße17;Anlehnbügel 2018 (SenUVK);52.464214;13.437429
+397;2;A;N;N;Geh;2019;Berthelsdorfer Straße 10;Anlehnbügel 2018 (SenUVK);52.478607;13.440704
+398;3;A;N;N;Geh;2019;Biebricher Straße 1A;Anlehnbügel 2018 (SenUVK);52.481766;13.425408
+399;2;A;N;N;Geh;2019;Boddinstraße 1;Anlehnbügel 2018 (SenUVK);52.481075;13.434288
+400;10;A;N;N;F;2019;Boddinstraße 22;Anlehnbügel 2018 (SenUVK);52.48027;13.428407
+401;3;A;N;N;Geh;2019;Boddinstraße 46;Anlehnbügel 2018 (SenUVK);52.480034;13.429225
+402;2;A;N;N;Geh;2019;Böhmische Straße 52;Anlehnbügel 2018 (SenUVK);52.47264;13.447207
+403;3;A;N;N;Geh;2019;Bornsdorfer Straße 14;Anlehnbügel 2018 (SenUVK);52.476739;13.436665
+404;3;A;N;N;Geh;2019;Bornsdorfer Straße 37b;Anlehnbügel 2018 (SenUVK);52.475197;13.437996
+405;2;A;N;N;Geh;2019;Braunlager Straße 15;Anlehnbügel 2018 (SenUVK);52.457787;13.427585
+406;4;A;N;N;Geh;2019;Braunlager Straße 15;Anlehnbügel 2018 (SenUVK);52.457787;13.427585
+407;2;A;N;N;Geh;2019;Braunlager Straße 21;Anlehnbügel 2018 (SenUVK);52.457577;13.427071
+408;3;A;N;N;Geh;2019;Braunlager Straße 9;Anlehnbügel 2018 (SenUVK);52.458294;13.428832
+409;3;A;N;N;F;2019;Braunschweiger Straße 28;Anlehnbügel 2018 (SenUVK);52.471878;13.450912
+410;4;A;N;N;F;2019;Braunschweiger Straße 57;Anlehnbügel 2018 (SenUVK);52.47081;13.446018
+411;2;A;N;N;Geh;2019;Braunschweiger Straße 60;Anlehnbügel 2018 (SenUVK);52.470947;13.44542
+412;2;A;N;N;Geh;2019;Braunschweiger Straße 60;Anlehnbügel 2018 (SenUVK);52.470947;13.44542
+413;3;A;N;N;F;2019;Braunschweiger Straße 71;Anlehnbügel 2018 (SenUVK);52.47058;13.44414
+414;2;A;N;N;Geh;2019;Britzer Damm 101;Anlehnbügel 2018 (SenUVK);52.453835;13.4383955
+415;4;A;N;N;Geh;2019;Britzer Damm 121;Anlehnbügel 2018 (SenUVK);52.451782;13.438577
+416;6;A;N;N;Geh;2019;Britzer Damm 139;Anlehnbügel 2018 (SenUVK);52.450577;13.437726
+417;4;A;N;N;Geh;2019;Britzer Damm 146;Anlehnbügel 2018 (SenUVK);52.450184;13.436874
+418;1;A;N;N;Geh;2019;Britzer Damm 15;Anlehnbügel 2018 (SenUVK);52.461643;13.4350395
+419;2;A;N;N;Geh;2019;Britzer Damm 172;Anlehnbügel 2018 (SenUVK);52.44756;13.4349785
+420;1;A;N;N;Geh;2019;Britzer Damm 18;Anlehnbügel 2018 (SenUVK);52.46147;13.4346285
+421;2;A;N;N;Geh;2019;Britzer Damm 181;Anlehnbügel 2018 (SenUVK);52.446583;13.434963
+422;3;A;N;N;Geh;2019;Britzer Damm 26;Anlehnbügel 2018 (SenUVK);52.4606;13.434908
+423;4;A;N;N;Geh;2019;Britzer Damm 55;Anlehnbügel 2018 (SenUVK);52.45743;13.437113
+424;2;A;N;N;Geh;2019;Britzer Damm 88;Anlehnbügel 2018 (SenUVK);52.454887;13.437387
+425;2;A;N;N;Geh;2019;Bruno-Bauer-Straße 17;Anlehnbügel 2018 (SenUVK);52.464863;13.438995
+426;2;A;N;N;Geh;2019;Bruno-Bauer-Straße 22;Anlehnbügel 2018 (SenUVK);52.46628;13.438572
+427;2;A;N;N;Geh;2019;Brusendorfer Straße 19;Anlehnbügel 2018 (SenUVK);52.47396;13.453547
+428;3;A;N;N;Geh;2019;Buchbinderweg 21 (Spielplatz);Anlehnbügel 2018 (SenUVK);52.418304;13.490973
+429;3;A;N;N;F;2019;Buckower Damm 188;Anlehnbügel 2018 (SenUVK);52.42681;13.43495
+430;2;A;N;N;Geh;2019;Buckower Damm 213;Anlehnbügel 2018 (SenUVK);52.42467;13.43592
+431;6;A;N;N;Geh;2019;Buckower Damm 59;Anlehnbügel 2018 (SenUVK);52.438564;13.435236
+432;3;A;N;N;Geh;2019;Delbrückstraße 56;Anlehnbügel 2018 (SenUVK);52.465317;13.439295
+433;2;A;N;N;Geh;2019;Donaustraße 114;Anlehnbügel 2018 (SenUVK);52.48339;13.433764
+434;3;A;N;N;Geh;2019;Donaustraße 66;Anlehnbügel 2018 (SenUVK);52.476776;13.444625
+435;10;A;N;N;Geh;2019;Elfriede-Kuhr-Straße 7 (Spielplatz);Anlehnbügel 2018 (SenUVK);52.405613;13.506751
+436;2;A;N;N;Geh;2019;Elly-Heuss-Knapp-Straße 21;Anlehnbügel 2018 (SenUVK);52.403755;13.505799
+437;4;A;N;N;Geh;2019;Emser Straße 10;Anlehnbügel 2018 (SenUVK);52.4696;13.438712
+438;2;A;N;N;Geh;2019;Emser Straße 15;Anlehnbügel 2018 (SenUVK);52.469463;13.437615
+439;2;A;N;N;Geh;2019;Emser Straße 80;Anlehnbügel 2018 (SenUVK);52.467484;13.42317
+440;1;A;N;N;Geh;2019;Emser Straße 83;Anlehnbügel 2018 (SenUVK);52.467587;13.424071
+441;4;A;N;N;Geh;2019;Finowstraße 9;Anlehnbügel 2018 (SenUVK);52.482395;13.443381
+442;2;A;N;N;Geh;2019;Fläzsteinpfad 3 (Spielplatz);Anlehnbügel 2018 (SenUVK);52.423485;13.432339
+443;3;A;N;N;Geh;2019;Flurweg 77;Anlehnbügel 2018 (SenUVK);52.42825;13.480668
+444;6;A;N;N;F;2019;Fontanestraße 14;Anlehnbügel 2018 (SenUVK);52.479362;13.4211855
+445;10;A;N;N;F;2019;Friedelstraße 22, 23 und 42;Anlehnbügel 2018 (SenUVK);52.491642;13.428101
+446;3;A;N;N;Geh;2019;Friedelstraße 35;Anlehnbügel 2018 (SenUVK);52.492924;13.427814
+447;3;A;N;N;F;2019;Friedelstraße 47;Anlehnbügel 2018 (SenUVK);52.489967;13.427468
+448;3;A;N;N;Geh;2019;Friedelstraße 48;Anlehnbügel 2018 (SenUVK);52.489784;13.4275055
+449;3;A;N;N;Geh;2019;Fritz-Erler-Allee 26;Anlehnbügel 2018 (SenUVK);52.43427;13.454605
+450;3;A;N;N;Geh;2019;Fritz-Reuter-Allee 173;Anlehnbügel 2018 (SenUVK);52.43796;13.447653
+451;5;A;N;N;Geh;2019;Fritz-Reuter-Allee 50;Anlehnbügel 2018 (SenUVK);52.447754;13.449581
+452;3;A;N;N;F;2019;Ganghoferstraße 3;Anlehnbügel 2018 (SenUVK);52.47918;13.439822
+453;1;A;N;N;Geh;2019;Germaniapromenade 2;Anlehnbügel 2018 (SenUVK);52.46095;13.434578
+454;3;A;N;N;Geh;2019;Germaniapromenade 8;Anlehnbügel 2018 (SenUVK);52.46088;13.434027
+455;6;A;N;N;Geh;2019;Geygerstraße 12 - 15;Anlehnbügel 2018 (SenUVK);52.478992;13.443156
+456;3;A;N;N;Geh;2019;Gradestraße 36;Anlehnbügel 2018 (SenUVK);52.452698;13.43204
+457;2;A;N;N;Geh;2019;Hannemannstraße 24;Anlehnbügel 2018 (SenUVK);52.4553;13.44637
+458;3;A;N;N;Geh;2019;Hannemannstraße 32;Anlehnbügel 2018 (SenUVK);52.455143;13.445071
+459;2;A;N;N;Geh;2019;Hannemannstraße 43;Anlehnbügel 2018 (SenUVK);52.454624;13.443023
+460;2;A;N;N;Geh;2019;Hänselstraße 6;Anlehnbügel 2018 (SenUVK);52.46662;13.473873
+461;3;A;N;N;Geh;2019;Heidelberger Straße 35;Anlehnbügel 2018 (SenUVK);52.485893;13.452776
+462;2;A;N;N;Geh;2019;Hermannstraße 144;Anlehnbügel 2018 (SenUVK);52.46385;13.4337
+463;3;A;N;J;Geh;2019;Hermannstraße 180;Anlehnbügel 2018 (SenUVK);52.47273;13.428795
+464;2;A;N;N;Geh;2019;Hertzbergstraße 12;Anlehnbügel 2018 (SenUVK);52.476883;13.447996
+465;2;A;N;N;Geh;2019;Hobrechtstraße 17;Anlehnbügel 2018 (SenUVK);52.488827;13.426848
+466;8;A;N;N;Geh;2019;Hobrechtstraße 39;Anlehnbügel 2018 (SenUVK);52.493458;13.425609
+467;10;A;N;N;F;2019;Hobrechtstraße 75;Anlehnbügel 2018 (SenUVK);52.48704;13.426779
+468;12;A;N;N;F;2019;Hobrechtstraße 76;Anlehnbügel 2018 (SenUVK);52.486874;13.426757
+469;2;A;N;N;Geh;2019;Hobrechtstraße 8;Anlehnbügel 2018 (SenUVK);52.486595;13.427025
+470;3;A;N;N;Geh;2019;Holzmindener Straße 11 b;Anlehnbügel 2018 (SenUVK);52.456512;13.43094
+471;2;A;N;N;Geh;2019;Ilsestraße 11a;Anlehnbügel 2018 (SenUVK);52.471817;13.434949
+472;2;A;N;N;Geh;2019;In den Gärten 4 (Bolzplatz);Anlehnbügel 2018 (SenUVK);52.42002;13.420787
+473;3;A;N;N;Geh;2019;Innstraße 42;Anlehnbügel 2018 (SenUVK);52.482224;13.4453
+474;3;A;N;N;Geh;2019;Jahnstraße 85;Anlehnbügel 2018 (SenUVK);52.46016;13.436112
+475;2;A;N;N;Geh;2019;Jonasstraße 23;Anlehnbügel 2018 (SenUVK);52.47149;13.433542
+476;2;A;N;N;Geh;2019;Jonasstraße 43;Anlehnbügel 2018 (SenUVK);52.471073;13.43179
+477;6;A;N;N;F;2019;Jonasstraße 6;Anlehnbügel 2018 (SenUVK);52.472237;13.439301
+478;5;A;N;N;Geh;2019;Karl-Marx-Straße 228;Anlehnbügel 2018 (SenUVK);52.469467;13.441403
+479;3;A;N;N;Geh;2019;Karlsgartenstraße 6;Anlehnbügel 2018 (SenUVK);52.48217;13.422211
+480;3;A;N;N;Geh;2019;Kiehlufer 45;Anlehnbügel 2018 (SenUVK);52.485714;13.443789
+481;6;A;N;N;F;2019;Kiehlufer 55;Anlehnbügel 2018 (SenUVK);52.485085;13.445
+482;2;A;N;N;Geh;2019;Kiehlufer 73;Anlehnbügel 2018 (SenUVK);52.48415;13.446911
+483;11;A;N;N;F;2019;Kiehlufer 75;Anlehnbügel 2018 (SenUVK);52.483826;13.447545
+484;3;A;N;N;F;2019;Kienitzer Straße 20;Anlehnbügel 2018 (SenUVK);52.477314;13.435754
+485;3;A;N;N;Geh;2019;Kirchhofstraße 2;Anlehnbügel 2018 (SenUVK);52.4735;13.443412
+486;3;A;N;N;F;2019;Kirchnerweg 29;Anlehnbügel 2018 (SenUVK);52.426945;13.456094
+487;3;A;N;N;Geh;2019;Kirschner Weg 23 (Spielplatz);Anlehnbügel 2018 (SenUVK);52.426914;13.455472
+488;3;A;N;N;Geh;2019;Köpenicker Straße 154;Anlehnbügel 2018 (SenUVK);52.42017;13.499531
+489;3;A;N;N;Geh;2019;Kranoldstraße 10;Anlehnbügel 2018 (SenUVK);52.465984;13.433251
+490;2;A;N;N;Geh;2019;Lahnstraße 78;Anlehnbügel 2018 (SenUVK);52.468178;13.44535
+491;6;A;N;N;Geh;2019;Lautenbergerstraße 44;Anlehnbügel 2018 (SenUVK);52.45748;13.428436
+492;5;A;N;N;Geh;2019;Leinestraße 17;Anlehnbügel 2018 (SenUVK);52.472984;13.423046
+493;4;A;N;N;Geh;2019;Lenaustraße 12;Anlehnbügel 2018 (SenUVK);52.490147;13.428008
+494;8;A;N;N;Geh;2019;Lenaustraße 26;Anlehnbügel 2018 (SenUVK);52.490135;13.425184
+495;6;A;N;N;F;2019;Liberdastraße 10;Anlehnbügel 2018 (SenUVK);52.49226;13.429895
+496;3;A;N;N;Geh;2019;Liberdastraße 12;Anlehnbügel 2018 (SenUVK);52.492;13.429531
+497;6;A;N;N;F;2019;Liberdastraße 15;Anlehnbügel 2018 (SenUVK);52.491604;13.429091
+498;3;A;N;N;Geh;2019;Lipschitzallee 23;Anlehnbügel 2018 (SenUVK);52.430054;13.472364
+499;3;A;N;N;F;2019;Mahlower Straße 16;Anlehnbügel 2018 (SenUVK);52.47957;13.41974
+500;2;A;N;N;Geh;2019;Mahlower Straße 24;Anlehnbügel 2018 (SenUVK);52.479626;13.422436
+501;3;A;N;N;F;2019;Mainzer Straße 15;Anlehnbügel 2018 (SenUVK);52.482433;13.427237
+502;3;A;N;N;Geh;2019;Mainzer Straße 6;Anlehnbügel 2018 (SenUVK);52.48393;13.427271
+503;3;A;N;N;Geh;2019;Malchiner Straße 73;Anlehnbügel 2018 (SenUVK);52.445038;13.453047
+504;3;A;N;N;Geh;2019;Malchiner Straße 89;Anlehnbügel 2018 (SenUVK);52.444546;13.452839
+505;4;A;N;N;Geh;2019;Manitiusstraße 10;Anlehnbügel 2018 (SenUVK);52.490955;13.432988
+506;2;A;N;N;Geh;2019;Marienfelder Chaussee 142;Anlehnbügel 2018 (SenUVK);52.416073;13.406432
+507;3;A;N;N;Geh;2019;Marienfelder Chaussee 149;Anlehnbügel 2018 (SenUVK);52.415276;13.405198
+508;2;A;N;N;Geh;2019;Marienfelder Chaussee 66;Anlehnbügel 2018 (SenUVK);52.418278;13.415952
+509;6;A;N;N;Geh;2019;Maybachufer 17;Anlehnbügel 2018 (SenUVK);52.49401;13.426172
+510;3;A;N;N;Geh;2019;Maybachufer 19;Anlehnbügel 2018 (SenUVK);52.49381;13.426795
+511;6;A;N;N;Geh;2019;Maybachufer 27;Anlehnbügel 2018 (SenUVK);52.492832;13.429667
+512;3;A;N;N;Geh;2019;Michael-Bohnen-Ring 52;Anlehnbügel 2018 (SenUVK);52.465122;13.47421
+513;3;A;N;N;Geh;2019;Miningstraße 83;Anlehnbügel 2018 (SenUVK);52.449383;13.447361
+514;3;A;N;N;Geh;2019;Mohriner Allee 69;Anlehnbügel 2018 (SenUVK);52.44149;13.424325
+515;3;A;N;N;Geh;2019;Mohriner Allee 96;Anlehnbügel 2018 (SenUVK);52.44094;13.420074
+516;6;A;N;N;Geh;2019;Möwenweg 1 (Spielplatz);Anlehnbügel 2018 (SenUVK);52.44246;13.463447
+517;2;A;N;N;Geh;2019;Neudecker Weg 84;Anlehnbügel 2018 (SenUVK);52.419025;13.507805
+518;3;A;N;N;Geh;2019;Neuköllner Straße 312;Anlehnbügel 2018 (SenUVK);52.421043;13.488215
+519;3;A;N;N;Geh;2019;Neuköllner Straße 333;Anlehnbügel 2018 (SenUVK);52.417076;13.49459
+520;3;A;N;N;Geh;2019;Niemetzstraße 22;Anlehnbügel 2018 (SenUVK);52.47205;13.450961
+521;2;A;N;N;Geh;2019;Nogatstraße 14;Anlehnbügel 2018 (SenUVK);52.469757;13.4346485
+522;2;A;N;N;Geh;2019;Nogatstraße 52;Anlehnbügel 2018 (SenUVK);52.469955;13.43801
+523;2;A;N;N;Geh;2019;Nogatstraße 52;Anlehnbügel 2018 (SenUVK);52.469955;13.43801
+524;6;A;N;N;F;2019;Oderstraße 29;Anlehnbügel 2018 (SenUVK);52.472355;13.420016
+525;6;A;N;N;F;2019;Oderstraße 34;Anlehnbügel 2018 (SenUVK);52.473133;13.41983
+526;6;A;N;N;F;2019;Oderstraße 44;Anlehnbügel 2018 (SenUVK);52.475037;13.419316
+527;3;A;N;N;Geh;2019;Ortolanweg 94a;Anlehnbügel 2018 (SenUVK);52.439995;13.468676
+528;3;A;N;J;F;2019;Pannierstraße 26;Anlehnbügel 2018 (SenUVK);52.490158;13.434434
+529;5;A;N;N;Geh;2019;Pannierstraße 47;Anlehnbügel 2018 (SenUVK);52.488712;13.432547
+530;6;A;N;N;Geh;2019;Pannierstraße 51;Anlehnbügel 2018 (SenUVK);52.488148;13.431998
+531;2;A;N;N;Geh;2019;Pannierstraße 6;Anlehnbügel 2018 (SenUVK);52.4867;13.431051
+532;6;A;N;N;Geh;2019;Parchimer Allee 2;Anlehnbügel 2018 (SenUVK);52.446762;13.461084
+533;6;A;N;N;Geh;2019;Pflügerstraße 19;Anlehnbügel 2018 (SenUVK);52.490616;13.431463
+534;3;A;N;N;Geh;2019;Reuterstraße 37;Anlehnbügel 2018 (SenUVK);52.4906;13.429249
+535;6;A;N;N;F;2019;Richardstraße 68;Anlehnbügel 2018 (SenUVK);52.473175;13.44573
+536;3;A;N;N;Geh;2019;Ringslebenstraße 1;Anlehnbügel 2018 (SenUVK);52.42116;13.459823
+537;2;A;N;N;Geh;2019;Rübelandstraße 14;Anlehnbügel 2018 (SenUVK);52.47057;13.438616
+538;3;A;N;N;Geh;2019;Saalestraße 37;Anlehnbügel 2018 (SenUVK);52.472378;13.454418
+539;3;A;N;N;F;2019;Sanderstraße 17;Anlehnbügel 2018 (SenUVK);52.492744;13.427766
+540;3;A;N;N;F;2019;Schierker Straße 29;Anlehnbügel 2018 (SenUVK);52.46978;13.43036
+541;2;A;N;N;Geh;2019;Schierker Straße 30;Anlehnbügel 2018 (SenUVK);52.469822;13.43076
+542;4;A;N;N;Geh;2019;Schierker Straße 50;Anlehnbügel 2018 (SenUVK);52.4706163;13.4372997
+543;6;A;N;N;F;2019;Schierker Straße 53;Anlehnbügel 2018 (SenUVK);52.470737;13.438364
+544;2;A;N;N;Geh;2019;Schinkestraße 25;Anlehnbügel 2018 (SenUVK);52.494267;13.421925
+545;3;A;N;N;F;2019;Schöneweider Straße 20;Anlehnbügel 2018 (SenUVK);52.472054;13.444139
+546;3;A;N;N;Geh;2019;Schudomastraße 7;Anlehnbügel 2018 (SenUVK);52.473785;13.450105
+547;4;A;N;N;F;2019;Selchower Straße 10;Anlehnbügel 2018 (SenUVK);52.478935;13.42238
+548;6;A;N;N;F;2019;Sonnenallee 182;Anlehnbügel 2018 (SenUVK);52.476448;13.450208
+549;5;A;N;N;Geh;2019;Straße 231 129 ;Anlehnbügel 2018 (SenUVK);52.415527;13.470893
+550;3;A;N;N;Geh;2019;Stubenrauchstraße 87;Anlehnbügel 2018 (SenUVK);52.43281;13.497571
+551;3;A;N;N;Geh;2019;Sülzhayner Straße 28;Anlehnbügel 2018 (SenUVK);52.487255;13.44602
+552;4;A;N;N;Geh;2019;Sülzhayner Straße 8;Anlehnbügel 2018 (SenUVK);52.48775;13.44581
+553;6;A;N;N;Geh;2019;Theodor Loos Ring 14 (Spielplätze);Anlehnbügel 2018 (SenUVK);52.42213;13.477458
+554;2;A;N;N;Geh;2019;Thomasstraße 15;Anlehnbügel 2018 (SenUVK);52.4736675;13.4387278
+555;3;A;N;N;Geh;2019;Thomasstraße 21;Anlehnbügel 2018 (SenUVK);52.4734553;13.4378660
+556;3;A;N;N;Geh;2019;Thomasstraße 23;Anlehnbügel 2018 (SenUVK);52.4730788;13.4378412
+557;2;A;N;N;Geh;2019;Thomasstraße 55;Anlehnbügel 2018 (SenUVK);52.47232;13.433288
+558;2;A;N;N;Geh;2019;Thomasstraße 67;Anlehnbügel 2018 (SenUVK);52.472054;13.431179
+559;6;A;N;N;F;2019;Treptower Straße 19;Anlehnbügel 2018 (SenUVK);52.480133;13.451043
+560;3;A;N;N;Geh;2019;Treptower Straße 68;Anlehnbügel 2018 (SenUVK);52.482758;13.454052
+561;3;A;N;N;F;2019;Uthmannstraße 15;Anlehnbügel 2018 (SenUVK);52.475414;13.441359
+562;3;A;N;N;Geh;2019;Warthestraße 12;Anlehnbügel 2018 (SenUVK);52.470123;13.426442
+563;3;A;N;N;Geh;2019;Warthestraße 62;Anlehnbügel 2018 (SenUVK);52.469803;13.426306
+564;3;A;N;N;Geh;2019;Wederstraße 87;Anlehnbügel 2018 (SenUVK);52.462044;13.435679
+565;4;A;N;N;Geh;2019;Weichselstraße 19;Anlehnbügel 2018 (SenUVK);52.48634;13.435891
+566;3;A;N;N;Geh;2019;Weichselstraße 22;Anlehnbügel 2018 (SenUVK);52.48664;13.436255
+567;3;A;N;N;Geh;2019;Weichselstraße 63;Anlehnbügel 2018 (SenUVK);52.484413;13.432966
+568;2;A;N;N;Geh;2019;Weisestraße 17;Anlehnbügel 2018 (SenUVK);52.476852;13.4239235
+569;2;A;N;N;Geh;2019;Weisestraße 47;Anlehnbügel 2018 (SenUVK);52.47641;13.424441
+570;2;A;N;N;Geh;2019;Werrastraße 40 B;Anlehnbügel 2018 (SenUVK);52.480503;13.450137
+571;3;A;N;N;Geh;2019;Wesenberger Ring 13;Anlehnbügel 2018 (SenUVK);52.440792;13.441961
+572;3;A;N;N;F;2019;Weserstraße 106;Anlehnbügel 2018 (SenUVK);52.477066;13.452849
+573;4;A;N;N;F;2019;Wesertstraße 38;Anlehnbügel 2018 (SenUVK);52.485165;13.436516
+574;1;A;N;N;Geh;2019;Wissmannstraße 12;Anlehnbügel 2018 (SenUVK);52.484173;13.423338
+575;4;A;N;N;Geh;2019;Wissmannstraße 32;Anlehnbügel 2018 (SenUVK);52.483833;13.422687
+576;2;A;N;N;Geh;2019;Wissmannstraße 4;Anlehnbügel 2018 (SenUVK);52.48552;13.423372
+577;2;A;N;N;Geh;2019;Wissmannstraße 45;Anlehnbügel 2018 (SenUVK);52.485924;13.422996
+578;4;A;N;N;Geh;2019;Wittmannsdorfer Straße 1-6;Anlehnbügel 2018 (SenUVK);52.471874;13.439374
+579;2;A;N;N;Geh;2019;Zwiestädter Straße 10;Anlehnbügel 2018 (SenUVK);52.47328;13.447894
+580;5;A;N;N;Geh;2019;Zwillingstraße 21;Anlehnbügel 2018 (SenUVK);52.467354;13.464315
+581;40;A;N;N;Geh;2019;Donaustraße 88;Sondermodelle;52.47995;13.43991
+582;6;A;N;N;Geh;2019;Fontanestraße 8;Sondermodelle;52.480915;13.420555
+583;11;A;N;N;F;2019;Karl-Marx-Straße 13;PBL Karl-Marx-Straße;52.485615;13.426426
+584;2;A;N;N;F;2019;Karl-Marx-Straße 25;PBL Karl-Marx-Straße;52.484776;13.428273
+585;;A;N;N;F;2019;Friedelstraße 22, 23 und 42;Anlehnbügel 2018 (SenUVK);52.491203;13.427948
+586;;A;N;N;F;2019;Friedelstraße 22, 23 und 42;Anlehnbügel 2018 (SenUVK);52.491238;13.427513
