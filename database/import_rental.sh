@@ -44,15 +44,21 @@ echo "Importing Rental Data ..."
 download_external "Deezer Nextbike Berlin" "https://api.nextbike.net/maps/nextbike-live.json?city=362" nextbike deezer-362.json
 download_external "Nextbike Potsdam" "https://api.nextbike.net/maps/nextbike-live.json?city=158" nextbike deezer-158.json
 #download_external "ADFC fLotte Berlin" "https://flotte-berlin.de/wp-admin/admin-ajax.php" flotte flotte-berlin.json
+#download_external "Inwole e.V. fLotte Potsdam" "https://flotte-potsdam.de/wp-admin/admin-ajax.php" flotte flotte-potsdam.json
 mkdir -p external_data/flotte
 if [ ! -f external_data/flotte/flotte-berlin.json ]
 then
   curl 'https://flotte-berlin.de/wp-admin/admin-ajax.php' -H 'content-type: application/x-www-form-urlencoded; charset=UTF-8' --data 'nonce=cb5852ab0b&action=cb_map_locations&cb_map_id=4160' -o external_data/flotte/flotte-berlin.json
 fi
+if [ ! -f external_data/flotte/flotte-potsdam.json ]
+then
+  curl 'https://flotte-potsdam.de/wp-admin/admin-ajax.php' -H 'content-type: application/x-www-form-urlencoded; charset=UTF-8' --data 'nonce=86c85a694d&action=cb_map_locations&cb_map_id=196' -o external_data/flotte/flotte-potsdam.json
+fi
 
 python3 python/import_nextbike.py 362 external_data/nextbike/deezer-362.json
 python3 python/import_nextbike.py 158 external_data/nextbike/deezer-158.json
 python3 python/import_flotte.py external_data/flotte/flotte-berlin.json
+python3 python/import_flotte.py external_data/flotte/flotte-potsdam.json
 psql -c 'UPDATE extern.all_rental_nextbike SET geom=ST_Transform(ST_SetSRID(ST_MakePoint(lon, lat),4326),3857)'
 psql -c 'UPDATE extern.all_rental_flotte SET geom=ST_Transform(ST_SetSRID(ST_MakePoint(lon, lat),4326),3857)'
 
