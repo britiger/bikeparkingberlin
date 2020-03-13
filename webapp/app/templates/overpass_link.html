@@ -1,6 +1,6 @@
 {% if rental %}
     {% if key != 'bicycle_rental' %}
-        {% set bcp_val = 'bicycle_rental%3D%2A%20and%20' %}
+        {% set bcp_val = 'amenity%3Dbicycle_rental%20and%20' %}
     {% endif %}
 {% else %}
     {% if key != 'bicycle_parking' %}
