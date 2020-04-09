@@ -189,13 +189,19 @@ msgstr "Editor öffnen"
 
 #: app/templates/node_popup_external.html:53
 #: app/templates/node_popup_rental.html:48 app/templates/osm_id_node.html:6
-#: app/templates/osm_id_way.html:4 app/templates/osm_id_way.html:11
+#: app/templates/osm_id_way.html:4 app/templates/osm_id_way.html:12
 msgid "load in JOSM"
 msgstr "In JOSM laden"
 
-#: app/templates/node_popup_external.html:54
+#: app/templates/node_popup_external.html:55
 #: app/templates/node_popup_rental.html:49 app/templates/osm_id_node.html:7
-#: app/templates/osm_id_way.html:5 app/templates/osm_id_way.html:12
+#: app/templates/osm_id_way.html:7 app/templates/osm_id_way.html:14
+msgid "show on openstreetmap.org"
+msgstr "Auf openstreetmap.org anzeigen"
+
+#: app/templates/node_popup_external.html:54
+#: app/templates/node_popup_rental.html:50 app/templates/osm_id_node.html:8
+#: app/templates/osm_id_way.html:5 app/templates/osm_id_way.html:13
 msgid "edit with iD Editor"
 msgstr "Mit iD Editor bearbeiten"
 
