@@ -1,9 +1,9 @@
 {% if typ == 'area' %}
     {% with osm_id=osm_id %}{% include "osm_id_way.html" %}{% endwith %}
 {% else %}
-    <a href="https://osm.org/node/{{ osm_id }}" class="osm_id_line" target="_blank"><img src="{{ url_for('static', filename='img/node.png') }}">&nbsp;{{ osm_id }}</a>
+    <a href="https://www.openstreetmap.org/node/{{ osm_id }}" class="osm_id_line" target="_blank"><img src="{{ url_for('static', filename='img/node.png') }}">&nbsp;{{ osm_id }}</a>
     <small>
         (<a href="http://localhost:8111/load_object?objects=n{{ osm_id }}" title="{{ _("load in JOSM") }}" target="_blank">josm</a>
-        | <a href="https://osm.org/edit?node={{ osm_id }}&comment=%23bikeparking" title="{{ _("edit with iD Editor") }}" target="_blank">iD</a>)
+        | <a href="https://www.openstreetmap.org/edit?node={{ osm_id }}&comment=%23bikeparking" title="{{ _("edit with iD Editor") }}" target="_blank">iD</a>)
     </small>
 {% endif %}
