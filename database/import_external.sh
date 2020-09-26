@@ -44,16 +44,17 @@ download_external "Norderstedt Fahhradabstellanlagen an ÖPNV-Haltestellen" http
 download_external "Jena Fahrradabstellanlagen" https://opendata.jena.de/data/fahrradabstellanlagen.csv fahrradabstellanlagen_jena.csv
 download_external "Rostock Fahrradabstellanlagen" https://geo.sv.rostock.de/download/opendata/fahrradabstellanlagen/fahrradabstellanlagen.csv fahrradabstellanlagen_rostock.csv
 download_external "Hamburg Bike + Ride Anlagen" http://archiv.transparenz.hamburg.de/hmbtgarchive/HMDK/hh_wfs_verkehr_opendata_26217_snap_7.XML hh_wfs_verkehr_opendata_26217_snap_7.XML
-download_external "Moers Fahrradständer" http://geoportal-niederrhein.de/files/opendatagis/Moers/fahrradstaender.geojson fahrradstaender_moers.geojson
+download_external "Moers Fahrradständer" https://gisdata.krzn.de/files/opendatagis/Moers/Fahrradstaender.geojson fahrradstaender_moers.geojson
 download_external "Bonn Fahrradstellplätze" https://stadtplan.bonn.de/geojson?Thema=24840 fahrradstellplaetze_bonn.geojson
-download_external "Wuppertal Fahrradstellplätze" https://www.offenedaten-wuppertal.de/node/1257/download Radabstellanlagen_wuppertal.zip
+download_external "Wuppertal Fahrradstellplätze" http://daten.wuppertal.de/Transport_Verkehr/Radabstellanlagen_EPSG25832_SHAPE.zip Radabstellanlagen_wuppertal.zip
 download_external "Köln Fahrrad Förderung" "https://geoportal.stadt-koeln.de/arcgis/rest/services/Fahrradverkehr_Ma%C3%9Fnahmen/MapServer/0/query?where=objectid+is+not+null&text=&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&relationParam=&outFields=*&returnGeometry=true&returnTrueCurves=false&maxAllowableOffset=&geometryPrecision=&outSR=4326&returnIdsOnly=false&returnCountOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&returnZ=false&returnM=false&gdbVersion=&returnDistinctValues=false&resultOffset=&resultRecordCount=&f=pjson" fahrrad_massnahme_koeln.geojson
 download_external "London Cycling Infrastructure" https://cycling.data.tfl.gov.uk/CyclingInfrastructure/data/points/cycle_parking.json london_parking.geojson
 download_external "London Cycling Infrastructure MapInfo" https://cycling.data.tfl.gov.uk/CycleParking/cycle-parking-map-info.zip london_mapinfo.zip
 download_external "Düsseldorf Bike + Ride" "https://opendata.duesseldorf.de/sites/default/files/Bike%20%2B%20Ride-Stationen.geojson" BikeRideDuesseldorf.geojson 
 download_external "Wien Fahrradabstellanlagen" "https://data.wien.gv.at/daten/geo?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:FAHRRADABSTELLANLAGEOGD&srsName=EPSG:4326&outputFormat=json" WienWFSFahrradabstellanlagen.geojson
 download_external "Graz Fahrradständer" http://www.opendatagraz.at/wp-content/uploads/2013/03/Fahrradabstellpl%C3%A4tze.zip Fahrradstellplaetze.zip
-download_external "Zürich Zweiradabstellplatz" https://data.stadt-zuerich.ch/dataset/11b61777-800c-4ebe-a340-bbe4affaedfd/resource/2eaa9ce6-7a21-429e-b1a0-54b1826a817d/download/zweiradabstellplatz.json zweiradabstellplatz.geojson
+# download_external "Zürich Zweiradabstellplatz" https://data.stadt-zuerich.ch/dataset/11b61777-800c-4ebe-a340-bbe4affaedfd/resource/2eaa9ce6-7a21-429e-b1a0-54b1826a817d/download/zweiradabstellplatz.json zweiradabstellplatz.geojson
+echo "Please Download 'taz.zweiradabstellplaetze_p.json' from https://www.stadt-zuerich.ch/geodaten/download/Zweiradparkierung"
 
 # Import data
 psql -f sql/create_external_table.sql
@@ -129,7 +130,7 @@ ogr2ogr -f "PostgreSQL" PG:"$OGR2OGR_PGSQL" \
     -overwrite -lco GEOMETRY_NAME=geom \
     -t_srs EPSG:3857 \
     -nln all_parking_wuppertal \
-    external_data/Radabstellanlagen_EPSG3857_SHAPE.shp
+    external_data/Radabstellanlagen_EPSG25832_SHAPE.shp
 psql -f sql/create_external_wuppertal.sql
 cat sql/create_external_template.sql | sed -e 's/#CITY#/wuppertal/g' | psql
 
@@ -198,7 +199,7 @@ ogr2ogr -f "PostgreSQL" PG:"$OGR2OGR_PGSQL" \
     -s_srs EPSG:4326 \
     -t_srs EPSG:3857 \
     -nln all_parking_zuerich \
-    external_data/zweiradabstellplatz.geojson
+    external_data/taz.zweiradabstellplaetze_p.json
 psql -f sql/create_external_zuerich.sql
 cat sql/create_external_template.sql | sed -e 's/#CITY#/zuerich/g' | psql
 

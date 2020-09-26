@@ -1,7 +1,7 @@
 SET client_min_messages TO WARNING;
 
-ALTER TABLE extern.all_parking_wuppertal ALTER COLUMN anzahl_abs TYPE int;
-ALTER TABLE extern.all_parking_wuppertal ALTER COLUMN "anzahl_bÜg" TYPE int;
+ALTER TABLE extern.all_parking_wuppertal ALTER COLUMN anz_abstel TYPE int;
+ALTER TABLE extern.all_parking_wuppertal ALTER COLUMN anz_buegel TYPE int;
 
 DELETE FROM extern.external_data WHERE city='Wuppertal';
 INSERT INTO extern.external_data (city, suffix, datasource, datasource_link, license, license_link, center_lat, center_lon, zoom_level, admin_osm_id)
