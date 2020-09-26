@@ -40,6 +40,7 @@ function download_external {
 }
 
 download_external "Berlin Fahrradständer Befahrung 2014" "https://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/s_Fahrradstaender?service=WFS&version=1.1.0&request=GetFeature&typeName=fis:s_Fahrradstaender" s_Fahrradstaender.gml
+download_external "Berlin Fahrradständer FixMyBerlin" "https://fixmyberlin.de/api/v1/reports" fixmyberlin.json
 download_external "Norderstedt Fahhradabstellanlagen an ÖPNV-Haltestellen" http://185.223.104.6/data/norderstedt/13_Bike_und_ride.csv 13_Bike_und_ride.csv
 download_external "Jena Fahrradabstellanlagen" https://opendata.jena.de/data/fahrradabstellanlagen.csv fahrradabstellanlagen_jena.csv
 download_external "Rostock Fahrradabstellanlagen" https://geo.sv.rostock.de/download/opendata/fahrradabstellanlagen/fahrradabstellanlagen.csv fahrradabstellanlagen_rostock.csv
@@ -72,6 +73,14 @@ ogr2ogr -f "PostgreSQL" PG:"$OGR2OGR_PGSQL" \
 psql -f sql/create_external_berlin.sql
 cat sql/create_external_template.sql | sed -e 's/#CITY#/berlin/g' | psql
 cat sql/create_external_template.sql | sed -e 's/#CITY#/berlin_cluster/g' | psql
+
+# Berlin Fahrradständer FixMyBerlin
+echo "Import Berlin FixMyBerlin"
+psql -c "DROP TABLE IF EXISTS extern.fixmyberlin_import CASCADE;"
+psql -c "CREATE TABLE extern.fixmyberlin_import (data jsonb);"
+cat external_data/fixmyberlin.json | sed 's/\\/\\\\/g' | psql -c 'COPY extern.fixmyberlin_import FROM STDIN;'
+psql -f sql/create_external_berlin_fixmyberlin.sql
+cat sql/create_external_template.sql | sed -e 's/#CITY#/berlin_fixmyberlin/g' | psql
 
 # Norderstedt Fahrrad ÖPNV
 echo "Import Norderstedt Fahhradabstellanlagen an ÖPNV-Haltestellen"
