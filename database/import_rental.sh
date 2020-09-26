@@ -65,7 +65,7 @@ psql -c 'UPDATE extern.all_rental_flotte SET geom=ST_Transform(ST_SetSRID(ST_Mak
 psql -f sql/create_rental_berlin.sql
 cat sql/create_rental_template.sql | \
     sed -e 's/#CITY#/Berlin/g' | \
-    sed -e 's/#BRAND#/Deezer nextbike/g' | \
+    sed -e 's/#BRAND#/nextbike Berlin/g' | \
     sed -e 's/#SUFFIX#/nextbike_berlin/g' | \
     sed -e 's/#AREA#/berlin/g' | psql
 cat sql/create_rental_template.sql | \
