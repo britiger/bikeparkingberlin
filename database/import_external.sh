@@ -232,3 +232,6 @@ psql -c "INSERT INTO extern.external_feedback (suffix, do_not_exists, osm_user, 
 # Import for Berlin Neukölln
 psql -c "DELETE FROM extern.external_feedback WHERE suffix='berlin_neukoelln'"
 psql -c "INSERT INTO extern.external_feedback (suffix, do_not_exists, osm_user, feedback, geom) (SELECT suffix, true, osm_user, feedback, (SELECT geom from extern.all_parking_berlin_neukoelln WHERE id::text=obj_id) FROM extern.file_feedback WHERE suffix='berlin_neukoelln');"
+# Import for Zuerich
+psql -c "DELETE FROM extern.external_feedback WHERE suffix='zuerich'"
+psql -c "INSERT INTO extern.external_feedback (suffix, do_not_exists, osm_user, feedback, geom) (SELECT suffix, true, osm_user, feedback, (SELECT geom from extern.all_parking_zuerich WHERE objectid=obj_id) FROM extern.file_feedback WHERE suffix='zuerich');"
