@@ -126,8 +126,8 @@ msgid "Show Clustered"
 msgstr "Gruppiert Anzeigen"
 
 #: app/templates/missing_map.html:114
-msgid "Export Missing"
-msgstr "Fehlende Exportieren"
+msgid "Export missing and not existing"
+msgstr "Fehlende und nicht vorhandene exportieren"
 
 #: app/templates/missing_map.html:120 app/templates/parking_map.html:129
 #: app/templates/rental_map.html:84
