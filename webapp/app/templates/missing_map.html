@@ -111,7 +111,8 @@
                                 <a href="?is_cluster=true">{{ _('Show Clustered') }}</a> &#x2022;
                             {% endif %}
                         {% endif %}
-                        <a href="/geojson/missing/{{ city }}{% if is_cluster %}?is_cluster=true{% endif %}" target="_blank">{{ _('Export Missing') }} (GeoJSON)</a>
+                        <!-- Wenn https://github.com/britiger/bikeparkingberlin/issues/45 gemacht ist, kann das vermutlich wieder auf "Export Fehlende" reduziert werden. -->
+                        <a href="/geojson/missing/{{ city }}{% if is_cluster %}?is_cluster=true{% endif %}" target="_blank">{{ _('Export missing and not existing') }} (GeoJSON)</a>
                     </li>
                 </ul>
             </div>
