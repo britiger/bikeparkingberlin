@@ -1,8 +1,7 @@
 config
 
 database/*.pbf
-database/tools/osmconvert
-database/tools/osmupdate
+database/tools/*
 database/cache/*
 database/tmp/*
 webapp/venv

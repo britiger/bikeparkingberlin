@@ -1,7 +1,6 @@
 flask
 flask-sqlalchemy
 flask-babel
-psycopg2
 psycopg2-binary
 pylint
 python-dotenv

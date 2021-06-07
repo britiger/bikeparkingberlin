@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd  `dirname $0`
+
 source ../config
 
 export PGHOST
@@ -17,4 +19,4 @@ pip install --upgrade setuptools
 pip install --upgrade pip
 pip install -r requirements.txt
 
-flask run
+flask run --host=0.0.0.0
