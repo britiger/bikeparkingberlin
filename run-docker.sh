@@ -41,7 +41,7 @@ else
     echo "  update   - Update Database from osm"
     echo "  webapp   - Start Webapp"
   fi
-fi 
+fi
 
 if [ "${CMD}" == "reimport" ] || [ -n "${DO_IMPORT}" ]
 then
@@ -66,4 +66,7 @@ then
 elif [ "${CMD}" == "rental" ]
 then
   docker exec -it $CONTAINER_NAME /bikeparking/database/import_rental.sh
+elif [ "${CMD}" == "download_js" ]
+then
+  docker exec -it $CONTAINER_NAME /bikeparking/webapp/download_js.sh
 fi
