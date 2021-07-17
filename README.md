@@ -20,32 +20,43 @@ The script links your local development directory as volume into the container.
 ```
 ./build-docker.sh
 ```
+
 2. Download and Link a pbf-File:
 ```
 # Here as example of Brandenburg incl. Berlin
 wget http://download.geofabrik.de/europe/germany/brandenburg-latest.osm.pbf
 ln -s brandenburg-latest.osm.pbf import.osm.pbf
 ```
+
 3. Start container and import data
 ```
-./run-docker.sh 
+./run-docker.sh
 ```
+
 4. Work with the container
 ```
-# Start Webapp
-./run-docker.sh webapp
-# Need to Open the Browser http://127.0.0.1:5000/
+# Preparation
+# 1. Load external assets
+./run-docker.sh download_js
 
 # Update Database
 ./run-docker.sh update
 
-# Import or update external data
+# 2. Import or update external data
 ./run-docker.sh external
 
-# Import or update rental stations
+# 3. Import or update rental stations
 ./run-docker.sh rental
-```
 
+# 4. Import import.osm.pbf
+./run-docker.sh reimport
+
+# Development
+# Start Webapp
+./run-docker.sh webapp
+# Need to Open the Browser http://127.0.0.1:5000/
+
+```
 If you want to persit your data in the database you need to edit `run-docker.sh` by adding a database volume:
 ```bash
 # create a Volume / otherwise you can use a local directory
