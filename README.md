@@ -1,6 +1,20 @@
 # [bikeparking.lorenz.lu](https://bikeparking.lorenz.lu/)
 
-You can start it by your own using Docker. By the script the source directory is linked as volume into the container, so you can localy edit the webapp.
+[bikeparking.lorenz.lu](https://bikeparking.lorenz.lu/) is a project
+of the [OSM Verkehrswende Berlin Usergroup](https://wiki.openstreetmap.org/wiki/Berlin/Verkehrswende).
+
+Core features are:
+
+* **Show** existing bicyle parking data from OSM in as statistics and on a map.
+* **Compare** external OpenData of **bicycle parking** data and **bicycle rental** data with data from OSM.
+  This allows to validate OpenData sets and manually add bicycle parking infrastructure to OSM ([ground truth](https://wiki.openstreetmap.org/wiki/Ground_truth)).
+
+
+## Development
+
+You can start it by your own using Docker.
+
+The script links your local development directory as volume into the container.
 
 1. Building a local image:
 ```
