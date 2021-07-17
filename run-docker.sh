@@ -40,6 +40,7 @@ else
     echo "  rental   - Import/Update data of rental sources"
     echo "  update   - Update Database from osm"
     echo "  webapp   - Start Webapp"
+    echo "  download_js   - Copy required, external css and js assets"
   fi
 fi
 
