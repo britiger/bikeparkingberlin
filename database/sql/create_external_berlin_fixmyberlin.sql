@@ -1,14 +1,14 @@
 SET client_min_messages TO WARNING;
 
 DELETE FROM extern.external_data WHERE city='Berlin Friedrichshain-Kreuzberg';
-INSERT INTO extern.external_data (city, suffix, datasource, datasource_link, license, license_link, center_lat, center_lon, zoom_level, admin_osm_id, is_cluster) 
+INSERT INTO extern.external_data (city, suffix, datasource, datasource_link, license, license_link, center_lat, center_lon, zoom_level, admin_osm_id) 
     VALUES ('Berlin Friedrichshain-Kreuzberg',
         'berlin_fixmyberlin',
         'FixMyBerlin',
         'https://fixmyberlin.de/meldungen/radbuegel/friedrichshain-kreuzberg/karte',
         'ODbL Lizenz',
         'https://opendatacommons.org/licenses/odbl/',
-        52.5, 13.433333, 13, -55764, true);
+        52.5, 13.433333, 13, -55764;
 
 DROP VIEW IF EXISTS extern.fixmyberlin_view CASCADE;
 CREATE VIEW extern.fixmyberlin_view AS 
