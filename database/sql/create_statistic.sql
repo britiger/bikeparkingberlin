@@ -18,12 +18,12 @@ DECLARE
     query text;
     all_table text;
     missing_table text;
-    current_date date;
+    current_datetime date;
 BEGIN
-    current_date := NOW();
+    current_datetime := statement_timestamp();
     FOR rec IN SELECT suffix, is_cluster FROM extern.external_data
     LOOP
-        INSERT INTO statistic.opendata (suffix, stat_date) VALUES (rec.suffix, current_date) ON CONFLICT DO NOTHING;
+        INSERT INTO statistic.opendata (suffix, stat_date) VALUES (rec.suffix, current_datetime) ON CONFLICT DO NOTHING;
         all_table := 'extern.all_parking_' || rec.suffix;
         missing_table := 'extern.missing_parking_' || rec.suffix;
 
@@ -32,17 +32,17 @@ BEGIN
                 cnt_total=(SELECT count(*) FROM '|| all_table ||'),
                 cnt_missing=(SELECT count(*) FROM '|| missing_table ||')
             WHERE suffix=$1 AND stat_date=$2';
-        EXECUTE query USING rec.suffix, current_date;
+        EXECUTE query USING rec.suffix, current_datetime;
 
         IF rec.is_cluster THEN
-            INSERT INTO statistic.opendata (suffix, stat_date) VALUES (rec.suffix||'_cluster', current_date) ON CONFLICT DO NOTHING;
+            INSERT INTO statistic.opendata (suffix, stat_date) VALUES (rec.suffix||'_cluster', current_datetime) ON CONFLICT DO NOTHING;
 
             query := 'UPDATE statistic.opendata
             SET
                 cnt_total=(SELECT count(*) FROM '|| all_table ||'_cluster),
                 cnt_missing=(SELECT count(*) FROM '|| missing_table ||'_cluster)
             WHERE suffix=$1 AND stat_date=$2';
-            EXECUTE query USING rec.suffix||'_cluster', current_date;
+            EXECUTE query USING rec.suffix||'_cluster', current_datetime;
         END IF;
     END LOOP;
 END
